@@ -1,6 +1,6 @@
 # H(ϑ) campaign
 
-Data and code for *Triprime Contributions and Signed Remainders in Square-Root Intervals*, Michael M. Ross (2026).
+Data and code for [*Triprime Contributions and Signed Remainders in Square-Root Intervals*](https://doi.org/10.5281/zenodo.23421683), Michael M. Ross (2026).
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.1422299016-blue.svg)](https://doi.org/10.5281/zenodo.23421764)
 
