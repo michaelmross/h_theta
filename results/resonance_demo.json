@@ -1,0 +1,46 @@
+[
+  {
+    "N": 200,
+    "M": 24,
+    "K": 833,
+    "t": 19.90049751243781,
+    "pair_count": 74,
+    "short_real_over_Y": 0.36800185495671733,
+    "broad_abs_over_Y": 0.020061107726333058,
+    "discrepancy_abs_over_Y": 0.37302936429776706,
+    "purpose": "Illustration only; analytical obstruction is proved in note."
+  },
+  {
+    "N": 500,
+    "M": 41,
+    "K": 3048,
+    "t": 49.9001996007984,
+    "pair_count": 166,
+    "short_real_over_Y": 0.33119648576371524,
+    "broad_abs_over_Y": 0.0057973960929340726,
+    "discrepancy_abs_over_Y": 0.33053905297666564,
+    "purpose": "Illustration only; analytical obstruction is proved in note."
+  },
+  {
+    "N": 1000,
+    "M": 63,
+    "K": 7936,
+    "t": 99.9000999000999,
+    "pair_count": 342,
+    "short_real_over_Y": 0.34151596132394674,
+    "broad_abs_over_Y": 0.00350905694762553,
+    "discrepancy_abs_over_Y": 0.34186727807844297,
+    "purpose": "Illustration only; analytical obstruction is proved in note."
+  },
+  {
+    "N": 2000,
+    "M": 95,
+    "K": 21052,
+    "t": 199.9000499750125,
+    "pair_count": 682,
+    "short_real_over_Y": 0.3406868739623448,
+    "broad_abs_over_Y": 0.0017457014767937014,
+    "discrepancy_abs_over_Y": 0.34069372876603565,
+    "purpose": "Illustration only; analytical obstruction is proved in note."
+  }
+]

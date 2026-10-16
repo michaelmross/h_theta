@@ -1,0 +1,690 @@
+{
+  "date": "2026-10-07",
+  "checkpoint": 13,
+  "provenance": {
+    "historical_files_verified_unchanged": 140,
+    "new_primary_sources_verified": 2,
+    "historical_numerical_ledger_unchanged": true
+  },
+  "outer_bound": {
+    "multiplicity_patterns_checked": 45,
+    "maximum_unrestricted_sum_c": "28",
+    "gamma_over_c_upper": "3/2",
+    "proper_outer_weight_upper": "42"
+  },
+  "source_vertex_checks": 34,
+  "actual_fixtures": [
+    {
+      "N": 100,
+      "U_V": 1,
+      "campaign_truncation": true,
+      "fixture_note": "Campaign floor(N^(1/100))",
+      "beta_first_moment_exact": -101,
+      "beta_energy_exact": 101,
+      "beta_density_first_exact": "-1",
+      "beta_density_second_exact": "1",
+      "alpha_coefficient_identities": 529,
+      "beta_sign_values_seen": [
+        -1,
+        0
+      ],
+      "joint_core_rows_checked": 5,
+      "joint_non_prime_power_rows_cancelled": 3,
+      "overlap_pair_checks": 228,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 12,
+          "all_integer_b_proxy_energy_exact": "23913/16",
+          "proxy_diagonal_exact": "10125/16",
+          "proxy_off_diagonal_exact": "3447/4",
+          "actual_prime_b_energy": {
+            "lower": "102.30948917738419589262528337233888156001727134362",
+            "upper": "102.30948917738419589262528337233888156001727134368",
+            "width": "6E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-1.1416794980151385700260013421618158210765254827856",
+            "upper": "-1.1416794980151385700260013421618158210765254827851",
+            "width": "5E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.1639881960612263930174143676433604818166779358191",
+            "upper": "1.1639881960612263930174143676433604818166779358197",
+            "width": "6E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 50,
+          "all_integer_b_proxy_energy_exact": "2943/8",
+          "proxy_diagonal_exact": "2421/8",
+          "proxy_off_diagonal_exact": "261/4",
+          "actual_prime_b_energy": {
+            "lower": "16.018320602547800526164347313915995857392651017301",
+            "upper": "16.018320602547800526164347313915995857392651017314",
+            "width": "1.3E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.81313445822887722199691024973990434285595216953842",
+            "upper": "-0.81313445822887722199691024973990434285595216953808",
+            "width": "3.4E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.0835515436966126692506783904380710219990178288523",
+            "upper": "1.0835515436966126692506783904380710219990178288531",
+            "width": "8E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 100,
+          "all_integer_b_proxy_energy_exact": "3033/16",
+          "proxy_diagonal_exact": "3033/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "7.6798517282267147790845676425462975321826957391731",
+            "upper": "7.6798517282267147790845676425462975321826957391768",
+            "width": "3.7E-48"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.94388835733104914508605888813345165067772764844632",
+            "upper": "-0.94388835733104914508605888813345165067772764844596",
+            "width": "3.6E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.2692018695573610276117809754467476401640312213146",
+            "upper": "1.2692018695573610276117809754467476401640312213153",
+            "width": "7E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 200,
+          "all_integer_b_proxy_energy_exact": "1917/16",
+          "proxy_diagonal_exact": "1917/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "3.6151093410647623017543669274860968871390359529932",
+            "upper": "3.6151093410647623017543669274860968871390359529948",
+            "width": "1.6E-48"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.59854465050164476015767076344530383561067352178058",
+            "upper": "-0.59854465050164476015767076344530383561067352178038",
+            "width": "2.0E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.2252500306847797268018690052500614584478470470090",
+            "upper": "1.2252500306847797268018690052500614584478470470097",
+            "width": "7E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    },
+    {
+      "N": 200,
+      "U_V": 3,
+      "campaign_truncation": false,
+      "fixture_note": "Larger U stress fixture; does not change campaign truncation",
+      "beta_first_moment_exact": -33,
+      "beta_energy_exact": 101,
+      "beta_density_first_exact": "-1/6",
+      "beta_density_second_exact": "1/2",
+      "alpha_coefficient_identities": 1028,
+      "beta_sign_values_seen": [
+        -1,
+        0,
+        1
+      ],
+      "joint_core_rows_checked": 14,
+      "joint_non_prime_power_rows_cancelled": 9,
+      "overlap_pair_checks": 219,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 25,
+          "all_integer_b_proxy_energy_exact": "6381/16",
+          "proxy_diagonal_exact": "9423/16",
+          "proxy_off_diagonal_exact": "-1521/8",
+          "actual_prime_b_energy": {
+            "lower": "14.584464668110102836744253126287147300397164747475",
+            "upper": "14.584464668110102836744253126287147300397164747488",
+            "width": "1.3E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.010487827918139955973899269628080483693805500451219",
+            "upper": "0.010487827918139955973899269628080483693805500451390",
+            "width": "1.71E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.33928747874444836709737385076060869773847600403290",
+            "upper": "0.33928747874444836709737385076060869773847600403312",
+            "width": "2.2E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 100,
+          "all_integer_b_proxy_energy_exact": "657/2",
+          "proxy_diagonal_exact": "1521/4",
+          "proxy_off_diagonal_exact": "-207/4",
+          "actual_prime_b_energy": {
+            "lower": "11.778680732248599522568808162955400911378681464838",
+            "upper": "11.778680732248599522568808162955400911378681464845",
+            "width": "7E-48"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.29820403823650180582328802918642041641325231116046",
+            "upper": "-0.29820403823650180582328802918642041641325231116027",
+            "width": "1.9E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.78590963818833142193083238328484190530033145239835",
+            "upper": "0.78590963818833142193083238328484190530033145239880",
+            "width": "4.5E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 200,
+          "all_integer_b_proxy_energy_exact": "3573/16",
+          "proxy_diagonal_exact": "3573/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "8.2695481125432940200646467543327040681903832164826",
+            "upper": "8.2695481125432940200646467543327040681903832164865",
+            "width": "3.9E-48"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.16735109745103119870119441765792239124676030517164",
+            "upper": "-0.16735109745103119870119441765792239124676030517155",
+            "width": "9E-50"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.92656287869574442690068503136275565361295976340625",
+            "upper": "0.92656287869574442690068503136275565361295976340675",
+            "width": "5.0E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 400,
+          "all_integer_b_proxy_energy_exact": "711/4",
+          "proxy_diagonal_exact": "711/4",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "5.2064740012640280540017587422452798673115258649735",
+            "upper": "5.2064740012640280540017587422452798673115258649760",
+            "width": "2.5E-48"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.19487648446999814354431555785773227485868097341718",
+            "upper": "-0.19487648446999814354431555785773227485868097341708",
+            "width": "1.0E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.1351452763902833768544585649310977609509977472991",
+            "upper": "1.1351452763902833768544585649310977609509977473005",
+            "width": "1.4E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    },
+    {
+      "N": 1000,
+      "U_V": 3,
+      "campaign_truncation": false,
+      "fixture_note": "Larger U stress fixture; does not change campaign truncation",
+      "beta_first_moment_exact": -166,
+      "beta_energy_exact": 500,
+      "beta_density_first_exact": "-1/6",
+      "beta_density_second_exact": "1/2",
+      "alpha_coefficient_identities": 6678,
+      "beta_sign_values_seen": [
+        -1,
+        0,
+        1
+      ],
+      "joint_core_rows_checked": 60,
+      "joint_non_prime_power_rows_cancelled": 48,
+      "overlap_pair_checks": 1066,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 125,
+          "all_integer_b_proxy_energy_exact": "37269/16",
+          "proxy_diagonal_exact": "51561/16",
+          "proxy_off_diagonal_exact": "-3573/4",
+          "actual_prime_b_energy": {
+            "lower": "49.651668546246967647841252173923888714023504212903",
+            "upper": "49.651668546246967647841252173923888714023504212965",
+            "width": "6.2E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.13335736249355488098095920757332901452680227864585",
+            "upper": "-0.13335736249355488098095920757332901452680227864563",
+            "width": "2.2E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.35148284389969397368426780138232127903859126570384",
+            "upper": "0.35148284389969397368426780138232127903859126570418",
+            "width": "3.4E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 500,
+          "all_integer_b_proxy_energy_exact": "1539",
+          "proxy_diagonal_exact": "7569/4",
+          "proxy_off_diagonal_exact": "-1413/4",
+          "actual_prime_b_energy": {
+            "lower": "45.738484410402047953033034003206140403971676884467",
+            "upper": "45.738484410402047953033034003206140403971676884529",
+            "width": "6.2E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.20516253359084698766841033057513647964046013440814",
+            "upper": "-0.20516253359084698766841033057513647964046013440786",
+            "width": "2.8E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.76289821293325972485690525991304402206851747966022",
+            "upper": "0.76289821293325972485690525991304402206851747966144",
+            "width": "1.22E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 1000,
+          "all_integer_b_proxy_energy_exact": "24003/16",
+          "proxy_diagonal_exact": "24003/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "44.922837956044274993404401075144903638725213395526",
+            "upper": "44.922837956044274993404401075144903638725213395568",
+            "width": "4.2E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.28666148294082211115628314181599581370095086064640",
+            "upper": "-0.28666148294082211115628314181599581370095086064598",
+            "width": "4.2E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.1352067965588403508699352776032288678914728460414",
+            "upper": "1.1352067965588403508699352776032288678914728460431",
+            "width": "1.7E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 2000,
+          "all_integer_b_proxy_energy_exact": "16083/16",
+          "proxy_diagonal_exact": "16083/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "16.960915489957374556584940543197904924588944797797",
+            "upper": "16.960915489957374556584940543197904924588944797818",
+            "width": "2.1E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.082519094230934590047934323186071355012625200647742",
+            "upper": "-0.082519094230934590047934323186071355012625200647624",
+            "width": "1.18E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.0334598564850857482073345521108025595702691920556",
+            "upper": "1.0334598564850857482073345521108025595702691920597",
+            "width": "4.1E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    },
+    {
+      "N": 2000,
+      "U_V": 5,
+      "campaign_truncation": false,
+      "fixture_note": "Larger U stress fixture; does not change campaign truncation",
+      "beta_first_moment_exact": 68,
+      "beta_energy_exact": 1270,
+      "beta_density_first_exact": "1/30",
+      "beta_density_second_exact": "19/30",
+      "alpha_coefficient_identities": 13831,
+      "beta_sign_values_seen": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "joint_core_rows_checked": 172,
+      "joint_non_prime_power_rows_cancelled": 139,
+      "overlap_pair_checks": 2820,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 250,
+          "all_integer_b_proxy_energy_exact": "34605/8",
+          "proxy_diagonal_exact": "71235/8",
+          "proxy_off_diagonal_exact": "-18315/4",
+          "actual_prime_b_energy": {
+            "lower": "239.48549424419274975916933372749631878735587855679",
+            "upper": "239.48549424419274975916933372749631878735587855720",
+            "width": "4.1E-46"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-0.043240804099687349320104956218691761717398266957091",
+            "upper": "-0.043240804099687349320104956218691761717398266956763",
+            "width": "3.28E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.59245677516602833151037266904089639740615045288165",
+            "upper": "0.59245677516602833151037266904089639740615045288255",
+            "width": "9.0E-49"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 1000,
+          "all_integer_b_proxy_energy_exact": "36657/8",
+          "proxy_diagonal_exact": "47043/8",
+          "proxy_off_diagonal_exact": "-5193/4",
+          "actual_prime_b_energy": {
+            "lower": "80.044294421696529916037159124009056023739836754571",
+            "upper": "80.044294421696529916037159124009056023739836754675",
+            "width": "1.04E-46"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.034030712396001609707813111574934445615826579063346",
+            "upper": "0.034030712396001609707813111574934445615826579063579",
+            "width": "2.33E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.75766388232709759002986598956652302428689717401275",
+            "upper": "0.75766388232709759002986598956652302428689717401400",
+            "width": "1.25E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 2000,
+          "all_integer_b_proxy_energy_exact": "66915/16",
+          "proxy_diagonal_exact": "66915/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "69.093764884025700368543661347577188079467889305831",
+            "upper": "69.093764884025700368543661347577188079467889305914",
+            "width": "8.3E-47"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.11001096432461086155625530793925854011982583955575",
+            "upper": "0.11001096432461086155625530793925854011982583955599",
+            "width": "2.4E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.0429377797225449661354119305230169882586055842331",
+            "upper": "1.0429377797225449661354119305230169882586055842373",
+            "width": "4.2E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 4000,
+          "all_integer_b_proxy_energy_exact": "6165/2",
+          "proxy_diagonal_exact": "6165/2",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "69.174602057305512535652018657631819771851890497053",
+            "upper": "69.174602057305512535652018657631819771851890497158",
+            "width": "1.05E-46"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.024762717145747031831943919746093071738981217951872",
+            "upper": "0.024762717145747031831943919746093071738981217952080",
+            "width": "2.08E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.5426347692962909152800652785015109639826556419553",
+            "upper": "1.5426347692962909152800652785015109639826556419641",
+            "width": "8.8E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    },
+    {
+      "N": 10000,
+      "U_V": 1,
+      "campaign_truncation": true,
+      "fixture_note": "Campaign floor(N^(1/100))",
+      "beta_first_moment_exact": -10001,
+      "beta_energy_exact": 10001,
+      "beta_density_first_exact": "-1",
+      "beta_density_second_exact": "1",
+      "alpha_coefficient_identities": 98008,
+      "beta_sign_values_seen": [
+        -1,
+        0
+      ],
+      "joint_core_rows_checked": 788,
+      "joint_non_prime_power_rows_cancelled": 683,
+      "overlap_pair_checks": 37658,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 1250,
+          "all_integer_b_proxy_energy_exact": "5024943/16",
+          "proxy_diagonal_exact": "1381761/16",
+          "proxy_off_diagonal_exact": "1821591/8",
+          "actual_prime_b_energy": {
+            "lower": "10167.929049115573001800570164545001840134024683858",
+            "upper": "10167.929049115573001800570164545001840134024683888",
+            "width": "3.0E-44"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-1.7831486433252315731938218786639065452842710147380",
+            "upper": "-1.7831486433252315731938218786639065452842710147343",
+            "width": "3.7E-48"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.9350669881618325833948790682511671528958144726443",
+            "upper": "1.9350669881618325833948790682511671528958144726489",
+            "width": "4.6E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 5000,
+          "all_integer_b_proxy_energy_exact": "170613/2",
+          "proxy_diagonal_exact": "126117/2",
+          "proxy_off_diagonal_exact": "22248",
+          "actual_prime_b_energy": {
+            "lower": "2075.1514009051335969302064742371276719582980964239",
+            "upper": "2075.1514009051335969302064742371276719582980964598",
+            "width": "3.59E-44"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-1.5960978577170686625498620054183305171875841387587",
+            "upper": "-1.5960978577170686625498620054183305171875841387488",
+            "width": "9.9E-48"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.9194314199451887436137100028853257145960167189506",
+            "upper": "1.9194314199451887436137100028853257145960167189769",
+            "width": "2.63E-47"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 10000,
+          "all_integer_b_proxy_energy_exact": "52794",
+          "proxy_diagonal_exact": "52794",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "1141.4531018855536290728928951226269392492870038455",
+            "upper": "1141.4531018855536290728928951226269392492870038594",
+            "width": "1.39E-44"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-1.4327067676604742410724215600933153717260103011097",
+            "upper": "-1.4327067676604742410724215600933153717260103010984",
+            "width": "1.13E-47"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "2.0837453544856794789541956825912914831177644650888",
+            "upper": "2.0837453544856794789541956825912914831177644651124",
+            "width": "2.36E-47"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 20000,
+          "all_integer_b_proxy_energy_exact": "688293/16",
+          "proxy_diagonal_exact": "688293/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "877.72543844335295867863296687454905538417045318505",
+            "upper": "877.72543844335295867863296687454905538417045319099",
+            "width": "5.94E-45"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "-1.3070387973848156244307428963761946985961436679922",
+            "upper": "-1.3070387973848156244307428963761946985961436679816",
+            "width": "1.06E-47"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "2.6855535755974546251736525887916292400273328007062",
+            "upper": "2.6855535755974546251736525887916292400273328007848",
+            "width": "7.86E-47"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    },
+    {
+      "N": 10000,
+      "U_V": 8,
+      "campaign_truncation": false,
+      "fixture_note": "Larger U stress fixture; does not change campaign truncation",
+      "beta_first_moment_exact": 97,
+      "beta_energy_exact": 5049,
+      "beta_density_first_exact": "1/105",
+      "beta_density_second_exact": "53/105",
+      "alpha_coefficient_identities": 80824,
+      "beta_sign_values_seen": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "joint_core_rows_checked": 788,
+      "joint_non_prime_power_rows_cancelled": 683,
+      "overlap_pair_checks": 11127,
+      "Gram_checks": 4,
+      "blocks": [
+        {
+          "Q": 1250,
+          "all_integer_b_proxy_energy_exact": "155133/8",
+          "proxy_diagonal_exact": "74349/2",
+          "proxy_off_diagonal_exact": "-142263/8",
+          "actual_prime_b_energy": {
+            "lower": "652.63842787640512350815206634561251367481411857328",
+            "upper": "652.63842787640512350815206634561251367481411857530",
+            "width": "2.02E-45"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.013191195641778747548681226888132492488370400556570",
+            "upper": "0.013191195641778747548681226888132492488370400556856",
+            "width": "2.86E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.49024827179834935572933266754877683856708263322262",
+            "upper": "0.49024827179834935572933266754877683856708263322382",
+            "width": "1.20E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 5000,
+          "all_integer_b_proxy_energy_exact": "347733/16",
+          "proxy_diagonal_exact": "383229/16",
+          "proxy_off_diagonal_exact": "-4437/2",
+          "actual_prime_b_energy": {
+            "lower": "443.17468507821604962252933225072190188927099659586",
+            "upper": "443.17468507821604962252933225072190188927099659811",
+            "width": "2.25E-45"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.0005343045161533720580694288107322180976820020935898",
+            "upper": "0.0005343045161533720580694288107322180976820020938342",
+            "width": "2.444E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "0.88702360685310359151641113062137225184340952071340",
+            "upper": "0.88702360685310359151641113062137225184340952072010",
+            "width": "6.70E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 10000,
+          "all_integer_b_proxy_energy_exact": "304461/16",
+          "proxy_diagonal_exact": "304461/16",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "319.36479975185991588166192743672376246307418588536",
+            "upper": "319.36479975185991588166192743672376246307418588709",
+            "width": "1.73E-45"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.034372628097439412879537884926480719772082894237162",
+            "upper": "0.034372628097439412879537884926480719772082894237510",
+            "width": "3.48E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.1021967640725038485324791469310017354535796972831",
+            "upper": "1.1021967640725038485324791469310017354535796972917",
+            "width": "8.6E-48"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        },
+        {
+          "Q": 20000,
+          "all_integer_b_proxy_energy_exact": "58923/4",
+          "proxy_diagonal_exact": "58923/4",
+          "proxy_off_diagonal_exact": "0",
+          "actual_prime_b_energy": {
+            "lower": "293.64957070087567205768910833832627785990802645772",
+            "upper": "293.64957070087567205768910833832627785990802645960",
+            "width": "1.88E-45"
+          },
+          "actual_prime_b_signed_contribution_over_u": {
+            "lower": "0.038334157781912276129478387054088020559459078495306",
+            "upper": "0.038334157781912276129478387054088020559459078495854",
+            "width": "5.48E-49"
+          },
+          "actual_prime_b_Cauchy_bound_over_u": {
+            "lower": "1.5533494329941196679754686587138947732601736557355",
+            "upper": "1.5533494329941196679754686587138947732601736557806",
+            "width": "4.51E-47"
+          },
+          "scope": "Finite diagnostic; actual c and gamma, frozen log denominator"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "coefficient_identities": 200898,
+    "overlap_pair_checks": 53118,
+    "Gram_checks": 24,
+    "joint_core_rows": 1827,
+    "joint_non_prime_power_rows_cancelled": 1565
+  },
+  "all_checks_passed": true,
+  "uniform_terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "positive_K_credited": 0,
+  "proof_note": "COFACTOR_ESTIMATE_NOTE.md"
+}

@@ -1,0 +1,79 @@
+{
+  "checkpoint": 20,
+  "date": "2026-10-09",
+  "audit_scope": "Primary statement, page-image formula and exact application ranges; no independent reproof of Ford or GKM source counting argument",
+  "sources": [
+    {
+      "authors": [
+        "Andrew Granville",
+        "Dimitris Koukoulopoulos",
+        "James Maynard"
+      ],
+      "title": "Sieve weights and their smoothings",
+      "publication": "Annales scientifiques de l Ecole normale superieure 54 (2021), no.5, 1089-1177",
+      "doi": "10.24033/asens.2478",
+      "publisher_url": "https://smf.emath.fr/publications/poids-de-crible-et-leurs-lissages",
+      "author_manuscript_url": "https://www.dms.umontreal.ca/~koukoulo/documents/publications/sieveweights.pdf",
+      "manuscript_date": "2020-04-08",
+      "manuscript_sha256": "7945bce527a9073eee0bbf69410c5204fe4603b062de69faa2ad87339ed91765",
+      "manuscript_size_bytes": 729474,
+      "location_checked": "Section1.1, printed page4/PDF page index3, equation1.2, isolated-divisor paragraph and footnote3; formula verified on page image",
+      "new_input_admitted": true,
+      "input": "Odd squarefree m with exactly one divisor in (U/2,U] give an even beta support lower bound >=c*t/((log U)^delta*(log log U)^(3/2)) on initial intervals for t>=U^(1+epsilon0)",
+      "source_dependency": "The source identifies the required squarefree refinement of Ford2008 Theorem4 and Lemmas4.1,4.3,4.5,4.8,4.9 in its footnote3",
+      "source_counting_proof_independently_reconstructed": false,
+      "application_range": "epsilon0=1 fixed; t>=N^(9/40)>=U^(22.5), U=floor(N^.01)",
+      "application": "Each sign has large even harmonic mass after using the separately inherited signed odd-Mobius mean; then transfer to actual p,b prime continuation rows on the original long reference",
+      "arbitrary_short_interval_lower_bound_supplied": false,
+      "source_lower_bound_for_beta_signs_separately_assumed": false,
+      "terminal_signed_discrepancy_supplied": false
+    },
+    {
+      "author": "Alexander P. Mangerel",
+      "title": "Divisor-bounded multiplicative functions in short intervals",
+      "year": 2023,
+      "doi": "10.1007/s40687-023-00376-0",
+      "url": "https://link.springer.com/article/10.1007/s40687-023-00376-0",
+      "location_checked": "Lemma3.2; official HTML; admitted primary PDF preserved in sources/beta_support",
+      "input_inherited": true,
+      "new_application": "f_j=rough_T*2^(j*omega_U) <= tau_(2^j), fixed B=2^j,C=1,delta=1/30, fixed integer j",
+      "moving_family_constants_depend_only_on_fixed_parameters": true,
+      "full_stop_interval_minimum_power_margin": "3/200",
+      "almost_all_interval_theorem_used": false,
+      "selected_beta_U_weighted_energy_bound_supplied": false
+    },
+    {
+      "authors": [
+        "Regis de la Breteche",
+        "Francois Dress",
+        "Gerald Tenenbaum"
+      ],
+      "title": "Remarques sur une somme liee a la fonction de Mobius",
+      "url": "https://tenenb.perso.math.cnrs.fr/PPP/Sxz.pdf",
+      "input_inherited": true,
+      "input": "q(U)->L>0 for the actual sharp truncated-Mobius second moment; exact divisor floors transfer to full intervals with error O(U^2)",
+      "full_stop_error_margin": "U^2/Hp << N^(-3/100)",
+      "weighted_selected_subinterval_energy_inferred": false
+    },
+    {
+      "input": "Previously admitted quantitative long Mobius and prime PNT",
+      "proof_note": "JOINT_REMAINDER_NOTE.md Sections2-3; SIGNED_KERNEL_ESTIMATION_NOTE.md Section5",
+      "new_applications": [
+        "Odd Mobius mean via M_odd(t)=M(t)+M_odd(t/2), reciprocal partial summation and Euler factor at1",
+        "Prime-log weighted reference rows with prime centers between N^(7/5) and N^(3/2), relative reference width rho=N^(-o(1))"
+      ],
+      "uniform_relative_reference_loss": "rho^(-1)*exp(-c*sqrt(log N)) is negligible",
+      "short_marked_prime_intervals_relative_exponent_range": [
+        "2/7",
+        "1/3"
+      ],
+      "long_PNT_transferred_to_short_prime_intervals": false
+    }
+  ],
+  "new_external_uniform_signed_cancellation_theorem_admitted": false,
+  "new_initial_interval_support_lower_bound_admitted": true,
+  "historical_007_and_021_application_gaps_unchanged": true,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

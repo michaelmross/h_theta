@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-08",
+  "checkpoint": 16,
+  "all_checks_passed": true,
+  "proof_note": "WEIGHTED_STOPPING_NOTE.md",
+  "provenance": {
+    "checkpoint_15_nonmutable_records_verified": 194,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "historical_analytic_ledger_unchanged": true
+  },
+  "exponent_certificates": {
+    "single_prime_stop_max_exponent": "19/20",
+    "pair_first_prime_max_exponent": "2/3",
+    "minimum_real_progression_width_exponent": "1/20",
+    "local_mean_error_exponent": "-1/25",
+    "local_variance_error_exponent": "-3/100",
+    "summed_first_moment_floor_exponent": "24/25",
+    "summed_second_moment_floor_exponent": "97/100",
+    "reference_sum_H_over_N": "log(19/5)",
+    "moment_limit": "L>0 (previously admitted BDT input)",
+    "progression_length_obstruction_avoided_at_first_prime": true,
+    "conditional_continuation_weights_estimated": false
+  },
+  "comparison_certificates": {
+    "source_margins": {
+      "grouped_lower": "17/50",
+      "individual_reference_upper": "33/100"
+    },
+    "maximum_nonnegative_weight_ratio": "34/33",
+    "epsilon_1_over_100_margin": "67/10000",
+    "selection_counterexample": {
+      "S": [
+        "0",
+        "17/25"
+      ],
+      "R": [
+        "33/100",
+        "33/100"
+      ],
+      "T": [
+        "1",
+        "1"
+      ],
+      "weights": [
+        1,
+        0
+      ],
+      "unweighted_correction": "1/50",
+      "weighted_correction": "-33/100",
+      "scope": "counterexample to unrestricted weighted inference, not to result 021"
+    },
+    "signed_beta_example": {
+      "U": 5,
+      "k": 77,
+      "tag_primes": [
+        13,
+        17
+      ],
+      "beta_pk": -1,
+      "scope": "a positive correction changes sign under this actual beta weight"
+    }
+  },
+  "arithmetic_fixtures": [
+    {
+      "N": 100,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 20,
+      "minimum_H": 1,
+      "alpha_U": "1",
+      "q_U": "1",
+      "beta_values": [
+        -1
+      ],
+      "counts": {
+        "direct_prime_b_rows": 112,
+        "direct_core_prime_rows": 1,
+        "stopped_prime_b_rows": 112,
+        "stopped_sites": 95,
+        "stopped_core_prime_rows": 1
+      },
+      "nonzero_direct_formal_coefficients": 112,
+      "maximum_first_error": "0",
+      "maximum_second_error": "0",
+      "maximum_centered_variance_error": "0",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 1000,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 123,
+      "minimum_H": 1,
+      "alpha_U": "1",
+      "q_U": "1",
+      "beta_values": [
+        -1
+      ],
+      "counts": {
+        "direct_prime_b_rows": 1471,
+        "direct_core_prime_rows": 4,
+        "stopped_prime_b_rows": 1471,
+        "stopped_sites": 1111,
+        "stopped_core_prime_rows": 4
+      },
+      "nonzero_direct_formal_coefficients": 1471,
+      "maximum_first_error": "0",
+      "maximum_second_error": "0",
+      "maximum_centered_variance_error": "0",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 10000,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 816,
+      "minimum_H": 1,
+      "alpha_U": "1",
+      "q_U": "1",
+      "beta_values": [
+        -1
+      ],
+      "counts": {
+        "direct_prime_b_rows": 18858,
+        "direct_core_prime_rows": 43,
+        "stopped_prime_b_rows": 18858,
+        "stopped_sites": 12558,
+        "stopped_core_prime_rows": 43
+      },
+      "nonzero_direct_formal_coefficients": 18858,
+      "maximum_first_error": "0",
+      "maximum_second_error": "0",
+      "maximum_centered_variance_error": "0",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 1000,
+      "U": 3,
+      "actual_campaign_truncation": false,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 123,
+      "minimum_H": 1,
+      "alpha_U": "1/6",
+      "q_U": "1/2",
+      "beta_values": [
+        -1,
+        0,
+        1
+      ],
+      "counts": {
+        "direct_prime_b_rows": 1227,
+        "direct_core_prime_rows": 4,
+        "stopped_prime_b_rows": 1378,
+        "stopped_sites": 1111,
+        "zero_extension_rows": 151,
+        "stopped_core_prime_rows": 4
+      },
+      "nonzero_direct_formal_coefficients": 593,
+      "maximum_first_error": "7/6",
+      "maximum_second_error": "3/2",
+      "maximum_centered_variance_error": "17/12",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 2000,
+      "U": 5,
+      "actual_campaign_truncation": false,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 216,
+      "minimum_H": 1,
+      "alpha_U": "-1/30",
+      "q_U": "19/30",
+      "beta_values": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "counts": {
+        "direct_prime_b_rows": 2688,
+        "direct_core_prime_rows": 11,
+        "zero_extension_rows": 498,
+        "stopped_prime_b_rows": 3186,
+        "stopped_sites": 2416,
+        "stopped_core_prime_rows": 11
+      },
+      "nonzero_direct_formal_coefficients": 1506,
+      "maximum_first_error": "47/30",
+      "maximum_second_error": "41/10",
+      "maximum_centered_variance_error": "1231/300",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 10000,
+      "U": 5,
+      "actual_campaign_truncation": false,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 816,
+      "minimum_H": 1,
+      "alpha_U": "-1/30",
+      "q_U": "19/30",
+      "beta_values": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "counts": {
+        "direct_prime_b_rows": 15250,
+        "direct_core_prime_rows": 43,
+        "stopped_prime_b_rows": 17364,
+        "stopped_sites": 12558,
+        "zero_extension_rows": 2114,
+        "stopped_core_prime_rows": 43
+      },
+      "nonzero_direct_formal_coefficients": 8393,
+      "maximum_first_error": "53/30",
+      "maximum_second_error": "41/10",
+      "maximum_centered_variance_error": "1231/300",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    },
+    {
+      "N": 10000,
+      "U": 8,
+      "actual_campaign_truncation": false,
+      "fixture_scope": "exact prime-b frozen kernel; stress U is not an asymptotic campaign result",
+      "stop_primes": 816,
+      "minimum_H": 1,
+      "alpha_U": "-1/105",
+      "q_U": "53/105",
+      "beta_values": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "counts": {
+        "direct_prime_b_rows": 14113,
+        "direct_core_prime_rows": 43,
+        "stopped_prime_b_rows": 17003,
+        "stopped_sites": 12558,
+        "zero_extension_rows": 2890,
+        "stopped_core_prime_rows": 43
+      },
+      "nonzero_direct_formal_coefficients": 6605,
+      "maximum_first_error": "71/35",
+      "maximum_second_error": "517/105",
+      "maximum_centered_variance_error": "857791/176400",
+      "all_independent_identities_passed": true,
+      "terminal_covariance_estimate_tested": false
+    }
+  ],
+  "aggregate_stopped_sites": 42407,
+  "aggregate_direct_prime_b_rows": 53719,
+  "aggregate_core_prime_rows": 149,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

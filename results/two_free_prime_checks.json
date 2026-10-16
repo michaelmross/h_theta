@@ -1,0 +1,248 @@
+{
+  "preservation": {
+    "checkpoint25_nonmutable_records_verified": 259,
+    "checkpoint25_manifest_sha256": "bbf277e37233b4e46491bc32ac95aa977909835735a11f861a63de5d983e657a",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "HB4": {
+    "identity_depth": 4,
+    "signed_binomial_coefficients": [
+      4,
+      -6,
+      4,
+      -1
+    ],
+    "row_checks": 6645,
+    "cases": [
+      {
+        "Z": 1,
+        "n_max": 15,
+        "support_ceiling": 16,
+        "primes": 6,
+        "proper_powers": 3,
+        "non_power_composites_cancelled": 5
+      },
+      {
+        "Z": 2,
+        "n_max": 80,
+        "support_ceiling": 81,
+        "primes": 22,
+        "proper_powers": 9,
+        "non_power_composites_cancelled": 48
+      },
+      {
+        "Z": 3,
+        "n_max": 255,
+        "support_ceiling": 256,
+        "primes": 54,
+        "proper_powers": 15,
+        "non_power_composites_cancelled": 185
+      },
+      {
+        "Z": 5,
+        "n_max": 1295,
+        "support_ceiling": 1296,
+        "primes": 210,
+        "proper_powers": 26,
+        "non_power_composites_cancelled": 1058
+      },
+      {
+        "Z": 8,
+        "n_max": 5000,
+        "support_ceiling": 6561,
+        "primes": 669,
+        "proper_powers": 42,
+        "non_power_composites_cancelled": 4288
+      }
+    ],
+    "all_terms_retained": true,
+    "original_least_prime_cutoff_changed": false
+  },
+  "tensor_identities": {
+    "cases": [
+      {
+        "N": 100,
+        "auxiliary_U": 1,
+        "stress_cutoff": false,
+        "rows": 78,
+        "composite_rows_cancelled": 62,
+        "proper_power_rows_retained": 11,
+        "diagonal_rows_retained": 9,
+        "full_prime_power_detector_mass": "203/24",
+        "explicit_proper_power_detector_mass": "119/24"
+      },
+      {
+        "N": 1000,
+        "auxiliary_U": 3,
+        "stress_cutoff": true,
+        "rows": 1429,
+        "composite_rows_cancelled": 1319,
+        "proper_power_rows_retained": 46,
+        "diagonal_rows_retained": 48,
+        "full_prime_power_detector_mass": "16501/210",
+        "explicit_proper_power_detector_mass": "3691/210"
+      },
+      {
+        "N": 10000,
+        "auxiliary_U": 8,
+        "stress_cutoff": true,
+        "rows": 20593,
+        "composite_rows_cancelled": 19806,
+        "proper_power_rows_retained": 207,
+        "diagonal_rows_retained": 301,
+        "full_prime_power_detector_mass": "5860177/9240",
+        "explicit_proper_power_detector_mass": "625717/9240"
+      }
+    ],
+    "tensor_rows": 22100,
+    "composite_rows_cancelled": 21187,
+    "proper_power_rows_retained": 264,
+    "original_gate_checks": 22100,
+    "finite_checks_are_not_a_uniform_sharp_estimate": true
+  },
+  "hybrid_geometry": {
+    "affine_cells": [
+      {
+        "S": [
+          "1/2",
+          "4487/4000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 0
+      },
+      {
+        "S": [
+          "4487/4000",
+          "4491/4000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 0
+      },
+      {
+        "S": [
+          "4491/4000",
+          "899/800"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 0
+      },
+      {
+        "S": [
+          "899/800",
+          "9/8"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 0
+      },
+      {
+        "S": [
+          "9/8",
+          "4609/4000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 0
+      },
+      {
+        "S": [
+          "4609/4000",
+          "3742/3125"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "3742/3125",
+          "7489/6250"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "7489/6250",
+          "49871/40000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "49871/40000",
+          "49891/40000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "49891/40000",
+          "49911/40000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 3
+      },
+      {
+        "S": [
+          "49911/40000",
+          "49931/40000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "49931/40000",
+          "3121/2500"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "3121/2500",
+          "12489/10000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "12489/10000",
+          "1329/1000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "1329/1000",
+          "3991/3000"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "3991/3000",
+          "799/600"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      },
+      {
+        "S": [
+          "799/600",
+          "4/3"
+        ],
+        "ordered_endpoint_guards_verified": true,
+        "independent_interval_count": 1
+      }
+    ],
+    "endpoint_order_checks": 476,
+    "continuous_geometry_proved_by_affine_order_guards": true,
+    "numerical_sampling_used_as_proof": false
+  },
+  "all_exact_checks_passed": true,
+  "sharp_target_proved": false
+}

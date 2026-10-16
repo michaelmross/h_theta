@@ -1,0 +1,51 @@
+{
+  "preservation": {
+    "checkpoint23_nonmutable_records_verified": 244,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "identities": {
+    "rowwise_Vaughan_checks": 3576,
+    "independent_cutoff_switches": 1192,
+    "finite_cutoffs_are_identity_stress_tests": true,
+    "asymptotic_terminal_estimate_tested": false
+  },
+  "padding": {
+    "product_padding_sites_checked": 53847,
+    "cases": [
+      {
+        "N": 62,
+        "sites": 3845,
+        "maximum_mark": "3",
+        "witness": 2431
+      },
+      {
+        "N": 100,
+        "sites": 10001,
+        "maximum_mark": "3",
+        "witness": 5083
+      },
+      {
+        "N": 200,
+        "sites": 40001,
+        "maximum_mark": "3",
+        "witness": 20387
+      }
+    ],
+    "cap_three_witness": {
+      "N": 62,
+      "n": 2431,
+      "primes": [
+        11,
+        13,
+        17
+      ]
+    },
+    "absolute_tail_bound": "282/kappa*N^3*sqrt(log N)/T^(3/2) + 54/kappa*N^2/T",
+    "T_star": "N^(4/3)*(log N)^2",
+    "tail_at_T_star": "O_kappa(N/(log N)^(5/2)+N^(2/3)/(log N)^2)=o(u)",
+    "tail_bound_is_for_product_localized_polynomial": true,
+    "original_unlocalized_high_bands_individually_declared_negligible": false
+  },
+  "all_checks_passed": true,
+  "sharp_spectral_0007935_proved": false
+}

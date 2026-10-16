@@ -1,0 +1,81 @@
+{
+  "checkpoint": 26,
+  "date": "2026-10-11",
+  "proof_note": "TWO_FREE_PRIME_DECOMPOSITION_NOTE.md",
+  "Robert_Sargos_2006": {
+    "primary_url": "https://perso.univ-st-etienne.fr/rool6510/robert-2006-crelle.pdf",
+    "local_source": "sources/cofactor_estimation/RobertSargos2006.pdf",
+    "sha256": "9d4e54047488ed6b842e91302584b1c8bd07b7f8dd533493f2910652a7238373",
+    "locations": {
+      "Theorem3_printed_page": 14,
+      "direct_fractional_part_Lemma9_printed_page": 17
+    },
+    "exact_interface": "sum_W abs(sum_f psi_frac(X*f^alpha*W^beta/(F^alpha*W0^beta))) with inner subinterval maximum",
+    "bound": "(FW)^(1+epsilon)*((X/(F^2*W))^(1/4)+F^(-1/2)+X^(-1))",
+    "reciprocal_exponents": [
+      -1,
+      -1
+    ],
+    "requirements_checked": [
+      "F,W are dyadic positive integer lengths",
+      "X>=1 eventually",
+      "alpha*(alpha-1)*beta!=0",
+      "free f has unit coefficients before Abel summation",
+      "logarithmic free-f weights have controlled variation",
+      "physical prime mask removed from f by the complete identity",
+      "actual gates restrict f to subintervals before W factorization is collapsed",
+      "fixed divisor-order multiplicities absorbed with strict power reserve"
+    ],
+    "arbitrary_free_slot_coefficients_used": false,
+    "oscillatory_Mellin_twist_on_free_slot_used": false,
+    "regional_family_admitted": true,
+    "sharp_joint_bound_supplied_by_source": false,
+    "historical_prime_weighted_source_rejection_changed": false
+  },
+  "cofactor_only_identity": {
+    "primary_url": "https://www.numdam.org/item/AST_1982__94__61_0.pdf",
+    "source": "Heath-Brown, Sieve identities and gaps between primes, Lemma1",
+    "identity_depth": 4,
+    "signed_binomial_coefficients": [
+      4,
+      -6,
+      4,
+      -1
+    ],
+    "independent_truncation_proof": "delta-(delta-mu_Z*1)^(*4); n<(Z+1)^4",
+    "all_terms_retained": true,
+    "balanced_gap_scope": "One-free-variable cofactor elimination and the audited reciprocal source mappings",
+    "other_identities_or_joint_transfers_excluded": false
+  },
+  "successful_exact_identity": {
+    "identity": "Complete auxiliary Vaughan identity on both the smaller outer factor p and whole cofactor q",
+    "auxiliary_tau": "1/1000",
+    "original_least_prime_cutoff_changed": false,
+    "all_tensor_components_retained": true,
+    "proper_powers_and_diagonal_weight_accounted_for": true,
+    "TypeI_small_product_upper": "N^(1/500)",
+    "TypeI_x_TypeI_region": "p<=r, p,r>=N^(1/4), pr^2<=N^(3987/2000)",
+    "direct_first_facet_reserve": "1/2000",
+    "raw_term_reserve": "1/8000",
+    "outer_TypeII_small_Mangoldt_cutoff_exponent": "1/800",
+    "outer_TypeII_small_Mangoldt_direct_first_facet_reserve": "1/4000",
+    "outer_TypeII_small_Mangoldt_raw_term_reserve": "1/16000",
+    "larger_outer_TypeII_sharp_estimate_proved": false
+  },
+  "inherited_inputs": [
+    "Checkpoint24 complete auxiliary Vaughan identity, TypeI complement coverage and actual-coefficient low-db TypeII transfer",
+    "Long prime reciprocal PNT and Mobius reciprocal estimates",
+    "Deterministic fixed-divisor-order short-interval envelope for logarithm freezing",
+    "Checkpoint25 actual local mark cap and weighted Selberg upper envelope"
+  ],
+  "new_nonvanishing_coefficient_charge": "0",
+  "remaining_signed_spectral_budget": "1587/200000",
+  "fixed_power_least_prime_budget_if_used": "xi from checkpoint22 (23), retained",
+  "fixed_multiplier_complete_transform_tail_budget_if_used": "21147/L from checkpoint25, retained",
+  "new_reference_mass_is_short_prime_upper_bound": false,
+  "finite_checks_are_uniform_sharp_estimate": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-13",
+  "checkpoint": 32,
+  "proof_note": "SHARP_SHORT_WINDOW_TEST_NOTE.md",
+  "status": "Sharp short comparison remains unproved; recombined generic mixed-moment route fails its sufficient source criterion",
+  "actual_short_input": "P_N(psi_Y)-C_N(psi_Y)>=-(eta_W+o(1))*u",
+  "equivalent_coupled_input": "L_N(psi_Y)+B_N(psi_Y)>=-(eta_W+o(1))*u",
+  "sharp_actual_short_input_proved": false,
+  "actual_deficit_coefficient_improved": false,
+  "coarse_centered_kernel_lower_coefficient_unchanged": "-.010008",
+  "new_source_profile_gap_in_x": ".001",
+  "gap_is_in_an_upper_envelope_not_the_actual_error": true,
+  "box_smoothed_actual_weight_reference_lower": {
+    "exact_fraction": "1599278967/4556220006400",
+    "lower": "0.0003510100400668834568067270404934237022887587309989298413",
+    "upper": "0.0003510100400668834568067270404934237022887587309989298414",
+    "scope": "enclosure of the rational lower certificate, not the full reference mass"
+  },
+  "box_can_be_omitted_within_current_budget": false,
+  "actual_short_counterexample_found": false,
+  "original_least_prime_or_frequency_sector_discarded": false,
+  "new_nonvanishing_charge_added": "0",
+  "retained_conditional_kernel_charge": ".000001",
+  "eta_W_plus_eta_rest_allowance": ".000099",
+  "K": 0,
+  "H_theta_proved": false,
+  "milestone7": "deferred",
+  "next_actual_analytic_input": "Prime-specific joint or one-sided phase-sensitive estimate on the retained box, or its contribution in the full coupled short comparison",
+  "preserved_checkpoint31_nonmutable_records": 305
+}

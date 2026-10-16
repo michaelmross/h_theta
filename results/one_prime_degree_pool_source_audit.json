@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 29,
+  "proof_note": "ONE_PRIME_DEGREE_POOL_AUDIT_NOTE.md",
+  "candidate": "Exact y-rough base plus one-prime primitive rough lower sieve minus exact prime and semiprime cofactors",
+  "parameters": {
+    "z_exponent": "1/4",
+    "y_exponent": "19/20",
+    "outer_prime_maximum": "(3x/2)^(1/4)",
+    "level_sum": "1249/1000",
+    "level_reserve": "1/1000",
+    "box_level": "N^(1249/1000)/(2P)",
+    "sifting_cutoff": "2P",
+    "all_physical_outer_prime_boxes_retained": true,
+    "two_prime_active_gate_used": false,
+    "primitive_lower_main_zero_for_alpha_at_least": "1249/3000"
+  },
+  "primary_source": {
+    "url": "https://arxiv.org/html/2109.02851v2",
+    "statement": "Lichtman Theorem 2.10, (2.4)-(2.5), fixed weights (5.17)",
+    "weights_fixed_independently_of_integer_set": true,
+    "pointwise_inference": "Singleton normalization with g(e)=1/e and exact centered lower remainder",
+    "finite_tolerance_retained": "V*(f-C*epsilon), fixed epsilon>0",
+    "zero_tolerance_source_application_used": false
+  },
+  "pointwise_audit": {
+    "exact_degree_identity": "rough_p(m)-prime(m)-rough_p(m)*1_(Omega(m)=2)=rough_p(m)*1_(Omega(m)>=3)",
+    "cofactor_exceeds_p_on_physical_domain": true,
+    "smallest_prime_counted_once": true,
+    "repeated_factors_retained": true,
+    "original_half_diagonal_weights_changed": false,
+    "candidate_pointwise_lower_weight_proved": true,
+    "old_four_prime_box_geometrically_covered": true
+  },
+  "inherited_remainder": {
+    "proof": "FI_1989_AUDIT.md Section5 and NEGATIVE_FRONTIER_NOTE.md Sections2-4",
+    "actual_outer_coefficient": "Prime indicator times theta_p in [0,1], independent of n",
+    "outer_exponent_domain": [
+      "1/4",
+      "1/2"
+    ],
+    "inner_coefficients": "Finite fixed full-level WF components with exact squarefree sifting support",
+    "minimum_level_reserve": "1/1000",
+    "minimum_RS_margin": "251/1000",
+    "rough_sieve_remainder_source_admitted": true,
+    "exact_base_comparison_admitted": false,
+    "exact_prime_exclusion_comparison_admitted": false,
+    "exact_semiprime_exclusion_comparison_admitted": false,
+    "joint_degree_pool_comparison_admitted": false,
+    "prime_cofactor_masks_treated_as_free_unit_slots": false
+  },
+  "reference_audit": {
+    "exact_base_credited_in_full": true,
+    "exact_low_degree_exclusions_are_favorable_benchmark": true,
+    "full_candidate_favorable_reference_loss": {
+      "lower": "0.94953483545111912628760403180123247919706951327452",
+      "upper": "0.95001731177403226485443110196606576337495253394016",
+      "width": "0.00048247632291313856682707016483328417788302066564"
+    },
+    "full_candidate_certified_loss_lower_coefficient": "47/50",
+    "ceiling_optimized_favorable_reference_loss": {
+      "lower": "0.1829163556627806444631375142729244656158929921485",
+      "upper": "0.1830846997425221040098205458817513075082068675554",
+      "width": "0.0001683440797414595466830316088268418923138754069"
+    },
+    "even_ceiling_optimized_certified_loss_lower_coefficient": "9/50",
+    "level_5_over_4_endpoint_used_only_as_price_ceiling": true,
+    "block_deletions_and_convex_outer_weights_included": true,
+    "integer_weight_nonlinear_clipping_claimed_admitted": false,
+    "finite_tolerance_and_upper_exclusion_majorants_worsen_reference": true,
+    "independent_old_box_band_deficit_lower": "693/911600",
+    "whole_test_band_reference": {
+      "lower": "0.0098070333321849229383884838261793776427228785511673",
+      "upper": "0.010007159752612216774303987459643579619973427996228",
+      "width": "0.0002001264204272938359155036334642019772505494450607"
+    },
+    "candidate_rejected": true,
+    "reference_budget_passed": false
+  },
+  "family_scope": "One primitive rough lower linear sieve per outer prime, then separate exact or pointwise upper-majorant prime and semiprime exclusions, with theta_p in [0,1] independent of n",
+  "all_one_prime_methods_excluded": false,
+  "next_coupled_test": {
+    "outer_band": [
+      "2/5",
+      "43/100"
+    ],
+    "actual_residual_condition": "Pminus(m)>=p and Omega(m)>=3",
+    "reference": {
+      "lower": "0.0098070333321849229383884838261793776427228785511673",
+      "upper": "0.010007159752612216774303987459643579619973427996228",
+      "width": "0.0002001264204272938359155036334642019772505494450607"
+    },
+    "required_estimate": "G_band(psi_Y)-a_N*G_band(psi_H1)>=-(eta_band+o(1))*u",
+    "remaining_base_and_pool_combined_budget": "eta_band+eta_rest<=1/10000",
+    "reference_formula_proved": true,
+    "short_lower_comparison_proved": false,
+    "successful_replacement_kernel_constructed": false,
+    "band_estimate_alone_sufficient_for_original_target": false
+  },
+  "preserved_source_files": [
+    {
+      "path": "sources/fi1989_monomials.pdf",
+      "sha256": "eb87421df0d868cd8c63ea163dc3be0ed7b5346ddba88f9028223cfba09afc71"
+    },
+    {
+      "path": "sources/cofactor_estimation/RobertSargos2006.pdf",
+      "sha256": "9d4e54047488ed6b842e91302584b1c8bd07b7f8dd533493f2910652a7238373"
+    },
+    {
+      "path": "FI_1989_AUDIT.md",
+      "sha256": "6607ae4cbcaeb7ff73f3464f7ea9cb085ba8e689449b4662512618e18dc360ac"
+    },
+    {
+      "path": "NEGATIVE_FRONTIER_NOTE.md",
+      "sha256": "3ca350fa7e90402792d2197055653ca3664eb49d51735bc2f199f1254d2aa391"
+    },
+    {
+      "path": "COUPLED_ONE_SIDED_NOTE.md",
+      "sha256": "2970e00d2dd542940d36268a69bb8744a7c83a05442b8eb8be0a86b409cedf4e"
+    },
+    {
+      "path": "SWITCHED_MINORANT_AUDIT_NOTE.md",
+      "sha256": "b9e2ff7e2da62d4bc58c9edcf07008415da81f70e0987733f8ad656601dc3e91"
+    }
+  ],
+  "original_budget": {
+    "spectral": "1587/200000",
+    "smoothing": "613/200000",
+    "total": "11/1000",
+    "new_global_charge": "0",
+    "fixed_least_prime_xi_if_used": "Checkpoint22 (23), retained",
+    "fixed_frequency_L_if_used": "21147/L, retained",
+    "full_criterion": ".007825257+eta_loss+eta_err+xi+21147/L<=.007935",
+    "band_definition_discards_original_signed_least_prime_sector": false
+  },
+  "whole_candidate_short_long_comparison_proved": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

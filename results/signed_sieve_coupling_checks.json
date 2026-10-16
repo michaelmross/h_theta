@@ -1,0 +1,237 @@
+{
+  "checkpoint": 22,
+  "date": "2026-10-09",
+  "provenance": {
+    "checkpoint21_nonmutable_records_verified": 232,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "combinatorial_sieve_fixtures": [
+    {
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "level": "361",
+      "beta_sieve": 2,
+      "U_for_beta_sign_fixture": 16,
+      "prime_divisibility_patterns": 64,
+      "repeated_prime_majorant_checks": 280,
+      "plus_coefficients": 7,
+      "minus_coefficients": 11,
+      "positive_upper_terminals": 4,
+      "positive_lower_terminals": 11,
+      "dimension2_upper_model_gap": "3058/23205",
+      "dimension2_lower_model_gap": "7732/36465",
+      "positive_beta_patterns": 50,
+      "negative_beta_patterns": 1,
+      "support_and_pointwise_identities_passed": true,
+      "exponential_asymptotic_bound_inferred_from_fixtures": false
+    },
+    {
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "level": "1000",
+      "beta_sieve": 2,
+      "U_for_beta_sign_fixture": 16,
+      "prime_divisibility_patterns": 64,
+      "repeated_prime_majorant_checks": 240,
+      "plus_coefficients": 8,
+      "minus_coefficients": 14,
+      "positive_upper_terminals": 3,
+      "positive_lower_terminals": 9,
+      "dimension2_upper_model_gap": "86/1547",
+      "dimension2_lower_model_gap": "4876/51051",
+      "positive_beta_patterns": 50,
+      "negative_beta_patterns": 1,
+      "support_and_pointwise_identities_passed": true,
+      "exponential_asymptotic_bound_inferred_from_fixtures": false
+    },
+    {
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "level": "4096",
+      "beta_sieve": 2,
+      "U_for_beta_sign_fixture": 16,
+      "prime_divisibility_patterns": 64,
+      "repeated_prime_majorant_checks": 148,
+      "plus_coefficients": 22,
+      "minus_coefficients": 23,
+      "positive_upper_terminals": 5,
+      "positive_lower_terminals": 6,
+      "dimension2_upper_model_gap": "7594/255255",
+      "dimension2_lower_model_gap": "9836/255255",
+      "positive_beta_patterns": 50,
+      "negative_beta_patterns": 1,
+      "support_and_pointwise_identities_passed": true,
+      "exponential_asymptotic_bound_inferred_from_fixtures": false
+    },
+    {
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41
+      ],
+      "level": "8789765579753643555083504787829125689141207431643136",
+      "beta_sieve": 32,
+      "U_for_beta_sign_fixture": 32,
+      "prime_divisibility_patterns": 4096,
+      "repeated_prime_majorant_checks": 3072,
+      "plus_coefficients": 2048,
+      "minus_coefficients": 3072,
+      "positive_upper_terminals": 1,
+      "positive_lower_terminals": 1,
+      "dimension2_upper_model_gap": "765450/267160387",
+      "dimension2_lower_model_gap": "43740/267160387",
+      "positive_beta_patterns": 4040,
+      "negative_beta_patterns": 3,
+      "support_and_pointwise_identities_passed": true,
+      "exponential_asymptotic_bound_inferred_from_fixtures": false
+    }
+  ],
+  "source_phase_perturbations": {
+    "frozen_vertices_checked": 80,
+    "facet_term_checks": 1472,
+    "phase_kappa_cap": "1/160000",
+    "uniform_slab_margin_lower_bound": "3/40000",
+    "raw_term_saving_lower_bound_before_transfer_losses": "3/160000",
+    "continuous_slab_certified_by_affinity_and_Lipschitz_bound": true,
+    "final_aggregate_modulus_exponent_numerically_selected": false,
+    "final_delta_requirement": "0<delta0<min(tau/32,1/100,c_star/(2(C+1))); c_star,C are fixed transfer constants",
+    "dimension_two_beta32_condition_rational_upper_bound": "5632/29791",
+    "regions": [
+      {
+        "region": "TypeI_low_RS",
+        "engine": "RS",
+        "verified_slab_minimum": "1533/160000"
+      },
+      {
+        "region": "TypeI_high_FI",
+        "engine": "FI6",
+        "verified_slab_minimum": "79/280000"
+      },
+      {
+        "region": "TypeI_high_RS_augmented",
+        "engine": "RS",
+        "verified_slab_minimum": "299/1120000"
+      },
+      {
+        "region": "TypeII_product_FI",
+        "engine": "FI6",
+        "verified_slab_minimum": "179/280000"
+      },
+      {
+        "region": "TypeII_product_RS_augmented",
+        "engine": "RS",
+        "verified_slab_minimum": "699/1120000"
+      },
+      {
+        "region": "TypeI_partial_other",
+        "engine": "RS",
+        "verified_slab_minimum": "13/160000"
+      },
+      {
+        "region": "TypeI_partial_augmented",
+        "engine": "RS",
+        "verified_slab_minimum": "13/160000"
+      }
+    ]
+  },
+  "actual_continuation_fixtures": [
+    {
+      "N": 18000,
+      "U": 5,
+      "T_for_finite_identity": 5,
+      "level_for_finite_identity": 64,
+      "stress_U": true,
+      "residual_cut_enlarged": true,
+      "artificial_reference_width": null,
+      "counts": {
+        "active_sites": 11168,
+        "positive_signed_sites": 3259,
+        "negative_signed_sites": 1886,
+        "marked_rows": 214,
+        "marked_positive_rows": 103,
+        "marked_negative_rows": 0,
+        "repeated_b_rows": 271
+      },
+      "small_block_identity_vector_terms": 7675,
+      "signed_gap_vector_terms": 0,
+      "marked_complement_partition_vector_terms": 15808,
+      "all_exact_coefficient_checks_passed": true,
+      "asymptotic_bounds_inferred_from_samples": false
+    },
+    {
+      "N": 18000,
+      "U": 5,
+      "T_for_finite_identity": 5,
+      "level_for_finite_identity": 64,
+      "stress_U": true,
+      "residual_cut_enlarged": true,
+      "artificial_reference_width": 54000,
+      "counts": {
+        "active_sites": 33658,
+        "positive_signed_sites": 9784,
+        "negative_signed_sites": 5764,
+        "marked_rows": 750,
+        "marked_positive_rows": 347,
+        "marked_negative_rows": 0,
+        "repeated_b_rows": 823
+      },
+      "small_block_identity_vector_terms": 22771,
+      "signed_gap_vector_terms": 0,
+      "marked_complement_partition_vector_terms": 46997,
+      "all_exact_coefficient_checks_passed": true,
+      "asymptotic_bounds_inferred_from_samples": false
+    },
+    {
+      "N": 100000,
+      "U": 16,
+      "T_for_finite_identity": 5,
+      "level_for_finite_identity": 64,
+      "stress_U": true,
+      "residual_cut_enlarged": true,
+      "artificial_reference_width": null,
+      "counts": {
+        "active_sites": 63874,
+        "positive_signed_sites": 9932,
+        "negative_signed_sites": 8355,
+        "marked_rows": 1093,
+        "marked_positive_rows": 179,
+        "marked_negative_rows": 55,
+        "repeated_b_rows": 687
+      },
+      "small_block_identity_vector_terms": 25420,
+      "signed_gap_vector_terms": 2937,
+      "marked_complement_partition_vector_terms": 88448,
+      "all_exact_coefficient_checks_passed": true,
+      "asymptotic_bounds_inferred_from_samples": false
+    }
+  ],
+  "all_exact_checks_passed": true,
+  "finite_checks_prove_asymptotic_theorem": false
+}

@@ -1,0 +1,94 @@
+{
+  "coordinate_order": [
+    "a1",
+    "a2"
+  ],
+  "constraints": [
+    {
+      "A": [
+        "-1",
+        "0"
+      ],
+      "bound": "-1/4"
+    },
+    {
+      "A": [
+        "1",
+        "-1"
+      ],
+      "bound": "0"
+    },
+    {
+      "A": [
+        "1",
+        "2"
+      ],
+      "bound": "1249/1000"
+    }
+  ],
+  "vertices": [
+    {
+      "a1": "1/4",
+      "a2": "1/4",
+      "gamma": "1/2",
+      "beta": "749/1000",
+      "s": "749/250",
+      "full_level_reserve": "1/1000",
+      "gamma_below_one_margin": "1/2"
+    },
+    {
+      "a1": "1/4",
+      "a2": "999/2000",
+      "gamma": "1499/2000",
+      "beta": "999/2000",
+      "s": "1",
+      "full_level_reserve": "1/1000",
+      "gamma_below_one_margin": "501/2000"
+    },
+    {
+      "a1": "1249/3000",
+      "a2": "1249/3000",
+      "gamma": "1249/1500",
+      "beta": "1249/3000",
+      "s": "1",
+      "full_level_reserve": "1/1000",
+      "gamma_below_one_margin": "251/1500"
+    }
+  ],
+  "vertex_count": 3,
+  "RS_branch_vertex_count": 4,
+  "FI_branch_vertex_count": 3,
+  "FI_capacity_margins": {
+    "actual_standalone_minus_frequency": "9/1000000",
+    "C6_minus_capacity": "3979/2000000",
+    "C2_minus_capacity": "277/280000",
+    "C1_minus_capacity": "989/1000000",
+    "second_factor_capacity_positive": "50197/300000",
+    "C3_minus_C2": "1/32",
+    "C4_minus_C2": "99999/3500000"
+  },
+  "maximum_gamma": "1249/1500",
+  "minimum_beta": "1249/3000",
+  "minimum_full_level_reserve": "1/1000",
+  "s_max": "749/250",
+  "normalized_lower_sieve_L_max": {
+    "lower": "0.69114517788927223206558101684765353635615072583197",
+    "upper": "0.69114517788927223206558101684765353635615072583199",
+    "width": "2E-50"
+  },
+  "cofactor_price_deficit_lower_enclosure": {
+    "lower": "0.30885482211072776793441898315234646364384927416801",
+    "upper": "0.30885482211072776793441898315234646364384927416803",
+    "width": "2E-50"
+  },
+  "positive_cofactor_price_necessary_level_formula": "B>(3+e)/4",
+  "positive_cofactor_price_necessary_level": {
+    "lower": "1.4295704571147613088400718678381655930564255327458",
+    "upper": "1.4295704571147613088400718678381656244729891062118",
+    "width": "3.14165635734660E-35"
+  },
+  "necessary_level_scope": "Separately priced lower rough cofactor minus upper prime cofactor, original z exponent 1/4; not a sufficient sharp comparison",
+  "base_actual_rough_count_comparison_admitted": false,
+  "switched_WF_components_source_admitted": true,
+  "all_switching_methods_excluded": false
+}

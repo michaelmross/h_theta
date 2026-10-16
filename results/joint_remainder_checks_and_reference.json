@@ -1,0 +1,221 @@
+{
+  "exact_signed_short_fixtures": [
+    {
+      "N": 20,
+      "U": 1,
+      "V": 1,
+      "parameters_forced_to_exercise_identity": false,
+      "outer_cofactor_incidences": 29,
+      "core_incidences": 2,
+      "A_N_short_exact": "55/8",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 10,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 49,
+          "negative": 0
+        },
+        "I_core": {
+          "positive": 3,
+          "negative": 0
+        },
+        "B": {
+          "positive": 0,
+          "negative": 46
+        }
+      }
+    },
+    {
+      "N": 40,
+      "U": 3,
+      "V": 3,
+      "parameters_forced_to_exercise_identity": true,
+      "outer_cofactor_incidences": 68,
+      "core_incidences": 3,
+      "A_N_short_exact": "127/12",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 13,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 43,
+          "negative": 13
+        },
+        "I_core": {
+          "positive": 2,
+          "negative": 0
+        },
+        "B": {
+          "positive": 13,
+          "negative": 34
+        }
+      }
+    },
+    {
+      "N": 80,
+      "U": 4,
+      "V": 5,
+      "parameters_forced_to_exercise_identity": true,
+      "outer_cofactor_incidences": 158,
+      "core_incidences": 6,
+      "A_N_short_exact": "1195/48",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 29,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 89,
+          "negative": 30
+        },
+        "I_core": {
+          "positive": 3,
+          "negative": 0
+        },
+        "B": {
+          "positive": 30,
+          "negative": 65
+        }
+      }
+    },
+    {
+      "N": 120,
+      "U": 3,
+      "V": 3,
+      "parameters_forced_to_exercise_identity": true,
+      "outer_cofactor_incidences": 161,
+      "core_incidences": 9,
+      "A_N_short_exact": "247/12",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 24,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 119,
+          "negative": 37
+        },
+        "I_core": {
+          "positive": 4,
+          "negative": 1
+        },
+        "B": {
+          "positive": 38,
+          "negative": 103
+        }
+      }
+    },
+    {
+      "N": 200,
+      "U": 4,
+      "V": 5,
+      "parameters_forced_to_exercise_identity": true,
+      "outer_cofactor_incidences": 292,
+      "core_incidences": 14,
+      "A_N_short_exact": "533/12",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 48,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 162,
+          "negative": 70
+        },
+        "I_core": {
+          "positive": 6,
+          "negative": 0
+        },
+        "B": {
+          "positive": 70,
+          "negative": 121
+        }
+      }
+    },
+    {
+      "N": 5000,
+      "U": 1,
+      "V": 1,
+      "parameters_forced_to_exercise_identity": false,
+      "outer_cofactor_incidences": 8315,
+      "core_incidences": 408,
+      "A_N_short_exact": "6778/9",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 763,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 21767,
+          "negative": 0
+        },
+        "I_core": {
+          "positive": 885,
+          "negative": 0
+        },
+        "B": {
+          "positive": 0,
+          "negative": 21898
+        }
+      }
+    },
+    {
+      "N": 18000,
+      "U": 1,
+      "V": 1,
+      "parameters_forced_to_exercise_identity": false,
+      "outer_cofactor_incidences": 31691,
+      "core_incidences": 1577,
+      "A_N_short_exact": "276923/110",
+      "aggregate_formal_identity_passed": true,
+      "coefficient_sign_counts": {
+        "A": {
+          "positive": 2523,
+          "negative": 0
+        },
+        "I_low": {
+          "positive": 87027,
+          "negative": 0
+        },
+        "I_core": {
+          "positive": 3496,
+          "negative": 0
+        },
+        "B": {
+          "positive": 0,
+          "negative": 88011
+        }
+      }
+    }
+  ],
+  "reference": {
+    "bins": 20000,
+    "triprime_TypeI_controlled_reference": {
+      "lower": "0.97896759324551177267035281661842425557544000886636",
+      "upper": "0.97911858909342882087054774821435408268475344883774",
+      "width": "0.00015099584791704820019493159592982710931343997138"
+    },
+    "triprime_TypeI_core_reference": {
+      "lower": "0.23998877851590372529694686642905960883902404790986",
+      "upper": "0.24018087573197143533404751963852849201290322379604",
+      "width": "0.00019209721606771003710065320946888317387917588618"
+    },
+    "joint_reference_TypeI_controlled_share": {
+      "lower": "0.92163692583627716462148951503649153299441734191262",
+      "upper": "0.92169855077923717870681127814146705262930181674814",
+      "width": "0.00006162494296001408532176310497551963488447483552"
+    },
+    "actual_short_count_cap_supplied_by_these_masses": false,
+    "TypeII_bound_supplied_by_this_reference_share": false
+  },
+  "finite_checks_prove_uniform_target": false
+}

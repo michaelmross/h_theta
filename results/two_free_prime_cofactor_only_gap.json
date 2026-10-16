@@ -1,0 +1,17 @@
+{
+  "scope": "Any cofactor-only exact identity followed by one-free-variable elimination and the audited RS1/FI6/RS3-L9 mappings",
+  "S_ge_5_4_L9_first_margin_upper": "-1/2",
+  "depth_independent": true,
+  "balanced_witness": {
+    "p_exponent": "13/20",
+    "r_exponent": "13/20",
+    "mu1_exponent": "1/20",
+    "mu2_exponent": "1/20",
+    "free_f_exponent": "1/5",
+    "free_ell_exponent": "2/5",
+    "Sigma": "8/5",
+    "L9_first_margin": "-1"
+  },
+  "all_other_methods_excluded": false,
+  "outer_prime_expansion_excluded": false
+}

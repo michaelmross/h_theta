@@ -1,0 +1,23 @@
+{
+  "checkpoint": 21,
+  "date": "2026-10-09",
+  "proof_note": "MARKED_EVEN_COMPLETION_NOTE.md",
+  "actual_covariance_completed_uniform_bound": "O(u)",
+  "small_least_prime_signed_block_estimated_at_u_scale": true,
+  "small_least_prime_signed_discrepancy_bound": "O_epsilon(u), T=U^epsilon, fixed epsilon>0",
+  "complete_even_continuation_uniform_signed_bound": "o(u)",
+  "each_fixed_squarefree_divisibility_mask_uniform_signed_bound": "o_e(u), e>1 fixed",
+  "fixed_least_prime_union_signed_bound": "o_Q(u), Q fixed",
+  "complete_marked_outer_prime_band_even_sector_bound": "o(u), with all even residuals and original continuation gates",
+  "marked_and_complementary_residual_discrepancy_relation": "E_mark=-E_complement+o(u)",
+  "marked_residual_slice_uniform_u_scale_proved": false,
+  "marked_residual_slice_completed_o_u_inferred": false,
+  "growing_least_prime_cutoff_negligibility_proved": false,
+  "growing_cutoff_flag_scope": "No explicit quantitative range; a non-effective sufficiently slowly growing cutoff follows by diagonalization",
+  "old_eta_scope": "Direct actual-beta absolute L1 estimate; no longer the best bound for the completed signed covariance",
+  "terminal_0011_estimate_proved": false,
+  "sharp_0011_coefficient_proved": false,
+  "higher_degree_cap_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

@@ -1,0 +1,497 @@
+{
+  "checkpoint": 6,
+  "date": "2026-10-05",
+  "source": {
+    "path": "sources/fi1989_monomials.pdf",
+    "sha256": "eb87421df0d868cd8c63ea163dc3be0ed7b5346ddba88f9028223cfba09afc71",
+    "size_bytes": 845096,
+    "title": "Exponential sums with monomials",
+    "authors": "E. Fouvry and H. Iwaniec",
+    "journal": "Journal of Number Theory 33 (1989), 311-333",
+    "page_image_checks": [
+      {
+        "printed": 324,
+        "pdf": 14,
+        "item": "special sum and additive character"
+      },
+      {
+        "printed": 325,
+        "pdf": 15,
+        "item": "Theorem 6 statement and all six terms"
+      },
+      {
+        "printed": 330,
+        "pdf": 20,
+        "item": "Lemma 9 reciprocal-weighted sum and transfer"
+      },
+      {
+        "printed": 331,
+        "pdf": 21,
+        "item": "Theorem 7 conditions; epsilon_prime=48*epsilon"
+      },
+      {
+        "printed": 332,
+        "pdf": 22,
+        "item": "auxiliary conditions and corollary"
+      }
+    ]
+  },
+  "source_statements_manually_verified": true,
+  "printed_statements_not_verified_by_hash_or_OCR": true,
+  "theorem6_integer_cap_rows_eta_Sigma_n0_constant": [
+    [
+      7,
+      -8,
+      7,
+      6
+    ],
+    [
+      5,
+      -6,
+      7,
+      4
+    ],
+    [
+      5,
+      -5,
+      8,
+      2
+    ],
+    [
+      5,
+      -4,
+      5,
+      2
+    ],
+    [
+      1,
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      1,
+      2,
+      -2
+    ]
+  ],
+  "theorem6_gcd_q_powers": [
+    "-5/4",
+    "-11/8",
+    "-3/2",
+    "-11/8",
+    "-3/2",
+    "-5/2"
+  ],
+  "gcd_powers_summable_without_assuming_H_le_B_over_q": true,
+  "frozen_pruned_FI_atoms_match": {
+    "FI0": [
+      [
+        [
+          0,
+          -1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          -3,
+          -1,
+          -2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          -12,
+          6,
+          4,
+          -6
+        ]
+      ]
+    ],
+    "FI1": [
+      [
+        [
+          1,
+          -1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -2,
+          -1,
+          -1,
+          -2,
+          1
+        ]
+      ],
+      [
+        [
+          -7,
+          -5,
+          6,
+          4,
+          -6
+        ]
+      ]
+    ],
+    "FI2": [
+      [
+        [
+          -1,
+          -1,
+          1,
+          0,
+          -1
+        ]
+      ],
+      [
+        [
+          2,
+          -1,
+          -1,
+          -2,
+          3
+        ]
+      ],
+      [
+        [
+          7,
+          -5,
+          6,
+          4,
+          1
+        ]
+      ]
+    ]
+  },
+  "frozen_atom_scope": "Correct on Sigma<=5/4, eta<=Sigma-1; outside this region the encoding contains relaxations",
+  "balanced_block_continuous_certificate": {
+    "point": "mu=gamma/2, eta=beta+gamma-1",
+    "FI0_lower_edge": "eta<=beta iff gamma<=1; gamma>1 fails",
+    "FI0_at_gamma1_T6": "4*beta<=1; fails beyond beta=1/4",
+    "FI1_and_FI2_T6": "2*beta+3*gamma<=3; impossible for gamma>=1,beta>0",
+    "exact_affine_identities_checked": {
+      "middle_T6_excess": [
+        "1/2",
+        "3/4",
+        "-3/4"
+      ],
+      "zero_family_lower_gap": [
+        "0",
+        "1",
+        "-1"
+      ],
+      "gamma1_zero_family_T6_excess": [
+        "1",
+        "-1/4"
+      ],
+      "tail_uncertainty_width_lower": [
+        "1",
+        "4",
+        "-1"
+      ]
+    },
+    "scope": "Fixed Vaughan decomposition and grouping toolkit; no universal optimality claim"
+  },
+  "pipeline_clarifications": [
+    "Lemma 9 includes a_m*b_n/(mn)",
+    "Three separated factors require fixed divisor-order collapse with a small loss",
+    "Use signed boundary estimates or divisor-bound envelopes; Fourier weights need not be monotone",
+    "State rectangular partial-sum uniformity or uniformity over the bounded coefficient families",
+    "Use real initial weights or control both frequency signs via coefficient-family conjugation"
+  ],
+  "theorem7": {
+    "length": "2<=y<=sqrt(x)",
+    "epsilon_prime": "48*epsilon",
+    "N_base_conditions": [
+      "m0<1",
+      "6*n0<m0+1",
+      "2*m0+4*n0<3"
+    ],
+    "campaign_endpoint_length_handling": "Split into two comparable subintervals for literal packaged application",
+    "undecomposed_large_prime_application": false
+  },
+  "new_arbitrary_outer_reduction": {
+    "condition": "0<=gamma<1; beta>0; gamma+beta<5/4; fixed margins",
+    "coefficients": "Arbitrary bounded c_d; fixed full-level WF modulus weight; exact e|P(z) retained",
+    "error": "O(N^(1-c)), some fixed c>0",
+    "old_extra_condition_removed": "2*gamma+beta<2",
+    "arbitrary_prime_weight_gamma1_endpoint_admitted": false,
+    "full_capacity": "s=Sigma-1+tau for Sigma>=1",
+    "actual_factor_interval": "[s-Delta,s] on retained product boxes",
+    "proof": "FI_1989_AUDIT.md Section 5; examples are checks, not the uniform proof",
+    "rational_examples": [
+      {
+        "gamma": "19/20",
+        "beta": "29/100",
+        "Sigma": "31/25",
+        "rho": "1/100",
+        "full_second_capacity_exponent": "2401/10000",
+        "tau": "1/10000",
+        "nu": "1/100000",
+        "old_second_condition_fails": true,
+        "minimum_exponent_saving": "9/200000",
+        "affine_endpoint_checks": [
+          {
+            "beta_prime": "4999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "4999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "4999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "4999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "29/100",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "29/100",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "29/100",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "29/100",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          }
+        ]
+      },
+      {
+        "gamma": "4/5",
+        "beta": "11/25",
+        "Sigma": "31/25",
+        "rho": "1/100",
+        "full_second_capacity_exponent": "2401/10000",
+        "tau": "1/10000",
+        "nu": "1/100000",
+        "old_second_condition_fails": true,
+        "minimum_exponent_saving": "9/200000",
+        "affine_endpoint_checks": [
+          {
+            "beta_prime": "19999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "19999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "19999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "19999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "11/25",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "11/25",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "11/25",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "11/25",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          }
+        ]
+      },
+      {
+        "gamma": "77/100",
+        "beta": "47/100",
+        "Sigma": "31/25",
+        "rho": "1/100",
+        "full_second_capacity_exponent": "2401/10000",
+        "tau": "1/10000",
+        "nu": "1/100000",
+        "old_second_condition_fails": true,
+        "minimum_exponent_saving": "9/200000",
+        "affine_endpoint_checks": [
+          {
+            "beta_prime": "22999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "22999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "22999/100000",
+            "eta": "0",
+            "n0": "9/100000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "22999/100000",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "15961/600000"
+          },
+          {
+            "beta_prime": "47/100",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "47/100",
+            "eta": "0",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "1399/20000"
+          },
+          {
+            "beta_prime": "47/100",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          },
+          {
+            "beta_prime": "47/100",
+            "eta": "24001/100000",
+            "n0": "2401/10000",
+            "minimum_exponent_saving": "9/200000"
+          }
+        ]
+      },
+      {
+        "gamma": "99/100",
+        "beta": "259/1000",
+        "Sigma": "1249/1000",
+        "rho": "1/1000",
+        "full_second_capacity_exponent": "24901/100000",
+        "tau": "1/100000",
+        "nu": "1/1000000",
+        "old_second_condition_fails": true,
+        "minimum_exponent_saving": "9/2000000",
+        "affine_endpoint_checks": [
+          {
+            "beta_prime": "9999/1000000",
+            "eta": "0",
+            "n0": "9/1000000",
+            "minimum_exponent_saving": "9/2000000"
+          },
+          {
+            "beta_prime": "9999/1000000",
+            "eta": "0",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "128461/6000000"
+          },
+          {
+            "beta_prime": "9999/1000000",
+            "eta": "0",
+            "n0": "9/1000000",
+            "minimum_exponent_saving": "9/2000000"
+          },
+          {
+            "beta_prime": "9999/1000000",
+            "eta": "0",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "128461/6000000"
+          },
+          {
+            "beta_prime": "259/1000",
+            "eta": "0",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "12649/200000"
+          },
+          {
+            "beta_prime": "259/1000",
+            "eta": "0",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "12649/200000"
+          },
+          {
+            "beta_prime": "259/1000",
+            "eta": "249001/1000000",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "9/2000000"
+          },
+          {
+            "beta_prime": "259/1000",
+            "eta": "249001/1000000",
+            "n0": "24901/100000",
+            "minimum_exponent_saving": "9/2000000"
+          }
+        ]
+      }
+    ]
+  },
+  "reconstructed_frozen_tail": {
+    "condition": "1<=gamma<6/5, beta<(6-5*gamma)/4, fixed margins",
+    "source_route": "Fixed WF sieve + Vaughan + RS + full-level coverage + gcd expansion + signed sharp transfer",
+    "uncertainty_width_minus_Delta_lower": "5-4*gamma-4*beta=gamma-1+4*rho>0",
+    "tail_integral": "4*integral_1^(2-theta) 1/[gamma*((6-5*gamma)/4)] dgamma = (8/3)*log((2-theta)/(5*theta-4))",
+    "relevant_source_route_verified_with_addenda": true,
+    "unamended_frozen_manuscript_fully_endorsed": false
+  },
+  "numerical_ledger_unchanged": {
+    "sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "certified_K": 0,
+    "H_theta_proved": false,
+    "conditional_target095_prime_margin_lower": "0.0061962441732748990792950119867356399506206108263"
+  },
+  "full_tool_inventory_complete": false,
+  "next_gate": "Parity-sensitive estimate for the actual short interval; stronger signed upper frontier or terminal prime comparison",
+  "note": "FI_1989_AUDIT.md"
+}

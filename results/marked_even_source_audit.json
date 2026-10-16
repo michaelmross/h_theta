@@ -1,0 +1,69 @@
+{
+  "checkpoint": 21,
+  "date": "2026-10-09",
+  "audit_scope": "Vaughan completion, exact fixed-divisibility density, inherited source transfer with fixed moduli, and precise marked-slice limitation",
+  "new_external_signed_estimate_admitted": false,
+  "sources": [
+    {
+      "author": "Alexander P. Mangerel",
+      "title": "Divisor-bounded multiplicative functions in short intervals",
+      "year": 2023,
+      "doi": "10.1007/s40687-023-00376-0",
+      "url": "https://link.springer.com/article/10.1007/s40687-023-00376-0",
+      "location_checked": "Official HTML Lemma3.2, including proof and dependence only on B,C,delta; primary PDF already frozen in sources/beta_support",
+      "input_inherited": true,
+      "new_application": "f_N=indicator(Pminus(n)>=N^(1/4)), bounded by one, B=C=1 and delta=1/30 on the full shell",
+      "admitted_conclusion": "Uniform rough-z count O(N/log z), hence original prime-cofactor marked count O(u)",
+      "sharp_numerical_constant_supplied": false,
+      "almost_all_interval_result_used": false
+    },
+    {
+      "input": "Exact Vaughan identity and selected proper-power/logarithmic-freezing bounds",
+      "proof_notes": ["TWO_THREE_BILINEAR_NOTE.md Sections3-5", "JOINT_REMAINDER_NOTE.md", "COFACTOR_ESTIMATE_NOTE.md", "DELTA_GROUPING_NOTE.md"],
+      "new_deduction": "Complete beta*V plus core prime marks equals nonnegative original prime-cofactor count minus retained good TypeI density, up to o(u)",
+      "covariance_completed_bound": "O(u)",
+      "direct_absolute_beta_bound_changed": false,
+      "new_terminal_prime_lower_comparison_supplied": false
+    },
+    {
+      "input": "Previously admitted quantitative long Mobius PNT",
+      "proof_note": "JOINT_REMAINDER_NOTE.md",
+      "new_extension_proved": "Fixed coprime-prime exclusion by finite smooth Euler-factor convolution, splitting the harmonic variable at sqrt(y)",
+      "exact_masked_scalars": "A_e=(1/e)*sum_(a|e)mu(a)*alpha_e0(U/a); Gamma_e=(1/e)*sum_(a|e)mu(a)*(gamma_e0(U/a)+log(a)*alpha_e0(U/a))",
+      "main_term_cancellation": "sum_(a|e)mu(a)=0 for fixed squarefree e>1",
+      "small_Mangoldt_bases_dividing_e_retained": true,
+      "growing_modulus_uniformity_admitted": false
+    },
+    {
+      "inputs": ["Robert-Sargos2006 Theorem1", "Fouvry-Iwaniec1989 Theorem6", "Audited signed sharp transfer and coefficient separation"],
+      "source_notes": ["FI_1989_AUDIT.md", "NEGATIVE_FRONTIER_NOTE.md Section3", "DELTA_GROUPING_NOTE.md Sections3-6"],
+      "new_extension_proved": "Fixed lattice h=e/gcd(e,t) or e/gcd(e,t*b); finite independent gcd classes; center and interval scaled by fixed h",
+      "strict_TypeI_minimum_margin": "1/10000",
+      "strict_low_product_TypeII_minimum_margin": "9/14000",
+      "modulus_scale_perturbation": "O_e(1/log N), with e fixed before N tends to infinity",
+      "outer_ordering_and_Dgood_gates_retained": true,
+      "low_db_masked_removal_separately_justified": true,
+      "admitted_conclusion": "Full e-divisible actual continuation sum o_e(u), and the normalized original reference o_e(u)",
+      "marked_residual_cut_covered_by_this_extension": false,
+      "new_explicit_N_dependent_range_of_e_admitted": false
+    },
+    {
+      "input": "Checkpoint20 actual marked continuation and normalized reference cancellation",
+      "proof_note": "SMALL_PRIME_CANCELLATION_NOTE.md Sections4-5",
+      "retained": "Original even residual (N^(1/5),N^(1/4)], prime p in [N^(3/10),N^(7/20)], log(b)/log(x/p), original gates and original reference",
+      "new_exact_reduction": "Odd divisor d in (U/2,U] and exact intersection floors in ell with c=2*d*ell",
+      "paired_denominator_exponents": ["44/25", "181/100"],
+      "previous_direct_reciprocal_engines_empty_at_exponents_at_least": "5/4",
+      "short_prime_relative_length_exponents": ["2/7", "1/3"],
+      "long_PNT_used_as_short_prime_asymptotic": false,
+      "marked_slice_separate_uniform_u_scale_estimate_supplied": false,
+      "impossibility_for_other_signed_methods_claimed": false
+    }
+  ],
+  "scope_correction": "Completed small-prime short aggregate is O_epsilon(u); earlier direct-kernel absence of such a bound did not describe all available completion arguments",
+  "historical_source_007_and_021_proof_scopes_unchanged": true,
+  "terminal_0011_estimate_proved": false,
+  "higher_degree_cap_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

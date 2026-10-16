@@ -1,0 +1,94 @@
+{
+  "preservation": {
+    "checkpoint28_nonmutable_records_verified": 283,
+    "checkpoint28_manifest_sha256": "9e3c5098ea9c5d9b0e437a125c8a4cd09241dccdf3862870c64bf13b96eee3c2",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "source_facets": {
+    "rough_WF_remainder_source_admitted": true,
+    "whole_candidate_comparison_admitted": false,
+    "outer_vertex_count": 2
+  },
+  "arithmetic": {
+    "cases": [
+      {
+        "N": 65536,
+        "actual_outer_prime_rows": 87221,
+        "repeated_outer_prime_rows": 2107,
+        "sites": 131075,
+        "rough_sites": 25142,
+        "base_sites": 6454,
+        "higher_degree_sites": 1687,
+        "prime_exclusion_sites": 4830,
+        "semiprime_exclusion_sites": 5789,
+        "repeated_three_correction_sites": 147,
+        "old_four_prime_box_sites_now_covered": 6,
+        "marked_mass": "16927",
+        "positive_complement_mass": "8215",
+        "original_cutoffs_and_canonical_weights_used": true
+      },
+      {
+        "N": 160000,
+        "sites": 320003,
+        "rough_sites": 54729,
+        "base_sites": 14660,
+        "higher_degree_sites": 3132,
+        "prime_exclusion_sites": 10210,
+        "semiprime_exclusion_sites": 12106,
+        "actual_outer_prime_rows": 198373,
+        "repeated_outer_prime_rows": 3203,
+        "repeated_three_correction_sites": 226,
+        "old_four_prime_box_sites_now_covered": 14,
+        "marked_mass": "36824",
+        "positive_complement_mass": "17905",
+        "original_cutoffs_and_canonical_weights_used": true
+      }
+    ],
+    "short_padding_sites_checked": 451078,
+    "old_four_prime_box_covered_witnesses": [
+      {
+        "N": 65536,
+        "n": 4294911613,
+        "factors": [
+          103,
+          163,
+          349,
+          733
+        ],
+        "positive_complement": "1",
+        "one_prime_degree_pool": 1
+      },
+      {
+        "N": 65536,
+        "n": 4294945397,
+        "factors": [
+          103,
+          151,
+          271,
+          1019
+        ],
+        "positive_complement": "1",
+        "one_prime_degree_pool": 1
+      },
+      {
+        "N": 65536,
+        "n": 4294970633,
+        "factors": [
+          89,
+          199,
+          281,
+          863
+        ],
+        "positive_complement": "1",
+        "one_prime_degree_pool": 1
+      }
+    ],
+    "pointwise_bound_checks_exact_pool_not_literal_Iwaniec_weight_values": true,
+    "finite_checks_do_not_prove_sharp_short_comparison": true
+  },
+  "outward_reference_integrals_certified": true,
+  "all_exact_checks_passed": true,
+  "candidate_accepted": false,
+  "optimized_family_accepted": false,
+  "sharp_target_proved": false
+}

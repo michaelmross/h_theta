@@ -1,0 +1,15 @@
+exact FM: zeta(gamma) = min beta admitting a failure witness
+  gamma=1 (a=1): zeta_typeI=1/4, zeta_typeII=1/4, => zeta=1/4   [(6-5g)/4 = 0.25]
+  gamma=21/20 (a=19/20): zeta_typeI=3/16, zeta_typeII=3/16, => zeta=3/16   [(6-5g)/4 = 3/16]
+  gamma=11/10 (a=9/10): zeta_typeI=1/8, zeta_typeII=1/8, => zeta=1/8   [(6-5g)/4 = 1/8]
+  gamma=23/20 (a=17/20): zeta_typeI=1/16, zeta_typeII=1/16, => zeta=1/16   [(6-5g)/4 = 1/16]
+  gamma=6/5 (a=4/5): zeta_typeI=0, zeta_typeII=0, => zeta=0   [(6-5g)/4 = 0]
+  gamma=5/4 (a=3/4): zeta_typeI=0, zeta_typeII=0, => zeta=0   [(6-5g)/4 = -1/16]
+
+binding witness at gamma=11/10 (type II): beta = 1/8
+  witness point: mu = 11/20  eta = 9/40   (gamma/2 = 11/20 , eta_max = 9/40 )
+
+theta** = 0.939305
+  margin at theta=0.94: +0.0136 u
+  margin at theta=0.95: +0.2028 u
+  margin at theta=0.97: +0.5478 u

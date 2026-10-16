@@ -1,0 +1,176 @@
+{
+  "bins_per_integral": 12000,
+  "quadrature": "Outward interval Riemann sums; no floating-point tolerance",
+  "level_sum": "1249/1000",
+  "favorable_level_ceiling": "5/4",
+  "ceiling_is_not_admitted_source_endpoint": true,
+  "base_exact_reference_smoothed": {
+    "lower": "1.1011835420155395190280621190263297489442432221315",
+    "upper": "1.1011835420155395190280621190263297489442432221318",
+    "width": "3E-49"
+  },
+  "positive_complement_reference_smoothed": {
+    "lower": "1.4281273878222395480831850084876584822568912593357",
+    "upper": "1.4281685773264701818885923212099280131716571239939",
+    "width": "0.0000411895042306338054073127222695309147658646582"
+  },
+  "higher_degree_reference_smoothed": {
+    "lower": "0.3269438458067000290551228894613287333126480372039",
+    "upper": "0.3269850353109306628605302021835982642274139018624",
+    "width": "0.0000411895042306338054073127222695309147658646585"
+  },
+  "primitive_lower_rough_reference_unscaled": {
+    "lower": "1.2968748291487865949845465601424109343555539799281",
+    "upper": "1.2971564915164360328859608506486869880515799595066",
+    "width": "0.0002816623676494379014142905062760536960259795785"
+  },
+  "exact_prime_exclusion_reference_unscaled": {
+    "lower": "0.84729786038720361371010750652065402498959417175909",
+    "upper": "0.84729786038720361371010750652065402498959417175915",
+    "width": "6E-50"
+  },
+  "exact_semiprime_exclusion_reference_unscaled": {
+    "lower": "1.0718276517530277211064039358761885533561131364695",
+    "upper": "1.0719868353580880781714429495083378275952691309239",
+    "width": "0.0001591836050603570650390136321492742391559944544"
+  },
+  "total_exact_low_degree_exclusion_reference_unscaled": {
+    "lower": "1.9191255121402313348165114423968425783457073082285",
+    "upper": "1.9192846957452916918815504560289918525848633026831",
+    "width": "0.0001591836050603570650390136321492742391559944546"
+  },
+  "full_candidate_residual_mean_unscaled": {
+    "lower": "-0.6224098665965050968970038958865809182293093227550",
+    "upper": "-0.6219690206237953019305505917481555902941273487219",
+    "width": "0.0004408459727097949664533041384253279351819740331"
+  },
+  "full_candidate_favorable_mean_smoothed": {
+    "lower": "0.47815126555243791703416121924386224979670459005374",
+    "upper": "0.47859255237112042179558097668642600305982174606118",
+    "width": "0.00044128681868250476141975744256375326311715600744"
+  },
+  "full_candidate_favorable_loss": {
+    "lower": "0.94953483545111912628760403180123247919706951327452",
+    "upper": "0.95001731177403226485443110196606576337495253394016",
+    "width": "0.00048247632291313856682707016483328417788302066564"
+  },
+  "best_block_deletion_residual_mean_unscaled": {
+    "lower": "0.14326005054826317521989350975337319613977107803858",
+    "upper": "0.14338664277697411010650913469272833731541161441202",
+    "width": "0.00012659222871093488661562493935514117564053637344"
+  },
+  "best_block_deletion_favorable_mean_smoothed": {
+    "lower": "1.2445868526143509574231755222894563182801540712481",
+    "upper": "1.2447135714352906032446777628537508145969702481583",
+    "width": "0.0001267188209396458215022405642944963168161769102"
+  },
+  "best_block_deletion_favorable_loss": {
+    "lower": "0.1834138163869489448385072456339076676599210111774",
+    "upper": "0.1835817247121192244654167989204716948915030527458",
+    "width": "0.0001679083251702796269095532865640272315820415684"
+  },
+  "ceiling_best_block_deletion_residual_mean_unscaled": {
+    "lower": "0.14375657898941913971099865764420275396524179251450",
+    "upper": "0.14388360653738200258939597920919507262413091414123",
+    "width": "0.00012702754796286287839732156499231865888912162673"
+  },
+  "ceiling_best_block_deletion_favorable_mean_smoothed": {
+    "lower": "1.2450838775839480778787717753281767056634502564385",
+    "upper": "1.2452110321594589036200474942147340166409982671872",
+    "width": "0.0001271545755108257412757188865573109775480107487"
+  },
+  "ceiling_best_block_deletion_favorable_loss": {
+    "lower": "0.1829163556627806444631375142729244656158929921485",
+    "upper": "0.1830846997425221040098205458817513075082068675554",
+    "width": "0.0001683440797414595466830316088268418923138754069"
+  },
+  "certified_full_candidate_loss_lower_coefficient": "47/50",
+  "certified_even_ceiling_optimized_loss_lower_coefficient": "9/50",
+  "independent_band_deficit_lower_coefficient": "693/911600",
+  "concrete_coupled_test_band_reference_smoothed": {
+    "lower": "0.0098070333321849229383884838261793776427228785511673",
+    "upper": "0.010007159752612216774303987459643579619973427996228",
+    "width": "0.0002001264204272938359155036334642019772505494450607"
+  },
+  "concrete_coupled_test_band_reference_certificate": {
+    "a_band": [
+      "2/5",
+      "43/100"
+    ],
+    "residual_Buchstab_ratio": [
+      "157/43",
+      "4"
+    ],
+    "bins_per_coordinate": 160,
+    "outward_cells": 25600,
+    "reference_formula": "(1+kappa)*2*integral_.40^.43 integral_1^(2/a-3) log(v)/(a*(2-a)*(v+1)) dv da",
+    "four_prime_main_only": true,
+    "degree_five_boundary_and_repetitions_are_o_u": true,
+    "sharp_short_lower_comparison_proved": false
+  },
+  "inherited_four_prime_box_certificate": {
+    "independent_exponent_ranges": [
+      [
+        "2/5",
+        "43/100"
+      ],
+      [
+        "9/20",
+        "12/25"
+      ],
+      [
+        "1/2",
+        "53/100"
+      ]
+    ],
+    "fourth_factor_exponent_range": [
+      "14/25",
+      "13/20"
+    ],
+    "a1_plus_twice_a2_minus_level_minimum": "51/1000",
+    "fourth_factor_ordering_margin": "3/100",
+    "canonical_distinct_four_prime_reference": {
+      "lower": "0.00075944240051304553279103520437438822695514226887636",
+      "upper": "0.0010714285714285714285714285714285714285714285714286",
+      "width": "0.00031198617091552589578039336705418320161628630255224"
+    },
+    "smoothed_reference": {
+      "lower": "0.00076020184291355857832382623957876261518209741114523",
+      "upper": "0.0010725",
+      "width": "0.00031229815708644142167617376042123738481790258885477"
+    },
+    "smoothed_reference_exact_lower_bound": "693/911600",
+    "weight_vanishes_pointwise_on_this_box": true,
+    "box_loss_exceeds_budget_even_with_perfect_active_transfer": true,
+    "same_box_still_outside_level_5_4_gate": true
+  },
+  "Buchstab_B4": {
+    "lower": "2.2458329463229072377458512614232681583054049218814",
+    "upper": "2.2458329919285277030981841791309713838956783967749",
+    "width": "4.56056204653523329177077032255902734748935E-8"
+  },
+  "Buchstab_B4_check": {
+    "bins_per_unit": 4000,
+    "cell_error": "1/384000000000",
+    "omega_second_derivative_bound": "2",
+    "integer_knots_are_grid_boundaries": true,
+    "B3_exact_check": true
+  },
+  "one_prime_rough_reference_B8_minus_B4": {
+    "lower": "2.2458428546823907171595438151159430446910363159233",
+    "upper": "2.2458429472757352797213319629806062460996270365780",
+    "width": "9.25933445625617881478646632014085907206547E-8"
+  },
+  "Buchstab_identity_cross_check_error": {
+    "lower": "-0.0001002179968976409163425072303297911379967188901",
+    "upper": "0.0001002065573820377568456060369817163926329778961",
+    "width": "0.0002004245542796786731881132673115075306296967862"
+  },
+  "finite_tolerance": "Fixed C*epsilon lowers the primitive weight and worsens loss",
+  "exact_exclusions_are_optimistic": true,
+  "upper_exclusion_majorants_can_only_worsen_reference": true,
+  "positive_part_is_applied_to_reference_price_not_integer_weight": true,
+  "budget": "1/10000",
+  "reference_budget_passed": false,
+  "historical_ledgers_changed": false
+}

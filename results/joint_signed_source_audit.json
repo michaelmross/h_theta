@@ -1,0 +1,32 @@
+{
+  "checkpoint": 23,
+  "date": "2026-10-10",
+  "new_external_theorem_admitted": false,
+  "inputs": [
+    "Checkpoint21 signed Vaughan completion with the actual coefficients and both windows",
+    "Checkpoint22 growing-subpower small-block o(u)",
+    "Previously admitted quantitative long PNT and reciprocal prime asymptotics",
+    "Elementary positive trapezoid smoothing and Mellin inversion"
+  ],
+  "new_deductions": [
+    "Actual-shell prime-cofactor multiplicity at most one",
+    "Low Mellin frequencies negligible with the actual sharp outer coefficient",
+    "Normalized smoothed long-reference high-frequency tail negligible",
+    "Absolute short frequency tail beyond N^(21/10) negligible"
+  ],
+  "primary_source_checks": [
+    {
+      "url": "https://arxiv.org/pdf/2207.05038",
+      "location": "Theorem 1.2, PDF page 2",
+      "scope": "All-interval E3 existence at sqrt(x)*(log x)^1.55, no campaign upper count admitted"
+    },
+    {
+      "url": "https://arxiv.org/html/2408.16576v1",
+      "location": "Theorem 1.1",
+      "scope": "Uniform distinct-prime-factor asymptotics at length >= x^(7/12+epsilon), no transfer to the campaign restricted kernel admitted"
+    }
+  ],
+  "uniform_high_frequency_sharp_estimate_admitted": false,
+  "terminal_0011_estimate_proved": false,
+  "global_impossibility_claim": false
+}

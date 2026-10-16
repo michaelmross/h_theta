@@ -1,0 +1,57 @@
+{
+  "coordinate": "a=log_N(p)",
+  "outer_domain": [
+    "1/4",
+    "1/2"
+  ],
+  "vertices": [
+    {
+      "outer_prime_exponent": "1/4",
+      "beta": "999/1000",
+      "s": "999/250",
+      "full_level_reserve": "1/1000",
+      "RS_margin": "501/1000"
+    },
+    {
+      "outer_prime_exponent": "1/2",
+      "beta": "749/1000",
+      "s": "749/500",
+      "full_level_reserve": "1/1000",
+      "RS_margin": "251/1000"
+    }
+  ],
+  "vertex_count": 2,
+  "rough_WF_remainder_source_admitted": true,
+  "whole_candidate_comparison_admitted": false,
+  "exact_base_comparison_admitted": false,
+  "exact_prime_counterweight_comparison_admitted": false,
+  "exact_semiprime_counterweight_comparison_admitted": false,
+  "minimum_full_level_reserve": "1/1000",
+  "minimum_RS_extra_margin": "251/1000",
+  "primitive_lower_zero_main_from": "1249/3000",
+  "f_monotonicity_margin": {
+    "lower": "0.2347210446652236419380880964108076286858427755105",
+    "upper": "0.2347210446652236419380880964108076286858427755108",
+    "width": "3E-49"
+  },
+  "negative_price_band": [
+    "3/8",
+    "1/2"
+  ],
+  "negative_price_band_gap_lower_enclosure": {
+    "lower": "0.27478453329367874288037934081123550660120495618634",
+    "upper": "0.27478453329367874288037934081123550660120495618684",
+    "width": "5.0E-49"
+  },
+  "old_box_least_prime_band": [
+    "2/5",
+    "43/100"
+  ],
+  "old_box_negative_price_gap_enclosure": {
+    "lower": "0.94709826121519667385805024144127419115081814790030",
+    "upper": "0.94709826121519667385805024144127419115081814790048",
+    "width": "1.8E-49"
+  },
+  "endpoint_5_over_4_used_only_as_favorable_price_ceiling": true,
+  "all_one_prime_methods_excluded": false
+}

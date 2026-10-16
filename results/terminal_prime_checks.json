@@ -1,0 +1,215 @@
+{
+  "cases": [
+    {
+      "N": 10,
+      "w": 2,
+      "z": 10,
+      "interval": [
+        95,
+        105
+      ],
+      "terminal_rough_count": 2,
+      "marked_prime_count": 2,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 10,
+      "w": 3,
+      "z": 6,
+      "interval": [
+        95,
+        105
+      ],
+      "terminal_rough_count": 1,
+      "marked_prime_count": 1,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 10,
+      "w": 5,
+      "z": 10,
+      "interval": [
+        95,
+        105
+      ],
+      "terminal_rough_count": 0,
+      "marked_prime_count": 0,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 20,
+      "w": 2,
+      "z": 20,
+      "interval": [
+        390,
+        410
+      ],
+      "terminal_rough_count": 1,
+      "marked_prime_count": 1,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 20,
+      "w": 3,
+      "z": 11,
+      "interval": [
+        390,
+        410
+      ],
+      "terminal_rough_count": 0,
+      "marked_prime_count": 0,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 20,
+      "w": 5,
+      "z": 20,
+      "interval": [
+        390,
+        410
+      ],
+      "terminal_rough_count": 0,
+      "marked_prime_count": 0,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 40,
+      "w": 2,
+      "z": 40,
+      "interval": [
+        1580,
+        1620
+      ],
+      "terminal_rough_count": 3,
+      "marked_prime_count": 3,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 40,
+      "w": 3,
+      "z": 21,
+      "interval": [
+        1580,
+        1620
+      ],
+      "terminal_rough_count": 2,
+      "marked_prime_count": 2,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 40,
+      "w": 5,
+      "z": 40,
+      "interval": [
+        1580,
+        1620
+      ],
+      "terminal_rough_count": 3,
+      "marked_prime_count": 3,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 80,
+      "w": 2,
+      "z": 80,
+      "interval": [
+        6360,
+        6440
+      ],
+      "terminal_rough_count": 4,
+      "marked_prime_count": 4,
+      "repeated_prime_marks": 1,
+      "identity_verified": true
+    },
+    {
+      "N": 80,
+      "w": 3,
+      "z": 41,
+      "interval": [
+        6360,
+        6440
+      ],
+      "terminal_rough_count": 2,
+      "marked_prime_count": 2,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 80,
+      "w": 5,
+      "z": 80,
+      "interval": [
+        6360,
+        6440
+      ],
+      "terminal_rough_count": 4,
+      "marked_prime_count": 4,
+      "repeated_prime_marks": 1,
+      "identity_verified": true
+    },
+    {
+      "N": 120,
+      "w": 2,
+      "z": 120,
+      "interval": [
+        14340,
+        14460
+      ],
+      "terminal_rough_count": 3,
+      "marked_prime_count": 3,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 120,
+      "w": 3,
+      "z": 61,
+      "interval": [
+        14340,
+        14460
+      ],
+      "terminal_rough_count": 1,
+      "marked_prime_count": 1,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    },
+    {
+      "N": 120,
+      "w": 5,
+      "z": 120,
+      "interval": [
+        14340,
+        14460
+      ],
+      "terminal_rough_count": 3,
+      "marked_prime_count": 3,
+      "repeated_prime_marks": 0,
+      "identity_verified": true
+    }
+  ],
+  "double_mark_witness": {
+    "integer": 385,
+    "marks": [
+      [
+        7,
+        5,
+        11
+      ],
+      [
+        11,
+        5,
+        7
+      ]
+    ]
+  },
+  "scope": "Exact finite arithmetic; no analytic short-interval estimate"
+}

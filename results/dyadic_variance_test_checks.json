@@ -1,0 +1,115 @@
+{
+  "checkpoint": 33,
+  "date": "2026-10-14",
+  "power_geometry": {
+    "vertices": [
+      {
+        "a": "2/5",
+        "b": "2/5",
+        "pair_exponent": "4/5",
+        "window_exponent": "1/5",
+        "residual_window_fraction": "1/6",
+        "roughness_minus_sieve_radius": "7/20",
+        "diagonal_ratio_power": "-1/5",
+        "Selberg_error_relative_power": "-1/10"
+      },
+      {
+        "a": "43/100",
+        "b": "43/100",
+        "pair_exponent": "43/50",
+        "window_exponent": "7/50",
+        "residual_window_fraction": "7/57",
+        "roughness_minus_sieve_radius": "79/200",
+        "diagonal_ratio_power": "-7/50",
+        "Selberg_error_relative_power": "-7/100"
+      },
+      {
+        "a": "43/100",
+        "b": "157/300",
+        "pair_exponent": "143/150",
+        "window_exponent": "7/150",
+        "residual_window_fraction": "7/157",
+        "roughness_minus_sieve_radius": "307/600",
+        "diagonal_ratio_power": "-7/150",
+        "Selberg_error_relative_power": "-7/300"
+      },
+      {
+        "a": "2/5",
+        "b": "8/15",
+        "pair_exponent": "14/15",
+        "window_exponent": "1/15",
+        "residual_window_fraction": "1/16",
+        "roughness_minus_sieve_radius": "31/60",
+        "diagonal_ratio_power": "-1/15",
+        "Selberg_error_relative_power": "-1/30"
+      }
+    ],
+    "rational_grid_rows": 1681,
+    "continuous_affine_extrema_certified_at_vertices": true,
+    "interior_example": {
+      "a": "83/200",
+      "b": "23/50",
+      "pair": "7/8",
+      "window": "1/8",
+      "a_plus_3b": "359/200"
+    }
+  },
+  "interval_Selberg": {
+    "intervals": [
+      {
+        "radius": 3,
+        "length": 81,
+        "rough_proxy_count": 27,
+        "Selberg_square": "162/5",
+        "main_term": "162/5",
+        "floor_error_bound": "144/25"
+      },
+      {
+        "radius": 5,
+        "length": 625,
+        "rough_proxy_count": 167,
+        "Selberg_square": "27520/121",
+        "main_term": "2500/11",
+        "floor_error_bound": "900/121"
+      },
+      {
+        "radius": 8,
+        "length": 4096,
+        "rough_proxy_count": 937,
+        "Selberg_square": "49181/41",
+        "main_term": "49152/41",
+        "floor_error_bound": "31684/1681"
+      },
+      {
+        "radius": 13,
+        "length": 28561,
+        "rough_proxy_count": 5478,
+        "Selberg_square": "131939308/17787",
+        "main_term": "571220/77",
+        "floor_error_bound": "3844/121"
+      }
+    ],
+    "uses_existing_checkpoint25_weights": true,
+    "new_little_o_prime_variance_verified": false
+  },
+  "sampled_norm": {
+    "N": 1099511627776,
+    "P": 65536,
+    "R": 262144,
+    "sampled_prime_pairs": 16,
+    "h": "1099511627777/17179869184",
+    "interval_length": "131941395333120",
+    "offset": "1099511627777/141670994486089356410880",
+    "long_integral": "0",
+    "continuous_squared_norm_unit_amplitude": "34615312389860691360216830430238037/50706024009129176059868128215040",
+    "sampled_squared_norm_unit_amplitude": "20070670678366023015870982371502340225114308609/1254416917417347551711384152836470334711398400",
+    "all_center_to_sample_transfer_counterexample_only": true,
+    "actual_prime_pair_count_counterexample": false
+  },
+  "preservation": {
+    "checkpoint32_nonmutable_records_verified": 311,
+    "checkpoint32_manifest_sha256": "b6ab72e2fcdb9018dcc07faddcf158ebce60a4dae14c4265ab6b3d449050c0f0"
+  },
+  "all_exact_checks_passed": true,
+  "actual_little_o_variance_verified": false
+}

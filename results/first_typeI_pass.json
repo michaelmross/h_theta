@@ -1,0 +1,10 @@
+{
+  "base_exponent": "1/4",
+  "theta": "97/100",
+  "root_lower_constant": 4.394449154672439,
+  "first_negative_upper_constant": 18.298843914013528,
+  "raw_lower_constant": -13.904394759341088,
+  "certified_K": 0.0,
+  "formula": "K_raw = 4*log((1-theta)/theta)",
+  "scope": "One-step Type I design, not optimization over all analytic methods"
+}

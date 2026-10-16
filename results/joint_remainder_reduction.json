@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-06",
+  "checkpoint": 11,
+  "U_V": "floor(N^(1/100))",
+  "TypeI_short_controlled_outer_range": "d<=N^(9/8)",
+  "all_semiprime_TypeI_controlled": true,
+  "all_triprime_TypeI_controlled": false,
+  "remaining_TypeI_outer_range": "N^(9/8)<d<=N^(4/3), only two-prime products",
+  "normalized_all_long_TypeI_floor_error": "O(N^(53/150)*(H1/x)^(-1))=o(u)",
+  "normalized_long_TypeII": "(Y/H1)*B_N(B1)=o(u)",
+  "long_reference_input": "Classical quantitative PNT for Lambda and mu; no short prime asymptotic",
+  "short_only_joint_reduction": "Delta2+Delta3=B_N(J)+R_I,core(J)+o(u)",
+  "remaining_sufficient_estimate": "B_N(J)+R_I,core(J)<=(.011+o(1))*u, every sufficiently large even N",
+  "beta_uniform_energy": "sum_(M<m<=2M)|beta_U(m)|^2=O(M)",
+  "short_TypeII_log_freeze_error": "O(N^epsilon/log(N))=o(u)",
+  "short_TypeI_free_weight_freeze_error": "O(N^(53/150)*log(N)^C)=o(u)",
+  "exact_center_outer_divisors": "d|N^2 contribute o(u) to TypeII and TypeI floor error; nearby products not estimated",
+  "remaining_uniform_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "general_proof": "JOINT_REMAINDER_NOTE.md"
+}

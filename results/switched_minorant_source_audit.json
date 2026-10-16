@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 28,
+  "proof_note": "SWITCHED_MINORANT_AUDIT_NOTE.md",
+  "candidate": "Exact y-rough base plus two-smallest-prime switch with lower rough-cofactor sieve minus upper prime-cofactor sieve",
+  "parameters": {
+    "z_exponent": "1/4",
+    "y_exponent": "19/20",
+    "level_sum": "1249/1000",
+    "level_reserve": "1/1000",
+    "box_level": "N^(1249/1000)/(4PR)",
+    "lower_sifting_cutoff": "2R",
+    "upper_prime_sifting_cutoff": "D_box",
+    "box_gate": "8PR^2<=N^(1249/1000)"
+  },
+  "primary_source": {
+    "url": "https://arxiv.org/html/2109.02851v2",
+    "statement": "Lichtman, Theorem2.10, (2.4)-(2.5), (5.17)",
+    "weights_fixed_independently_of_integer_set": true,
+    "pointwise_inference": "Apply source inequalities to singleton sets, with g(e)=1/e and exact centered remainders",
+    "finite_tolerance_retained": "Lower scalar V(f-Cepsilon), upper scalar V(F+Cepsilon), fixed epsilon>0",
+    "zero_tolerance_source_application_used": false,
+    "arithmetic_fixture_instantiates_literal_Iwaniec_weights": false
+  },
+  "inherited_remainder": {
+    "proof": "FI_1989_AUDIT.md Section5 and NEGATIVE_FRONTIER_NOTE.md Sections2-4",
+    "actual_outer_coefficient": "Unique canonical prime-pair product; bounded by one, including p=r",
+    "inner_coefficients": "Fixed full-level well-factorable sieve components; exact squarefree prime support",
+    "prime_coefficient_described_as_free_unit_slot": false,
+    "full_level_factor_choice_retained": true,
+    "switched_components_source_admitted": true,
+    "actual_exact_base_comparison_admitted": false,
+    "minimum_level_reserve": "1/1000",
+    "maximum_outer_gamma": "1249/1500"
+  },
+  "pricing_failure": {
+    "s_max": "749/250",
+    "normalized_lower_cost_max": "log(499/250)<1",
+    "normalized_upper_prime_cost_min": "1",
+    "every_active_block_has_negative_leading_reference": true,
+    "finite_tolerance_corrections_increase_reference_loss": true,
+    "necessary_positive_cofactor_price_level": {
+      "lower": "1.4295704571147613088400718678381655930564255327458",
+      "upper": "1.4295704571147613088400718678381656244729891062118",
+      "width": "3.14165635734660E-35"
+    },
+    "scope": "Separately priced lower rough minus upper prime linear-sieve construction; not all switching methods"
+  },
+  "reference_failure": {
+    "exact_base_credited_in_full": true,
+    "most_favorable_reference_loss": {
+      "lower": "1.5638608563675874824085115539881325161471808566011",
+      "upper": "1.5923064248244960770378904046737442069984830010494",
+      "width": "0.0284455684569085946293788506856116908513021444483"
+    },
+    "certified_uniform_reference_loss_lower_coefficient": "39/25",
+    "allowed_reference_loss_plus_comparison_error": "1/10000",
+    "candidate_reference_budget_passed": false,
+    "omitted_positive_four_prime_box_smoothed_lower": "693/911600",
+    "even_perfect_active_comparison_cannot_remove_box_loss": true,
+    "candidate_rejected": true
+  },
+  "next_interface": {
+    "identity": "D_short=S_y,short+sum_(p>=z,prime) sum_(Pminus(m)>=p,Omega(m)>=3) psi_Y(pm)+o(u)",
+    "first_prime_pool_identity_proved": true,
+    "coupled_degree_pool_comparison_admitted": false,
+    "qualifying_replacement_lower_weight_constructed": false,
+    "next_action": "Audit a lower weight for the one-smallest-prime residual degree pool, retaining the exact degree condition and accounting for the omitted four-prime box"
+  },
+  "preserved_source_files": [
+    {
+      "path": "sources/fi1989_monomials.pdf",
+      "sha256": "eb87421df0d868cd8c63ea163dc3be0ed7b5346ddba88f9028223cfba09afc71"
+    },
+    {
+      "path": "sources/cofactor_estimation/RobertSargos2006.pdf",
+      "sha256": "9d4e54047488ed6b842e91302584b1c8bd07b7f8dd533493f2910652a7238373"
+    },
+    {
+      "path": "sources/aa37127.pdf",
+      "sha256": "a6a962b15345953fe522160e0323df2bee9b29a93102c9fba2ad2c9b047d70e9"
+    },
+    {
+      "path": "FI_1989_AUDIT.md",
+      "sha256": "6607ae4cbcaeb7ff73f3464f7ea9cb085ba8e689449b4662512618e18dc360ac"
+    },
+    {
+      "path": "NEGATIVE_FRONTIER_NOTE.md",
+      "sha256": "3ca350fa7e90402792d2197055653ca3664eb49d51735bc2f199f1254d2aa391"
+    },
+    {
+      "path": "COUPLED_ONE_SIDED_NOTE.md",
+      "sha256": "2970e00d2dd542940d36268a69bb8744a7c83a05442b8eb8be0a86b409cedf4e"
+    }
+  ],
+  "original_budget": {
+    "spectral": "1587/200000",
+    "smoothing": "613/200000",
+    "total": "11/1000",
+    "new_global_charge": "0",
+    "fixed_least_prime_sector_xi_if_used": "Checkpoint22 (23), retained",
+    "fixed_frequency_L_if_used": "21147/L, retained",
+    "full_criterion": ".007825257+eta_loss+eta_err+xi+21147/L<=.007935"
+  },
+  "whole_candidate_short_long_comparison_proved": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

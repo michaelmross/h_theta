@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-10",
+  "checkpoint": 23,
+  "original_joint_signed_target": "E_(T_N<q<=U)-E_R <= (.011+o(1))*u",
+  "cutoff_free_equivalent_target": "Q_all(J)-a*Q_all(B1) <= (.011+o(1))*u",
+  "equivalence_scope": "Deduction from checkpoint21 completion and checkpoint22 small-block o(u); not a new proof of the sharp target",
+  "actual_shell_prime_cofactor_pointwise_cap": "0<=Q_all({n})<=1_(Pminus(n)>=N^(1/4))",
+  "actual_shell_mark_cap_one_proved": true,
+  "paired_positive_mellin_smoothing_proved": true,
+  "low_mellin_frequency_o_u_from_admitted_long_PNT_proved": true,
+  "normalized_smooth_reference_high_frequency_o_u_proved": true,
+  "absolute_frequency_tail_beyond_N_21_10_o_u_proved": true,
+  "remaining_signed_frequency_range": "exp((c0/4)*sqrt(log N))<|t|<=N^(21/10)",
+  "remaining_high_frequency_target": "H_kappa(N) <= (.007935+o(1))*u, kappa=1/1000",
+  "original_0011_coefficient_retained": true,
+  "coefficient_budget": {
+    "original_target": "11/1000",
+    "kappa": "1/1000",
+    "original_joint_reference_mass": {
+      "lower": "3.0649340581076633147812768096087415241136662002238",
+      "upper": "3.0649751594758139766181825312222805801782319361390",
+      "width": "0.0000411013681506618369057216135390560645657359152"
+    },
+    "long_smoothing_cost_enclosure": {
+      "lower": "0.0030649340581076633147812768096087415241136662002238",
+      "upper": "0.0030649751594758139766181825312222805801782319361390",
+      "width": "4.11013681506618369057216135390560645657359152E-8"
+    },
+    "rational_smoothing_budget": "613/200000",
+    "rational_high_frequency_budget": "1587/200000",
+    "unrounded_remaining_budget": {
+      "lower": "0.0079350248405241860233818174687777194198217680638610",
+      "upper": "0.0079350659418923366852187231903912584758863337997762",
+      "width": "4.11013681506618369057216135390560645657359152E-8"
+    },
+    "fixed_power_example_budget": "1/1000",
+    "fixed_power_remaining_target": "1/100",
+    "fixed_power_cutoff_recipe": "A=100*delta0; s=max(128,2*log(max(1,Cprime/(xi*A^2)))); epsilon=A/s",
+    "numerical_delta0_or_Cprime_invented": false,
+    "high_frequency_upper_truncation_exponent": "21/10",
+    "absolute_tail_N_exponent": "9/10",
+    "terminal_0011_estimate_proved": false
+  },
+  "high_frequency_sharp_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "marked_residual_slice_separate_uniform_u_scale_proved": false,
+  "higher_degree_cap_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "historical_analytic_ledger_unchanged": true
+}

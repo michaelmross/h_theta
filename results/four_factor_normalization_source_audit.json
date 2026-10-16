@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-13",
+  "checkpoint": 31,
+  "primary_sources": [
+    {
+      "authors": "Ethan S. Lee and Nicol Leong",
+      "version": "2208.06141v4",
+      "url": "https://arxiv.org/html/2208.06141v4",
+      "item": "Theorem 1.1",
+      "used_bound": "M(T) << T*exp(-c*sqrt(log(T))) for a fixed c>0",
+      "role": "Harmonic Mobius tails; whole Type-I continuous density",
+      "source_checked": true,
+      "RH_assumed": false
+    },
+    {
+      "authors": "Daniel R. Johnston and Andrew Yang",
+      "version": "2204.01980v2",
+      "url": "https://arxiv.org/html/2204.01980v2",
+      "item": "Theorem 1.1",
+      "used_bound": "sum_(v<=T) Lambda(v)=T+O(T*exp(-c*sqrt(log(T)))) after absorbing fixed log powers",
+      "role": "Full detector versus continuum only on normalized original long window",
+      "source_checked": true,
+      "short_square_root_PNT_assumed": false
+    },
+    {
+      "authors": "M. Z. Garaev, F. Luca and W. G. Nowak",
+      "url": "https://link.springer.com/article/10.1007/s00013-005-1447-2",
+      "item": "Primary publisher abstract; full article unavailable",
+      "stated_range": "length large compared with sqrt(X)*log(X)",
+      "direct_mapping_accepted": false,
+      "reason": "At X=x/D and length Y/D, the ratio is asymptotic to 1/(sqrt(D)*log(x/D)), uniformly D<=U^8; already tends to zero at D=1",
+      "full_article_finer_statements_excluded": false,
+      "restricted_box_extension_assumed": false
+    }
+  ],
+  "new_uniform_analytic_results": [
+    "exact harmonic all-Type-I density with original gates",
+    "centered all-Type-I continuous term o(u)",
+    "normalized long all-Type-I lattice error o(u)",
+    "normalized long 325-term signed Type-II aggregate o(u)"
+  ],
+  "required_short_joint_lower_estimate_proved": false,
+  "previous_RS_failures_preserved_not_retested": true,
+  "other_four_variable_methods_excluded": false
+}

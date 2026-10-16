@@ -1,0 +1,33 @@
+{
+  "checkpoint": 14,
+  "date": "2026-10-07",
+  "U_V": "floor(N^(1/100)) unchanged",
+  "complete_TypeI_outer_cutoff": "N^(457/400)",
+  "additional_TypeI_domain": "Pair outer d=p*r, p<=r: either robust RS wedge in DELTA_GROUPING_NOTE.md",
+  "complete_TypeII_removed_product": "db<=N^(459/400), all actual outer coefficients",
+  "remaining_reduction": "Delta2+Delta3=B_(db>N^(459/400))+R_I,core+o(u)",
+  "joint_core": "B_core+R_I,core=A_core-integral(G_core), exact for sufficiently large N",
+  "equivalent_remaining_interface": "B_(good outer,db>N^(459/400)) + A_core - integral(G_core)",
+  "terminal_target": "Signed joint remainder<=(.011+o(1))*u, uniformly for all sufficiently large even N",
+  "complete_TypeI_minimum_source_margin": "1/3500",
+  "complete_TypeII_minimum_source_margin": "9/14000",
+  "partial_TypeI_minimum_source_margin": "1/10000",
+  "sources": [
+    "Robert-Sargos 2006 Theorem 1",
+    "Fouvry-Iwaniec 1989 Theorem 6"
+  ],
+  "new_grouping": "Small Vaughan product moves into standalone prime slot in RS branches",
+  "ordering_gate_preserved": true,
+  "signed_boundary_envelopes_preserved": true,
+  "prime_b_proper_powers_removed_absolutely": true,
+  "remaining_covariance_weight_changes_with_product_cutoff": true,
+  "uniform_0011_estimate_proved": false,
+  "remaining_covariance_estimated_at_target_scale": false,
+  "remaining_core_estimated_at_target_scale": false,
+  "H_theta_proved": false,
+  "higher_degree_cap_proved": false,
+  "positive_K_credited": 0,
+  "historical_numerical_ledger_changed": false,
+  "global_impossibility_claim": false,
+  "proof_note": "DELTA_GROUPING_NOTE.md"
+}

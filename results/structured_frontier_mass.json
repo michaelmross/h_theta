@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-05",
+  "theta": "97/100",
+  "b": "1/4",
+  "normalization": "u=N/(2 log N)",
+  "frontier": "positive R2, marked three-prime subterm",
+  "region": [
+    "b <= t2 <= t1 <= theta",
+    "t1+3*t2 > 2",
+    "t1+2*t2 < 2"
+  ],
+  "mass_formula": "2*integral_D dt1 dt2/[t1*t2*(2-t1-t2)]",
+  "method": "Closed interval Riemann sums, outward Decimal arithmetic and logarithms",
+  "rounding_sanity": {
+    "exact_rational_arithmetic_cases": 95,
+    "independent_rational_log_enclosures": 5,
+    "decimal_precision": 50
+  },
+  "pieces": [
+    {
+      "t2": [
+        "103/300",
+        "1/2"
+      ],
+      "bins": 40000,
+      "t1_lower": "2-3*t2",
+      "t1_upper": "theta",
+      "integral": {
+        "lower": "0.27999099656217229711400182985034307377940025060419",
+        "upper": "0.28001400282227653352590590759367084899309826722105",
+        "width": "0.00002300626010423641190407774332777521369801661686"
+      }
+    },
+    {
+      "t2": [
+        "1/2",
+        "103/200"
+      ],
+      "bins": 40000,
+      "t1_lower": "t2",
+      "t1_upper": "theta",
+      "integral": {
+        "lower": "0.050774845641980853461353564909389113805254402251331",
+        "upper": "0.050774983784028163611280926361929801978100918596125",
+        "width": "1.38142047310149927361452540688172846516344794E-7"
+      }
+    },
+    {
+      "t2": [
+        "103/200",
+        "2/3"
+      ],
+      "bins": 40000,
+      "t1_lower": "t2",
+      "t1_upper": "2-2*t2",
+      "integral": {
+        "lower": "0.24189131903156467837587552104874938953538667982621",
+        "upper": "0.24190989098841027453526838677309808290778146597983",
+        "width": "0.00001857195684559615939286572434869337239478615362"
+      }
+    }
+  ],
+  "reference_mass": {
+    "lower": "0.57265716123571782895123091580848157712004133268173",
+    "upper": "0.57269887759471497167245522072869873387898065179701",
+    "width": "0.00004171635899714272122430492021715675893931911528"
+  },
+  "interior_box": {
+    "t1": [
+      "39/50",
+      "81/100"
+    ],
+    "t2": [
+      "57/100",
+      "59/100"
+    ],
+    "t3": [
+      "3/5",
+      "13/20"
+    ],
+    "mass": {
+      "lower": "0.0041649649309987086261331482005669317258173345868019",
+      "upper": "0.0041650477491487761442886827080927875416367436581400",
+      "width": "8.28181500675181555345075258558158194090713381E-8"
+    },
+    "contained_in_theta_region": true
+  },
+  "m": {
+    "lower": "1.0600180097262529486518806933494791068193462057118",
+    "upper": "1.0600180097262529486518806933494791068193462057121",
+    "width": "3E-49"
+  },
+  "frozen_C": {
+    "lower": "0.51220728463818484244882230387767105470521797737716",
+    "upper": "0.51220728463818484244882230387767105470521797737766",
+    "width": "5.0E-49"
+  },
+  "allowed_model_loss": {
+    "lower": "0.54781072508806810620305838947180805211412822833414",
+    "upper": "0.54781072508806810620305838947180805211412822833494",
+    "width": "8.0E-49"
+  },
+  "reference_mass_minus_budget": {
+    "lower": "0.02484643614764972274817252633667352500591310434679",
+    "upper": "0.02488815250664686546939683125689068176485242346287",
+    "width": "0.00004171635899714272122430492021715675893931911608"
+  },
+  "dropping_this_region_exceeds_budget_if_all_other_mass_matches": true,
+  "certified_short_interval_mass": 0,
+  "mass_admission_status": "Reference mass only; interval-transfer hypothesis unproved",
+  "baseline_verified": {
+    "source_hashes_verified": true,
+    "original_five_slice_table_verified": true,
+    "independent_tail_theorem_audit": "partial; see CAMPAIGN_NOTE.md",
+    "original_log": "results/fm_original_run.txt"
+  }
+}

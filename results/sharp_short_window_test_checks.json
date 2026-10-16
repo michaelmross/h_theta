@@ -1,0 +1,1225 @@
+{
+  "preservation": {
+    "checkpoint31_nonmutable_records_verified": 305,
+    "checkpoint31_manifest_sha256": "0ffd365887415fdbec77d4a2e8b59afbe8d7eac08c4a9fffd7f7481ae4d6c6e2",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "source_formula": {
+    "rational_profile_rows": 2500,
+    "critical_source_level": "3/10",
+    "reduced_profile": "min(tau,max(3*b/5,tau-2*b/5))",
+    "unrestricted_beta_minimum_at_tau_half": "3/10, attained only at b=1/2",
+    "test_is_of_available_upper_envelopes_not_actual_level_set_sizes": true
+  },
+  "continuous_mixed_moment_certificate": {
+    "physical_sorted_box": [
+      [
+        "2/5",
+        "43/100"
+      ],
+      [
+        "9/20",
+        "47/100"
+      ],
+      [
+        "101/200",
+        "21/40"
+      ]
+    ],
+    "fourth_physical_exponent_range": [
+      "23/40",
+      "129/200"
+    ],
+    "physical_vertices": [
+      [
+        "2/5",
+        "9/20",
+        "101/200",
+        "129/200"
+      ],
+      [
+        "2/5",
+        "9/20",
+        "21/40",
+        "5/8"
+      ],
+      [
+        "2/5",
+        "47/100",
+        "101/200",
+        "5/8"
+      ],
+      [
+        "2/5",
+        "47/100",
+        "21/40",
+        "121/200"
+      ],
+      [
+        "43/100",
+        "9/20",
+        "101/200",
+        "123/200"
+      ],
+      [
+        "43/100",
+        "9/20",
+        "21/40",
+        "119/200"
+      ],
+      [
+        "43/100",
+        "47/100",
+        "101/200",
+        "119/200"
+      ],
+      [
+        "43/100",
+        "47/100",
+        "21/40",
+        "23/40"
+      ]
+    ],
+    "mixed_moment_families_through_degree_four": 69,
+    "exact_corner_rows": 552,
+    "critical_source_profile_lower": "301/1000",
+    "required_critical_level_set_exponent": "3/10",
+    "source_upper_envelope_power_loss_in_x": "1/1000",
+    "source_upper_envelope_integral_exponent_lower": "501/1000",
+    "interior_tau": "999/2000",
+    "interior_source_profile_lower": "601/2000",
+    "all_fixed_higher_mixed_integer_moments_covered_analytically": true,
+    "actual_integral_or_cardinality_lower_bound_asserted": false,
+    "other_joint_or_phase_sensitive_methods_excluded": false,
+    "examples": [
+      {
+        "physical_N_exponents": [
+          "83/200",
+          "23/50",
+          "103/200",
+          "61/100"
+        ],
+        "source_x_exponents": [
+          "83/400",
+          "23/100",
+          "103/400",
+          "61/200"
+        ],
+        "best_profile": "61/200",
+        "winning_mixed_powers": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "source_upper_envelope_integral_exponent": "101/200",
+        "strict_gap_relative_to_required_half": "1/200"
+      },
+      {
+        "physical_N_exponents": [
+          "2/5",
+          "8/15",
+          "8/15",
+          "8/15"
+        ],
+        "source_x_exponents": [
+          "1/5",
+          "4/15",
+          "4/15",
+          "4/15"
+        ],
+        "best_profile": "47/150",
+        "winning_mixed_powers": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "source_upper_envelope_integral_exponent": "77/150",
+        "strict_gap_relative_to_required_half": "1/75"
+      }
+    ],
+    "continuous_length_intervals": [
+      {
+        "mixed_powers": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "degree": 1,
+        "length_interval": [
+          "23/80",
+          "129/400"
+        ],
+        "profile_minimum": "371/1000",
+        "profile_minimum_at_tau_999_over_2000": "741/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "degree": 2,
+        "length_interval": [
+          "23/40",
+          "129/200"
+        ],
+        "profile_minimum": "69/200",
+        "profile_minimum_at_tau_999_over_2000": "69/200"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "degree": 3,
+        "length_interval": [
+          "69/80",
+          "387/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "degree": 4,
+        "length_interval": [
+          "23/20",
+          "129/100"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "degree": 1,
+        "length_interval": [
+          "101/400",
+          "21/80"
+        ],
+        "profile_minimum": "79/200",
+        "profile_minimum_at_tau_999_over_2000": "789/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "degree": 2,
+        "length_interval": [
+          "11/20",
+          "23/40"
+        ],
+        "profile_minimum": "33/100",
+        "profile_minimum_at_tau_999_over_2000": "33/100"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "degree": 3,
+        "length_interval": [
+          "67/80",
+          "359/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          1,
+          3
+        ],
+        "degree": 4,
+        "length_interval": [
+          "9/8",
+          "61/50"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "101/200",
+          "21/40"
+        ],
+        "profile_minimum": "303/1000",
+        "profile_minimum_at_tau_999_over_2000": "303/1000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "321/400",
+          "67/80"
+        ],
+        "profile_minimum": "963/2000",
+        "profile_minimum_at_tau_999_over_2000": "963/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "11/10",
+          "23/20"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          3,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "303/400",
+          "63/80"
+        ],
+        "profile_minimum": "909/2000",
+        "profile_minimum_at_tau_999_over_2000": "909/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          3,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "211/200",
+          "11/10"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          0,
+          4,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "101/100",
+          "21/20"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "degree": 1,
+        "length_interval": [
+          "9/40",
+          "47/200"
+        ],
+        "profile_minimum": "203/500",
+        "profile_minimum_at_tau_999_over_2000": "811/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "degree": 2,
+        "length_interval": [
+          "209/400",
+          "219/400"
+        ],
+        "profile_minimum": "627/2000",
+        "profile_minimum_at_tau_999_over_2000": "627/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "degree": 3,
+        "length_interval": [
+          "81/100",
+          "87/100"
+        ],
+        "profile_minimum": "243/500",
+        "profile_minimum_at_tau_999_over_2000": "243/500"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "degree": 4,
+        "length_interval": [
+          "439/400",
+          "477/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "191/400",
+          "199/400"
+        ],
+        "profile_minimum": "301/1000",
+        "profile_minimum_at_tau_999_over_2000": "601/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "157/200",
+          "4/5"
+        ],
+        "profile_minimum": "471/1000",
+        "profile_minimum_at_tau_999_over_2000": "471/1000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "429/400",
+          "449/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "73/100",
+          "19/25"
+        ],
+        "profile_minimum": "219/500",
+        "profile_minimum_at_tau_999_over_2000": "219/500"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "83/80",
+          "17/16"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          1,
+          3,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "393/400",
+          "409/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "9/20",
+          "47/100"
+        ],
+        "profile_minimum": "39/125",
+        "profile_minimum_at_tau_999_over_2000": "623/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "299/400",
+          "313/400"
+        ],
+        "profile_minimum": "897/2000",
+        "profile_minimum_at_tau_999_over_2000": "897/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "209/200",
+          "219/200"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "281/400",
+          "293/400"
+        ],
+        "profile_minimum": "843/2000",
+        "profile_minimum_at_tau_999_over_2000": "843/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "101/100",
+          "207/200"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "191/200",
+          "199/200"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          3,
+          0,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "27/40",
+          "141/200"
+        ],
+        "profile_minimum": "81/200",
+        "profile_minimum_at_tau_999_over_2000": "81/200"
+      },
+      {
+        "mixed_powers": [
+          0,
+          3,
+          0,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "389/400",
+          "407/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          3,
+          1,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "371/400",
+          "387/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          0,
+          4,
+          0,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "9/10",
+          "47/50"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "degree": 1,
+        "length_interval": [
+          "1/5",
+          "43/200"
+        ],
+        "profile_minimum": "207/500",
+        "profile_minimum_at_tau_999_over_2000": "827/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "degree": 2,
+        "length_interval": [
+          "201/400",
+          "209/400"
+        ],
+        "profile_minimum": "603/2000",
+        "profile_minimum_at_tau_999_over_2000": "603/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "degree": 3,
+        "length_interval": [
+          "79/100",
+          "169/200"
+        ],
+        "profile_minimum": "237/500",
+        "profile_minimum_at_tau_999_over_2000": "237/500"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "degree": 4,
+        "length_interval": [
+          "431/400",
+          "467/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "181/400",
+          "191/400"
+        ],
+        "profile_minimum": "309/1000",
+        "profile_minimum_at_tau_999_over_2000": "617/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "153/200",
+          "31/40"
+        ],
+        "profile_minimum": "459/1000",
+        "profile_minimum_at_tau_999_over_2000": "459/1000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "421/400",
+          "439/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "141/200",
+          "37/50"
+        ],
+        "profile_minimum": "423/1000",
+        "profile_minimum_at_tau_999_over_2000": "423/1000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "407/400",
+          "83/80"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          0,
+          3,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "383/400",
+          "401/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "17/40",
+          "9/20"
+        ],
+        "profile_minimum": "8/25",
+        "profile_minimum_at_tau_999_over_2000": "639/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "59/80",
+          "299/400"
+        ],
+        "profile_minimum": "177/400",
+        "profile_minimum_at_tau_999_over_2000": "177/400"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "41/40",
+          "107/100"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "271/400",
+          "57/80"
+        ],
+        "profile_minimum": "813/2000",
+        "profile_minimum_at_tau_999_over_2000": "813/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "1",
+          "1"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "93/100",
+          "39/40"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "13/20",
+          "137/200"
+        ],
+        "profile_minimum": "39/100",
+        "profile_minimum_at_tau_999_over_2000": "39/100"
+      },
+      {
+        "mixed_powers": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "77/80",
+          "393/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "361/400",
+          "379/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          1,
+          3,
+          0,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "7/8",
+          "23/25"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "degree": 2,
+        "length_interval": [
+          "2/5",
+          "43/100"
+        ],
+        "profile_minimum": "41/125",
+        "profile_minimum_at_tau_999_over_2000": "131/400"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "degree": 3,
+        "length_interval": [
+          "281/400",
+          "59/80"
+        ],
+        "profile_minimum": "843/2000",
+        "profile_minimum_at_tau_999_over_2000": "843/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "degree": 4,
+        "length_interval": [
+          "201/200",
+          "209/200"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "261/400",
+          "277/400"
+        ],
+        "profile_minimum": "783/2000",
+        "profile_minimum_at_tau_999_over_2000": "783/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "193/200",
+          "99/100"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "181/200",
+          "191/200"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "5/8",
+          "133/200"
+        ],
+        "profile_minimum": "3/8",
+        "profile_minimum_at_tau_999_over_2000": "3/8"
+      },
+      {
+        "mixed_powers": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "15/16",
+          "77/80"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "351/400",
+          "371/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "17/20",
+          "9/10"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "degree": 3,
+        "length_interval": [
+          "3/5",
+          "129/200"
+        ],
+        "profile_minimum": "9/25",
+        "profile_minimum_at_tau_999_over_2000": "9/25"
+      },
+      {
+        "mixed_powers": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "degree": 4,
+        "length_interval": [
+          "361/400",
+          "381/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "341/400",
+          "363/400"
+        ],
+        "profile_minimum": "1/2",
+        "profile_minimum_at_tau_999_over_2000": "999/2000"
+      },
+      {
+        "mixed_powers": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "33/40",
+          "22/25"
+        ],
+        "profile_minimum": "99/200",
+        "profile_minimum_at_tau_999_over_2000": "99/200"
+      },
+      {
+        "mixed_powers": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "degree": 4,
+        "length_interval": [
+          "4/5",
+          "43/50"
+        ],
+        "profile_minimum": "12/25",
+        "profile_minimum_at_tau_999_over_2000": "12/25"
+      }
+    ]
+  },
+  "box_reference_and_budget": {
+    "box_volume": "3/250000",
+    "denominator_product_upper": "5474889/80000000",
+    "kernel_defect_upper": "3125/33554432",
+    "unweighted_unsmoothed_reference_lower_certificate": {
+      "exact_fraction": "640/1824963",
+      "lower": "0.0003506920414276892189047120407372642623439488910186124321",
+      "upper": "0.0003506920414276892189047120407372642623439488910186124322",
+      "scope": "enclosure of the rational lower certificate, not the full reference mass"
+    },
+    "actual_weight_smoothed_reference_lower_certificate": {
+      "exact_fraction": "1599278967/4556220006400",
+      "lower": "0.0003510100400668834568067270404934237022887587309989298413",
+      "upper": "0.0003510100400668834568067270404934237022887587309989298414",
+      "scope": "enclosure of the rational lower certificate, not the full reference mass"
+    },
+    "actual_weight_smoothed_reference_downward_round": ".000351",
+    "remaining_comparison_and_rest_allowance": ".000099",
+    "reference_lower_over_remaining_budget": "10096458125/2847637504",
+    "whole_reference_mass_not_reestimated": true,
+    "actual_short_negative_deficit_asserted": false,
+    "box_omission_charge_added_to_global_ledger": false,
+    "conditional_kernel_charge_retained": ".000001",
+    "original_spectral_allowance": ".007935",
+    "original_final_allowance": ".011",
+    "conditional_original_coefficient_before_later_xi_or_tail": "10990257/1000000000",
+    "conditional_remaining_xi_or_fixed_tail_reserve": "9743/1000000000"
+  },
+  "critical_multiplier": {
+    "critical_frequency_block": "[N/2,N]",
+    "trapezoid_rectangular_convolution_lengths": [
+      "(1+kappa)*Y",
+      "kappa*Y"
+    ],
+    "sinc_argument_upper_bounds_for_large_N": [
+      "51/100",
+      "1/1000"
+    ],
+    "rational_leading_sinc_product_lower": "114797980867/120000000000",
+    "exact_Mellin_approximation_uniform_error": "O(1/N)",
+    "actual_Mellin_multiplier_lower_for_sufficiently_large_N": ".9",
+    "frequency_block_discarded": false,
+    "actual_centered_integral_lower_bound_asserted": false
+  },
+  "checks_do_not_prove_actual_short_inequality": true
+}

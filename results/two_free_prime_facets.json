@@ -1,0 +1,632 @@
+{
+  "coordinate_order": [
+    "S",
+    "a",
+    "alpha",
+    "beta"
+  ],
+  "source": "Robert-Sargos2006, Theorem3 and direct Lemma9",
+  "reciprocal_phase_exponents": [
+    -1,
+    -1
+  ],
+  "standalone_slot_is_unit_or_log_weighted_free_integer": true,
+  "arbitrary_standalone_coefficients_used": false,
+  "constraints": [
+    {
+      "A": [
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound": "-1/2"
+    },
+    {
+      "A": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "bound": "4/3"
+    },
+    {
+      "A": [
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "bound": "-1/4"
+    },
+    {
+      "A": [
+        "-1/2",
+        "1",
+        "0",
+        "0"
+      ],
+      "bound": "0"
+    },
+    {
+      "A": [
+        "2",
+        "-1",
+        "0",
+        "0"
+      ],
+      "bound": "3987/2000"
+    },
+    {
+      "A": [
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      "bound": "0"
+    },
+    {
+      "A": [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "bound": "1/500"
+    },
+    {
+      "A": [
+        "0",
+        "0",
+        "0",
+        "-1"
+      ],
+      "bound": "0"
+    },
+    {
+      "A": [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      "bound": "1/500"
+    }
+  ],
+  "direct_vertices": [
+    {
+      "S": "1/2",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "0",
+      "Sigma": "1/2",
+      "free_slot_A": "1/4",
+      "margins": {
+        "L9_first_and_second": "5/4",
+        "L9_third": "2",
+        "free_slot_positive": "1/4"
+      }
+    },
+    {
+      "S": "1/2",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "1/500",
+      "Sigma": "251/500",
+      "free_slot_A": "1/4",
+      "margins": {
+        "L9_first_and_second": "623/500",
+        "L9_third": "499/250",
+        "free_slot_positive": "1/4"
+      }
+    },
+    {
+      "S": "1/2",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "0",
+      "Sigma": "1/2",
+      "free_slot_A": "31/125",
+      "margins": {
+        "L9_first_and_second": "156/125",
+        "L9_third": "2",
+        "free_slot_positive": "31/125"
+      }
+    },
+    {
+      "S": "1/2",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "Sigma": "251/500",
+      "free_slot_A": "31/125",
+      "margins": {
+        "L9_first_and_second": "311/250",
+        "L9_third": "499/250",
+        "free_slot_positive": "31/125"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "0",
+      "Sigma": "4487/4000",
+      "free_slot_A": "1/4",
+      "margins": {
+        "L9_first_and_second": "13/2000",
+        "L9_third": "1513/2000",
+        "free_slot_positive": "1/4"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "1/500",
+      "Sigma": "899/800",
+      "free_slot_A": "1/4",
+      "margins": {
+        "L9_first_and_second": "1/400",
+        "L9_third": "301/400",
+        "free_slot_positive": "1/4"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "0",
+      "Sigma": "4487/4000",
+      "free_slot_A": "31/125",
+      "margins": {
+        "L9_first_and_second": "9/2000",
+        "L9_third": "1513/2000",
+        "free_slot_positive": "31/125"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "Sigma": "899/800",
+      "free_slot_A": "31/125",
+      "margins": {
+        "L9_first_and_second": "1/2000",
+        "L9_third": "301/400",
+        "free_slot_positive": "31/125"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "0",
+      "beta": "0",
+      "Sigma": "1329/1000",
+      "free_slot_A": "1329/2000",
+      "margins": {
+        "L9_first_and_second": "13/2000",
+        "L9_third": "171/500",
+        "free_slot_positive": "1329/2000"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "0",
+      "beta": "1/500",
+      "Sigma": "1331/1000",
+      "free_slot_A": "1329/2000",
+      "margins": {
+        "L9_first_and_second": "1/400",
+        "L9_third": "169/500",
+        "free_slot_positive": "1329/2000"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "1/500",
+      "beta": "0",
+      "Sigma": "1329/1000",
+      "free_slot_A": "53/80",
+      "margins": {
+        "L9_first_and_second": "9/2000",
+        "L9_third": "171/500",
+        "free_slot_positive": "53/80"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "Sigma": "1331/1000",
+      "free_slot_A": "53/80",
+      "margins": {
+        "L9_first_and_second": "1/2000",
+        "L9_third": "169/500",
+        "free_slot_positive": "53/80"
+      }
+    }
+  ],
+  "direct_vertex_count": 12,
+  "direct_minimum_facets": {
+    "L9_first_and_second": "1/2000",
+    "L9_third": "169/500",
+    "free_slot_positive": "31/125"
+  },
+  "raw_term_minimum_power_reserve": "1/8000",
+  "critical_vertices": [
+    {
+      "S": "499/500",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "1/500",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "156/625",
+        "RS3_T2": "1249/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "499/500",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "619/2500",
+        "RS3_T2": "1239/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "499/500",
+      "a": "499/1000",
+      "alpha": "0",
+      "beta": "1/500",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "2493/5000",
+        "RS3_T2": "1247/2500",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "499/500",
+      "a": "499/1000",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "2483/5000",
+        "RS3_T2": "621/1250",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "1",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "0",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "156/625",
+        "RS3_T2": "1249/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "1",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "0",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "619/2500",
+        "RS3_T2": "1239/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "1",
+      "a": "1/2",
+      "alpha": "0",
+      "beta": "0",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "1249/2500",
+        "RS3_T2": "2499/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "1",
+      "a": "1/2",
+      "alpha": "1/500",
+      "beta": "0",
+      "eta": "1/10000",
+      "margins": {
+        "RS3_T1": "311/625",
+        "RS3_T2": "2489/5000",
+        "RS3_T3": "1"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "0",
+      "eta": "2437/20000",
+      "margins": {
+        "RS3_T1": "61/10000",
+        "RS3_T2": "63/10000",
+        "RS3_T3": "3513/4000"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "0",
+      "beta": "1/500",
+      "eta": "2477/20000",
+      "margins": {
+        "RS3_T1": "21/10000",
+        "RS3_T2": "23/10000",
+        "RS3_T3": "701/800"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "0",
+      "eta": "2437/20000",
+      "margins": {
+        "RS3_T1": "41/10000",
+        "RS3_T2": "43/10000",
+        "RS3_T3": "3513/4000"
+      }
+    },
+    {
+      "S": "4487/4000",
+      "a": "1/4",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "eta": "2477/20000",
+      "margins": {
+        "RS3_T1": "1/10000",
+        "RS3_T2": "3/10000",
+        "RS3_T3": "701/800"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "0",
+      "beta": "0",
+      "eta": "3291/10000",
+      "margins": {
+        "RS3_T1": "61/10000",
+        "RS3_T2": "63/10000",
+        "RS3_T3": "671/1000"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "0",
+      "beta": "1/500",
+      "eta": "3311/10000",
+      "margins": {
+        "RS3_T1": "21/10000",
+        "RS3_T2": "23/10000",
+        "RS3_T3": "669/1000"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "1/500",
+      "beta": "0",
+      "eta": "3291/10000",
+      "margins": {
+        "RS3_T1": "41/10000",
+        "RS3_T2": "43/10000",
+        "RS3_T3": "671/1000"
+      }
+    },
+    {
+      "S": "1329/1000",
+      "a": "1329/2000",
+      "alpha": "1/500",
+      "beta": "1/500",
+      "eta": "3311/10000",
+      "margins": {
+        "RS3_T1": "1/10000",
+        "RS3_T2": "3/10000",
+        "RS3_T3": "669/1000"
+      }
+    }
+  ],
+  "critical_vertex_count": 16,
+  "critical_minimum_facets": {
+    "RS3_T1": "1/10000",
+    "RS3_T2": "3/10000",
+    "RS3_T3": "669/1000"
+  },
+  "outer_TypeII_small_Mangoldt_factor": {
+    "b_p_exponent_cut": "1/800",
+    "outer_small_product_upper": "9/4000",
+    "vertices": [
+      {
+        "S": "1/2",
+        "a": "1/4",
+        "alpha": "0",
+        "beta": "0",
+        "Sigma": "1/2",
+        "A": "1/4",
+        "margins": {
+          "L9_first_and_second": "5/4",
+          "L9_third": "2"
+        }
+      },
+      {
+        "S": "1/2",
+        "a": "1/4",
+        "alpha": "0",
+        "beta": "1/500",
+        "Sigma": "251/500",
+        "A": "1/4",
+        "margins": {
+          "L9_first_and_second": "623/500",
+          "L9_third": "499/250"
+        }
+      },
+      {
+        "S": "1/2",
+        "a": "1/4",
+        "alpha": "9/4000",
+        "beta": "0",
+        "Sigma": "1/2",
+        "A": "991/4000",
+        "margins": {
+          "L9_first_and_second": "4991/4000",
+          "L9_third": "2"
+        }
+      },
+      {
+        "S": "1/2",
+        "a": "1/4",
+        "alpha": "9/4000",
+        "beta": "1/500",
+        "Sigma": "251/500",
+        "A": "991/4000",
+        "margins": {
+          "L9_first_and_second": "199/160",
+          "L9_third": "499/250"
+        }
+      },
+      {
+        "S": "4487/4000",
+        "a": "1/4",
+        "alpha": "0",
+        "beta": "0",
+        "Sigma": "4487/4000",
+        "A": "1/4",
+        "margins": {
+          "L9_first_and_second": "13/2000",
+          "L9_third": "1513/2000"
+        }
+      },
+      {
+        "S": "4487/4000",
+        "a": "1/4",
+        "alpha": "0",
+        "beta": "1/500",
+        "Sigma": "899/800",
+        "A": "1/4",
+        "margins": {
+          "L9_first_and_second": "1/400",
+          "L9_third": "301/400"
+        }
+      },
+      {
+        "S": "4487/4000",
+        "a": "1/4",
+        "alpha": "9/4000",
+        "beta": "0",
+        "Sigma": "4487/4000",
+        "A": "991/4000",
+        "margins": {
+          "L9_first_and_second": "17/4000",
+          "L9_third": "1513/2000"
+        }
+      },
+      {
+        "S": "4487/4000",
+        "a": "1/4",
+        "alpha": "9/4000",
+        "beta": "1/500",
+        "Sigma": "899/800",
+        "A": "991/4000",
+        "margins": {
+          "L9_first_and_second": "1/4000",
+          "L9_third": "301/400"
+        }
+      },
+      {
+        "S": "1329/1000",
+        "a": "1329/2000",
+        "alpha": "0",
+        "beta": "0",
+        "Sigma": "1329/1000",
+        "A": "1329/2000",
+        "margins": {
+          "L9_first_and_second": "13/2000",
+          "L9_third": "171/500"
+        }
+      },
+      {
+        "S": "1329/1000",
+        "a": "1329/2000",
+        "alpha": "0",
+        "beta": "1/500",
+        "Sigma": "1331/1000",
+        "A": "1329/2000",
+        "margins": {
+          "L9_first_and_second": "1/400",
+          "L9_third": "169/500"
+        }
+      },
+      {
+        "S": "1329/1000",
+        "a": "1329/2000",
+        "alpha": "9/4000",
+        "beta": "0",
+        "Sigma": "1329/1000",
+        "A": "2649/4000",
+        "margins": {
+          "L9_first_and_second": "17/4000",
+          "L9_third": "171/500"
+        }
+      },
+      {
+        "S": "1329/1000",
+        "a": "1329/2000",
+        "alpha": "9/4000",
+        "beta": "1/500",
+        "Sigma": "1331/1000",
+        "A": "2649/4000",
+        "margins": {
+          "L9_first_and_second": "1/4000",
+          "L9_third": "169/500"
+        }
+      }
+    ],
+    "vertex_count": 12,
+    "minimum_facets": {
+      "L9_first_and_second": "1/4000",
+      "L9_third": "169/500"
+    },
+    "raw_term_minimum_power_reserve": "1/16000",
+    "uses_direct_Lemma9_not_conservative_Y_over_Q_frequency_envelope": true
+  },
+  "balanced_witness": {
+    "S": "13/10",
+    "a": "13/20",
+    "alpha": "1/500",
+    "beta": "1/500",
+    "Sigma": "651/500",
+    "A": "81/125",
+    "margins": {
+      "first_and_second": "11/250",
+      "third": "99/250"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "preservation": {
+    "checkpoint24_nonmutable_records_verified": 252,
+    "checkpoint24_manifest_sha256": "21587916b9551061d9df60b6b292cf3058d13e281dbc430629718d8c0bb70b96",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "selberg": {
+    "radii": [
+      {
+        "R": 1,
+        "G_R": "1",
+        "quadratic_minimum": "1",
+        "nonzero_weights": 1
+      },
+      {
+        "R": 2,
+        "G_R": "2",
+        "quadratic_minimum": "1/2",
+        "nonzero_weights": 2
+      },
+      {
+        "R": 8,
+        "G_R": "41/12",
+        "quadratic_minimum": "12/41",
+        "nonzero_weights": 6
+      },
+      {
+        "R": 17,
+        "G_R": "1009/240",
+        "quadratic_minimum": "240/1009",
+        "nonzero_weights": 12
+      },
+      {
+        "R": 37,
+        "G_R": "22859/4620",
+        "quadratic_minimum": "4620/22859",
+        "nonzero_weights": 24
+      },
+      {
+        "R": 100,
+        "G_R": "93195236983/15767623872",
+        "quadratic_minimum": "15767623872/93195236983",
+        "nonzero_weights": 61
+      },
+      {
+        "R": 257,
+        "G_R": "77718483321621381662352052073/11292027299210120719288032000",
+        "quadratic_minimum": "11292027299210120719288032000/77718483321621381662352052073",
+        "nonzero_weights": 158
+      }
+    ],
+    "quadratic_pair_checks": 77776,
+    "mobius_inversion_rows": 422,
+    "all_exact_checks_passed": true
+  },
+  "shape_and_lattice": {
+    "independent_lattice_rows": 771,
+    "local_area_over_Y": "1501/1000",
+    "total_variation": 2,
+    "signed_quadratic_fixture": {
+      "N": 100,
+      "R": 17,
+      "actual_square": "11951676758935583066222270527333/331048732564596861454065793919",
+      "main_term": "909606/25225",
+      "absolute_lattice_error_bound": "102473928/1018081"
+    },
+    "finite_fixtures_are_not_uniform_prime_estimates": true
+  },
+  "narrow_marks": {
+    "cases": [
+      {
+        "N": 62,
+        "sites": 127,
+        "marked_sites": 42,
+        "maximum_mark": "1"
+      },
+      {
+        "N": 100,
+        "sites": 203,
+        "marked_sites": 42,
+        "maximum_mark": "1"
+      },
+      {
+        "N": 200,
+        "sites": 403,
+        "marked_sites": 85,
+        "maximum_mark": "1"
+      },
+      {
+        "N": 1000,
+        "sites": 2003,
+        "marked_sites": 357,
+        "maximum_mark": "1"
+      },
+      {
+        "N": 10000,
+        "sites": 20003,
+        "marked_sites": 3076,
+        "maximum_mark": "1"
+      }
+    ],
+    "sites": 22739,
+    "marked_repeated_factor_rows": 81,
+    "uniform_analytic_cap_threshold": 65536,
+    "broad_support_cap_one_claimed": false
+  },
+  "all_exact_checks_passed": true,
+  "finite_checks_prove_sharp_target": false
+}

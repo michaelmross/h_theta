@@ -1,0 +1,60 @@
+{
+  "checkpoint": 22,
+  "date": "2026-10-09",
+  "proof_note": "SIGNED_SIEVE_COUPLING_NOTE.md",
+  "primary_sources": [
+    {
+      "source": "Terence Tao, 254A Notes 4 (2015)",
+      "url": "https://terrytao.wordpress.com/2015/01/21/254a-notes-4-some-sieve-theory/",
+      "interface": "Proposition 14 positive terminal identities; beta predicates; Lemma 17 fundamental lemma",
+      "use": "Odd-prime dimension-two model g(p)=2/p; fixed beta=32; only positive sieve-error gaps are majorized",
+      "signed_nonnegative_corollary_applied": false
+    },
+    {
+      "source": "Alexander P. Mangerel (2023), Divisor-bounded multiplicative functions in short intervals",
+      "url": "https://link.springer.com/article/10.1007/s40687-023-00376-0",
+      "interface": "Lemma 3.2, deterministic Shiu theorem",
+      "use": "Uniform scaled terminal windows W/d, f_U times roughness indicator, fixed interval exponent 1/30",
+      "almost_all_interval_input": false
+    },
+    {
+      "source": "Robert and Sargos (2006), Three-dimensional exponential sums with monomials",
+      "url": "https://perso.univ-st-etienne.fr/rool6510/robert-2006-crelle.pdf",
+      "interface": "Theorem 1, inherited bounded separated coefficient application",
+      "use": "Center x/h and height Qh/Y; perturbed raw facets and uniform fixed reserve"
+    },
+    {
+      "source": "Fouvry and Iwaniec (1989), Exponential sums with monomials",
+      "source_path": "sources/fi1989_monomials.pdf",
+      "source_audit": "FI_1989_AUDIT.md",
+      "interface": "Theorem 6, six raw terms, additive-character frequency restriction",
+      "use": "Same bounded-slot and frequency-completion interface with perturbed center x/h",
+      "arbitrary_joint_frequency_coefficient_admitted": false
+    }
+  ],
+  "new_campaign_deductions": {
+    "summable_growing_masks": "Exact A_e,Gamma_e,L_e densities; uniform coprime Euler convolution; retain harmonic 1/e in sum; source phase kappa perturbation",
+    "mask_range": "some fixed delta0>0; final numerical exponent not selected",
+    "source_phase_cap": "1/160000",
+    "aggregate_reference_freeze": "Sum divisor masks pointwise and use tau(n)^2 <= d_4(n); never multiply slow rho decay by N^delta0",
+    "signed_sieve_identity": "Equation (21) exact with lambda_1=1; coefficient one retained on every sector",
+    "positive_error_transfer": "Terminal d<=D, f_U(dm)<=2^omega(d)*f_U(m), scaled Shiu Euler product log(U)/log(p_min(d))^2",
+    "subpower_cutoff": "All growing T_N with log(T_N)=o(log(N)); explicit T_N=U^(1/log(log(N)))",
+    "fixed_power_scope": "Vanishing coefficient only after epsilon decreases; not o(u) for each fixed epsilon"
+  },
+  "inherited_inputs": [
+    "Quantitative long Mobius PNT",
+    "Original exact Vaughan identity",
+    "Complete good Type I and low-db Type II transfer",
+    "Selected absolute proper-power removals",
+    "Original frozen long reference"
+  ],
+  "new_external_short_signed_Mobius_estimate_admitted": false,
+  "individual_short_prime_PNT_admitted": false,
+  "separate_marked_spiky_floor_estimate_admitted": false,
+  "numerical_0001_budget_epsilon_certified": false,
+  "remaining_0011_comparison_proved": false,
+  "positive_prime_mass_credited": 0,
+  "H_theta_proved": false,
+  "new_analytic_claims_proved_by_finite_samples": false
+}

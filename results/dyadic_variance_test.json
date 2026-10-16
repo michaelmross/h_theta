@@ -1,0 +1,22 @@
+{
+  "checkpoint": 33,
+  "proof_note": "DYADIC_VARIANCE_TEST_NOTE.md",
+  "block_variance_O_scale_proved": true,
+  "block_variance_upper_scale": "O_j(N^2/(PR*(log N)^4))",
+  "block_variance_little_o_proved": false,
+  "local_diagonal_upper": "O_j(N/(log N)^3)",
+  "local_diagonal_uniformly_negligible_at_target_scale": true,
+  "required_uniform_off_diagonal_little_o_proved": false,
+  "all_center_log_saving_automatic_transfer_valid": false,
+  "functional_model_is_actual_prime_counterexample": false,
+  "original_masks_gates_and_five_moments_retained": true,
+  "actual_deficit_coefficient_improved": false,
+  "new_nonvanishing_error_charge": "0",
+  "comparison_plus_rest_budget": ".000099",
+  "original_allowance": ".011",
+  "spectral_allowance": ".007935",
+  "sharp_short_window_inequality_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "any_global_impossibility_claim": false
+}

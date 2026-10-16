@@ -1,0 +1,67 @@
+{
+  "checkpoint": 24,
+  "date": "2026-10-11",
+  "kappa": "1/1000",
+  "original_target": "11/1000",
+  "smoothing_charge": "613/200000",
+  "remaining_signed_spectral_allowance": "1587/200000",
+  "new_nonvanishing_coefficient_charge": "0",
+  "new_frequency_identity": "H_original = (1/pi)*Re integral_[T0,T_star] F_chi(t)*psi_Y_hat(1+it) dt + o(u)",
+  "original_unlocalized_upper_limit": "N^(21/10)",
+  "localized_upper_limit": "N^(4/3)*(log N)^2",
+  "frequency_regions": [
+    {
+      "region": "abs(t)<=T0",
+      "bound": "o(u)",
+      "method": "Long PNT and paired areas",
+      "proved": true
+    },
+    {
+      "region": "Normalized long reference, abs(t)>T0",
+      "bound": "o(u)",
+      "method": "Kernel decay",
+      "proved": true
+    },
+    {
+      "region": "Localized short polynomial, abs(t)>T_star",
+      "bound": "o(u)",
+      "method": "Elementary mean square plus kernel decay",
+      "proved": true
+    },
+    {
+      "region": "T0<t<=T_star",
+      "bound": "Required .007935u",
+      "method": "Signed prime-product estimate missing",
+      "proved": false
+    }
+  ],
+  "factor_regions": [
+    {
+      "region": "All single-prime outers z<=d<N^.95",
+      "TypeI": "o(u)",
+      "TypeII_small_db": "o(u) through N^(461/400)",
+      "full_centered_prime_count": "Open"
+    },
+    {
+      "region": "Pair outers d<=N^(4609/4000), and two rational wedges",
+      "TypeI": "o(u)",
+      "TypeII_small_db": "o(u) through N^(461/400)",
+      "full_centered_prime_count": "Open"
+    },
+    {
+      "region": "Auxiliary pair core",
+      "TypeI": "Open",
+      "remaining_TypeII": "Open",
+      "full_centered_prime_count": "Open"
+    }
+  ],
+  "coupled_remaining_inequality": "B_aux,good,db>N^(461/400)(psi_Y)+Q_aux,core(psi_Y) <= ((1+kappa)*M_aux,core+.007935+o(1))*u",
+  "conservative_sufficient_coupled_coefficient": ".0686138 using lower core reference endpoint",
+  "fixed_least_prime_cutoff_budget_if_used": "xi from checkpoint22 (23), remaining spectral allowance .007935-xi",
+  "auxiliary_Vaughan_parameter_is_a_discarded_least_prime_sector": false,
+  "original_joint_0011_target_proved": false,
+  "sharp_spectral_0007935_proved": false,
+  "H_theta_proved": false,
+  "positive_K_credited": 0,
+  "proof_note": "SPECTRAL_COVERAGE_NOTE.md"
+}

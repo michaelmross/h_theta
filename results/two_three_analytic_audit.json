@@ -1,0 +1,34 @@
+{
+  "truncation_exponent_N": "1/100",
+  "U_V": "floor(N^(1/100))",
+  "low_outer_cutoff": "N^(19/20)",
+  "low_TypeI_floor_error_exponent": "97/100",
+  "low_TypeI_centered_error": "O(N^(97/100))+O(Y*(H1/x)^2*log(N)^4)=o(u)",
+  "all_semiprime_TypeI_terms_in_low_range": true,
+  "high_outer_coefficients": "Only frozen two-prime products; N^.95<d<=N^(4/3)",
+  "balanced_triple_reciprocal_FI6": {
+    "Sigma": "4/3",
+    "eta": "1/3",
+    "necessary_B_slot_lower": "1/3",
+    "necessary_B_slot_upper": "1/6",
+    "all_factor_groupings_fail_these_two_facets": true,
+    "scope": "Direct generic reciprocal Theorem 6 mapping only"
+  },
+  "TypeII_additive_FI2": {
+    "frequency_height_N_exponent": "1",
+    "weighted_product_N_exponent": "2",
+    "phase_size_N_exponent": "1",
+    "first_term_raw_N_exponent": "2",
+    "Fourier_coefficient_N_exponent": "-1",
+    "resulting_error_N_exponent": "1",
+    "uniform_o_u_saving_supplied": false,
+    "actual_sparse_norm_or_spacing_refinement_excluded": false
+  },
+  "Li_Lemma_4_1_at_half": {
+    "necessary_facet": "abs(alpha1-alpha2)<2*eta-1=0",
+    "formal_region_empty": true,
+    "theorem_extended_to_endpoint": false
+  },
+  "new_terminal_comparison_admitted": false,
+  "uniform_0011_joint_estimate_proved": false
+}

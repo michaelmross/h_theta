@@ -1,0 +1,37 @@
+{
+  "arithmetic_term": "sum over p1>p2>p3>=N^(1/4), p1*p2*p3<=N^(19/20), of S_(p1*p2*p3)(p3)",
+  "sign_in_third_buchstab_lower_ledger": "negative",
+  "outer_exponent_range": [
+    "3/4",
+    "19/20"
+  ],
+  "old_level": "min(5/4-sigma,2-2*sigma), minus fixed slack",
+  "new_level": "5/4-sigma, minus fixed slack",
+  "upper_coefficient_density": "4*rho3(sigma)/beta(sigma)",
+  "rho3_formula": "(1/3)*int_(1/4)^(sigma-1/2) log(4*(sigma-v)-1)/(v*(sigma-v)) dv",
+  "normalized_by": "u=N/(2 log N)",
+  "old_upper_coefficient": {
+    "lower": "0.18479512859322558207110951499528103855076265477180",
+    "upper": "0.18882643908808370333955192137568934247967764180804",
+    "width": "0.00403131049485812126844240638040830392891498703624"
+  },
+  "new_upper_coefficient": {
+    "lower": "0.096083424560032775779089350947311561184617400205748",
+    "upper": "0.097751118940115281524939953282548002378502138312095",
+    "width": "0.001667694380082505745850602335236441193884738106347"
+  },
+  "coefficient_reduction": {
+    "lower": "0.088711704033192806292020164047969477366145254630957",
+    "upper": "0.091075320147968421814611968093141340101175503428341",
+    "width": "0.002363616114775615522591804045171862735030248797384"
+  },
+  "grid_per_coordinate": 384,
+  "new_positive_branch_region": false,
+  "whole_frontier_095_upper_improved": false,
+  "unestimated_third_frontier_products": "sigma>19/20",
+  "endpoints_sigma_equal_one_admitted": false,
+  "parent_accounting_identity": "(4/beta)*log((beta-b)/b)-int_b^c 4/[t*(beta-t)] dt=(4/beta)*log((beta-c)/c)",
+  "parent_accounting_scope": "1/2<=sigma2<3/4; b<=c<beta; full child range covered",
+  "parent_direct_sieve_gain_must_not_be_double_counted": true,
+  "proof_location": "FRONTIER_INVESTIGATION_NOTE.md Section 2"
+}

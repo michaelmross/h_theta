@@ -1,0 +1,49 @@
+{
+  "checkpoint": 24,
+  "date": "2026-10-11",
+  "new_theorem_admitted_for_sharp_prime_product_bound": false,
+  "elementary_new_tail": {
+    "source": "Direct expansion of a finite Dirichlet polynomial square and harmonic row estimate",
+    "external_mean_value_theorem_required": false,
+    "actual_coefficient_cap": "Q_N({n})<=3 globally",
+    "normalization": "(1/pi) integral_T^infinity |F_chi(t)*psi_Y_hat(1+it)| dt",
+    "uniformity": "Every sufficiently large even N, kappa=1/1000 fixed",
+    "proof": "SPECTRAL_COVERAGE_NOTE.md (5)-(11)"
+  },
+  "auxiliary_identity": {
+    "source": "Checkpoint10 exact Vaughan convolution identity, all terms retained",
+    "new_cutoffs": "U_aux=V_aux=floor(N^(1/1000))",
+    "original_U_and_least_prime_T_N_unchanged": true,
+    "coefficient_budget_spent": "0",
+    "actual_outer_gates_retained": true,
+    "sources_for_remainder_bounds": ["Robert-Sargos2006 Theorem1", "Fouvry-Iwaniec1989 Theorem6 and Lemma9"],
+    "continuous_rational_certificate": "results/spectral_coverage_facets.json",
+    "proof": "SPECTRAL_COVERAGE_NOTE.md (12)-(14)",
+    "whole_TypeII_removed": false
+  },
+  "Robert_Sargos_2006": {
+    "primary_url": "https://perso.univ-st-etienne.fr/rool6510/robert-2006-crelle.pdf",
+    "Theorem1_checked": "PDF pages 1-2; weights a(h,n) and b(m) bounded separately, a(a-1)bc nonzero",
+    "Theorem3_checked": "PDF pages 14-16; absolute fifth moment of an unweighted standalone integer sum",
+    "Theorem3_admitted_for_current_prime_standalone_slot": false,
+    "gap": "Current prime/convolution indicator is not an unweighted free integer sum; additional exact decomposition and proof needed"
+  },
+  "Pliego_2024": {
+    "title": "Estimates for a three-dimensional exponential sum with monomials",
+    "journal": "Journal de Theorie des Nombres de Bordeaux 36(2), 725-766",
+    "primary_url": "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1294.pdf",
+    "corollary_checked": "Corollary1.1, printed pages 727-728, PDF pages 4-5",
+    "conditions": "0<a<c<b, b+c-a=1, c<2a; particular power weights and domain D_T",
+    "direct_reciprocal_phase_match": false,
+    "phase_gap": "Conjugated standard reciprocal phase has exponents (-1,1,1), violating strict a<c<b",
+    "coefficient_gap": "No arbitrary prime/Mobius coefficient extension supplied by this corollary",
+    "domain_gap": "Author states after corollary that the special domain precludes deriving the analogous dyadic bound",
+    "admitted_for_current_missing_estimate": false
+  },
+  "source_frontier_scope": "Inherited two-engine standard top-frequency reciprocal mapping only; not a global obstruction to other estimates or signed coupling",
+  "numerical_reference_scope": "Outward reference integration, no short-window upper bound inferred",
+  "sharp_0007935_estimate_proved": false,
+  "original_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "positive_K_credited": 0
+}

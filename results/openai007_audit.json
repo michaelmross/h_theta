@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-07",
+  "checkpoint": 12,
+  "source_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "manuscript": "Ordinary two-point correlations of multiplicative functions",
+  "source_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/final.pdf",
+  "note": "OPENAI007_AUDIT.md",
+  "audit_scope": "Critical mathematical proof mechanisms, theorem quantifiers, source-level formalization scope and actual campaign transfer; not independent kernel replay",
+  "full_manuscript_obtained": true,
+  "manuscript_pages": 87,
+  "TeX_build_obtained": true,
+  "fatal_defect_identified_in_checked_arguments": false,
+  "entire_proof_independently_certified": false,
+  "quantitative_main_result": {
+    "functions": "Liouville",
+    "forms": "Fixed positive slopes, nonnegative intercepts, nonzero determinant",
+    "averaging": "Ordinary initial intervals through all real cutoffs",
+    "saving": "Absolute c>0; constants depend on forms",
+    "moving_forms_uniformity_asserted": false,
+    "printed_construction_c": "1/(1200*W*A)",
+    "printed_construction_c_upper": "1/12000000"
+  },
+  "qualitative_main_result": {
+    "functions": "Fixed one-bounded multiplicative factors; one uniformly nonpretentious",
+    "twist_height": "Same N as prime cutoff",
+    "forms_and_shifts": "Fixed",
+    "rate_asserted": false
+  },
+  "derived_translated_graph_bound": {
+    "proved_in_audit": true,
+    "source": "Part II graph proof, Sections 13-17; Proposition 10.1",
+    "bound": "C*L0*B^(-1-c_star/2)*(M+D0*Q_B+ceil(tau*h*H)+1)",
+    "c_star": "1/1000000",
+    "quantifiers": "All translated positive-integer intervals; arbitrary changing one-bounded tests and bounded edge coefficients; all admissible families/cutoffs; fixed h,tau,C0,T",
+    "slow_scale": "B=(1/2)*log(log(M))",
+    "period_with_slow_scale": "D0*Q_B=M^o(1)",
+    "specific_kernel_retained": true,
+    "actual_Vaughan_kernel_matched": false
+  },
+  "application_gaps": [
+    "Prefix subtraction leaves a length-N-squared error scale",
+    "Reindexing uses moving intercepts with uncontrolled fixed-form constants",
+    "Quantitative dilation bin error eta*N^2 is too large for a length-N seed window",
+    "MRT supplies averaged initial-interval short sums, not the required every-center localized centering",
+    "Actual beta_U and normalized Mangoldt prime detector are not multiplicative",
+    "Actual coefficient/cutoff families change with N; qualitative convergence has no such uniform rate",
+    "The centered divisor graph has not been identified with the product-window kernel",
+    "The signed high-outer Type I floor-error core remains unestimated"
+  ],
+  "rate_qualification": "Any c>0 would suffice for an O(N/log(N)^c) bound on the entire actual Mangoldt-weighted numerator after the existing outer logarithmic division. No such bound is supplied by 007.",
+  "actual_overlap_kernel": {
+    "identity_proved": true,
+    "formula": "max(0,min(2Q,floor(Jplus/k),floor(Jplus/l))-max(Q+1,V+1,ceil(Jminus/k),ceil(Jminus/l))+1)",
+    "nearby_product_condition": "abs(k-l)*b<=N",
+    "signed_actual_quadratic_form_estimated": false
+  },
+  "formalization": {
+    "actual_solution_modules_obtained": true,
+    "selected_implementation_and_statement_definitions_read": true,
+    "comparator_configurations_obtained": true,
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "comparator_rerun": false,
+    "transitive_axiom_audit_completed": false,
+    "challenge_placeholders_are_solution_failures": false,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "nanoda_enabled": false
+  },
+  "terminal_estimate_admitted": false,
+  "uniform_0011_bound_proved": false,
+  "positive_K_credited": 0,
+  "H_theta_proved": false,
+  "global_impossibility_claim": false,
+  "historical_numerical_ledger_changed": false,
+  "next_task": "Estimate the actual cofactor-overlap quadratic form with c_N and beta_U and the compatible Type I core, or bound their original joint signed sum uniformly."
+}

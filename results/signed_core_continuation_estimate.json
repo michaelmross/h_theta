@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-08",
+  "checkpoint": 18,
+  "proof_note": "SIGNED_CORE_CONTINUATION_NOTE.md",
+  "actual_U": "floor(N^(1/100))",
+  "uniformity": "Every sufficiently large even N; actual gates unchanged",
+  "rough_core_absorption": "sum_(n in J,Pminus(n)>U)(P_N(n)-V_N(n)) <= O(N^(2/3)+1/log N)=o(u)",
+  "rough_core_absorption_proved": true,
+  "rough_core_absorption_is_pointwise_except_sparse_repeated_largest_cases": true,
+  "repeated_largest_error": "O(N^(2/3))",
+  "signed_interface": "C_N=F_N^+-G_N^--R_N+o(u); F_N^+,G_N^->=0 and R_N>=-o(u)",
+  "positive_beta_weighted_sum": "F_N^+=sum_(n in J,beta_U(n)>0)beta_U(n)*V_N(n)",
+  "signed_boundary_kernel": "sum_(nonrough n) beta_U(n)V_N(n)=-sum_(q<=U)sum_(U/q<d<=U,mu^2(d)=1,Pminus(d)>q)mu(d)*sum_(q*d*m in J,Pminus(m)>=q)V_N^*(m)",
+  "activated_unit_rows_required_in_V_star": true,
+  "actual_beta_L1_bound": "sum_(I_p)|beta_U| << H_p/(log U)^eta",
+  "actual_covariance_absolute_bound": "|C_N| << N/(log N)^eta",
+  "parameters": {
+    "root_equation": "3-rho+rho*log(rho/4)=0; unique root in (1,2)",
+    "rational_root_bracket": [
+      "42639422843531706389119804825761502137814211/27875931498163278926919647840810451882475520",
+      "10659855710882926597279951206440375534453553/6968982874540819731729911960202612970618880"
+    ],
+    "rho": {
+      "lower": "1.5296142784086401262665447022262177116018558213734",
+      "upper": "1.5296142784086401262665447022262177116018558572468",
+      "width": "3.58734E-44"
+    },
+    "t": {
+      "lower": "0.76480713920432006313327235111310885580092791068670",
+      "upper": "0.76480713920432006313327235111310885580092792862340",
+      "width": "1.793670E-44"
+    },
+    "new_log_saving_exponent": {
+      "lower": "0.060247824423184131569041622857316763681703683368180",
+      "upper": "0.060247824423184131569041622857316763681703726864980",
+      "width": "4.3496800E-44"
+    },
+    "low_stratum_exponent": {
+      "lower": "0.06024782442318413156904162285731676368170367175158",
+      "upper": "0.06024782442318413156904162285731676368170375311721",
+      "width": "8.136563E-44"
+    },
+    "old_log_saving_exponent": {
+      "lower": "0.043035666027967103443786549388461338880295554765135",
+      "upper": "0.043035666027967103443786549388461338880295554765205",
+      "width": "7.0E-50"
+    },
+    "strict_log_exponent_gain": {
+      "lower": "0.017212158395217028125255073468855424801408128602975",
+      "upper": "0.017212158395217028125255073468855424801408172099845",
+      "width": "4.3496870E-44"
+    },
+    "remaining_log_power_to_reach_u": {
+      "lower": "0.93975217557681586843095837714268323631829627313502",
+      "upper": "0.93975217557681586843095837714268323631829631663182",
+      "width": "4.349680E-44"
+    },
+    "root_lower_sign": {
+      "lower": "3.18775E-44",
+      "upper": "3.18780E-44",
+      "width": "5E-49"
+    },
+    "root_upper_sign": {
+      "lower": "-2.6067E-45",
+      "upper": "-2.6063E-45",
+      "width": "4E-49"
+    },
+    "monotonicity": "F'(rho)=log(rho/4)<0 on (1,2)",
+    "outward_enclosure_verified": true
+  },
+  "new_partial_log_saving_proved": true,
+  "old_beta_support_sparsity_bound_retained": true,
+  "actual_gates_retained": true,
+  "new_u_scale_signed_cancellation_estimate_proved": false,
+  "remaining_one_sided_target": "F_N^+-G_N^--R_N <= (M_core+.011+o(1))*u",
+  "source_input": "Inherited Mangerel (2023), Lemma 3.2, uniform Shiu upper bound; inherited beta second moment",
+  "source_url": "https://doi.org/10.1007/s40687-023-00376-0",
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "higher_degree_cap_proved": false,
+  "certified_K": 0,
+  "core_reference_enclosure_changed": false,
+  "historical_mass_credit": 0,
+  "provenance": {
+    "checkpoint_17_nonmutable_records_verified": 209,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "historical_analytic_ledger_unchanged": true
+  },
+  "checks": "results/signed_core_continuation_checks.json"
+}

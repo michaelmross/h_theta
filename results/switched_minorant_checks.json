@@ -1,0 +1,92 @@
+{
+  "preservation": {
+    "checkpoint27_nonmutable_records_verified": 275,
+    "checkpoint27_manifest_sha256": "8351aaf001ca7d85b80f380066eeb44e8b90760b0597933893f03b549880f8f6",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "source_facets": {
+    "vertex_count": 3,
+    "switched_WF_components_source_admitted": true,
+    "base_actual_rough_count_comparison_admitted": false
+  },
+  "arithmetic": {
+    "cases": [
+      {
+        "N": 65536,
+        "sites": 131075,
+        "rough_sites": 25142,
+        "base_sites": 6454,
+        "selected_composite_pool_sites": 1092,
+        "fixed_box_composite_pool_sites": 912,
+        "one_smallest_prime_higher_degree_sites": 1687,
+        "selected_outer_pair_rows": 14033,
+        "p_equals_r_selected_rows": 1780,
+        "omitted_four_prime_box_sites": 6,
+        "marked_mass": "16927",
+        "positive_complement_mass": "8215",
+        "original_cutoffs_and_gates_used": true
+      },
+      {
+        "N": 160000,
+        "sites": 320003,
+        "rough_sites": 54729,
+        "base_sites": 14660,
+        "selected_composite_pool_sites": 2026,
+        "fixed_box_composite_pool_sites": 1727,
+        "one_smallest_prime_higher_degree_sites": 3132,
+        "selected_outer_pair_rows": 30122,
+        "p_equals_r_selected_rows": 2598,
+        "omitted_four_prime_box_sites": 14,
+        "marked_mass": "36824",
+        "positive_complement_mass": "17905",
+        "original_cutoffs_and_gates_used": true
+      }
+    ],
+    "short_padding_sites_checked": 451078,
+    "omitted_box_witnesses": [
+      {
+        "N": 65536,
+        "n": 4294911613,
+        "factors": [
+          103,
+          163,
+          349,
+          733
+        ],
+        "positive_complement": "1",
+        "selected_pool": "0"
+      },
+      {
+        "N": 65536,
+        "n": 4294945397,
+        "factors": [
+          103,
+          151,
+          271,
+          1019
+        ],
+        "positive_complement": "1",
+        "selected_pool": "0"
+      },
+      {
+        "N": 65536,
+        "n": 4294970633,
+        "factors": [
+          89,
+          199,
+          281,
+          863
+        ],
+        "positive_complement": "1",
+        "selected_pool": "0"
+      }
+    ],
+    "tests_cover_exact_switching_pool_not_literal_Iwaniec_weight_values": true,
+    "one_smallest_prime_next_interface_identity_checked": true,
+    "finite_sites_do_not_prove_uniform_short_comparison": true
+  },
+  "outward_reference_cells": 57600,
+  "all_exact_checks_passed": true,
+  "candidate_accepted": false,
+  "sharp_target_proved": false
+}

@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-08",
+  "status": "passed",
+  "scope": "exact arithmetic and source-preservation checks; analytical arguments reviewed separately",
+  "reference_margins": {
+    "log2_upper_series_bound": {
+      "exact": "122668117246769434822000523/176972684427100187101347300",
+      "decimal_display": 0.6931471805599453
+    },
+    "log2_decimal_upper": {
+      "exact": "346573590279973/500000000000000",
+      "decimal_display": 0.693147180559946
+    },
+    "gamma_upper": {
+      "exact": "242152322671337306586932688763265192043157999770695635694657711974597390026601/367878171191060851810783382754640430602091929653284209171010933086657077988980",
+      "decimal_display": 0.6582405307913018
+    },
+    "exp_at_0_66_upper": {
+      "exact": "21100421963165405333032143857627729/10905781250000000000000000000000000",
+      "decimal_display": 1.9347923344020315
+    },
+    "correction_integral_rational_lower": {
+      "exact": "1350504891408918239631604218020312594562137351808799057781655942817593414952290229472591319829502730285466006509269416124460621182265749240587042513236278142708991201297297678862922879548899/6056635970456559368595000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal_display": 0.22297937303752383
+    },
+    "published_sharp_margin": {
+      "exact": "227268107885015227085312594562137351808799057781655942817593414952290229472591319829502730285466006509269416124460621182265749240587042513236278142708991201297297678862922879548899/6056635970456559368595000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal_display": 3.752381833638309e-11
+    },
+    "coarse_correction_integral_lower": {
+      "exact": "11/75",
+      "decimal_display": 0.14666666666666667
+    },
+    "coarse_scaled_reference_lower": {
+      "exact": "101/3900",
+      "decimal_display": 0.025897435897435896
+    },
+    "f_at_2_18_upper": {
+      "exact": "404001/1362500",
+      "decimal_display": 0.296514495412844
+    },
+    "stop_family_lower_coefficient_before_rounding": {
+      "exact": "893/2210",
+      "decimal_display": 0.40407239819004526
+    },
+    "stop_after_missing_primes_minus_reference": {
+      "exact": "1/100",
+      "decimal_display": 0.01
+    }
+  },
+  "translation_checks": {
+    "arbitrary_class_rows": 4710,
+    "signed_translation_rows": 637
+  },
+  "hyperbola_checks": {
+    "cases": 504,
+    "solutions": 524,
+    "long_interval_cases": 360,
+    "negative_translation_cases": 504,
+    "scope": "exact decomposition only; no test of Weil's analytic bound"
+  },
+  "square_shell_geometry": {
+    "cutoff": "z=(1/4)*sqrt(N)*log(N)",
+    "geometry_assumptions": "log(N)>=8; covering theorem also needs its unspecified large-z threshold",
+    "unrounded_block_lower_ratio": {
+      "exact": "4/25",
+      "decimal_display": 0.16
+    },
+    "block_upper_ratio": {
+      "exact": "1/4",
+      "decimal_display": 0.25
+    },
+    "rounded_block_lower_ratio_for_N_ge_29": "1/8",
+    "z_fourth_over_N_squared_lower": {
+      "exact": "16",
+      "decimal_display": 16.0
+    },
+    "shell_upper_over_N_squared_upper_for_N_ge_2": "5/4",
+    "maximum_Omega_of_survivor": 3,
+    "guaranteed_count_scale": "N*log(log(N))/log(N)^2",
+    "guaranteed_lower_bound_scale_relative_to_u": "2*log(log(N))/log(N) -> 0",
+    "prime_count_lower_bound_supplied": false,
+    "remaining_TypeI_progression_length_exponent": "-57/400",
+    "remaining_TypeII_progression_length_exponent": "-59/400",
+    "direct_021_positive_node_length_hypothesis_satisfied_on_delta_core": false
+  },
+  "unchanged_checkpoint14_records": 156,
+  "source_records": 32,
+  "Lean_comparator_replayed": false,
+  "uniform_delta_0011_estimate_proved": false,
+  "certified_K": 0,
+  "H_theta_proved": false
+}

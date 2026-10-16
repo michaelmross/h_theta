@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-07",
+  "checkpoint": 13,
+  "note": "COFACTOR_ESTIMATE_NOTE.md",
+  "coefficients": "Actual frozen c_N, gamma_N and beta_U; U=V=floor(N^(1/100)) unchanged",
+  "actual_cofactor_factorization": {
+    "identity": "alpha_N(k)=beta_U(k)*sum_(d|k,d<k) gamma_N(d)",
+    "proper_divisor_condition_essential": true,
+    "proper_outer_weight_bound": "42",
+    "extra_unrestricted_divisor_loss_removed": true
+  },
+  "local_beta_moments": {
+    "any_translated_integer_interval": true,
+    "first": "-H*alpha_U+O(U)",
+    "second": "H*q(U)+O(U^2)",
+    "actual_J_first": "o(u)",
+    "actual_J_second": "(L+o(1))*Y, L>0"
+  },
+  "uniform_Gram_estimate": {
+    "proved": true,
+    "bound": "(1+N/Q)*min(N+Q*U^2,(1+Q/N)*(N^2/Q+U^2))",
+    "low_range": "E_Q=O(N^2/Q) for U<=Q<=N/U^2",
+    "large_b_range": "E_Q=O(N), and exact diagonal kernel, for Q>=N in the contributing range",
+    "prime_b_bound": "E_Q^p=O((1+N/Q)*(N+Q*U^2)/log(2Q))",
+    "arbitrary_b_dependent_bounded_outer_subsets_allowed": true,
+    "supplies_required_vanishing_log_saving": false
+  },
+  "proper_prime_power_b_removal": {
+    "uniform": true,
+    "error": "O_epsilon(N^epsilon*(N*U^(-1/2)+sqrt(S))), S=O(N^(7/4)/U)",
+    "example_leading_power": "N^(249/250)"
+  },
+  "signed_covariance_reduction": {
+    "proved": true,
+    "weight": "sum_(p|n,p>U prime) log(p)*sum_(d|n/p,d<n/p) gamma_N(d)",
+    "weight_upper": "(36+o(1))*log(N)",
+    "unweighted_beta_centering_complete": true,
+    "uniform_full_TypeII_bound": "O(N), insufficient for u=N/(2log(N))"
+  },
+  "new_source_coverage": {
+    "complete_TypeI_outer_exponent": "113/100",
+    "total_denominator_exponent_max": "1153/1000",
+    "minimum_continuous_source_margin": "3/5600",
+    "new_ordering_gate_retained_by_Mellin_separation": true,
+    "source_certificate": "results/cofactor_facets.json"
+  },
+  "TypeII_region_proved_negligible": [
+    "db<=N^(49/50)",
+    "N^(19/20)<d<=N^(113/100), db<=N^(1143/1000)"
+  ],
+  "remaining_target": "B_remaining(J)+R_I,d>N^(113/100)(J)<=(.011+o(1))*u",
+  "remaining_numerator_target": "sum_J beta_U(n)*(W_remaining(n)-mean(W_remaining)) + log(N)*R_I,new <=(.0055+o(1))*N",
+  "remaining_weight_depends_on_b_after_region_removal": true,
+  "original_b_independent_Gram_formula_retained_after_removal": false,
+  "joint_core_identity": "B_core+R_I,new=A_core-integral(G_core)",
+  "remaining_signed_covariance_estimated_at_target_scale": false,
+  "remaining_TypeI_core_estimated_at_target_scale": false,
+  "terminal_uniform_0011_estimate_proved": false,
+  "positive_K_credited": 0,
+  "H_theta_proved": false,
+  "higher_degree_cap_proved": false,
+  "openai007_kernel_matched": false,
+  "global_impossibility_claim": false,
+  "historical_numerical_ledger_changed": false
+}

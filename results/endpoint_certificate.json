@@ -1,0 +1,14 @@
+{
+  "id": "DP_LIMIT_1",
+  "lambda_value": "1/2",
+  "source": "Runbo Li arXiv:2308.04458v8, Lemma 4.1 (candidate family)",
+  "source_url": "https://arxiv.org/html/2308.04458v8",
+  "theorem_at_endpoint": "NOT APPLICABLE; this is a formal-limit certificate",
+  "necessary_inequalities": [
+    "abs(alpha1-alpha2) >= 0",
+    "abs(alpha1-alpha2) < 2*lambda-1 = 0"
+  ],
+  "contradiction": "nonnegative number strictly less than zero",
+  "scope": "Only this displayed criterion without a changed inequality",
+  "claims_about_all_existing_tools": false
+}

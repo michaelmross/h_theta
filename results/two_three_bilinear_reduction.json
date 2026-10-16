@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "checkpoint": 10,
+  "outer_coefficient": "prime z<=d<w, plus c3(d)=1/2*sum_ordered_prime_p,r>=z 1_(pr=d)1_(pr*max(p,r)<=N^2)",
+  "outer_coefficient_bound": "0<=c_N(d)<=1; prime and semiprime supports disjoint",
+  "outer_support_N_exponents": [
+    "1/4",
+    "4/3"
+  ],
+  "cofactor_support_N_exponents": [
+    "2/3",
+    "7/4"
+  ],
+  "frozen_prime_bilinear_kernel": "sum_d c_N(d)*sum_prime_q 1_W(dq)",
+  "frozen_ordering_centered_error": "O(N^(3/4))+O(Y*(H1/x)*log(N))=o(u)",
+  "proper_prime_power_count_bound": "P(t)<=5*sqrt(t)",
+  "proper_prime_power_reciprocal_bound": "sum_(r>=R,r proper_prime_power)1/r<=25/sqrt(R)",
+  "Mangoldt_kernel": "A_N(W)=sum_d c_N(d)*sum_q Lambda(q)/log(q)*1_W(dq)",
+  "Mangoldt_centered_transfer_error": "O(N^(7/8))=o(u)",
+  "full_centered_transfer": "Delta2+Delta3=Delta A_N+O(N^(7/8))+O(Y*(H1/x)*log(N))",
+  "beta_U": "sum_(a|m,a>U)mu(a)",
+  "Vaughan_TypeII": "B_N(W)=sum_d c_N(d)*sum_(m>U,b>V)beta_U(m)*Lambda(b)/log(m*b)*1_W(d*m*b)",
+  "remaining_high_TypeI_floor_error": "R_I,high(W)=I1_high(W)+I2_high(W)-integral_W G_high(v)dv, d>N^.95",
+  "final_uniform_reduction": "Delta2+Delta3=Delta B_N+Delta R_I,high+o(u)",
+  "required_remaining_estimate": "Delta B_N+Delta R_I,high<=(.011+o(1))*u for every sufficiently large even N",
+  "general_proof": "TWO_THREE_BILINEAR_NOTE.md",
+  "uniform_0011_estimate_proved": false,
+  "certified_K": 0,
+  "H_theta_proved": false
+}

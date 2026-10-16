@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-08",
+  "checkpoint": 16,
+  "actual_parameters": {
+    "x": "N^2",
+    "J": "[N^2-N/2,N^2+N/2] intersect Z, even N",
+    "U": "floor(N^(1/100))",
+    "z": "N^(1/4)",
+    "u": "N/(2 log N)"
+  },
+  "stop": "canonical first outer prime p; full I_p={k:pk in J}",
+  "coefficients": "Z_p(k)=v_p(k)-P_core,p(k), all outer, ordering and db gates retained",
+  "exact_identity": "B_good,large + A_core = sum_(p,k) beta_U(k)*Z_p(k) + o(u)",
+  "centered_identity": "Delta_2+Delta_3 = C_N - (M_core+o(1))*u",
+  "C_N": "sum_p sum_(k in I_p) (beta_U(k)-mean_Ip(beta))*(Z_p(k)-mean_Ip(Z))",
+  "uniform_local_moments_proved": true,
+  "uniform_moment_errors": {
+    "single_prime_stop_max_exponent": "19/20",
+    "pair_first_prime_max_exponent": "2/3",
+    "minimum_real_progression_width_exponent": "1/20",
+    "local_mean_error_exponent": "-1/25",
+    "local_variance_error_exponent": "-3/100",
+    "summed_first_moment_floor_exponent": "24/25",
+    "summed_second_moment_floor_exponent": "97/100",
+    "reference_sum_H_over_N": "log(19/5)",
+    "moment_limit": "L>0 (previously admitted BDT input)",
+    "progression_length_obstruction_avoided_at_first_prime": true,
+    "conditional_continuation_weights_estimated": false
+  },
+  "summed_centering_error": "O(N*exp(-c*sqrt(log N))+N^(24/25))=o(u)",
+  "summed_centered_beta_energy": "(L*log(19/5)+o(1))*N",
+  "remaining_reference_coefficient": [
+    "0.088495462680506291767141069549718388565758372430595",
+    "0.088532079408569630135767526784074925416683359058930"
+  ],
+  "remaining_one_sided_target": "C_N <= (M_core+11/1000+o(1))*u",
+  "optional_Cauchy_sufficient_variance": "sum_p sum_Ip |Z-mean_Ip(Z)|^2 <= ((M_core+.011)^2/(4*L*log(19/5))+o(1))*N/log(N)^2",
+  "positive_flat_weight_021_extension": "Ratio<=34/33 preserves the source grouped sign, under the same complete-owner hypotheses",
+  "actual_log_weight_extension_requires": "nonnegative weights, a full eligible bin and constant support/selection gates",
+  "signed_beta_or_sharp_selection_extension_proved": false,
+  "uniform_terminal_covariance_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "new_lower_bound_mass_admitted": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

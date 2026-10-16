@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-05",
+  "checkpoint": 5,
+  "method": "OCR for navigation; theorem statements and listed hypotheses manually checked against page images",
+  "manual_reading_is_not_automatically_verified": true,
+  "sources": [
+    {
+      "path": "sources/aa37127.pdf",
+      "authors": "H. Iwaniec",
+      "title": "A new form of the error term in the linear sieve",
+      "journal": "Acta Arithmetica 37 (1980), 307-320",
+      "sha256": "a6a962b15345953fe522160e0323df2bee9b29a93102c9fba2ad2c9b047d70e9",
+      "size_bytes": 613790,
+      "page_image_evidence": [
+        {
+          "printed_page": 308,
+          "pdf_page": 2,
+          "half": "left",
+          "statement": "Dimension-one density and prime-power conditions (1)-(2)"
+        },
+        {
+          "printed_page": 309,
+          "pdf_page": 2,
+          "half": "right",
+          "statement": "Theorem 1; signed bilinear remainder, s>=2, capacities>1; optional mn|P(z)"
+        },
+        {
+          "printed_page": 312,
+          "pdf_page": 4,
+          "half": "left",
+          "statement": "Lemma 1 prime-box partition and subsequent capacity enlargement"
+        }
+      ],
+      "manual_audit_status": "Relevant theorem hypotheses and remainder statement verified on page images",
+      "fixed_weight_quantifier_note": "Theorem 1 coefficients explicitly depend on the prescribed capacities; use the explicit WF formulation for adaptive splits"
+    },
+    {
+      "path": "sources/aa36210.pdf",
+      "authors": "H. Iwaniec",
+      "title": "Rosser's sieve",
+      "journal": "Acta Arithmetica 36 (1980), 171-202",
+      "sha256": "6b799768bafdea2952ce84c82b944ef9e320195631e3bbdc6b95be7b8607f91a",
+      "size_bytes": 1193655,
+      "page_image_evidence": [
+        {
+          "printed_page": 172,
+          "pdf_page": 2,
+          "half": "left",
+          "statement": "Theorem 1; absolute divisor remainder"
+        }
+      ],
+      "manual_audit_status": "Relevant ordinary sieve statement verified on page image",
+      "higher_level_admitted_from_this_statement": false
+    },
+    {
+      "path": "sources/aa4226.pdf",
+      "authors": "E. Fouvry and H. Iwaniec",
+      "title": "Primes in arithmetic progressions",
+      "journal": "Acta Arithmetica 42 (1983), 197-218",
+      "sha256": "0c6d409366e531638112a7cba82c1120dcf4ec6d9531c65b9fc3e67d6dd2ad22",
+      "size_bytes": 961135,
+      "page_image_evidence": [
+        {
+          "printed_page": 199,
+          "pdf_page": 2,
+          "half": "right",
+          "statement": "Fixed well-factorability, Q=x^(9/17-epsilon) theorem, sieve remainders (1.2)-(1.3) of order 2"
+        },
+        {
+          "printed_page": 203,
+          "pdf_page": 4,
+          "half": "right",
+          "statement": "Proposition 1, divisor bounds (A1), Siegel-Walfisz condition (A2)"
+        },
+        {
+          "printed_page": 213,
+          "pdf_page": 9,
+          "half": "right",
+          "statement": "Proposition 2, interval-indicator condition (A3), power-saving conclusion"
+        },
+        {
+          "printed_page": 216,
+          "pdf_page": 11,
+          "half": "left",
+          "statement": "Factor capacities chosen according to the fixed bilinear block using well-factorability"
+        }
+      ],
+      "manual_audit_status": "Relevant formulation and candidate hypotheses verified on page images",
+      "is_the_1989_monomial_paper": false,
+      "new_short_interval_input_admitted": false
+    }
+  ],
+  "file_integrity_checks_passed": [
+    "sources/aa37127.pdf",
+    "sources/aa36210.pdf",
+    "sources/aa4226.pdf",
+    "baseline/one-hypothesis.tex",
+    "baseline/constraint_inventory.tex",
+    "baseline/fm_exact.py",
+    "baseline/milestones.png",
+    "CAMPAIGN_NOTE.md",
+    "STRUCTURED_FRONTIER_NOTE.md",
+    "SIGNED_LEDGER_NOTE.md",
+    "NEGATIVE_FRONTIER_NOTE.md",
+    "results/negative_frontier_ledger.json"
+  ],
+  "rational_parameter_checks": {
+    "x_to_N_exponent_conversion": "2*(9/17)=18/17; loss epsilon in x becomes 2*epsilon in N",
+    "root_s": "5",
+    "tail_upper_s": "2",
+    "restoration_range": "2<s<=3 from t>=v>=1/4 and t+3v<5/4",
+    "restoration_identity": "s-2=(5/4-t-3*v)/v; 3-s=(t+4*v-5/4)/v>=0",
+    "restoration_rational_example": {
+      "t": "3/8",
+      "v": "1/4",
+      "s": "5/2"
+    },
+    "zero_exponent_factor": "Use constant capacity >1; complementary capacity D/constant; O(1/log N) exponent shift",
+    "checks_do_not_prove_analytic_applicability": true
+  },
+  "density_check": {
+    "g": "1/d",
+    "omega_prime_power": "1",
+    "prime_power_tail": "sum_(p>=w) 1/[p*(p-1)] <= 1/(ceil(w)-1) by telescoping over integers",
+    "dimension_one_product": "Mertens product condition"
+  },
+  "fixed_weight_interface": {
+    "iwaniec_1980_theorem_1": "Prescribed-split bilinear coefficients depend on the capacities",
+    "original_explicit_corroboration": "Fouvry-Iwaniec 1983 p.199 equations (1.2)-(1.3), fixed WF weights of order 2",
+    "modern_formulation_already_used": "Lichtman arXiv:2109.02851v2 Definition 2.1 and Theorem 2.10",
+    "blockwise_representations_of_fixed_weights": true,
+    "restriction_to_smaller_modulus_box_is_not_releveled": true,
+    "combined_squarefree_sifting_support_retained": true
+  },
+  "progression_candidate": {
+    "main_theorem_error": "O(x/(log x)^A) for each fixed A",
+    "campaign_u": "asymp sqrt(x)/log x",
+    "endpoint_subtraction_error_is_not_o_u": true,
+    "fixed_nonzero_coprime_residue_required": true,
+    "prop1_requires_A2_Siegel_Walfisz": true,
+    "prop2_has_power_saving_but_requires_A3_interval_indicator": true,
+    "new_short_interval_input_admitted": false,
+    "universal_inapplicability_claim": false
+  },
+  "unchanged_numerical_ledger": {
+    "path": "results/negative_frontier_ledger.json",
+    "sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "target095_conditional_prime_margin_lower": "0.0061962441732748990792950119867356399506206108263",
+    "target095_frozen_conditional_prime_margin_lower": "0.0065044702975235952417045935175360555571557153914",
+    "certified_K": 0,
+    "H_theta_proved": false
+  },
+  "pending": [
+    "Primary-text audit of Fouvry-Iwaniec 1989, Exponential sums with monomials, Lemma 9 and Theorem 6",
+    "Actual short-interval arithmetic reduction for any new 1983 progression-paper candidate",
+    "Parity-sensitive structured estimate improving the negative frontier or terminal prime comparison"
+  ],
+  "note": "ORIGINAL_SOURCE_AUDIT.md"
+}

@@ -1,0 +1,87 @@
+{
+  "source": "Li arXiv:2308.04458v8, Lemma 4.2 and proof following Lemma 4.5",
+  "source_url": "https://arxiv.org/html/2308.04458v8",
+  "source_interval_not_extended": true,
+  "general_hypotheses": [
+    "delta_1=2",
+    "sum_j 1/delta_j=1",
+    "all delta_j finite and delta_n>1"
+  ],
+  "coefficient_sum_identity": "1+sum_(2<=j<n) 2/delta_j+2/(delta_n-1) = 2+2/[delta_n*(delta_n-1)]",
+  "lambda_half_contradiction": "sum_j alpha_j >= 1+1/[delta_n*(delta_n-1)] > 1",
+  "necessary_lambda_lower_bound": "1/2+1/[2*(delta_n*(delta_n-1)+1)]",
+  "covered_displayed_box_families": {
+    "Lemma 4.4": 9,
+    "Lemma 4.5": 87
+  },
+  "examples": [
+    {
+      "moment_orders": [
+        2,
+        4,
+        8,
+        8
+      ],
+      "threshold_coefficient_sum": "57/28",
+      "root_sum_excess": "1/56",
+      "necessary_lambda_lower_bound": "29/57"
+    },
+    {
+      "moment_orders": [
+        2,
+        4,
+        6,
+        12
+      ],
+      "threshold_coefficient_sum": "133/66",
+      "root_sum_excess": "1/132",
+      "necessary_lambda_lower_bound": "67/133"
+    },
+    {
+      "moment_orders": [
+        2,
+        4,
+        6,
+        14,
+        86,
+        3612
+      ],
+      "threshold_coefficient_sum": "13042933/6521466",
+      "root_sum_excess": "1/13042932",
+      "necessary_lambda_lower_bound": "6521467/13042933"
+    }
+  ],
+  "all_four_Lemma42_cases": [
+    {
+      "case": 1,
+      "combined_coefficient": "57/28",
+      "rhs": 1,
+      "contradiction_gap_at_lambda_half": "1/56",
+      "necessary_lambda_lower_bound": "29/57"
+    },
+    {
+      "case": 2,
+      "combined_coefficient": "133/66",
+      "rhs": 1,
+      "contradiction_gap_at_lambda_half": "1/132",
+      "necessary_lambda_lower_bound": "67/133"
+    },
+    {
+      "case": 3,
+      "combined_coefficient": "61/15",
+      "rhs": 2,
+      "contradiction_gap_at_lambda_half": "1/30",
+      "necessary_lambda_lower_bound": "31/61"
+    },
+    {
+      "case": 4,
+      "combined_coefficient": "27/13",
+      "rhs": 1,
+      "contradiction_gap_at_lambda_half": "1/26",
+      "necessary_lambda_lower_bound": "14/27"
+    }
+  ],
+  "scope": "The unchanged finite Holder/moment family and the four displayed Lemma 4.2 cases; not every existing method",
+  "endpoint_theorem_applied": false,
+  "global_impossibility_claim": false
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": 25,
+  "proof_note": "SHORT_SCALE_LOCALIZATION_NOTE.md",
+  "admitted_new_inputs": "Own elementary mark-cap, weighted Selberg algebra, reference-centering and kernel tail deductions",
+  "inherited_inputs": [
+    "Original c_N and gates",
+    "Checkpoint23 admitted long-PNT reference and density derivative bound",
+    "Checkpoint24 exact coupled identity and reference enclosure"
+  ],
+  "new_short_prime_theorem_assumed": false,
+  "new_mean_value_theorem_assumed": false,
+  "candidate_checked": {
+    "source": "Li and Ma, Three-dimensional exponential sums under constant perturbation, arXiv:2302.05870v1",
+    "url": "https://arxiv.org/html/2302.05870v1",
+    "scope": "Theorem1.1 with positive constant perturbation; at zero perturbation the paper records the original RS1 form",
+    "reason_not_admitted_for_sharp_target": "The stated perturbation bound retains the RS1 term structure; its fractional Mangoldt-sum application is a different count and has not been matched to the campaign coefficients and gates",
+    "sharp_target_admitted": false
+  },
+  "global_existing_tool_exclusion_claim": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "certified_K": 0
+}

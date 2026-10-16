@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-07",
+  "checkpoint": 12,
+  "provenance": {
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "source_records_verified": 56,
+    "historical_files_verified_unchanged": 78,
+    "main_pdf_sha256": "ccb6f339a7505db7ab158dae4b739164ed8dda32be4012b0310198dd32f5c70a",
+    "frozen_numerical_ledger_unchanged": true
+  },
+  "lean_source_scope": {
+    "exported_statement_types_matched_textually": [
+      "liouville_log_saving",
+      "binary_corrected_elliott",
+      "affine_corrected_elliott"
+    ],
+    "definition_bodies_matched_textually": [
+      "liouville",
+      "correlationSum",
+      "affineSum",
+      "Multiplicative",
+      "OneBounded",
+      "primesUpTo",
+      "squaredDistance",
+      "characterTwist",
+      "UniformlyNonpretentious"
+    ],
+    "final_forwarding_module_has_no_placeholder_or_axiom_declaration": true,
+    "challenge_placeholder_count": 3,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "lean_or_comparator_run": false,
+    "transitive_axiom_audit_completed": false,
+    "note": "Textual source matches are not kernel verification."
+  },
+  "coefficient_witnesses": {
+    "beta_nonmultiplicative_witnesses": [
+      {
+        "U": 1,
+        "p": 2,
+        "q": 3,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "U": 2,
+        "p": 3,
+        "q": 5,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "U": 3,
+        "p": 5,
+        "q": 7,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "U": 5,
+        "p": 7,
+        "q": 11,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "U": 10,
+        "p": 11,
+        "q": 13,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "U": 100,
+        "p": 101,
+        "q": 103,
+        "beta_values": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    ],
+    "beta_not_one_bounded_witness": {
+      "U": 5,
+      "m": 30,
+      "beta": 2
+    },
+    "prime_detector_values": {
+      "7": "1",
+      "11": "1",
+      "77": "0",
+      "49": "1/2"
+    }
+  },
+  "singleton_center_identity": {
+    "exact_primewise_fixtures": 21,
+    "beta_Z": "1/2",
+    "theta": "1/4",
+    "leading_coefficient_beta_squared_minus_theta": "0",
+    "scope": "Local rational factor identity, not a high-trace verification."
+  },
+  "cofactor_overlap": {
+    "independent_overlap_pair_checks": 83568,
+    "exact_signed_quadratic_form_checks": 60,
+    "N_fixtures": [
+      10,
+      20,
+      50,
+      100
+    ],
+    "scope": "Exact integer geometry and Gram identity; no asymptotic bound."
+  },
+  "prefix_to_window_witness": {
+    "arithmetic_prefix_endpoint_fixtures": 25,
+    "sequence_multiplicative": false,
+    "scope": "Logical prefix-to-window obstruction, not a counterexample to 007."
+  },
+  "exponent_and_admission": {
+    "printed_construction_c_upper": "1/12000000",
+    "gamma_N_bound": "3/2",
+    "finite_law_exponent_parentheses_checked_against_TeX": true,
+    "positive_K_credited": 0,
+    "terminal_estimate_proved": false,
+    "H_theta_proved": false
+  },
+  "all_checks_passed": true,
+  "mathematical_proof_note": "OPENAI007_AUDIT.md",
+  "uniform_signed_remainder_estimate_proved": false
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-13",
+  "checkpoint": 32,
+  "primary_source": {
+    "authors": "K. Matomaki, M. Pandey, J. Pliego, J. Teravainen and M. Wang",
+    "title": "Higher order uniformity of the primes and cancellation of the Mobius function in shorter intervals",
+    "version": "arXiv:2610.09567v1",
+    "url": "https://arxiv.org/html/2610.09567v1",
+    "checked_items": [
+      "Definition 2.2",
+      "Lemma 2.3(i) and proof, including powers and dyadic splitting",
+      "Lemma 2.3(ii) actual coefficient class",
+      "Lemma 3.1",
+      "Proposition 3.2 and its strict tau<1/2 and positivity hypotheses"
+    ],
+    "generic_LV_coefficient_class": "Fixed divisor-order and logarithm bounded coefficients",
+    "generic_LV_height_range": "0<tau<=1; critical tau=1/2 admitted for Lemma2.3",
+    "mean_value_proposition_height_range": "0<tau<1/2; no endpoint invocation asserted",
+    "free_coefficient_refinement_admitted_for_recombined_prime_slots": false,
+    "all_fixed_mixed_integer_moments_included_in_test": true,
+    "strict_source_positivity_on_retained_box_passed": false
+  },
+  "actual_coupling_retained_before_absolute_source_test": true,
+  "actual_80_and_325_terms_recombined": true,
+  "actual_large_value_states_shown_to_exist": false,
+  "original_weight_or_sector_changed": false,
+  "uniform_sharp_short_lower_estimate_proved": false,
+  "general_impossibility_result_claimed": false,
+  "remaining_options": [
+    "Actual-prime joint large-value information",
+    "One-sided estimate retaining the oscillatory phase",
+    "Different source-complete decomposition retaining the original coefficient"
+  ]
+}

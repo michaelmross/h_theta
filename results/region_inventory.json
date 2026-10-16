@@ -1,0 +1,611 @@
+{
+  "exponent_base": "N",
+  "x_exponent": "2",
+  "interval_length_exponent": "1",
+  "base_exponent": "1/4",
+  "theta": "97/100",
+  "note": "An algebraic region template, not a completed Harman mass optimization.",
+  "complete_large_N_depth": 8,
+  "nodes": [
+    {
+      "id": "B1",
+      "sign": -1,
+      "variables": [
+        "t1"
+      ],
+      "sigma": "t1",
+      "domain": [
+        {
+          "lhs": "t1",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t1",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t1",
+      "typeI_upper_condition": {
+        "lhs": "t1",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t1",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+2*t1",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B2",
+      "sign": 1,
+      "variables": [
+        "t1",
+        "t2"
+      ],
+      "sigma": "t1+t2",
+      "domain": [
+        {
+          "lhs": "t2",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t2",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t2",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+2*t2",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B3",
+      "sign": -1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "sigma": "t1+t2+t3",
+      "domain": [
+        {
+          "lhs": "t3",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t3",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t3",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+2*t3",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B4",
+      "sign": 1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "sigma": "t1+t2+t3+t4",
+      "domain": [
+        {
+          "lhs": "t4",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t4-t3",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3+t4",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t4",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3+t4",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+t4+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t4+t4",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+2*t4",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B5",
+      "sign": -1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+      ],
+      "sigma": "t1+t2+t3+t4+t5",
+      "domain": [
+        {
+          "lhs": "t5",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t4-t3",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t5-t4",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t5",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3+t4+t5",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+t4+t5+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t4+t5+t5",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+2*t5",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B6",
+      "sign": 1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6"
+      ],
+      "sigma": "t1+t2+t3+t4+t5+t6",
+      "domain": [
+        {
+          "lhs": "t6",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t4-t3",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t5-t4",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t6-t5",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t6",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t6",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+2*t6",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B7",
+      "sign": -1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7"
+      ],
+      "sigma": "t1+t2+t3+t4+t5+t6+t7",
+      "domain": [
+        {
+          "lhs": "t7",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t4-t3",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t5-t4",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t6-t5",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t7-t6",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t7",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6+t7",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6+t7+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7+t7",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7+2*t7",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    },
+    {
+      "id": "B8",
+      "sign": 1,
+      "variables": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8"
+      ],
+      "sigma": "t1+t2+t3+t4+t5+t6+t7+t8",
+      "domain": [
+        {
+          "lhs": "t8",
+          "op": ">=",
+          "rhs": "1/4"
+        },
+        {
+          "lhs": "t1",
+          "op": "<",
+          "rhs": "97/100"
+        },
+        {
+          "lhs": "t2-t1",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t3-t2",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t4-t3",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t5-t4",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t6-t5",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t7-t6",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t8-t7",
+          "op": "<=",
+          "rhs": "0"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7+t8",
+          "op": "<=",
+          "rhs": "2",
+          "caveat": "Asymptotic box domain; keep boundary strata in arithmetic sums."
+        }
+      ],
+      "base_cutoff": "1/4",
+      "frontier_cutoff": "t8",
+      "typeI_upper_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6+t7+t8",
+        "op": "<",
+        "rhs": "1"
+      },
+      "typeI_positive_lower_condition": {
+        "lhs": "t1+t2+t3+t4+t5+t6+t7+t8+2*c",
+        "op": "<",
+        "rhs": "1",
+        "c": "b for a base term; tj for a frontier term"
+      },
+      "cofactor_prime_region": [
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7+t8+t8",
+          "op": "<=",
+          "rhs": "2"
+        },
+        {
+          "lhs": "t1+t2+t3+t4+t5+t6+t7+t8+2*t8",
+          "op": ">",
+          "rhs": "2"
+        }
+      ],
+      "terminal_unit_stratum": "d belongs to J_N; retain separately",
+      "uncovered_positive": "may discard for a lower bound",
+      "uncovered_negative": "must upper-bound or expand; may not discard"
+    }
+  ]
+}

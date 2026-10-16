@@ -1,0 +1,333 @@
+{
+  "date": "2026-10-08",
+  "checkpoint": 18,
+  "all_checks_passed": true,
+  "provenance": {
+    "checkpoint_17_nonmutable_records_verified": 209,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "historical_analytic_ledger_unchanged": true
+  },
+  "parameters": {
+    "root_equation": "3-rho+rho*log(rho/4)=0; unique root in (1,2)",
+    "rational_root_bracket": [
+      "42639422843531706389119804825761502137814211/27875931498163278926919647840810451882475520",
+      "10659855710882926597279951206440375534453553/6968982874540819731729911960202612970618880"
+    ],
+    "rho": {
+      "lower": "1.5296142784086401262665447022262177116018558213734",
+      "upper": "1.5296142784086401262665447022262177116018558572468",
+      "width": "3.58734E-44"
+    },
+    "t": {
+      "lower": "0.76480713920432006313327235111310885580092791068670",
+      "upper": "0.76480713920432006313327235111310885580092792862340",
+      "width": "1.793670E-44"
+    },
+    "new_log_saving_exponent": {
+      "lower": "0.060247824423184131569041622857316763681703683368180",
+      "upper": "0.060247824423184131569041622857316763681703726864980",
+      "width": "4.3496800E-44"
+    },
+    "low_stratum_exponent": {
+      "lower": "0.06024782442318413156904162285731676368170367175158",
+      "upper": "0.06024782442318413156904162285731676368170375311721",
+      "width": "8.136563E-44"
+    },
+    "old_log_saving_exponent": {
+      "lower": "0.043035666027967103443786549388461338880295554765135",
+      "upper": "0.043035666027967103443786549388461338880295554765205",
+      "width": "7.0E-50"
+    },
+    "strict_log_exponent_gain": {
+      "lower": "0.017212158395217028125255073468855424801408128602975",
+      "upper": "0.017212158395217028125255073468855424801408172099845",
+      "width": "4.3496870E-44"
+    },
+    "remaining_log_power_to_reach_u": {
+      "lower": "0.93975217557681586843095837714268323631829627313502",
+      "upper": "0.93975217557681586843095837714268323631829631663182",
+      "width": "4.349680E-44"
+    },
+    "root_lower_sign": {
+      "lower": "3.18775E-44",
+      "upper": "3.18780E-44",
+      "width": "5E-49"
+    },
+    "root_upper_sign": {
+      "lower": "-2.6067E-45",
+      "upper": "-2.6063E-45",
+      "width": "4E-49"
+    },
+    "monotonicity": "F'(rho)=log(rho/4)<0 on (1,2)",
+    "outward_enclosure_verified": true
+  },
+  "core_facets": {
+    "constraints": [
+      {
+        "A": [
+          "1",
+          "1",
+          "1"
+        ],
+        "rhs": "2"
+      },
+      {
+        "A": [
+          "-1",
+          "-1",
+          "-1"
+        ],
+        "rhs": "-2"
+      },
+      {
+        "A": [
+          "-1",
+          "0",
+          "0"
+        ],
+        "rhs": "-1/4"
+      },
+      {
+        "A": [
+          "1",
+          "-1",
+          "0"
+        ],
+        "rhs": "0"
+      },
+      {
+        "A": [
+          "0",
+          "1",
+          "-1"
+        ],
+        "rhs": "0"
+      },
+      {
+        "A": [
+          "-1",
+          "-1",
+          "0"
+        ],
+        "rhs": "-457/400"
+      }
+    ],
+    "vertices": [
+      {
+        "a": "57/200",
+        "b": "343/400",
+        "c": "343/400",
+        "single_upper_cutoff_margin": "37/400",
+        "continuation_product_margin": "227/400",
+        "log_ratio_residual": "229/457"
+      },
+      {
+        "a": "457/800",
+        "b": "457/800",
+        "c": "343/400",
+        "single_upper_cutoff_margin": "37/400",
+        "continuation_product_margin": "9/32",
+        "log_ratio_residual": "229/2286"
+      },
+      {
+        "a": "2/3",
+        "b": "2/3",
+        "c": "2/3",
+        "single_upper_cutoff_margin": "17/60",
+        "continuation_product_margin": "223/1200",
+        "log_ratio_residual": "0"
+      }
+    ],
+    "minimum_single_upper_cutoff_margin": "37/400",
+    "minimum_continuation_product_margin": "223/1200",
+    "nonlinear_ratio_proof": "Residual=(c-a)/(2(a+c))+(b-a)/(2(a+b))>=0 throughout ordered domain",
+    "exact_arithmetic_rounding_handled_in_proof": true,
+    "source_length_margin_for_boundary_envelopes": "7/2400 (inherited)"
+  },
+  "arithmetic_fixtures": [
+    {
+      "N": 100,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "scope": "Complete actual square shell",
+      "counts": {
+        "shell_sites": 101,
+        "rough_sites": 101,
+        "core_sites": 1,
+        "core_p_equals_r": 0,
+        "core_absorption_rows": 1
+      },
+      "core_weight": "1",
+      "minimum_absorbing_log_ratio_lower": "1.0577837315276116271828545463851371229256171069362",
+      "signed_decomposition_formal_coefficients": 112,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 1000,
+      "U": 3,
+      "actual_campaign_truncation": false,
+      "scope": "Complete actual square shell",
+      "counts": {
+        "shell_sites": 1001,
+        "smooth_invariance_rows": 668,
+        "rough_sites": 333,
+        "positive_beta_sites": 167,
+        "signed_boundary_divisor_rows": 167,
+        "core_sites": 4,
+        "core_p_equals_r": 0,
+        "core_absorption_rows": 4
+      },
+      "core_weight": "4",
+      "minimum_absorbing_log_ratio_lower": "1.0541530866123254479135985195381177394640580176290",
+      "signed_decomposition_formal_coefficients": 593,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 10000,
+      "U": 5,
+      "actual_campaign_truncation": false,
+      "scope": "Complete actual square shell",
+      "counts": {
+        "shell_sites": 10001,
+        "positive_beta_sites": 2667,
+        "smooth_invariance_rows": 7335,
+        "signed_boundary_divisor_rows": 3001,
+        "rough_sites": 2666,
+        "core_sites": 43,
+        "core_p_equals_r": 2,
+        "core_absorption_rows": 43
+      },
+      "core_weight": "42",
+      "minimum_absorbing_log_ratio_lower": "1.0289661915276981022627260253246545387550928201169",
+      "signed_decomposition_formal_coefficients": 8393,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 30000,
+      "U": 8,
+      "actual_campaign_truncation": false,
+      "scope": "Complete actual square shell",
+      "counts": {
+        "shell_sites": 30001,
+        "positive_beta_sites": 6572,
+        "smooth_invariance_rows": 23144,
+        "signed_boundary_divisor_rows": 7144,
+        "rough_sites": 6857,
+        "core_sites": 126,
+        "core_p_equals_r": 0,
+        "core_absorption_rows": 126
+      },
+      "core_weight": "126",
+      "minimum_absorbing_log_ratio_lower": "1.0189167671666424254833330140086108922951776339002",
+      "signed_decomposition_formal_coefficients": 19576,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 100000,
+      "U": 16,
+      "actual_campaign_truncation": false,
+      "scope": "Complete actual square shell",
+      "counts": {
+        "shell_sites": 100001,
+        "smooth_invariance_rows": 80820,
+        "rough_sites": 19181,
+        "positive_beta_sites": 14853,
+        "signed_boundary_divisor_rows": 19775,
+        "negative_nonrough_beta_sites": 2798,
+        "core_sites": 363,
+        "core_p_equals_r": 1,
+        "core_absorption_rows": 363
+      },
+      "core_weight": "725/2",
+      "minimum_absorbing_log_ratio_lower": "1.0133418123524266563806302194888332673966196706393",
+      "signed_decomposition_formal_coefficients": 54819,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 74,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "scope": "Selected core sites",
+      "counts": {
+        "shell_sites": 1,
+        "rough_sites": 1,
+        "core_sites": 1,
+        "core_p_equals_r": 1,
+        "core_absorption_rows": 1
+      },
+      "core_weight": "1/2",
+      "minimum_absorbing_log_ratio_lower": "1.0101083981302398213536312287637061046607740441015",
+      "signed_decomposition_formal_coefficients": 3,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    },
+    {
+      "N": 128,
+      "U": 1,
+      "actual_campaign_truncation": true,
+      "scope": "Selected core sites",
+      "counts": {
+        "shell_sites": 1,
+        "rough_sites": 1,
+        "core_sites": 1,
+        "core_p_equals_r": 0,
+        "repeated_largest_exception_sites": 1
+      },
+      "core_weight": "1",
+      "minimum_absorbing_log_ratio_lower": null,
+      "signed_decomposition_formal_coefficients": 3,
+      "all_identities_passed": true,
+      "terminal_u_scale_estimate_tested": false
+    }
+  ],
+  "aggregate_counts": {
+    "shell_sites": 141107,
+    "rough_sites": 29140,
+    "core_sites": 539,
+    "core_p_equals_r": 4,
+    "core_absorption_rows": 538,
+    "smooth_invariance_rows": 111967,
+    "positive_beta_sites": 24259,
+    "signed_boundary_divisor_rows": 30087,
+    "negative_nonrough_beta_sites": 2798,
+    "repeated_largest_exception_sites": 1
+  },
+  "boundary_envelope_checks": {
+    "signed_even_odd_boundary_rows": 73143,
+    "weighted_boundary_witnesses": 20858,
+    "stress_cutoffs": [
+      16,
+      64,
+      256,
+      4096
+    ],
+    "direct_L1_inequality_verified": true,
+    "asymptotic_density_test": false
+  },
+  "unit_activation_witness": {
+    "N": 96,
+    "stress_U": 3,
+    "actual_shell_site": 9174,
+    "smooth_factor": 6,
+    "boundary_q": 2,
+    "boundary_d": 3,
+    "beta_U_n": 1,
+    "remaining_m": 1529,
+    "activated_formal_rows": [
+      {
+        "d": 11,
+        "b": 139,
+        "coefficient": "1"
+      }
+    ],
+    "ordinary_continuation_on_m_is_zero": true,
+    "scope": "Exact signed-boundary unit-activation illustration; U=3 is a stress cutoff"
+  },
+  "proof_note": "SIGNED_CORE_CONTINUATION_NOTE.md",
+  "terminal_u_scale_estimate_verified_by_finite_tests": false
+}

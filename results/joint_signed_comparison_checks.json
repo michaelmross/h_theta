@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-10",
+  "checkpoint": 23,
+  "preservation": {
+    "checkpoint22_nonmutable_records_verified": 238,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "coefficient_budget": {
+    "original_target": "11/1000",
+    "kappa": "1/1000",
+    "original_joint_reference_mass": {
+      "lower": "3.0649340581076633147812768096087415241136662002238",
+      "upper": "3.0649751594758139766181825312222805801782319361390",
+      "width": "0.0000411013681506618369057216135390560645657359152"
+    },
+    "long_smoothing_cost_enclosure": {
+      "lower": "0.0030649340581076633147812768096087415241136662002238",
+      "upper": "0.0030649751594758139766181825312222805801782319361390",
+      "width": "4.11013681506618369057216135390560645657359152E-8"
+    },
+    "rational_smoothing_budget": "613/200000",
+    "rational_high_frequency_budget": "1587/200000",
+    "unrounded_remaining_budget": {
+      "lower": "0.0079350248405241860233818174687777194198217680638610",
+      "upper": "0.0079350659418923366852187231903912584758863337997762",
+      "width": "4.11013681506618369057216135390560645657359152E-8"
+    },
+    "fixed_power_example_budget": "1/1000",
+    "fixed_power_remaining_target": "1/100",
+    "fixed_power_cutoff_recipe": "A=100*delta0; s=max(128,2*log(max(1,Cprime/(xi*A^2)))); epsilon=A/s",
+    "numerical_delta0_or_Cprime_invented": false,
+    "high_frequency_upper_truncation_exponent": "21/10",
+    "absolute_tail_N_exponent": "9/10",
+    "terminal_0011_estimate_proved": false
+  },
+  "smoothing": {
+    "exact_smoothing_checks": 95175,
+    "paired_kernels": [
+      {
+        "N": 20,
+        "Y": "21",
+        "H1": "1",
+        "a": "21",
+        "short_area": "21021/1000",
+        "normalized_long_area": "21021/1000",
+        "contrast_mass": "0"
+      },
+      {
+        "N": 100,
+        "Y": "101",
+        "H1": "19",
+        "a": "101/19",
+        "short_area": "101101/1000",
+        "normalized_long_area": "101101/1000",
+        "contrast_mass": "0"
+      },
+      {
+        "N": 5000,
+        "Y": "5001",
+        "H1": "11107",
+        "a": "5001/11107",
+        "short_area": "5006001/1000",
+        "normalized_long_area": "5006001/1000",
+        "contrast_mass": "0"
+      },
+      {
+        "N": 10000,
+        "Y": "10001",
+        "H1": "36231",
+        "a": "10001/36231",
+        "short_area": "10011001/1000",
+        "normalized_long_area": "10011001/1000",
+        "contrast_mass": "0"
+      },
+      {
+        "N": 80000,
+        "Y": "80001",
+        "H1": "1329439",
+        "a": "80001/1329439",
+        "short_area": "80081001/1000",
+        "normalized_long_area": "80081001/1000",
+        "contrast_mass": "0"
+      }
+    ],
+    "smooth_prime_padding": {
+      "support_exponents": [
+        "1/2",
+        "19/10"
+      ],
+      "plateau_exponents": [
+        "3/5",
+        "9/5"
+      ],
+      "transition_polynomial": "10t^3-15t^4+6t^5",
+      "regularity": "C2, piecewise polynomial"
+    },
+    "finite_checks_prove_spectral_bound": false
+  },
+  "original_weight_fixtures": [
+    {
+      "N": 5000,
+      "U": 8,
+      "actual_campaign_U": false,
+      "artificial_reference": false,
+      "H1_fixture": 11107,
+      "cutoffs": [
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "windows": [
+        {
+          "name": "J",
+          "endpoints": [
+            24997500,
+            25002500
+          ],
+          "counts": {
+            "sites": 5001,
+            "positive_beta_active_sites": 681,
+            "negative_nonrough_active_sites": 0,
+            "core_mark_sites": 21,
+            "half_weight_core_sites": 1,
+            "repeated_prime_active_sites": 1291,
+            "joint_signed_sector_identity_checks": 25005,
+            "pointwise_cap_one_checks": 5001,
+            "prime_padding_checks": 759,
+            "active_original_continuation_rows": 7612
+          },
+          "Q_all_exact": "1499/2",
+          "M2_plus_M3_exact": "1499/2",
+          "orientation_or_diagonal_error_exact": "0",
+          "orientation_or_diagonal_error_sites": 0,
+          "repeated_prime_sites": 1960,
+          "maximum_short_mark": "1"
+        },
+        {
+          "name": "B1",
+          "endpoints": [
+            24994447,
+            25005553
+          ],
+          "counts": {
+            "sites": 11107,
+            "positive_beta_active_sites": 1523,
+            "negative_nonrough_active_sites": 0,
+            "core_mark_sites": 48,
+            "half_weight_core_sites": 1,
+            "repeated_prime_active_sites": 2897,
+            "joint_signed_sector_identity_checks": 55535,
+            "active_original_continuation_rows": 17067,
+            "prime_padding_checks": 1665
+          },
+          "Q_all_exact": "1649",
+          "M2_plus_M3_exact": "1649",
+          "orientation_or_diagonal_error_exact": "0",
+          "orientation_or_diagonal_error_sites": 0,
+          "repeated_prime_sites": 4356,
+          "maximum_short_mark": "0"
+        }
+      ]
+    },
+    {
+      "N": 10000,
+      "U": 8,
+      "actual_campaign_U": false,
+      "artificial_reference": false,
+      "H1_fixture": 36231,
+      "cutoffs": [
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "windows": [
+        {
+          "name": "J",
+          "endpoints": [
+            99995000,
+            100005000
+          ],
+          "counts": {
+            "sites": 10001,
+            "positive_beta_active_sites": 1462,
+            "negative_nonrough_active_sites": 0,
+            "core_mark_sites": 43,
+            "half_weight_core_sites": 2,
+            "repeated_prime_active_sites": 2758,
+            "joint_signed_sector_identity_checks": 50005,
+            "pointwise_cap_one_checks": 10001,
+            "prime_padding_checks": 1529,
+            "active_original_continuation_rows": 17003
+          },
+          "Q_all_exact": "3031/2",
+          "M2_plus_M3_exact": "3031/2",
+          "orientation_or_diagonal_error_exact": "0",
+          "orientation_or_diagonal_error_sites": 0,
+          "repeated_prime_sites": 3924,
+          "maximum_short_mark": "1"
+        },
+        {
+          "name": "B1",
+          "endpoints": [
+            99981885,
+            100018115
+          ],
+          "counts": {
+            "sites": 36231,
+            "positive_beta_active_sites": 5269,
+            "negative_nonrough_active_sites": 0,
+            "core_mark_sites": 170,
+            "half_weight_core_sites": 2,
+            "repeated_prime_active_sites": 9932,
+            "active_original_continuation_rows": 61658,
+            "joint_signed_sector_identity_checks": 181155,
+            "prime_padding_checks": 5547
+          },
+          "Q_all_exact": "5500",
+          "M2_plus_M3_exact": "5500",
+          "orientation_or_diagonal_error_exact": "0",
+          "orientation_or_diagonal_error_sites": 0,
+          "repeated_prime_sites": 14200,
+          "maximum_short_mark": "0"
+        }
+      ]
+    },
+    {
+      "N": 80000,
+      "U": 16,
+      "actual_campaign_U": false,
+      "artificial_reference": true,
+      "H1_fixture": 240001,
+      "cutoffs": [
+        2,
+        3,
+        5,
+        8,
+        16
+      ],
+      "windows": [
+        {
+          "name": "J",
+          "endpoints": [
+            6399960000,
+            6400040000
+          ],
+          "counts": {
+            "sites": 80001,
+            "positive_beta_active_sites": 8055,
+            "negative_nonrough_active_sites": 1494,
+            "core_mark_sites": 318,
+            "half_weight_core_sites": 2,
+            "repeated_prime_active_sites": 22195,
+            "joint_signed_sector_identity_checks": 400005,
+            "pointwise_cap_one_checks": 80001,
+            "active_original_continuation_rows": 143918,
+            "prime_padding_checks": 10321
+          },
+          "Q_all_exact": "20561/2",
+          "M2_plus_M3_exact": "20559/2",
+          "orientation_or_diagonal_error_exact": "1",
+          "orientation_or_diagonal_error_sites": 2,
+          "repeated_prime_sites": 31376,
+          "maximum_short_mark": "1"
+        },
+        {
+          "name": "B1",
+          "endpoints": [
+            6399880000,
+            6400120000
+          ],
+          "counts": {
+            "sites": 240001,
+            "positive_beta_active_sites": 24207,
+            "negative_nonrough_active_sites": 4541,
+            "core_mark_sites": 933,
+            "half_weight_core_sites": 3,
+            "repeated_prime_active_sites": 66758,
+            "joint_signed_sector_identity_checks": 1200005,
+            "active_original_continuation_rows": 432167,
+            "prime_padding_checks": 31022
+          },
+          "Q_all_exact": "30890",
+          "M2_plus_M3_exact": "61781/2",
+          "orientation_or_diagonal_error_exact": "-1/2",
+          "orientation_or_diagonal_error_sites": 5,
+          "repeated_prime_sites": 94107,
+          "maximum_short_mark": "0"
+        }
+      ]
+    }
+  ],
+  "finite_fixture_scope": "Original outer/continuation gates; stress U and one artificial long window are labeled. No finite sample proves an asymptotic estimate."
+}

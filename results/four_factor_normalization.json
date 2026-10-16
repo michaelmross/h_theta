@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-13",
+  "checkpoint": 31,
+  "proof_note": "FOUR_FACTOR_NORMALIZATION_NOTE.md",
+  "new_exact_interface": "Delta W_N = L_N(psi_Y) + B_N(psi_Y) + o(u)",
+  "L_N": "Full all-Type-I integer product sum minus its actual continuous product integral",
+  "B_N": "All 325 signed subterms containing at least one Type II",
+  "centered_continuous_o_u_proved": true,
+  "normalized_long_all_TypeI_lattice_o_u_proved": true,
+  "normalized_long_signed_TypeII_aggregate_o_u_proved": true,
+  "TypeII_terms_individually_absolute_o_u_asserted": false,
+  "remaining_actual_short_input": "L_N(psi_Y)+B_N(psi_Y)>=-(eta_W+o(1))*u",
+  "remaining_actual_short_input_proved": false,
+  "short_all_TypeI_lattice_o_u_proved": false,
+  "new_nonvanishing_normalization_charge": "0",
+  "eta_W_plus_eta_rest_allowance": ".000099",
+  "kernel_reference_charge_retained": ".000001",
+  "complete_full_complement_lower_comparison_proved": false,
+  "original_007935_0011_targets_proved": false,
+  "K": 0,
+  "milestone7": "deferred",
+  "preserved_checkpoint30_nonmutable_records": 299
+}

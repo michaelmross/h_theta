@@ -1,0 +1,55 @@
+{
+  "pi_certificate": {
+    "machin_identity": "pi=16*atan(1/5)-4*atan(1/239)",
+    "bounds": {
+      "lower": "3.141592653589793238462643380769255836674850169",
+      "upper": "3.141592653589793238462818058038813547601857374"
+    }
+  },
+  "full_reference_enclosure": {
+    "lower": "3.0649340581076633147812768096087415241136662002238",
+    "upper": "3.0649751594758139766181825312222805801782319361390",
+    "width": "0.0000411013681506618369057216135390560645657359152"
+  },
+  "auxiliary_core_reference_enclosure": {
+    "lower": "0.060618198105624377339043095546585986442385831820644",
+    "upper": "0.060652044699174003031639681922526403326065297211056",
+    "width": "0.000033846593549625692596586375940416883679465390412"
+  },
+  "local_cutoff_area_over_Y": "1501/1000",
+  "local_actual_mass_upper_coefficient": "1501/125",
+  "local_density_mass_upper_coefficient": {
+    "lower": "4.600527714373196778903891979364643150847526136",
+    "upper": "4.600527714373196778903891979364643150847526137"
+  },
+  "asymptotic_tail_constant_upper": {
+    "lower": "21146.634265769861160106952469506522612775318392477",
+    "upper": "21146.634265769861160106952469506522612775318392478"
+  },
+  "uniform_eventual_tail_constant": 21147,
+  "tail_cutoff": "L*x/Y",
+  "tail_upper": "(21147/L)*u for sufficiently large even N, uniformly L>=1",
+  "original_spectral_allowance": "1587/200000",
+  "signed_Selberg_upper": {
+    "lower": "4.940001007834229021903941913581649734362220133",
+    "upper": "4.940001007834229021903941913581649734362220134"
+  },
+  "upward_rounded_signed_coefficient": "4.940002",
+  "actual_coupled_Selberg_upper": {
+    "lower": "5.000713704578102198938613235186098664091611496",
+    "upper": "5.000713704578102198938613235186098664091611497"
+  },
+  "upward_rounded_coupled_coefficient": "5.000714",
+  "required_sufficient_coupled_coefficient_unchanged": ".0686138",
+  "fixed_multiplier_example": {
+    "L": 100000000,
+    "tail": "21147/100000000",
+    "central": "772353/100000000",
+    "smoothing": "613/200000",
+    "total": "11/1000"
+  },
+  "fixed_least_prime_budget_if_used": "xi from checkpoint22 (23)",
+  "growing_L_nonvanishing_coefficient_charge": "0",
+  "sharp_spectral_bound_proved": false,
+  "sharp_coupled_bound_proved": false
+}

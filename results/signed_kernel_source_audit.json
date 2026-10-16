@@ -1,0 +1,60 @@
+{
+  "checkpoint": 19,
+  "date": "2026-10-08",
+  "audit_scope": "Primary statements and direct application hypotheses; not an exhaustive literature exclusion or independent reconstruction of the source proofs",
+  "sources": [
+    {
+      "author": "Alexander P. Mangerel",
+      "title": "Divisor-bounded multiplicative functions in short intervals",
+      "year": 2023,
+      "url": "https://doi.org/10.1007/s40687-023-00376-0",
+      "location_checked": "Lemma 3.2, official article lines 405-412; original bundled PDF page 13",
+      "prior_source_file": "sources/beta_support/Mangerel2023.pdf",
+      "prior_source_sha256": "999b4c56c6caffd811707be891f1bfdd925277fc2d47de83944a9ba57981baaa",
+      "input_admitted": true,
+      "input": "Deterministic all-interval absolute upper bound with constants depending only on fixed divisor and interval parameters",
+      "new_applications": [
+        "U-rough counterweight count, B=2,C=1, interval delta=1/30",
+        "Moving individual boundary kernels, B=2,C=1, interval delta=1/30",
+        "f_(U,T)=rough_(T)*2^(omega_U), B=2,C=1, interval delta=1/30",
+        "Long-reference logarithmic freezing majorant tau_4, B=4,C=1, interval delta=1/30"
+      ],
+      "signed_mu_kernel_cancellation_supplied": false,
+      "explicit_0011_constant_supplied": false,
+      "almost_all_results_used": false
+    },
+    {
+      "authors": ["Kaisa Matomaki", "Joni Teravainen"],
+      "title": "On the Mobius function in all short intervals",
+      "url": "https://ems.press/content/serial-article-files/32826",
+      "location_checked": "Theorem 1.1, printed page 1208 / PDF page 2; Theorem 1.4 and discussion inspected",
+      "statement_scope": "Actual Mobius cancellation in every interval of length at least X^theta, fixed theta>0.55",
+      "terminal_input_admitted": false,
+      "application_gaps": [
+        "Global kernel cofactor width exponent is at most 1/2 relative to center",
+        "First-prime stopped width exponent is at most 3/7 relative to center",
+        "Actual beta_U and changing selected prime-divisor kernels are not the source's unweighted Mobius sum",
+        "Long-range Mobius cancellation does not estimate a selected d kernel without additional weighted regularity"
+      ],
+      "complete_source_proof_reconstructed": false
+    },
+    {
+      "authors": ["Kaisa Matomaki", "Xuancheng Shao", "Terence Tao", "Joni Teravainen"],
+      "title": "Higher uniformity of arithmetic functions in short intervals I. All intervals",
+      "version": "arXiv:2204.03754v4, 28 February 2024",
+      "url": "https://arxiv.org/html/2204.03754v4",
+      "location_checked": "Theorem 1.1 and Corollary 1.3",
+      "terminal_input_admitted": false,
+      "application_gaps": [
+        "Source's displayed Mobius/von Mangoldt interval thresholds exceed kernel cofactor exponent",
+        "Source tests have nilsequence and complexity hypotheses; actual kernel has no supplied representation meeting them"
+      ],
+      "complete_source_proof_reconstructed": false
+    }
+  ],
+  "original_007_and_021_application_gaps_preserved": true,
+  "new_external_signed_cancellation_theorem_admitted": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

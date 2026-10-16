@@ -1,0 +1,1579 @@
+{
+  "date": "2026-10-06",
+  "checkpoint": 8,
+  "supplied_sources": [
+    {
+      "path": "sources/ross_square_shells_original.zip",
+      "size_bytes": 418565,
+      "sha256": "3df0a2191ed4aa81bc2dda72d422087ef2afc71c6c5c96d123b1b5fed2f67bdf"
+    },
+    {
+      "path": "sources/ross_square_shells/main.tex",
+      "size_bytes": 74613,
+      "sha256": "9a42d1f61f924d0ce3b6dee89b43cd2aafc602ad65a215c0afa463c8137f0d25"
+    },
+    {
+      "path": "sources/ross_factor_rays_original.zip",
+      "size_bytes": 80769,
+      "sha256": "e8f4bdabddce21908abc56c24ecda4a3df59f8c2e681bbc978a2ccb4a18417f9"
+    },
+    {
+      "path": "sources/ross_factor_rays/main.tex",
+      "size_bytes": 61220,
+      "sha256": "3c37b0c8a22daf9dec2a597dc5aa90e30bb95b547badd1efd50e948e181ed828"
+    }
+  ],
+  "source_reading": "Both supplied main.tex files read; source identities recorded",
+  "not_reproduced": [
+    "The authors' dense shell scans and exact samples through 10^9",
+    "Complete-wave FFT covariance tables; the referenced scripts/CSV are not in these ZIPs"
+  ],
+  "square_offset_checks": {
+    "prime_checks": [
+      {
+        "p": 3,
+        "center_counts": {
+          "0": 1,
+          "2": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 1
+        },
+        "left_single_preimage_value": 1
+      },
+      {
+        "p": 5,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "4": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 1,
+          "2": 2
+        },
+        "left_single_preimage_value": 1
+      },
+      {
+        "p": 7,
+        "center_counts": {
+          "0": 1,
+          "3": 2,
+          "5": 2,
+          "6": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "2": 2,
+          "3": 2,
+          "4": 1
+        },
+        "left_single_preimage_value": 4
+      },
+      {
+        "p": 11,
+        "center_counts": {
+          "0": 1,
+          "2": 2,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "10": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "8": 2,
+          "9": 1
+        },
+        "left_single_preimage_value": 9
+      },
+      {
+        "p": 13,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "3": 2,
+          "4": 2,
+          "9": 2,
+          "10": 2,
+          "12": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "5": 2,
+          "6": 2,
+          "8": 2,
+          "9": 1,
+          "10": 2,
+          "12": 2
+        },
+        "left_single_preimage_value": 9
+      },
+      {
+        "p": 17,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "4": 2,
+          "8": 2,
+          "9": 2,
+          "13": 2,
+          "15": 2,
+          "16": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 2,
+          "3": 2,
+          "7": 2,
+          "8": 2,
+          "12": 2,
+          "14": 2,
+          "15": 2,
+          "16": 1
+        },
+        "left_single_preimage_value": 16
+      },
+      {
+        "p": 19,
+        "center_counts": {
+          "0": 1,
+          "2": 2,
+          "3": 2,
+          "8": 2,
+          "10": 2,
+          "12": 2,
+          "13": 2,
+          "14": 2,
+          "15": 2,
+          "18": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "5": 2,
+          "6": 1,
+          "8": 2,
+          "9": 2,
+          "14": 2,
+          "16": 2,
+          "18": 2
+        },
+        "left_single_preimage_value": 6
+      },
+      {
+        "p": 23,
+        "center_counts": {
+          "0": 1,
+          "5": 2,
+          "7": 2,
+          "10": 2,
+          "11": 2,
+          "14": 2,
+          "15": 2,
+          "17": 2,
+          "19": 2,
+          "20": 2,
+          "21": 2,
+          "22": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 2,
+          "4": 2,
+          "5": 2,
+          "7": 2,
+          "9": 2,
+          "10": 2,
+          "11": 2,
+          "12": 2,
+          "13": 1,
+          "18": 2,
+          "20": 2
+        },
+        "left_single_preimage_value": 13
+      },
+      {
+        "p": 29,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 2,
+          "9": 2,
+          "13": 2,
+          "16": 2,
+          "20": 2,
+          "22": 2,
+          "23": 2,
+          "24": 2,
+          "25": 2,
+          "28": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "4": 2,
+          "7": 2,
+          "11": 2,
+          "13": 2,
+          "14": 2,
+          "15": 2,
+          "16": 2,
+          "19": 2,
+          "20": 1,
+          "21": 2,
+          "24": 2,
+          "25": 2,
+          "26": 2,
+          "27": 2
+        },
+        "left_single_preimage_value": 20
+      },
+      {
+        "p": 31,
+        "center_counts": {
+          "0": 1,
+          "3": 2,
+          "6": 2,
+          "11": 2,
+          "12": 2,
+          "13": 2,
+          "15": 2,
+          "17": 2,
+          "21": 2,
+          "22": 2,
+          "23": 2,
+          "24": 2,
+          "26": 2,
+          "27": 2,
+          "29": 2,
+          "30": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "1": 2,
+          "2": 1,
+          "5": 2,
+          "8": 2,
+          "13": 2,
+          "14": 2,
+          "15": 2,
+          "17": 2,
+          "19": 2,
+          "23": 2,
+          "24": 2,
+          "25": 2,
+          "26": 2,
+          "28": 2,
+          "29": 2
+        },
+        "left_single_preimage_value": 2
+      },
+      {
+        "p": 37,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "3": 2,
+          "4": 2,
+          "7": 2,
+          "9": 2,
+          "10": 2,
+          "11": 2,
+          "12": 2,
+          "16": 2,
+          "21": 2,
+          "25": 2,
+          "26": 2,
+          "27": 2,
+          "28": 2,
+          "30": 2,
+          "33": 2,
+          "34": 2,
+          "36": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "3": 2,
+          "4": 2,
+          "6": 2,
+          "7": 1,
+          "8": 2,
+          "10": 2,
+          "11": 2,
+          "14": 2,
+          "16": 2,
+          "17": 2,
+          "18": 2,
+          "19": 2,
+          "23": 2,
+          "28": 2,
+          "32": 2,
+          "33": 2,
+          "34": 2,
+          "35": 2
+        },
+        "left_single_preimage_value": 7
+      },
+      {
+        "p": 41,
+        "center_counts": {
+          "0": 1,
+          "1": 2,
+          "2": 2,
+          "4": 2,
+          "5": 2,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "16": 2,
+          "18": 2,
+          "20": 2,
+          "21": 2,
+          "23": 2,
+          "25": 2,
+          "31": 2,
+          "32": 2,
+          "33": 2,
+          "36": 2,
+          "37": 2,
+          "39": 2,
+          "40": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "2": 2,
+          "8": 2,
+          "9": 2,
+          "10": 2,
+          "13": 2,
+          "14": 2,
+          "16": 2,
+          "17": 2,
+          "18": 1,
+          "19": 2,
+          "20": 2,
+          "22": 2,
+          "23": 2,
+          "26": 2,
+          "27": 2,
+          "28": 2,
+          "34": 2,
+          "36": 2,
+          "38": 2,
+          "39": 2
+        },
+        "left_single_preimage_value": 18
+      },
+      {
+        "p": 43,
+        "center_counts": {
+          "0": 1,
+          "2": 2,
+          "3": 2,
+          "5": 2,
+          "7": 2,
+          "8": 2,
+          "12": 2,
+          "18": 2,
+          "19": 2,
+          "20": 2,
+          "22": 2,
+          "26": 2,
+          "27": 2,
+          "28": 2,
+          "29": 2,
+          "30": 2,
+          "32": 2,
+          "33": 2,
+          "34": 2,
+          "37": 2,
+          "39": 2,
+          "42": 2
+        },
+        "left_counts": {
+          "0": 2,
+          "4": 2,
+          "10": 2,
+          "11": 2,
+          "12": 2,
+          "14": 2,
+          "18": 2,
+          "19": 2,
+          "20": 2,
+          "21": 2,
+          "22": 2,
+          "24": 2,
+          "25": 2,
+          "26": 2,
+          "29": 2,
+          "31": 2,
+          "34": 2,
+          "35": 1,
+          "37": 2,
+          "38": 2,
+          "40": 2,
+          "42": 2
+        },
+        "left_single_preimage_value": 35
+      }
+    ],
+    "CRT_modulus": 105,
+    "CRT_period_in_even_N": 210,
+    "CRT_observed_vectors": 24,
+    "all_passed": true,
+    "pointwise_prime_cancellation_inferred": false
+  },
+  "finite_band_checks": [
+    {
+      "N": 20,
+      "endpoints": [
+        390,
+        410
+      ],
+      "Y": 21,
+      "prime_count": 3,
+      "root_rough_count": 10,
+      "R_095": 7,
+      "high_rough_count": 3,
+      "high_rough_semiprimes": 0,
+      "unweighted_ordinary_wave_row_incidences": 59,
+      "prime_anchored_wave_counts": {
+        "1": 7,
+        "2": 7,
+        "8": 7
+      },
+      "weighted_wave_indices_used": {
+        "1": 7,
+        "2": 6,
+        "8": 6
+      },
+      "max_rp_over_q": {
+        "1": "17/23",
+        "2": "34/23",
+        "8": "136/23"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        400
+      ],
+      "difference_of_squares_rows": 3,
+      "odd_difference_of_squares_rows": 2,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": 0,
+          "divisor_signed_sum": 0,
+          "signed_divisor_ranges": {
+            "d<=N": 0
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -3,
+          "divisor_signed_sum": -3,
+          "signed_divisor_ranges": {
+            "d<=N": -2,
+            "N<d<=N^(5/4)": -1
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -3,
+          "divisor_signed_sum": -3,
+          "signed_divisor_ranges": {
+            "d<=N": -1,
+            "N<d<=N^(5/4)": -1,
+            "d>N^(5/4)": -1
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 0,
+          "twisted_remainder": "0",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-4/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 0,
+          "twisted_remainder": "0",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "-3/7",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-10/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-2/3",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "11/21",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-10/21",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "-2/7",
+          "Liouville_extra": 0,
+          "twisted_remainder": "-2/7",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "-2/21",
+          "Liouville_extra": 0,
+          "twisted_remainder": "-2/21",
+          "twisted_absolute_remainder_exceeds_one": false
+        }
+      ],
+      "all_checks_passed": true,
+      "full_depth_odd_model": {
+        "odd_positions": 10,
+        "admissible_moduli": 39,
+        "truncated_reciprocal": "116715/323323",
+        "signed_floor_remainder": "-197181/323323",
+        "ordinary_shell_model_minus_centered_model": "-1/429",
+        "absolute_cutoff_difference_bound": "3/41",
+        "prime_count": 3,
+        "identity_passed": true
+      }
+    },
+    {
+      "N": 40,
+      "endpoints": [
+        1580,
+        1620
+      ],
+      "Y": 41,
+      "prime_count": 7,
+      "root_rough_count": 20,
+      "R_095": 12,
+      "high_rough_count": 8,
+      "high_rough_semiprimes": 1,
+      "unweighted_ordinary_wave_row_incidences": 144,
+      "prime_anchored_wave_counts": {
+        "1": 12,
+        "2": 12,
+        "8": 12
+      },
+      "weighted_wave_indices_used": {
+        "1": 12,
+        "2": 12,
+        "8": 12
+      },
+      "max_rp_over_q": {
+        "1": "7/227",
+        "2": "14/227",
+        "8": "56/227"
+      },
+      "post_parabola_primes": [
+        41
+      ],
+      "squares": [
+        1600
+      ],
+      "difference_of_squares_rows": 4,
+      "odd_difference_of_squares_rows": 2,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": -8,
+          "divisor_signed_sum": -8,
+          "signed_divisor_ranges": {
+            "d<=N": -8
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -6,
+          "divisor_signed_sum": -6,
+          "signed_divisor_ranges": {
+            "d<=N": 1,
+            "N<d<=N^(5/4)": -5,
+            "d>N^(5/4)": -2
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -7,
+          "divisor_signed_sum": -7,
+          "signed_divisor_ranges": {
+            "d<=N": 0,
+            "N<d<=N^(5/4)": -5,
+            "d>N^(5/4)": -2
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -8,
+          "twisted_remainder": "-8",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": -3,
+          "twisted_remainder": "-8/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -2,
+          "twisted_remainder": "-2",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "1/7",
+          "Liouville_extra": 3,
+          "twisted_remainder": "22/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-4/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "1/21",
+          "Liouville_extra": 1,
+          "twisted_remainder": "22/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "-4/7",
+          "Liouville_extra": 0,
+          "twisted_remainder": "-4/7",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "-4/21",
+          "Liouville_extra": 0,
+          "twisted_remainder": "-4/21",
+          "twisted_absolute_remainder_exceeds_one": false
+        }
+      ],
+      "all_checks_passed": true,
+      "full_depth_odd_model": {
+        "odd_positions": 20,
+        "admissible_moduli": 125,
+        "truncated_reciprocal": "103667499911/337306278855",
+        "signed_floor_remainder": "57558790753/67461255771",
+        "ordinary_shell_model_minus_centered_model": "-1/1653",
+        "absolute_cutoff_difference_bound": "1/27",
+        "prime_count": 7,
+        "identity_passed": true
+      }
+    },
+    {
+      "N": 80,
+      "endpoints": [
+        6360,
+        6440
+      ],
+      "Y": 81,
+      "prime_count": 8,
+      "root_rough_count": 40,
+      "R_095": 32,
+      "high_rough_count": 8,
+      "high_rough_semiprimes": 0,
+      "unweighted_ordinary_wave_row_incidences": 335,
+      "prime_anchored_wave_counts": {
+        "1": 32,
+        "2": 32,
+        "8": 32
+      },
+      "weighted_wave_indices_used": {
+        "1": 32,
+        "2": 32,
+        "8": 32
+      },
+      "max_rp_over_q": {
+        "1": "59/109",
+        "2": "118/109",
+        "8": "472/109"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        6400
+      ],
+      "difference_of_squares_rows": 6,
+      "odd_difference_of_squares_rows": 3,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": 2,
+          "divisor_signed_sum": 2,
+          "signed_divisor_ranges": {
+            "d<=N": 2
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -8,
+          "divisor_signed_sum": -8,
+          "signed_divisor_ranges": {
+            "d<=N": -7,
+            "N<d<=N^(5/4)": -1,
+            "d>N^(5/4)": 0
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -8,
+          "divisor_signed_sum": -8,
+          "signed_divisor_ranges": {
+            "d<=N": -5,
+            "N<d<=N^(5/4)": -2,
+            "d>N^(5/4)": -1
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 2,
+          "twisted_remainder": "2",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": 3,
+          "twisted_remainder": "8/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 0,
+          "twisted_remainder": "0",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "2/7",
+          "Liouville_extra": 2,
+          "twisted_remainder": "16/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-2/3",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "2/21",
+          "Liouville_extra": 2,
+          "twisted_remainder": "44/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "-1/7",
+          "Liouville_extra": 1,
+          "twisted_remainder": "6/7",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "13/21",
+          "Liouville_extra": 1,
+          "twisted_remainder": "34/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true,
+      "full_depth_odd_model": {
+        "odd_positions": 40,
+        "admissible_moduli": 563,
+        "truncated_reciprocal": "30375865893803099778396359/117201310094728378666099095",
+        "signed_floor_remainder": "-55484830998859392361412320/23440262018945675733219819",
+        "ordinary_shell_model_minus_centered_model": "-72176691805396/232926657784553733",
+        "absolute_cutoff_difference_bound": "3/161",
+        "prime_count": 8,
+        "identity_passed": true
+      }
+    },
+    {
+      "N": 120,
+      "endpoints": [
+        14340,
+        14460
+      ],
+      "Y": 121,
+      "prime_count": 14,
+      "root_rough_count": 40,
+      "R_095": 24,
+      "high_rough_count": 16,
+      "high_rough_semiprimes": 2,
+      "unweighted_ordinary_wave_row_incidences": 541,
+      "prime_anchored_wave_counts": {
+        "1": 24,
+        "2": 24,
+        "8": 24
+      },
+      "weighted_wave_indices_used": {
+        "1": 24,
+        "2": 24,
+        "8": 24
+      },
+      "max_rp_over_q": {
+        "1": "83/173",
+        "2": "166/173",
+        "8": "664/173"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        14400
+      ],
+      "difference_of_squares_rows": 7,
+      "odd_difference_of_squares_rows": 4,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": -2,
+          "divisor_signed_sum": -2,
+          "signed_divisor_ranges": {
+            "d<=N": -2
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -12,
+          "divisor_signed_sum": -12,
+          "signed_divisor_ranges": {
+            "d<=N": -6,
+            "N<d<=N^(5/4)": -2,
+            "d>N^(5/4)": -4
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -14,
+          "divisor_signed_sum": -14,
+          "signed_divisor_ranges": {
+            "d<=N": -6,
+            "N<d<=N^(5/4)": -3,
+            "d>N^(5/4)": -5
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 2,
+          "twisted_remainder": "2",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 4,
+          "twisted_remainder": "4",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 0,
+          "twisted_remainder": "0",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "3/7",
+          "Liouville_extra": 3,
+          "twisted_remainder": "24/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 0,
+          "twisted_remainder": "0",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "1/7",
+          "Liouville_extra": 1,
+          "twisted_remainder": "8/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "2/7",
+          "Liouville_extra": 2,
+          "twisted_remainder": "16/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "3/7",
+          "Liouville_extra": 1,
+          "twisted_remainder": "10/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true,
+      "full_depth_odd_model": {
+        "odd_positions": 60,
+        "admissible_moduli": 1276,
+        "truncated_reciprocal": "7546377912062585142594231004931082236131594/31800859799212885098737632084047950194441335",
+        "signed_floor_remainder": "-504709168984981144888467407946242096381130/2120057319947525673249175472269863346296089",
+        "ordinary_shell_model_minus_centered_model": "-592917403223566132290141152/1436834965167898512741958159545",
+        "absolute_cutoff_difference_bound": "3/241",
+        "prime_count": 14,
+        "identity_passed": true
+      }
+    },
+    {
+      "N": 200,
+      "endpoints": [
+        39900,
+        40100
+      ],
+      "Y": 201,
+      "prime_count": 17,
+      "root_rough_count": 67,
+      "R_095": 48,
+      "high_rough_count": 19,
+      "high_rough_semiprimes": 2,
+      "unweighted_ordinary_wave_row_incidences": 997,
+      "prime_anchored_wave_counts": {
+        "1": 48,
+        "2": 48,
+        "8": 48
+      },
+      "weighted_wave_indices_used": {
+        "1": 48,
+        "2": 48,
+        "8": 46
+      },
+      "max_rp_over_q": {
+        "1": "149/269",
+        "2": "298/269",
+        "8": "1192/269"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        40000
+      ],
+      "difference_of_squares_rows": 10,
+      "odd_difference_of_squares_rows": 5,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": 3,
+          "divisor_signed_sum": 3,
+          "signed_divisor_ranges": {
+            "d<=N": 3
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -15,
+          "divisor_signed_sum": -15,
+          "signed_divisor_ranges": {
+            "d<=N": -1,
+            "N<d<=N^(5/4)": -9,
+            "d>N^(5/4)": -5
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -17,
+          "divisor_signed_sum": -17,
+          "signed_divisor_ranges": {
+            "d<=N": -3,
+            "N<d<=N^(5/4)": -7,
+            "d>N^(5/4)": -7
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 6,
+          "twisted_remainder": "6",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": 3,
+          "twisted_remainder": "8/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -2,
+          "twisted_remainder": "-2",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "-2/7",
+          "Liouville_extra": 2,
+          "twisted_remainder": "12/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-2/3",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "5/21",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-16/21",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "1/7",
+          "Liouville_extra": 1,
+          "twisted_remainder": "8/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "1/21",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-20/21",
+          "twisted_absolute_remainder_exceeds_one": false
+        }
+      ],
+      "all_checks_passed": true
+    },
+    {
+      "N": 400,
+      "endpoints": [
+        159800,
+        160200
+      ],
+      "Y": 401,
+      "prime_count": 31,
+      "root_rough_count": 133,
+      "R_095": 100,
+      "high_rough_count": 33,
+      "high_rough_semiprimes": 2,
+      "unweighted_ordinary_wave_row_incidences": 2263,
+      "prime_anchored_wave_counts": {
+        "1": 100,
+        "2": 100,
+        "8": 100
+      },
+      "weighted_wave_indices_used": {
+        "1": 100,
+        "2": 99,
+        "8": 99
+      },
+      "max_rp_over_q": {
+        "1": "281/569",
+        "2": "562/569",
+        "8": "2248/569"
+      },
+      "post_parabola_primes": [
+        401
+      ],
+      "squares": [
+        160000
+      ],
+      "difference_of_squares_rows": 14,
+      "odd_difference_of_squares_rows": 7,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": 11,
+          "divisor_signed_sum": 11,
+          "signed_divisor_ranges": {
+            "d<=N": 11
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -29,
+          "divisor_signed_sum": -29,
+          "signed_divisor_ranges": {
+            "d<=N": 1,
+            "N<d<=N^(5/4)": -14,
+            "d>N^(5/4)": -16
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -31,
+          "divisor_signed_sum": -31,
+          "signed_divisor_ranges": {
+            "d<=N": 3,
+            "N<d<=N^(5/4)": -16,
+            "d>N^(5/4)": -18
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 20,
+          "twisted_remainder": "20",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": 9,
+          "twisted_remainder": "28/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 12,
+          "twisted_remainder": "12",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "3/7",
+          "Liouville_extra": 7,
+          "twisted_remainder": "52/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": 5,
+          "twisted_remainder": "14/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "-11/21",
+          "Liouville_extra": 3,
+          "twisted_remainder": "52/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "2/7",
+          "Liouville_extra": 4,
+          "twisted_remainder": "30/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "2/21",
+          "Liouville_extra": 2,
+          "twisted_remainder": "44/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true
+    },
+    {
+      "N": 1000,
+      "endpoints": [
+        999500,
+        1000500
+      ],
+      "Y": 1001,
+      "prime_count": 71,
+      "root_rough_count": 266,
+      "R_095": 189,
+      "high_rough_count": 77,
+      "high_rough_semiprimes": 6,
+      "unweighted_ordinary_wave_row_incidences": 6514,
+      "prime_anchored_wave_counts": {
+        "1": 189,
+        "2": 189,
+        "8": 189
+      },
+      "weighted_wave_indices_used": {
+        "1": 189,
+        "2": 188,
+        "8": 188
+      },
+      "max_rp_over_q": {
+        "1": "701/1427",
+        "2": "1402/1427",
+        "8": "5608/1427"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        1000000
+      ],
+      "difference_of_squares_rows": 22,
+      "odd_difference_of_squares_rows": 11,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": -6,
+          "divisor_signed_sum": -6,
+          "signed_divisor_ranges": {
+            "d<=N": -6
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -65,
+          "divisor_signed_sum": -65,
+          "signed_divisor_ranges": {
+            "d<=N": -24,
+            "N<d<=N^(5/4)": -8,
+            "d>N^(5/4)": -33
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -71,
+          "divisor_signed_sum": -71,
+          "signed_divisor_ranges": {
+            "d<=N": -24,
+            "N<d<=N^(5/4)": -10,
+            "d>N^(5/4)": -37
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -20,
+          "twisted_remainder": "-20",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": 3,
+          "twisted_remainder": "10/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -16,
+          "twisted_remainder": "-16",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "-3/7",
+          "Liouville_extra": -5,
+          "twisted_remainder": "-38/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": 1,
+          "twisted_remainder": "2/3",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "-17/21",
+          "Liouville_extra": -5,
+          "twisted_remainder": "-122/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "-2/7",
+          "Liouville_extra": -4,
+          "twisted_remainder": "-30/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "-16/21",
+          "Liouville_extra": -2,
+          "twisted_remainder": "-58/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true
+    },
+    {
+      "N": 2000,
+      "endpoints": [
+        3999000,
+        4001000
+      ],
+      "Y": 2001,
+      "prime_count": 131,
+      "root_rough_count": 534,
+      "R_095": 379,
+      "high_rough_count": 155,
+      "high_rough_semiprimes": 24,
+      "unweighted_ordinary_wave_row_incidences": 14402,
+      "prime_anchored_wave_counts": {
+        "1": 379,
+        "2": 379,
+        "8": 379
+      },
+      "weighted_wave_indices_used": {
+        "1": 379,
+        "2": 379,
+        "8": 379
+      },
+      "max_rp_over_q": {
+        "1": "1361/2939",
+        "2": "2722/2939",
+        "8": "10888/2939"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        4000000
+      ],
+      "difference_of_squares_rows": 31,
+      "odd_difference_of_squares_rows": 16,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": -16,
+          "divisor_signed_sum": -16,
+          "signed_divisor_ranges": {
+            "d<=N": -16
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -107,
+          "divisor_signed_sum": -107,
+          "signed_divisor_ranges": {
+            "d<=N": -2,
+            "N<d<=N^(5/4)": -5,
+            "d>N^(5/4)": -100
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -131,
+          "divisor_signed_sum": -131,
+          "signed_divisor_ranges": {
+            "d<=N": -21,
+            "N<d<=N^(5/4)": 3,
+            "d>N^(5/4)": -113
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": -6,
+          "twisted_remainder": "-6",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": -3,
+          "twisted_remainder": "-10/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 10,
+          "twisted_remainder": "10",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "1/7",
+          "Liouville_extra": -3,
+          "twisted_remainder": "-20/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": -3,
+          "twisted_remainder": "-8/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "8/21",
+          "Liouville_extra": 12,
+          "twisted_remainder": "260/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "-4/7",
+          "Liouville_extra": 0,
+          "twisted_remainder": "-4/7",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "-11/21",
+          "Liouville_extra": -3,
+          "twisted_remainder": "-74/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true
+    },
+    {
+      "N": 10000,
+      "endpoints": [
+        99995000,
+        100005000
+      ],
+      "Y": 10001,
+      "prime_count": 548,
+      "root_rough_count": 2286,
+      "R_095": 1686,
+      "high_rough_count": 600,
+      "high_rough_semiprimes": 52,
+      "unweighted_ordinary_wave_row_incidences": 88009,
+      "prime_anchored_wave_counts": {
+        "1": 1686,
+        "2": 1686,
+        "8": 1686
+      },
+      "weighted_wave_indices_used": {
+        "1": 1686,
+        "2": 1686,
+        "8": 1682
+      },
+      "max_rp_over_q": {
+        "1": "6247/16007",
+        "2": "12494/16007",
+        "8": "49976/16007"
+      },
+      "post_parabola_primes": [],
+      "squares": [
+        100000000
+      ],
+      "difference_of_squares_rows": 70,
+      "odd_difference_of_squares_rows": 35,
+      "Liouville_cutoffs": {
+        "base": {
+          "rough_signed_sum": -10,
+          "divisor_signed_sum": -10,
+          "signed_divisor_ranges": {
+            "d<=N": -10
+          }
+        },
+        "frontier": {
+          "rough_signed_sum": -496,
+          "divisor_signed_sum": -496,
+          "signed_divisor_ranges": {
+            "d<=N": -72,
+            "N<d<=N^(5/4)": -49,
+            "d>N^(5/4)": -375
+          }
+        },
+        "prime_detector": {
+          "rough_signed_sum": -548,
+          "divisor_signed_sum": -548,
+          "signed_divisor_ranges": {
+            "d<=N": -72,
+            "N<d<=N^(5/4)": -65,
+            "d>N^(5/4)": -411
+          }
+        }
+      },
+      "actual_twist_divisor_examples": [
+        {
+          "d": 1,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 30,
+          "twisted_remainder": "30",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 3,
+          "untwisted_remainder": "1/3",
+          "Liouville_extra": 59,
+          "twisted_remainder": "178/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 5,
+          "untwisted_remainder": "0",
+          "Liouville_extra": 54,
+          "twisted_remainder": "54",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 7,
+          "untwisted_remainder": "-2/7",
+          "Liouville_extra": -30,
+          "twisted_remainder": "-212/7",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 15,
+          "untwisted_remainder": "-1/3",
+          "Liouville_extra": 45,
+          "twisted_remainder": "134/3",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 21,
+          "untwisted_remainder": "-2/21",
+          "Liouville_extra": 6,
+          "twisted_remainder": "124/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        },
+        {
+          "d": 35,
+          "untwisted_remainder": "1/7",
+          "Liouville_extra": -1,
+          "twisted_remainder": "-6/7",
+          "twisted_absolute_remainder_exceeds_one": false
+        },
+        {
+          "d": 105,
+          "untwisted_remainder": "-13/21",
+          "Liouville_extra": 7,
+          "twisted_remainder": "134/21",
+          "twisted_absolute_remainder_exceeds_one": true
+        }
+      ],
+      "all_checks_passed": true
+    }
+  ],
+  "cutoff_method": "Exact integer powers; no floating cutoff rounding",
+  "finite_checks_prove_uniform_estimates": false,
+  "general_proofs": "ROSS_GEOMETRY_AUDIT.md",
+  "new_arithmetic_estimate_admitted": false,
+  "centered_frontier_allowed_excess": "0.338",
+  "centered_frontier_estimate_proved": false,
+  "certified_K": 0,
+  "H_theta_proved": false,
+  "historical_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+}

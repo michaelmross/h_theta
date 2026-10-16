@@ -1,0 +1,180 @@
+{
+  "proof": "Symbolic facet identities in the note; this finite sweep is a consistency check",
+  "prime_piece_cases": 24000,
+  "arbitrary_outer_cases": 1314,
+  "tools_used": {
+    "elementary": 7359,
+    "RS": 16641
+  },
+  "smaller_modulus_examples": [
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "13/48",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "7/24",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "5/16",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "1/3",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "17/48",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "3/8",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "19/48",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    },
+    {
+      "gamma": "3/4",
+      "beta": "3/8",
+      "actual_beta": "9/32",
+      "eta": "0",
+      "mu": "5/12",
+      "piece": "I",
+      "witness": {
+        "group": "0",
+        "factor_capacity": "0",
+        "actual_standalone_range": [
+          "0",
+          "0"
+        ],
+        "RS_required": [
+          "0",
+          "33/32"
+        ]
+      }
+    }
+  ],
+  "symbolic_certificates": {
+    "V1_gap": "(1-gamma)/2+2*rho+2*deficit",
+    "V2_and_V5_gap": "1/12+(2/3)*(1-gamma)+rho+deficit",
+    "V3_and_RS_window_width": "4*rho+4*deficit",
+    "V4_gap": "1-gamma+4*rho+4*deficit",
+    "full_level": "beta=5/4-gamma-rho; actual_beta=beta-deficit",
+    "subblock_robustness": "window_width>=4*(rho+deficit); required uncertainty at most deficit"
+  },
+  "exponent_boundaries_not_asserted_as_power_savings": true
+}

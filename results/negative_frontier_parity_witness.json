@@ -1,0 +1,36 @@
+{
+  "carrier": "B=[N^2-H/2,N^2+H/2], H=N^2/(log(N^2))^10",
+  "sequence": "a_m^*=(Y/H)*(1+lambda(m))*1_B(m); lambda(m)=(-1)^Omega(m)",
+  "nonnegative": true,
+  "prime_mass": 0,
+  "compatible_interface": "Asymptotic divisor axioms and all admitted one-sided branch mass inequalities",
+  "does_not_match": [
+    "Exact indicator of J_N",
+    "Individual integer floor remainders bounded by 1",
+    "The stronger power saving remainder error"
+  ],
+  "rough_095_mass": {
+    "lower": "0.20016691711396507298314109695570379409439205221070",
+    "upper": "0.20016691711396507298314109695570379409439205221110",
+    "width": "4.0E-49"
+  },
+  "frontier_095_lower": {
+    "lower": "4.2835968508401263369374792571404778350933859973495",
+    "upper": "4.2836258459041709755203965822500942963891297690213",
+    "width": "0.0000289950640446385829173251096164612957437716718"
+  },
+  "excess_above_373_target": {
+    "lower": "0.5535968508401263369374792571404778350933859973495",
+    "upper": "0.5536258459041709755203965822500942963891297690213",
+    "width": "0.0000289950640446385829173251096164612957437716718"
+  },
+  "new_tail_gap": {
+    "lower": "0.54740060666685143785818424515374219514276538652253",
+    "upper": "0.54740060666685143785818424515374219514276538652351",
+    "width": "9.8E-49"
+  },
+  "universal_parity_tail_gap_derivative": "d(C_small-2*log((2-theta)/theta))/dtheta = -12/[theta*(5-4*theta)*(2-theta)]",
+  "regional_tail_bounds_also_compatible": true,
+  "conclusion": "The mass interfaces alone cannot force K>C_small; an extra arithmetic estimate is required for this campaign",
+  "every_existing_mathematical_method_ruled_out": false
+}

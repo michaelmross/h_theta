@@ -1,0 +1,91 @@
+{
+  "fixtures": [
+    {
+      "U": 1,
+      "M": 1000,
+      "dyadic_energy_exact": 1000,
+      "quadratic_form_exact": "1",
+      "quadratic_form_decimal": "1",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 2,
+      "M": 1000,
+      "dyadic_energy_exact": 500,
+      "quadratic_form_exact": "1/2",
+      "quadratic_form_decimal": "0.5",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 3,
+      "M": 1000,
+      "dyadic_energy_exact": 501,
+      "quadratic_form_exact": "1/2",
+      "quadratic_form_decimal": "0.5",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 4,
+      "M": 1000,
+      "dyadic_energy_exact": 501,
+      "quadratic_form_exact": "1/2",
+      "quadratic_form_decimal": "0.5",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 8,
+      "M": 1000,
+      "dyadic_energy_exact": 507,
+      "quadratic_form_exact": "53/105",
+      "quadratic_form_decimal": "0.5047619047619047619047619048",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 16,
+      "M": 1000,
+      "dyadic_energy_exact": 401,
+      "quadratic_form_exact": "6011/15015",
+      "quadratic_form_decimal": "0.4003330003330003330003330003",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 32,
+      "M": 1000,
+      "dyadic_energy_exact": 474,
+      "quadratic_form_exact": "190912621/406816410",
+      "quadratic_form_decimal": "0.4692844642132307298026645484",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 64,
+      "M": 1000,
+      "dyadic_energy_exact": 454,
+      "quadratic_form_exact": "4797452187864943689863/10662580123582451907570",
+      "quadratic_form_decimal": "0.4499335181786262159767292084",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    },
+    {
+      "U": 128,
+      "M": 1000,
+      "dyadic_energy_exact": 448,
+      "quadratic_form_exact": "27038935661243489721126332008052995121757284038/60825408171712669531733957561000683888574018905",
+      "quadratic_form_decimal": "0.4445335670401330350007856188",
+      "diagonalization_passed": true,
+      "floor_expansion_passed": true
+    }
+  ],
+  "analytic_input": "Bretèche-Dress-Tenenbaum (2020), (1.5) and Theorem 1.1",
+  "source_url": "https://tenenb.perso.math.cnrs.fr/PPP/Sxz.pdf",
+  "uniform_dyadic_bound": "sum_(M<m<=2M)|beta_U(m)|^2=O(M)",
+  "positive_limit": "For U->infinity and M/U->infinity, energy/M->L>0",
+  "vanishing_beta_norm_factor_supplied": false,
+  "fixed_center_nearby_product_correlations_estimated": false
+}

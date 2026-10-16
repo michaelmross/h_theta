@@ -1,0 +1,41 @@
+{
+  "source": "Li arXiv:2308.04458v8 Lemma 4.2, four printed cases",
+  "url": "https://arxiv.org/html/2308.04458v8",
+  "exponent_units": "x; w=1-interval_exponent",
+  "constraints_used": "alpha_j>0; sum alpha_j=1; printed necessary facets",
+  "all_groupings_and_all_positive_factor_decompositions_excluded_at_endpoint": true,
+  "four_cases": [
+    {
+      "case": 1,
+      "coefficient_of_w": "57/28",
+      "necessary_interval_exponent": "29/57",
+      "contradiction_at_interval_exponent_one_half": "1/56",
+      "derivation": "Sum of four individual lower bounds"
+    },
+    {
+      "case": 2,
+      "coefficient_of_w": "133/66",
+      "necessary_interval_exponent": "67/133",
+      "contradiction_at_interval_exponent_one_half": "1/132",
+      "derivation": "Sum of four individual lower bounds"
+    },
+    {
+      "case": 3,
+      "coefficient_of_w": "61/30",
+      "necessary_interval_exponent": "31/61",
+      "contradiction_at_interval_exponent_one_half": "1/60",
+      "derivation": "alpha4+2*alpha3>=w and alpha4>=2*w/5 imply alpha3+alpha4>=7*w/10"
+    },
+    {
+      "case": 4,
+      "coefficient_of_w": "27/13",
+      "necessary_interval_exponent": "14/27",
+      "contradiction_at_interval_exponent_one_half": "1/26",
+      "derivation": "alpha1>=w and 1-alpha1>=14*w/13"
+    }
+  ],
+  "minimum_necessary_interval_exponent": "67/133",
+  "source_applied_at_endpoint": false,
+  "necessary_conditions_are_sufficient": false,
+  "other_large_values_methods_excluded": false
+}

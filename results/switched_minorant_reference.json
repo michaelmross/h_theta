@@ -1,0 +1,92 @@
+{
+  "bins_per_coordinate": 240,
+  "outward_cells": 57600,
+  "level_reserve": "1/1000",
+  "level_sum": "1249/1000",
+  "negative_cofactor_mean_magnitude_unscaled": {
+    "lower": "1.2356813292316557975558328316951086741603724469503",
+    "upper": "1.2640573321813840301472129895006452974735955036833",
+    "width": "0.0283760029497282325913801578055366233132230567330"
+  },
+  "negative_cofactor_mean_magnitude_smoothed": {
+    "lower": "1.2369170105608874533533886645268037828345328193972",
+    "upper": "1.2653213895135654141773602024901459427710690991870",
+    "width": "0.0284043789526779608239715379633421599365362797898"
+  },
+  "actual_base_reference_unscaled": {
+    "lower": "1.1000834585569825364915705484778518970471960261054",
+    "upper": "1.1000834585569825364915705484778518970471960261056",
+    "width": "2E-49"
+  },
+  "actual_base_reference_smoothed": {
+    "lower": "1.1011835420155395190280621190263297489442432221315",
+    "upper": "1.1011835420155395190280621190263297489442432221318",
+    "width": "3E-49"
+  },
+  "positive_complement_reference_smoothed": {
+    "lower": "1.4281273878222395480831850084876584822568912593357",
+    "upper": "1.4281685773264701818885923212099280131716571239939",
+    "width": "0.0000411895042306338054073127222695309147658646582"
+  },
+  "higher_degree_reference_smoothed": {
+    "lower": "0.3269438458067000290551228894613287333126480372039",
+    "upper": "0.3269850353109306628605302021835982642274139018624",
+    "width": "0.0000411895042306338054073127222695309147658646585"
+  },
+  "most_favorable_candidate_mean_smoothed": {
+    "lower": "-0.1641378474980258951492980834638161938268258770555",
+    "upper": "-0.1357334685453479343253265455004740338902895972654",
+    "width": "0.0284043789526779608239715379633421599365362797901"
+  },
+  "most_favorable_candidate_reference_loss": {
+    "lower": "1.5638608563675874824085115539881325161471808566011",
+    "upper": "1.5923064248244960770378904046737442069984830010494",
+    "width": "0.0284455684569085946293788506856116908513021444483"
+  },
+  "certified_candidate_reference_loss_lower_coefficient": "39/25",
+  "if_base_also_WF_minorized_reference_loss_lower_enclosure": {
+    "lower": "2.6650443983831270014365736730144622650914240787329",
+    "upper": "2.6934899668400355960659525237000739559427262231809",
+    "width": "0.0284455684569085946293788506856116908513021444480"
+  },
+  "finite_sieve_tolerance_corrections": "Increase reference loss; displayed favorable enclosure is the epsilon->0 coefficient limit, not an epsilon=0 source application",
+  "budget": "1/10000",
+  "reference_budget_passed": false,
+  "old_coefficients_or_ledgers_changed": false,
+  "omitted_four_prime_box": {
+    "independent_exponent_ranges": [
+      [
+        "2/5",
+        "43/100"
+      ],
+      [
+        "9/20",
+        "12/25"
+      ],
+      [
+        "1/2",
+        "53/100"
+      ]
+    ],
+    "fourth_factor_exponent_range": [
+      "14/25",
+      "13/20"
+    ],
+    "a1_plus_twice_a2_minus_level_minimum": "51/1000",
+    "fourth_factor_ordering_margin": "3/100",
+    "canonical_distinct_four_prime_reference": {
+      "lower": "0.00075944240051304553279103520437438822695514226887636",
+      "upper": "0.0010714285714285714285714285714285714285714285714286",
+      "width": "0.00031198617091552589578039336705418320161628630255224"
+    },
+    "smoothed_reference": {
+      "lower": "0.00076020184291355857832382623957876261518209741114523",
+      "upper": "0.0010725",
+      "width": "0.00031229815708644142167617376042123738481790258885477"
+    },
+    "smoothed_reference_exact_lower_bound": "693/911600",
+    "weight_vanishes_pointwise_on_this_box": true,
+    "box_loss_exceeds_budget_even_with_perfect_active_transfer": true,
+    "same_box_still_outside_level_5_4_gate": true
+  }
+}
