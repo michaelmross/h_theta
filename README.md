@@ -1,6 +1,6 @@
-# H(ϑ) campaign — checkpoint 33
+# H(ϑ) campaign
 
-Michael M. Ross's square-root interval project. Updated 14 October 2026.
+Data and code for *Tri-prime Contributions and Signed Remainders in Square-Root Intervals*, Michael M. Ross (2026).
 
 Start with **[DYADIC_VARIANCE_TEST_NOTE.md](DYADIC_VARIANCE_TEST_NOTE.md)**. The required weaker block variance remains unproved with little-o. An elementary Selberg square now proves the correct uniform O(N²/(PR log⁴N)) scale; its local diagonal is O(N/log³N) and is uniformly negligible. All prime masks, individual r thresholds, five kernel moments and physical sectors are retained. A zero-mean function-space construction proves that even arbitrary fixed logarithmic all-center mean-square savings do not automatically control this sparse reciprocal sample; it is not an actual prime counterexample. The checked primary correlation, interval, progression-variance and smooth Kloosterman clauses do not directly close the actual centered off-diagonal estimate. No sharp deficit coefficient is improved and no sector is removed. All 311 nonmutable checkpoint-32 records are preserved. The original .011/.007935 targets remain open, eta_W+eta_rest<=.000099 is unchanged, K=0 and milestone 7 is deferred.
 
