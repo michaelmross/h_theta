@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 27,
+  "proof_note": "COUPLED_ONE_SIDED_NOTE.md",
+  "primary_sieve_source": {
+    "source": "Lichtman, arXiv:2109.02851v2, Theorem2.10, (2.4)-(2.5)",
+    "url": "https://arxiv.org/html/2109.02851v2",
+    "density_used": "g(p)=1/p; sifting over primes p<z",
+    "remainder": "Finite sum of full-level well-factorable sequences",
+    "source_statement_supplies_campaign_short_interval_remainder": false,
+    "campaign_remainder": "Already proved gamma=0 case of NEGATIVE_FRONTIER_NOTE.md Sections2-4",
+    "fixed_margin_level": "D=N^(5/4-delta), fixed delta>0",
+    "endpoint_order": "N tends to infinity through even integers first, then fixed sieve tolerance and delta tend to zero",
+    "finite_sieve_tolerance_depends_on_N": false,
+    "gates_and_original_least_prime_cutoff_changed": false,
+    "squarefree_sifting_and_full_level_factor_choice_retained": true,
+    "weighted_extension": "Average of nonnegative sharp-window upper inequalities; endpoints within O(Y) of x"
+  },
+  "preserved_source_files": [
+    {
+      "path": "sources/aa37127.pdf",
+      "sha256": "a6a962b15345953fe522160e0323df2bee9b29a93102c9fba2ad2c9b047d70e9"
+    },
+    {
+      "path": "sources/cofactor_estimation/RobertSargos2006.pdf",
+      "sha256": "9d4e54047488ed6b842e91302584b1c8bd07b7f8dd533493f2910652a7238373"
+    },
+    {
+      "path": "NEGATIVE_FRONTIER_NOTE.md",
+      "sha256": "3ca350fa7e90402792d2197055653ca3664eb49d51735bc2f199f1254d2aa391"
+    },
+    {
+      "path": "results/negative_frontier_ledger.json",
+      "sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+    },
+    {
+      "path": "results/signed_mass_ledger.json",
+      "sha256": "44af5f3ca9e3b897e1b311c34611129e450d5bf138f0e108ddf3f45b10df3815"
+    }
+  ],
+  "whole_joint_bound": {
+    "identity": "I_kappa=T_h-(1+kappa)*M_hybrid_core*u+o(u)",
+    "all_three_coefficients": 1,
+    "individual_TypeII_absolute_bounds_inferred": false,
+    "centered_coarse_upper": "1.435994",
+    "coupled_coarse_upper": "1.441618",
+    "sharp_00135582_coupled_estimate_proved": false
+  },
+  "positive_complement": {
+    "coefficient": "1_(Pminus(n)>=z)*(1-min(1,q_N(n)))",
+    "nonnegative": true,
+    "short_partition_exact": true,
+    "long_partition_requires_clipping": true,
+    "long_excess_mark_mass_after_normalization": "O(N/z+rho^(-1))+O(N*rho/(log N)^2)=o(u)",
+    "long_input": "Inherited prime PNT at relative width rho=N^(-o(1)), with error exponentially smaller than rho",
+    "rough_reference": "A0=8*omega(8)",
+    "ordinary_positive_reference": "(1+kappa)*(A0-M), not a short-count lower bound",
+    "sufficient_centered_lower_deficit": "1/10000",
+    "lower_comparison_at_that_deficit_proved": false,
+    "same_as_optional_marked_task": false
+  },
+  "constants": {
+    "root_upper_integral": "(16/5)*(1+integral_1^3 log(v)/(v+1) dv)",
+    "root_integrand_second_derivative_bound": "2 on [1,3]",
+    "Buchstab_recursion": "B=1 on [1,2]; Bprime(t)=B(t-1)/(t-1)",
+    "Buchstab_second_derivative_bound": "2 on interiors of unit intervals; all integer knots are mesh boundaries",
+    "all_operations_outward_rounded": true,
+    "older_ledger_rewritten": false,
+    "rough_centered_upper_coefficient": "7825257/1000000000",
+    "conditional_spectral_coefficient": "7925257/1000000000",
+    "guaranteed_conditional_reserve": "9743/1000000000"
+  },
+  "scoped_lower_sieve_limitation": {
+    "route": "Direct final-cofactor linear lower sieve with admitted 5/4-gamma level",
+    "prime_s": "5/4 < 2",
+    "balanced_semiprime_s_upper": "4/7 < 2",
+    "four_prime_level_minus_twice_sifting_exponent": "<=0, strictly negative after fixed slack",
+    "five_plus_outer_product_exponent": ">=1, outside gamma<1 arbitrary-outer input",
+    "switching_or_joint_degree_estimation_excluded": false
+  },
+  "original_budget": {
+    "spectral": "1587/200000",
+    "smoothing": "613/200000",
+    "total": "11/1000",
+    "new_nonvanishing_charge": "0",
+    "fixed_power_xi_if_used": "Checkpoint22 (23), retained in final coefficient",
+    "fixed_frequency_L_if_used": "21147/L, retained",
+    "sufficient_later_budget": "C_rough+eta+xi+21147/L<=.007935"
+  },
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "next_investigation": {
+    "approach": "Switching audit of a lower weight for the combined positive complement",
+    "pointwise_requirement": "w_N(n)<=d_N(n) on |n-x|<=Y",
+    "reference_loss_requirement": "a*(D_long-W_long)<=(eta_loss+o(1))*u",
+    "comparison_requirement": "W_short-a*W_long>=-(eta_err+o(1))*u",
+    "budget": "eta_loss+eta_err<=1/10000; any xi and 21147/L remain in the final coefficient",
+    "acceptance_transfer_proved": true,
+    "weight_constructed": false,
+    "viability_proved": false,
+    "deliverable": "Actual switched-term coefficient/gate/source table with certified reference loss and comparison charge, or an identified unsupported component"
+  }
+}

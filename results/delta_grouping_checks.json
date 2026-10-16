@@ -1,0 +1,108 @@
+{
+  "checkpoint": 14,
+  "provenance": {
+    "historical_files_verified_unchanged": 149,
+    "historical_ledger_unchanged": true
+  },
+  "fixtures": [
+    {
+      "N": 100,
+      "U": 1,
+      "actual_truncation": true,
+      "stress_truncation": false,
+      "exact_checks": {
+        "selected_beta_expansions": 179,
+        "remaining_covariance_identities": 112,
+        "joint_rows": 125,
+        "proper_b_rows": 80,
+        "core_rows": 1
+      },
+      "all_passed": true,
+      "scope": "Arithmetic identities, not evidence for an asymptotic delta bound"
+    },
+    {
+      "N": 1000,
+      "U": 3,
+      "actual_truncation": false,
+      "stress_truncation": true,
+      "exact_checks": {
+        "joint_rows": 1535,
+        "selected_beta_expansions": 1836,
+        "remaining_covariance_identities": 1249,
+        "proper_b_rows": 1208,
+        "core_rows": 24,
+        "non_prime_power_core_rows_cancelled": 18
+      },
+      "all_passed": true,
+      "scope": "Arithmetic identities, not evidence for an asymptotic delta bound"
+    },
+    {
+      "N": 10000,
+      "U": 8,
+      "actual_truncation": false,
+      "stress_truncation": true,
+      "exact_checks": {
+        "proper_b_rows": 7129,
+        "joint_rows": 18280,
+        "selected_beta_expansions": 15961,
+        "remaining_covariance_identities": 14314,
+        "core_rows": 283,
+        "non_prime_power_core_rows_cancelled": 236
+      },
+      "all_passed": true,
+      "scope": "Arithmetic identities, not evidence for an asymptotic delta bound"
+    }
+  ],
+  "all_checks_passed": true,
+  "terminal_0011_estimate_proved": false,
+  "source_ceiling": {
+    "RS_width": "5-4*Sigma-7*nu",
+    "FI_width": "(5-4*Sigma-3*nu)/2",
+    "widths_strictly_decrease_with_Sigma": true,
+    "no_source_window_for_Sigma_ge_5_4": true,
+    "rows": [
+      {
+        "Sigma": "5/4",
+        "eta": "2501/10000",
+        "RS_necessary_slot_interval": [
+          "1251/2500",
+          "4997/10000"
+        ],
+        "FI_necessary_slot_interval": [
+          "2501/10000",
+          "4999/20000"
+        ]
+      },
+      {
+        "Sigma": "13/10",
+        "eta": "3001/10000",
+        "RS_necessary_slot_interval": [
+          "1501/2500",
+          "3997/10000"
+        ],
+        "FI_necessary_slot_interval": [
+          "3001/10000",
+          "3999/20000"
+        ]
+      },
+      {
+        "Sigma": "4/3",
+        "eta": "10003/30000",
+        "RS_necessary_slot_interval": [
+          "5003/7500",
+          "9991/30000"
+        ],
+        "FI_necessary_slot_interval": [
+          "10003/30000",
+          "9997/60000"
+        ]
+      }
+    ],
+    "actual_interior_core_witness": {
+      "sigma": "13/10",
+      "a": "13/20",
+      "delta": "0"
+    },
+    "scope": "These two raw reciprocal engines at the top transfer frequency; not all methods or joint cancellation"
+  }
+}

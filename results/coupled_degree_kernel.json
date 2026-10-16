@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 30,
+  "definition": "lambda_p(v)=Lambda(v)*1_(Pminus(v)>=p); nu_p(m)=(9/2)*(lambda_p*lambda_p*lambda_p)(m)/log(m)^3; w_p(m)=1-(1-nu_p(m))^5",
+  "lift_order": 5,
+  "band": [
+    "2/5",
+    "43/100"
+  ],
+  "global_nu_range_proved": [
+    "0",
+    "1"
+  ],
+  "automatic_rough_degree_support_proved": true,
+  "pointwise_lower_weight_proved": true,
+  "reference_loss_upper_coefficient": "1/1000000",
+  "uniform_short_defect_upper_coefficient": "33/1000000",
+  "uniform_centered_pool_minus_kernel_bounds_proved": true,
+  "actual_centered_kernel_lower_comparison_proved": false,
+  "arithmetic_reference_candidate_passed": true,
+  "fully_admitted_comparison_weight": false,
+  "tested_two_free_RS_mapping_rejected": true,
+  "all_multilinear_methods_rejected": false,
+  "remaining_interface": "Delta_W5>=-(eta_W+o(1))*u, with eta_W+eta_rest<=99/1000000; keep all 405 signed Vaughan terms",
+  "new_actual_count_was_replaced_by_its_reference_main": false,
+  "original_spectral_budget": "1587/200000",
+  "original_smoothing_budget": "613/200000",
+  "original_total_coefficient": "11/1000",
+  "original_global_allowance_changed": false,
+  "new_fixed_power_or_frequency_sector_discarded": false,
+  "conditional_kernel_transfer_charge": "1/1000000",
+  "fixed_least_prime_xi_if_used": "Checkpoint22 (23), retained",
+  "fixed_frequency_tail_if_used": "21147/L, retained",
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "centered_comparison_flag_scope": "Required .000099 budget; coarse actual lower coefficient -.010008 is proved",
+  "coarse_actual_centered_kernel_lower_coefficient": "-1251/125000",
+  "tested_three_free_per_frequency_RS_mapping_rejected": true
+}

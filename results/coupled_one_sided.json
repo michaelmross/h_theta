@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 27,
+  "proof_note": "COUPLED_ONE_SIDED_NOTE.md",
+  "whole_coupled_one_sided_envelope_proved": true,
+  "whole_coupled_upper_coefficient": "720809/500000",
+  "whole_centered_upper_coefficient": "717997/500000",
+  "positive_short_complement_identity_proved": true,
+  "normalized_long_positive_clipping_error_o_u_proved": true,
+  "positive_complement_sufficient_lower_deficit": "1/10000",
+  "rough_centered_upper_coefficient": "7825257/1000000000",
+  "conditional_spectral_upper_coefficient": "7925257/1000000000",
+  "positive_complement_sharp_lower_comparison_proved": false,
+  "original_spectral_budget": "1587/200000",
+  "original_smoothing_budget": "613/200000",
+  "new_nonvanishing_coefficient_charge": "0",
+  "original_target": "11/1000",
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0
+}

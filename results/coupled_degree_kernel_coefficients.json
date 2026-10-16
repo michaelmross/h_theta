@@ -1,0 +1,114 @@
+{
+  "band": [
+    "2/5",
+    "43/100"
+  ],
+  "lift_order": 5,
+  "normalizing_multiplier": "9/2",
+  "squarefree_triple_seed_minimum": "27/32",
+  "relative_seed_defect_maximum": "5/32",
+  "relative_lifted_defect_maximum": "3125/33554432",
+  "squarefree_triple_lifted_weight_floor": "33551307/33554432",
+  "polynomial_coefficients_ascending": [
+    5,
+    -10,
+    10,
+    -5,
+    1
+  ],
+  "preserved_actual_pool_reference": {
+    "lower": "0.0098070333321849229383884838261793776427228785511673",
+    "upper": "0.010007159752612216774303987459643579619973427996228",
+    "width": "0.0002001264204272938359155036334642019772505494450607"
+  },
+  "rough_band_upper_formula": "(1+kappa)*(4/B)*log(b*(B-a)/(a*(B-b)))",
+  "rough_band_upper_enclosure": {
+    "lower": "0.34717072794857299191353348006358720056090415682013",
+    "upper": "0.34717072794857299191353348006358720056090415682050",
+    "width": "3.7E-49"
+  },
+  "rough_band_upper_upward_coefficient": ".348",
+  "orders": [
+    {
+      "order": 1,
+      "relative_defect": "5/32",
+      "reference_defect_upper_enclosure": {
+        "lower": "0.0015323489581538942091232005978405277566754497736198",
+        "upper": "0.0015636187113456588709849980405693093156208481244107",
+        "width": "0.0000312697531917646618617974427287815589453983507909"
+      },
+      "short_defect_upper_enclosure": {
+        "lower": "0.054245426241964529986489606259935500087641274503145",
+        "upper": "0.054245426241964529986489606259935500087641274503204",
+        "width": "5.9E-50"
+      }
+    },
+    {
+      "order": 2,
+      "relative_defect": "25/1024",
+      "reference_defect_upper_enclosure": {
+        "lower": "0.00023942952471154597017550009341258246198053902712810",
+        "upper": "0.00024431542364775919859140594383895458056575751943917",
+        "width": "0.00000488589893621322841590585042637211858521849231107"
+      },
+      "short_defect_upper_enclosure": {
+        "lower": "0.0084758478503069578103890009781149218886939491411164",
+        "upper": "0.0084758478503069578103890009781149218886939491411255",
+        "width": "9.1E-51"
+      }
+    },
+    {
+      "order": 3,
+      "relative_defect": "125/32768",
+      "reference_defect_upper_enclosure": {
+        "lower": "0.000037410863236179057839921889595716009684459222988766",
+        "upper": "0.000038174284944962374779907178724836653213399612412369",
+        "width": "7.63421708783316939985289129120643528940389423603E-7"
+      },
+      "short_defect_upper_enclosure": {
+        "lower": "0.0013243512266104621578732814028304565451084295532994",
+        "upper": "0.0013243512266104621578732814028304565451084295533009",
+        "width": "1.5E-51"
+      }
+    },
+    {
+      "order": 4,
+      "relative_defect": "625/1048576",
+      "reference_defect_upper_enclosure": {
+        "lower": "0.0000058454473806529777874877952493306265131967535919948",
+        "upper": "0.0000059647320226503710593604966757557270645936894394327",
+        "width": "1.192846419973932718727014264251005513969358474379E-7"
+      },
+      "short_defect_upper_enclosure": {
+        "lower": "0.00020692987915788471216770021919225883517319211770303",
+        "upper": "0.00020692987915788471216770021919225883517319211770326",
+        "width": "2.3E-52"
+      }
+    },
+    {
+      "order": 5,
+      "relative_defect": "3125/33554432",
+      "reference_defect_upper_enclosure": {
+        "lower": "9.1335115322702777929496800770791039268699274874919E-7",
+        "upper": "9.3198937853912047802507760558683235384276397491135E-7",
+        "width": "1.863822531209269873010959787892196115577122616216E-8"
+      },
+      "short_defect_upper_enclosure": {
+        "lower": "0.000032332793618419486276203159248790442995811268391099",
+        "upper": "0.000032332793618419486276203159248790442995811268391135",
+        "width": "3.6E-53"
+      }
+    }
+  ],
+  "selected_reference_loss_charge": "1/1000000",
+  "selected_uniform_short_defect_charge": "33/1000000",
+  "actual_reference_loss_budget_passed": true,
+  "centered_pool_minus_kernel_lower_coefficient": "-1/1000000",
+  "centered_pool_minus_kernel_upper_coefficient": "33/1000000",
+  "comparison_plus_remaining_budget": "99/1000000",
+  "coarse_actual_centered_kernel_lower_coefficient": "-1251/125000",
+  "coarse_actual_centered_kernel_upper_coefficient": "87/250",
+  "comparison_still_uses_actual_normalized_long_count": true,
+  "reference_enclosure_width_discarded_as_o_u": false,
+  "sharp_centered_kernel_lower_bound_proved": false
+}

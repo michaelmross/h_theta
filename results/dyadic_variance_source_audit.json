@@ -1,0 +1,65 @@
+{
+  "checkpoint": 33,
+  "date": "2026-10-14",
+  "proof_note": "DYADIC_VARIANCE_TEST_NOTE.md",
+  "admitted_inputs": [
+    "Checkpoint25 explicit Selberg square and interval floor-remainder algebra",
+    "Ordinary long prime upper bounds",
+    "Own uniform physical-pair geometry and block normalization",
+    "Own elementary centered-square upper envelope and diagonal estimate"
+  ],
+  "new_block_O_scale_proved": true,
+  "required_block_little_o_proved": false,
+  "actual_prime_masks_and_thresholds_retained": true,
+  "new_short_prime_asymptotic_assumed": false,
+  "new_sampled_correlation_theorem_assumed": false,
+  "functional_sampling_counterexample_is_actual_prime_counterexample": false,
+  "candidates": [
+    {
+      "source": "Natalie Evans, Correlations of almost primes",
+      "url": "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/correlations-of-almost-primes/08F8E4E4C36F68ED6DDA373CCAF7A221",
+      "clauses_read": ["Theorem1.1", "Theorem1.3", "Lemma2.4", "Definition3.1", "Theorem3.2"],
+      "scope": "Long base-variable correlations for almost all shifts; restricted smaller prime is subpower; Parseval averages over centers",
+      "gaps": ["The actual beta has both prime factors at least N^.40", "Curved prime-pair sampling has not been transferred from a long center average"],
+      "required_little_o_source_admitted": false,
+      "all_possible_adaptations_excluded": false
+    },
+    {
+      "source": "Matomaki and Teravainen, Almost primes in almost all short intervals II",
+      "url": "https://arxiv.org/pdf/2207.05038",
+      "version_read": "PDF returned by arXiv on 14 October 2026",
+      "clauses_read": ["Theorem1.1", "Theorem2.1", "Lemma3.4"],
+      "scope": "Polylogarithmic first prime, sieve minorant, and integrated-center variance; sparse-polynomial mean value is a t-integral",
+      "gaps": ["Different coefficient family", "No sampled-center variance bound with the physical r threshold"],
+      "required_little_o_source_admitted": false,
+      "all_possible_adaptations_excluded": false
+    },
+    {
+      "source": "Adam Harper, Simple Barban-Davenport-Halberstam type asymptotics for general sequences",
+      "url": "https://arxiv.org/pdf/2412.19644",
+      "clauses_read": ["Variance definition", "Theorem1", "Section2 equation(2.1)"],
+      "scope": "Long arithmetic-progression variance, summed over moduli and residue classes, with distribution and sparsity hypotheses",
+      "gaps": ["No reduction to the curved short-window prime sample", "Hypotheses have not been matched to produce the current centered expression"],
+      "required_little_o_source_admitted": false,
+      "all_possible_adaptations_excluded": false
+    },
+    {
+      "source": "Sary Drappeau, Sums of Kloosterman sums in arithmetic progressions, and the error term in the dispersion method",
+      "url": "https://arxiv.org/pdf/1504.05549",
+      "version_read": "v4, 11 December 2016",
+      "clauses_read": ["Section2 discussion of smooth variables", "Theorem2.1", "Theorem5.1 and centered character kernel"],
+      "scope": "Kloosterman phases with two smooth summation variables and scale derivative bounds; convolution estimates in arithmetic progressions",
+      "direct_mapping_failed": true,
+      "gaps": ["Actual prime masks are not smooth-variable coefficients", "Original product-window logarithmic derivative is of order N on its ramps", "No completed mapping with physical gates and centering has been supplied"],
+      "required_little_o_source_admitted": false,
+      "all_possible_adaptations_excluded": false
+    }
+  ],
+  "next_actual_analytic_input": "Uniform one-sided little-o upper bound for the complete centered off-diagonal expression (16), or the original coupled one-sided comparison",
+  "new_nonvanishing_error_charge": "0",
+  "original_coefficient_allowance_changed": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "sharp_original_0011_bound_proved": false,
+  "global_existing_tool_exclusion_claim": false,
+  "certified_K": 0
+}

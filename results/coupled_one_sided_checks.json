@@ -1,0 +1,106 @@
+{
+  "preservation": {
+    "checkpoint26_nonmutable_records_verified": 268,
+    "checkpoint26_manifest_sha256": "49e94f955c26531b0da3ece2c17b0cdd3bff17b3e339b8348d5cc24e5abea437",
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+  },
+  "arithmetic": {
+    "short_cases": [
+      {
+        "N": 65536,
+        "squarefree_three_prime_rows": 6348,
+        "sites": 131075,
+        "rough_sites": 25142,
+        "repeated_three_prime_residual_rows": 147,
+        "marked_mass": "16927",
+        "positive_complement_mass": "8215",
+        "original_cutoffs_used": true
+      },
+      {
+        "N": 65538,
+        "sites": 131079,
+        "rough_sites": 25143,
+        "squarefree_three_prime_rows": 6363,
+        "repeated_three_prime_residual_rows": 150,
+        "marked_mass": "16888",
+        "positive_complement_mass": "8255",
+        "original_cutoffs_used": true
+      },
+      {
+        "N": 70000,
+        "sites": 140003,
+        "rough_sites": 26854,
+        "squarefree_three_prime_rows": 6812,
+        "repeated_three_prime_residual_rows": 145,
+        "marked_mass": "35923/2",
+        "positive_complement_mass": "17785/2",
+        "original_cutoffs_used": true
+      }
+    ],
+    "short_padding_sites_checked": 402157,
+    "broad_stress_window": {
+      "N": 62,
+      "window": [
+        1922,
+        5766
+      ],
+      "artificial_window_not_the_asymptotic_long_reference": true,
+      "multiple_mark_sites": 14,
+      "excess_mark_mass": "14",
+      "maximum_mark": "3",
+      "witness": {
+        "n": 2431,
+        "mark": "3",
+        "raw_complement": "-2",
+        "positive_complement": "0"
+      }
+    },
+    "finite_rows_do_not_prove_a_uniform_sharp_estimate": true
+  },
+  "source_scope": {
+    "actual_beta_both_signs": {
+      "U": 5,
+      "beta_30": 2,
+      "beta_7": -1
+    },
+    "positive_outer_TypeII_stress_witness": {
+      "p": 210,
+      "b_p": 7,
+      "m": 30,
+      "U": 5,
+      "coefficient_numerator": 2,
+      "stress_cutoff_only_not_uniform_shell_evidence": true
+    },
+    "direct_final_cofactor_lower_sieve": {
+      "unmarked_prime_limiting_s": "5/4 < 2",
+      "unmarked_balanced_semiprime_maximum_s": "4/7 < 2",
+      "four_prime_limiting_level_minus_twice_last_sifting_exponent": "0",
+      "fixed_slack_four_prime_margin": "negative",
+      "five_or_more_prime_outer_gamma": ">=1, outside gamma<1 input",
+      "scope": "Direct final-cofactor linear lower sieve with the admitted 5/4-gamma level",
+      "all_other_transfers_excluded": false
+    }
+  },
+  "outward_quadrature": {
+    "root_upper": {
+      "bins": 8000,
+      "second_derivative_absolute_bound": "2",
+      "integral_trapezoid_absolute_error": "1/48000000",
+      "normalized_U5": {
+        "lower": "1.4060916101339288413974994657633797782996097890728",
+        "upper": "1.4060916518005955080641661324300464449662764557906",
+        "width": "4.16666666666666666666666666666666666667178E-8"
+      }
+    },
+    "rough_reference": {
+      "bins_per_unit": 8000,
+      "trapezoid_cells": 48000,
+      "cell_integral_error": "1/3072000000000",
+      "omega_second_derivative_bound_on_unit_interiors": "2",
+      "integer_knots_are_grid_boundaries": true,
+      "explicit_B3_check_passed": true
+    }
+  },
+  "all_exact_checks_passed": true,
+  "sharp_target_proved": false
+}

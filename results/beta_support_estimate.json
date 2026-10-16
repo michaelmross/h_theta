@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-08",
+  "checkpoint": 17,
+  "actual_U": "floor(N^(1/100))",
+  "uniformity": "Every sufficiently large even N; all actual first-prime stopped intervals",
+  "new_source_input": {
+    "author": "Alexander P. Mangerel",
+    "year": 2023,
+    "statement": "Lemma 3.2 (Shiu), fixed divisor-bound parameters B=2,C=1",
+    "url": "https://doi.org/10.1007/s40687-023-00376-0",
+    "source_page": "PDF page 13",
+    "all_interval_bound": true,
+    "almost_all_theorem_used": false
+  },
+  "support_bound": "#{k in I_p: beta_U(k)!=0} << H_p/(log U)^delta",
+  "absolute_beta_bound": "sum_(I_p)|beta_U| << H_p/(log U)^(delta/2)",
+  "actual_covariance_bound": "|C_N| << N/(log N)^(delta/2)",
+  "delta_formula": "1-(1+log(log(2)))/log(2)",
+  "parameters": {
+    "lambda": {
+      "lower": "1.4426950408889634073599246810018921374266459541529",
+      "upper": "1.4426950408889634073599246810018921374266459541530",
+      "width": "1E-49"
+    },
+    "t": {
+      "lower": "0.72134752044448170367996234050094606871332297707645",
+      "upper": "0.72134752044448170367996234050094606871332297707650",
+      "width": "5E-50"
+    },
+    "delta": {
+      "lower": "0.08607133205593420688757309877692267776059110953019",
+      "upper": "0.08607133205593420688757309877692267776059110953046",
+      "width": "2.7E-49"
+    },
+    "covariance_log_saving_exponent": {
+      "lower": "0.043035666027967103443786549388461338880295554765095",
+      "upper": "0.043035666027967103443786549388461338880295554765230",
+      "width": "1.35E-49"
+    },
+    "high_support_exponent": {
+      "lower": "-0.08607133205593420688757309877692267776059110953046",
+      "upper": "-0.08607133205593420688757309877692267776059110953019",
+      "width": "2.7E-49"
+    },
+    "low_support_exponent": {
+      "lower": "-0.08607133205593420688757309877692267776059110953048",
+      "upper": "-0.08607133205593420688757309877692267776059110953021",
+      "width": "2.7E-49"
+    },
+    "scaled_interval_vertices": [
+      {
+        "a": "1/4",
+        "s": "0",
+        "width_exponent": "3/4",
+        "center_exponent": "7/4",
+        "Shiu_margin": "83/120"
+      },
+      {
+        "a": "1/4",
+        "s": "1/80",
+        "width_exponent": "59/80",
+        "center_exponent": "139/80",
+        "Shiu_margin": "1631/2400"
+      },
+      {
+        "a": "19/20",
+        "s": "0",
+        "width_exponent": "1/20",
+        "center_exponent": "21/20",
+        "Shiu_margin": "3/200"
+      },
+      {
+        "a": "19/20",
+        "s": "1/80",
+        "width_exponent": "3/80",
+        "center_exponent": "83/80",
+        "Shiu_margin": "7/2400"
+      }
+    ],
+    "minimum_Shiu_width_margin": "7/2400",
+    "fixed_Shiu_interval_exponent": "1/30",
+    "prime_series_block_exponent": {
+      "lower": "1.4426950408889634073599246810018921374266459541529",
+      "upper": "1.4426950408889634073599246810018921374266459541530",
+      "width": "1E-49"
+    },
+    "remaining_log_power_to_reach_u": {
+      "lower": "0.95696433397203289655621345061153866111970444523477",
+      "upper": "0.95696433397203289655621345061153866111970444523491",
+      "width": "1.4E-49"
+    },
+    "transcendental_values_enclosed_outward": true
+  },
+  "actual_beta_support_bound_proved": true,
+  "actual_beta_L1_log_saving_proved": true,
+  "actual_covariance_partial_log_saving_proved": true,
+  "actual_gates_retained": true,
+  "repeated_and_shared_prime_factors_retained": true,
+  "beta_treated_as_multiplicative": false,
+  "historical_second_moment_input_strengthened": false,
+  "new_numeric_core_mass_credit": 0,
+  "remaining_interface": "Delta_2+Delta_3=C_N-(M_core+o(1))*u",
+  "required_one_sided_bound": "C_N <= (M_core+.011+o(1))*u",
+  "terminal_0011_estimate_proved": false,
+  "covariance_estimated_at_u_scale": false,
+  "higher_degree_cap_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "next_analytic_target": "Signed actual continuation/core estimate on the small-prime boundary-divisor configurations; recover the remaining logarithmic power and terminal coefficient",
+  "checks": "results/beta_support_checks.json",
+  "provenance": {
+    "checkpoint_16_nonmutable_records_verified": 199,
+    "new_source_records_verified": 3,
+    "negative_frontier_ledger_sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e",
+    "historical_analytic_ledger_unchanged": true
+  },
+  "proof_note": "BETA_SUPPORT_ESTIMATE_NOTE.md"
+}

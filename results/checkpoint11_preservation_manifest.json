@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-06",
+  "checkpoint": 11,
+  "files": [
+    {
+      "path": "CAMPAIGN_NOTE.md",
+      "size_bytes": 15926,
+      "sha256": "908826cf477947bd7e357a27e953d7428f99226641d932b68f07b1b0d7c6698c"
+    },
+    {
+      "path": "CONSTRAINT_INVENTORY.md",
+      "size_bytes": 32324,
+      "sha256": "51f6f771e6b092a25fb06a60fb1928ad741a3ae8c62d4c8d2f4d2c9993aeb6c8"
+    },
+    {
+      "path": "FI_1989_AUDIT.md",
+      "size_bytes": 19720,
+      "sha256": "6607ae4cbcaeb7ff73f3464f7ea9cb085ba8e689449b4662512618e18dc360ac"
+    },
+    {
+      "path": "FRONTIER_INVESTIGATION_NOTE.md",
+      "size_bytes": 21150,
+      "sha256": "896731aad12dadf17901c84d555aa818f88c74903f85613abfd10ceced02a17a"
+    },
+    {
+      "path": "JOINT_REMAINDER_NOTE.md",
+      "size_bytes": 17922,
+      "sha256": "c70dc2a817d6e48c477a9ce16be487d542ce0a4b4dbe68ccacb0c59c94ce40e9"
+    },
+    {
+      "path": "NEGATIVE_FRONTIER_NOTE.md",
+      "size_bytes": 29683,
+      "sha256": "3ca350fa7e90402792d2197055653ca3664eb49d51735bc2f199f1254d2aa391"
+    },
+    {
+      "path": "ORIGINAL_SOURCE_AUDIT.md",
+      "size_bytes": 16372,
+      "sha256": "2c22f0c33de55133e6541863f90db141edbff9a03b2fdf18a05c176f19f4cd0b"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 20128,
+      "sha256": "e7100ee440c6735a3db7e8a2c9582b38c6fadd2565cfdddf61e59a0756300eca"
+    },
+    {
+      "path": "RESTRICTED_FRONTIER_NOTE.md",
+      "size_bytes": 16388,
+      "sha256": "f0ec701ce5fe6bb4d000d7236d4484240229a222f160acc3ff5f87a1c14dac32"
+    },
+    {
+      "path": "ROSS_GEOMETRY_AUDIT.md",
+      "size_bytes": 18712,
+      "sha256": "feb4c6842b9419929c82078f621058fc728977675495d48399c46e32cd2e7e74"
+    },
+    {
+      "path": "SIGNED_LEDGER_NOTE.md",
+      "size_bytes": 10755,
+      "sha256": "97eb7d016f67d238e19c2b31311746993ce215214cd376d0d69ca0fe6975e860"
+    },
+    {
+      "path": "STRUCTURED_FRONTIER_NOTE.md",
+      "size_bytes": 17523,
+      "sha256": "05674b14dc5128273a47075ceec01c872cc77299cb608b819998a7ce876dbe47"
+    },
+    {
+      "path": "TOOL_REGISTRY.json",
+      "size_bytes": 43316,
+      "sha256": "519f541e0f8d0a916eed99a21cc04741735d41b09bb68ad2c583c788f7fca815"
+    },
+    {
+      "path": "TWO_THREE_BILINEAR_NOTE.md",
+      "size_bytes": 15583,
+      "sha256": "b742f1743caf463ae2f406ec44bc278cfde28d1a3e8cba2a5d118ebca010690f"
+    },
+    {
+      "path": "baseline/constraint_inventory.tex",
+      "size_bytes": 21717,
+      "sha256": "7fde7bb49a7e1a61dd056b3d4688a6d3b96f74ac6d23fe8f6101297d7e7d485e"
+    },
+    {
+      "path": "baseline/fm_exact.py",
+      "size_bytes": 8206,
+      "sha256": "4e92cc27172c5326cfef3d45503eb4881c67a979998d8b78f5fa392d30721d57"
+    },
+    {
+      "path": "baseline/manifest.json",
+      "size_bytes": 892,
+      "sha256": "4871afbd21cdf494ed6b9f9294239a16457436d7f4d32ba8734115d7869a9a7b"
+    },
+    {
+      "path": "baseline/milestones.png",
+      "size_bytes": 38713,
+      "sha256": "a30def873dfe1dda2e647e3f6541c68026e42129467308dfa80187c95d73feb1"
+    },
+    {
+      "path": "baseline/one-hypothesis.tex",
+      "size_bytes": 46449,
+      "sha256": "e534a6b418268735d65f8894ce5267a663e296d958a0ed0d21de358dff57ef54"
+    },
+    {
+      "path": "results/buchstab_checks.json",
+      "size_bytes": 8777,
+      "sha256": "2232e245df5694a82c5820b8332ac02526fc8defffa8f49ac7194c68e4fe056f"
+    },
+    {
+      "path": "results/campaign_state.json",
+      "size_bytes": 7191,
+      "sha256": "a49fe20e46f0f23fe94080c2f5b42488dc127a28679145b860f9ffe00a3bc7c3"
+    },
+    {
+      "path": "results/endpoint_certificate.json",
+      "size_bytes": 547,
+      "sha256": "f7d6b6f19bf54866ffbb0d05ce3769914bf67acc758f6757b77a0a67ac861745"
+    },
+    {
+      "path": "results/fi1989_source_audit.json",
+      "size_bytes": 12998,
+      "sha256": "7c4fc7533f74492b086e0b37bb5bfed80475e666e525dde27886cada528ba06a"
+    },
+    {
+      "path": "results/fi_remaining_bounds.json",
+      "size_bytes": 4924,
+      "sha256": "0c06772af2b172b4d7ec47135736d5cb51840469707a6b960b943390aa8333a6"
+    },
+    {
+      "path": "results/first_typeI_pass.json",
+      "size_bytes": 344,
+      "sha256": "cc2b0a9b8f2a0e50f9e3356b6f25e4d49175c0755fb052a75fcc3685c59a7ed0"
+    },
+    {
+      "path": "results/fm_original_run.txt",
+      "size_bytes": 829,
+      "sha256": "cc9447c0f9916bee1814c6a2dcb58e860b66b0364d7357dee2750bbba101bae2"
+    },
+    {
+      "path": "results/frontier_centered_experiments.json",
+      "size_bytes": 77180,
+      "sha256": "d2c7eb1b756c68c2ff09894c497041ad1a0f2451c7d298fa2259a74482ebd2c8"
+    },
+    {
+      "path": "results/frontier_four_factor_certificate.json",
+      "size_bytes": 1483,
+      "sha256": "4231ca29e4c0f1d45ce1f5b84cbfc36eeebcc4613ccdbfc796c93af281371d3a"
+    },
+    {
+      "path": "results/frontier_investigation.json",
+      "size_bytes": 3579,
+      "sha256": "994f769a2fab65d2fb95fde0d08c7f1a247a8ded352f04dc9e09cd0198703b43"
+    },
+    {
+      "path": "results/frontier_prime_product_mass.json",
+      "size_bytes": 4798,
+      "sha256": "1ddcbd032087c21e365ca92e8682dc0e16aa059c88ae5c7f63a3616e7815d82a"
+    },
+    {
+      "path": "results/joint_remainder_beta_energy.json",
+      "size_bytes": 2770,
+      "sha256": "c064ddaf23edddae26d724d1a95623c2739ad1edeaabf5f75700b403761d0099"
+    },
+    {
+      "path": "results/joint_remainder_checks_and_reference.json",
+      "size_bytes": 5397,
+      "sha256": "21df0b9efd1427178965cdb3ff740b5f6f28d03612ec0ef3d0d56e75972ae2f8"
+    },
+    {
+      "path": "results/joint_remainder_facets.json",
+      "size_bytes": 14890,
+      "sha256": "bc9904edacd9af05d1483f116355f84f7c3919200e5aacf87d4cb43036c64044"
+    },
+    {
+      "path": "results/joint_remainder_reduction.json",
+      "size_bytes": 1162,
+      "sha256": "6b90e62ac341762892a26235d2453ce33653e080dd3287162054b3c188bdf9ce"
+    },
+    {
+      "path": "results/moment_family_endpoint.json",
+      "size_bytes": 2300,
+      "sha256": "4931e3579dda5af1483d1e1c308a09fba393367c9b86a788b9b6839d69c30ec4"
+    },
+    {
+      "path": "results/negative_frontier_arithmetic.json",
+      "size_bytes": 4498,
+      "sha256": "c8626dbe1405111128779f32168754d994d89069e04a765cf9d084b6541b5585"
+    },
+    {
+      "path": "results/negative_frontier_coverage.json",
+      "size_bytes": 3662,
+      "sha256": "dd505ecbde737109c773cfdfff20ba8d1ed58ae72fe907342d714fd0260bd704"
+    },
+    {
+      "path": "results/negative_frontier_ledger.json",
+      "size_bytes": 14649,
+      "sha256": "c7a2b69b438c5a426bafab83c0cba2aeb0fa703046659798c1da8460e7e1378e"
+    },
+    {
+      "path": "results/negative_frontier_parity_witness.json",
+      "size_bytes": 1647,
+      "sha256": "8783d6d42eefe1a0395222ae129abc6f7de38dd9ca3516870859ab018138785f"
+    },
+    {
+      "path": "results/original_source_audit.json",
+      "size_bytes": 6466,
+      "sha256": "914e2046e212747a4956d70e6bfc808bc2adeb96cdaebf014b9e44f6cb743fd9"
+    },
+    {
+      "path": "results/region_inventory.json",
+      "size_bytes": 13691,
+      "sha256": "a09cbe597b87472655b435edca4a3e9155f06fd87f99e4eaab65555e64ef5fa0"
+    },
+    {
+      "path": "results/resonance_demo.json",
+      "size_bytes": 1294,
+      "sha256": "8de9cbfa8205dafdf9acc123c630ba78c64f895efac910e16af9171deb0f3a7e"
+    },
+    {
+      "path": "results/restricted_frontier_reduction.json",
+      "size_bytes": 2526,
+      "sha256": "2dce166e9aef6afb4a3d7c6d2240681b82c0e921b9007bcab1186190dd0097de"
+    },
+    {
+      "path": "results/ross_geometry_audit.json",
+      "size_bytes": 39740,
+      "sha256": "22cd029ef3cb4e521dee8eecee51fa83b33b5fedd947a5f51bb61ac4a937c756"
+    },
+    {
+      "path": "results/signed_mass_ledger.json",
+      "size_bytes": 8316,
+      "sha256": "44af5f3ca9e3b897e1b311c34611129e450d5bf138f0e108ddf3f45b10df3815"
+    },
+    {
+      "path": "results/structured_frontier_mass.json",
+      "size_bytes": 3617,
+      "sha256": "c5e3fe635fab8083a1d8bbb4a74a0fd689b3d3b020c065b4ff2b2632d4e35cd5"
+    },
+    {
+      "path": "results/structured_frontier_obstruction.json",
+      "size_bytes": 5570,
+      "sha256": "3c92d667d0b43429c3ae4d1ec86ac00d3dae95356c6c368411b81f37820d8101"
+    },
+    {
+      "path": "results/tail_boundary_checks.json",
+      "size_bytes": 669,
+      "sha256": "cd905a25c406bf17f9b31b934166010aeb62ca40f490c5304a56b33b00d6118c"
+    },
+    {
+      "path": "results/target_table.csv",
+      "size_bytes": 748,
+      "sha256": "3ac6ed4924b7aea1c10cbdd6f070080d5507120abc0dc3297431aaea053459f4"
+    },
+    {
+      "path": "results/terminal_prime_checks.json",
+      "size_bytes": 3892,
+      "sha256": "60a1853f044f83fb3fbe9864816ff3b9f2581ec1a16d4590b926406abe7a47a9"
+    },
+    {
+      "path": "results/third_frontier_upper.json",
+      "size_bytes": 1762,
+      "sha256": "d754e75916929759940c70ee7ea9584b2d9ef21e6a023518cef147882c288caf"
+    },
+    {
+      "path": "results/two_three_analytic_audit.json",
+      "size_bytes": 1257,
+      "sha256": "89442cb993d5efda956455375a6d6c3ee93cf6087836ce35b54b081c4acd4257"
+    },
+    {
+      "path": "results/two_three_bilinear_reduction.json",
+      "size_bytes": 1430,
+      "sha256": "ef4e9ebddb10d408cac97180af59f91929c0c1a8933e86e021bce29be3e0ddd4"
+    },
+    {
+      "path": "results/two_three_reference_and_samples.json",
+      "size_bytes": 7057,
+      "sha256": "2fb3f49c729520b21973eb359dba8813574dd9b2fe305ea96993bb0601bc81c2"
+    },
+    {
+      "path": "results/two_three_vaughan_checks.json",
+      "size_bytes": 10924,
+      "sha256": "4fed872ca0e1c78c8b803df192e56e79f9dbc34e65901589c50224421b29b66a"
+    },
+    {
+      "path": "sources/aa36210.pdf",
+      "size_bytes": 1193655,
+      "sha256": "6b799768bafdea2952ce84c82b944ef9e320195631e3bbdc6b95be7b8607f91a"
+    },
+    {
+      "path": "sources/aa37127.pdf",
+      "size_bytes": 613790,
+      "sha256": "a6a962b15345953fe522160e0323df2bee9b29a93102c9fba2ad2c9b047d70e9"
+    },
+    {
+      "path": "sources/aa4226.pdf",
+      "size_bytes": 961135,
+      "sha256": "0c6d409366e531638112a7cba82c1120dcf4ec6d9531c65b9fc3e67d6dd2ad22"
+    },
+    {
+      "path": "sources/fi1989_monomials.pdf",
+      "size_bytes": 845096,
+      "sha256": "eb87421df0d868cd8c63ea163dc3be0ed7b5346ddba88f9028223cfba09afc71"
+    },
+    {
+      "path": "sources/ross_factor_rays/fig1_factor_rays.pdf",
+      "size_bytes": 25030,
+      "sha256": "31a0f65e7e38bdb42007a9afca6db5e6ca462e8330a9d89a4e9b8373d8579643"
+    },
+    {
+      "path": "sources/ross_factor_rays/fig2_band_comparison.pdf",
+      "size_bytes": 15065,
+      "sha256": "efb27d5d0c4c2404e14535a18d98b6a6e0a8c757c814de3b49d5e888daa68c98"
+    },
+    {
+      "path": "sources/ross_factor_rays/fig3_composite_waves.pdf",
+      "size_bytes": 33936,
+      "sha256": "b1dba142ef77bbfcd092c6924ecfebfe5f0f352e15794f2957908d816ac6c7b8"
+    },
+    {
+      "path": "sources/ross_factor_rays/main.tex",
+      "size_bytes": 61220,
+      "sha256": "3c37b0c8a22daf9dec2a597dc5aa90e30bb95b547badd1efd50e948e181ed828"
+    },
+    {
+      "path": "sources/ross_factor_rays/rossmeta.sty",
+      "size_bytes": 663,
+      "sha256": "29a28890d9fda512ec62bf0d8a61cf5125831b20b9affedf20e132885b37c62a"
+    },
+    {
+      "path": "sources/ross_factor_rays_original.zip",
+      "size_bytes": 80769,
+      "sha256": "e8f4bdabddce21908abc56c24ecda4a3df59f8c2e681bbc978a2ccb4a18417f9"
+    },
+    {
+      "path": "sources/ross_square_shells/finite_shell_fluctuation.png",
+      "size_bytes": 120797,
+      "sha256": "5029d3db060b2364064ddd29723504e12ba884f12afe0353bc6d8feab6fdfd80"
+    },
+    {
+      "path": "sources/ross_square_shells/k5_geometric_exact_margin.png",
+      "size_bytes": 102249,
+      "sha256": "3930fa20e439a6ea885b86ff7a9838a36f22c5c3dc3bfe4cbcbb0dfec0fc8bc6"
+    },
+    {
+      "path": "sources/ross_square_shells/liouville_parity_two_panel.png",
+      "size_bytes": 211921,
+      "sha256": "041a9d55229ddbe1f63cc8d619bcc97baebd00dc0dc5f8c2fa43db02e73ab8fc"
+    },
+    {
+      "path": "sources/ross_square_shells/main.tex",
+      "size_bytes": 74613,
+      "sha256": "9a42d1f61f924d0ce3b6dee89b43cd2aafc602ad65a215c0afa463c8137f0d25"
+    },
+    {
+      "path": "sources/ross_square_shells/rossmeta.sty",
+      "size_bytes": 659,
+      "sha256": "66920328746738454a09a8f58b60a3d6071e556e105bc4f6735e00d497d45e80"
+    },
+    {
+      "path": "sources/ross_square_shells_original.zip",
+      "size_bytes": 418565,
+      "sha256": "3df0a2191ed4aa81bc2dda72d422087ef2afc71c6c5c96d123b1b5fed2f67bdf"
+    },
+    {
+      "path": "src/campaign.py",
+      "size_bytes": 13675,
+      "sha256": "5a83b29a8f4c2eab9835e8e71b990efc1563766d2db8a68213cad464d5b7ab87"
+    },
+    {
+      "path": "src/fi1989_audit.py",
+      "size_bytes": 14407,
+      "sha256": "c56b0fe8f9fe644306d84d922a96792a34c224c75100c8d72fb58928a95919bd"
+    },
+    {
+      "path": "src/frontier_investigation.py",
+      "size_bytes": 15931,
+      "sha256": "27a113aa57d25d48b01726ae6aa28c01c4ca5fdc4409d7b88b529f114f180e8e"
+    },
+    {
+      "path": "src/joint_remainder.py",
+      "size_bytes": 17312,
+      "sha256": "971a7cbac720eecc040a8f7e9591411e40cf39fd052b903563997c4609abd61e"
+    },
+    {
+      "path": "src/negative_frontier.py",
+      "size_bytes": 20378,
+      "sha256": "880ce4dd1db458787a533b02ddc4aca6e0e3f789e8205d1807552103a76092a3"
+    },
+    {
+      "path": "src/restricted_frontier.py",
+      "size_bytes": 20737,
+      "sha256": "e6507f179435823d549b4ef2c27b73bbd5f155a8dde9e62b7f6844faaf236348"
+    },
+    {
+      "path": "src/ross_geometry_audit.py",
+      "size_bytes": 17076,
+      "sha256": "ddff90b0635e158df5b2faf1bab7786619213738e7fe2aad91e106c7eae38c59"
+    },
+    {
+      "path": "src/signed_mass.py",
+      "size_bytes": 12026,
+      "sha256": "7b5a0846c19f403a560f5363e3a8eef5580d1d5954d73bf5bd38d4fa0f8bf9b0"
+    },
+    {
+      "path": "src/source_audit.py",
+      "size_bytes": 11650,
+      "sha256": "2fc2a2497c9a85fb3b0c722b16d51a22619b51ca5e1f5eecfe03858a3d2b177d"
+    },
+    {
+      "path": "src/structured_frontier.py",
+      "size_bytes": 17527,
+      "sha256": "d756e69eb1899c46e9a8863b9d30bbe754dfa72682a24219ae6dc9e147f06631"
+    },
+    {
+      "path": "src/two_three_frontier.py",
+      "size_bytes": 17625,
+      "sha256": "4f287db0aa0a94858fccc53db649e050f32a97f7952b2b6aaec92fc1a27ed6c0"
+    }
+  ],
+  "historical_checkpoint10_files_verified": 72,
+  "historical_mutable_indexes": [
+    "CONSTRAINT_INVENTORY.md",
+    "README.md",
+    "TOOL_REGISTRY.json",
+    "results/campaign_state.json"
+  ],
+  "new_report": "JOINT_REMAINDER_NOTE.md",
+  "H_theta_proved": false,
+  "verification_summary": {
+    "continuous_exponent_regions": 3,
+    "exact_rational_vertex_records": 32,
+    "exact_beta_energy_fixtures": 9,
+    "exact_signed_short_fixtures": 7,
+    "reference_interval_bins": 20000,
+    "terminal_0011_estimate_proved": false,
+    "certified_K": 0
+  }
+}

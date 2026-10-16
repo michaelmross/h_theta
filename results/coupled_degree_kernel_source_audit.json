@@ -1,0 +1,181 @@
+{
+  "date": "2026-10-12",
+  "checkpoint": 30,
+  "proof_note": "COUPLED_DEGREE_KERNEL_NOTE.md",
+  "kernel": {
+    "band": [
+      "2/5",
+      "43/100"
+    ],
+    "prime_base_cutoff": "lambda_p(v)=Lambda(v)*1_(Pminus(v)>=p)",
+    "convolution": "C_3,p=lambda_p*lambda_p*lambda_p",
+    "seed": "nu_p(m)=(9/2)*C_3,p(m)/log(m)^3",
+    "fixed_polynomial": "1-(1-nu)^5",
+    "global_seed_range": [
+      "0",
+      "1"
+    ],
+    "rough_degree_support_is_automatic": true,
+    "pointwise_lower_weight_proved": true,
+    "original_prime_product_marks_and_half_diagonal_changed": false,
+    "polynomial_declared_WF_by_clipping": false
+  },
+  "defect_proofs": {
+    "squarefree_four_prime_minimum_seed": "27/32",
+    "relative_defect_bound": "3125/33554432",
+    "repeated_rows_retained_in_pointwise_proof": true,
+    "repeated_short_envelope": "O(N^(3/5)+N^(4/5))=o(u)",
+    "repeated_normalized_long_envelope": "O(N^(3/5)+N^(-1/5)*rho^(-1))=o(u)",
+    "degree_five_normalized_long_boundary": "O(N*rho^4/log(N)^5)=o(u)",
+    "ordinary_pool_reference": {
+      "lower": "0.0098070333321849229383884838261793776427228785511673",
+      "upper": "0.010007159752612216774303987459643579619973427996228",
+      "width": "0.0002001264204272938359155036334642019772505494450607"
+    },
+    "reference_bound_expression": {
+      "lower": "9.1335115322702777929496800770791039268699274874919E-7",
+      "upper": "9.3198937853912047802507760558683235384276397491135E-7",
+      "width": "1.863822531209269873010959787892196115577122616216E-8"
+    },
+    "reference_loss_upper_charge": "1/1000000",
+    "rough_band_upper": {
+      "lower": "0.34717072794857299191353348006358720056090415682013",
+      "upper": "0.34717072794857299191353348006358720056090415682050",
+      "width": "3.7E-49"
+    },
+    "short_bound_expression": {
+      "lower": "0.000032332793618419486276203159248790442995811268391099",
+      "upper": "0.000032332793618419486276203159248790442995811268391135",
+      "width": "3.6E-53"
+    },
+    "uniform_short_defect_upper_charge": "33/1000000",
+    "uniform_centered_G_minus_W_interval": [
+      "-1/1000000",
+      "33/1000000"
+    ],
+    "short_defect_has_positive_sign_in_forward_lower_transfer": true,
+    "reference_test_passed": true,
+    "pointwise_test_passed": true
+  },
+  "upper_count_source": {
+    "primary_url": "https://arxiv.org/html/2109.02851v2",
+    "statement": "Lichtman Theorem2.10 (2.4)-(2.5)",
+    "actual_count": "sum_p sum_(Pminus(m)>=p) psi_Y(pm)",
+    "box_majorant_cutoff": "P on p in [P,2P)",
+    "full_box_level": "N^(1249/1000)/(2P)",
+    "inherited_remainder": "FI_1989_AUDIT.md Section5 and NEGATIVE_FRONTIER_NOTE.md Sections2-4",
+    "actual_prime_indicator_is_bounded_outer_coefficient": true,
+    "exact_squarefree_sifting_support_retained": true,
+    "full_level_reserve": "1/1000",
+    "minimum_older_RS_margin": "321/1000",
+    "s_ratio_range": [
+      "819/430",
+      "849/400"
+    ],
+    "fixed_tolerance_retained_before_limsup_then_epsilon_to_zero": true,
+    "N_dependent_source_tolerance_used": false,
+    "admitted": true,
+    "this_upper_bound_proves_kernel_centered_lower_comparison": false
+  },
+  "actual_comparison_family": {
+    "ordered_prime_representation_factor": "1/6",
+    "logarithm_freezing_error_applied_before_detector_expansion": true,
+    "proper_power_padding_short": "O(N^(.80+epsilon))=o(u), sufficiently small fixed epsilon",
+    "proper_power_padding_applied_to_complete_count": true,
+    "Vaughan_cutoff_exponent": "1/1000",
+    "identity_is_complete": true,
+    "detector_count": 4,
+    "signed_terms_per_log_moment": 81,
+    "log_moments": 5,
+    "retained_signed_terms": 405,
+    "grouped_patterns_per_log_moment": 16,
+    "prime_mask_retained_on_free_integer_slots": false,
+    "all_TypeII_or_all_TypeI_errors_discarded": false,
+    "required_interface": "Delta_W5 >= -(eta_W+o(1))*u",
+    "coarse_actual_centered_lower_coefficient": "-.010008",
+    "required_centered_lower_comparison_proved": false
+  },
+  "tested_comparison_source": {
+    "primary_url": "https://perso.univ-st-etienne.fr/rool6510/robert-2006-crelle.pdf",
+    "statement": "Robert-Sargos2006 Theorem3 p14 and direct fractional-part Lemma9 p17",
+    "primary_page_images_rechecked": true,
+    "mapping": "Eliminate one free physical factor; retain one distinct physical factor as the free standalone variable; collapse other factors in the arbitrary other slot",
+    "standalone_coefficient_unit_or_smooth_logarithmic": true,
+    "standalone_product_coefficient_falsely_declared_unit": false,
+    "necessary_margin": "A-2Sigma+2=R+2L-2-h_s-2h_e",
+    "continuous_ceiling": "c+2d-2=2-2a-2b-c<=2-5a<=0",
+    "physical_vertices": 6,
+    "optimistic_slot_choices_checked": 72,
+    "small_product_corners_checked": 288,
+    "strict_power_saving_region_found": false,
+    "mapping_rejected": true,
+    "other_multilinear_or_joint_methods_excluded": false
+  },
+  "next_analytic_input": {
+    "whole_coupled_goal": "The actual centered 405-term weighted four-factor product comparison, with eta_W+eta_rest<=99/1000000",
+    "first_separate_source_subproblem": "All-four-Type-I four-free-variable lattice-minus-continuous-product integral error, actual gates and h_i<=N^(.002)",
+    "all_TypeI_lattice_error_proved_o_u": false,
+    "whole_centered_estimate_proved": false,
+    "exact_base_and_other_degree_bands_retained_in_eta_rest": true,
+    "separate_per_frequency_three_free_Theorem3_sufficient": false
+  },
+  "conditional_original_ledger": {
+    "smoothing": "613/200000",
+    "rough_centered_upper": ".007825257",
+    "kernel_reference_charge": "1/1000000",
+    "comparison_and_rest_budget": "99/1000000",
+    "full_spectral_criterion": ".007825257+.000001+eta_W+eta_rest+xi+21147/L<=.007935",
+    "final_original_coefficient": ".003065+.007825257+.000001+eta_W+eta_rest+xi+21147/L<=.011",
+    "kernel_reference_charge_is_inside_existing_0001_budget": true,
+    "short_defect_charge_paid_a_second_time": false,
+    "original_coefficient_allowance_changed": false,
+    "fixed_least_prime_xi_if_used": "Checkpoint22 (23), retained",
+    "fixed_frequency_L_if_used": "21147/L, retained",
+    "new_fixed_power_or_frequency_sector_discarded": false
+  },
+  "preserved_source_files": [
+    {
+      "path": "sources/cofactor_estimation/RobertSargos2006.pdf",
+      "sha256": "9d4e54047488ed6b842e91302584b1c8bd07b7f8dd533493f2910652a7238373"
+    },
+    {
+      "path": "sources/fi1989_monomials.pdf",
+      "sha256": "eb87421df0d868cd8c63ea163dc3be0ed7b5346ddba88f9028223cfba09afc71"
+    },
+    {
+      "path": "FI_1989_AUDIT.md",
+      "sha256": "6607ae4cbcaeb7ff73f3464f7ea9cb085ba8e689449b4662512618e18dc360ac"
+    },
+    {
+      "path": "NEGATIVE_FRONTIER_NOTE.md",
+      "sha256": "3ca350fa7e90402792d2197055653ca3664eb49d51735bc2f199f1254d2aa391"
+    },
+    {
+      "path": "TWO_FREE_PRIME_DECOMPOSITION_NOTE.md",
+      "sha256": "609d5405faf1ee12a18f635ceaffff4cae024c690b9e6ead3bc5283da80a6b82"
+    },
+    {
+      "path": "COUPLED_ONE_SIDED_NOTE.md",
+      "sha256": "2970e00d2dd542940d36268a69bb8744a7c83a05442b8eb8be0a86b409cedf4e"
+    },
+    {
+      "path": "ONE_PRIME_DEGREE_POOL_AUDIT_NOTE.md",
+      "sha256": "2751744ae4d6633dfe86bf82344e02a9ae37d7f95712e414748c447df5e97a14"
+    }
+  ],
+  "qualifying_source_complete_full_complement_kernel_constructed": false,
+  "sharp_signed_spectral_bound_proved": false,
+  "terminal_0011_estimate_proved": false,
+  "H_theta_proved": false,
+  "certified_K": 0,
+  "tested_three_free_per_frequency_source": {
+    "primary_url": "https://perso.univ-st-etienne.fr/rool6510/robert-2006-crelle.pdf",
+    "statement": "Theorem3 p14, first two terms",
+    "fixed_small_product_rows": true,
+    "critical_phase_exponent": "1",
+    "continuous_first_two_error_lower": "523/500",
+    "cases_checked": 576,
+    "mapping_rejected": true,
+    "joint_frequency_product_or_other_multilinear_methods_excluded": false
+  }
+}
