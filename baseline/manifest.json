@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-04",
+  "files": [
+    {
+      "uploaded_name": "one-hypothesis(1).tex",
+      "path": "baseline/one-hypothesis.tex",
+      "sha256": "e534a6b418268735d65f8894ce5267a663e296d958a0ed0d21de358dff57ef54",
+      "size_bytes": 46449
+    },
+    {
+      "uploaded_name": "constraint_inventory(1).tex",
+      "path": "baseline/constraint_inventory.tex",
+      "sha256": "7fde7bb49a7e1a61dd056b3d4688a6d3b96f74ac6d23fe8f6101297d7e7d485e",
+      "size_bytes": 21717
+    },
+    {
+      "uploaded_name": "fm_exact(1).py",
+      "path": "baseline/fm_exact.py",
+      "sha256": "4e92cc27172c5326cfef3d45503eb4881c67a979998d8b78f5fa392d30721d57",
+      "size_bytes": 8206
+    },
+    {
+      "uploaded_name": "image(6).png",
+      "path": "baseline/milestones.png",
+      "sha256": "a30def873dfe1dda2e647e3f6541c68026e42129467308dfa80187c95d73feb1",
+      "size_bytes": 38713
+    }
+  ]
+}

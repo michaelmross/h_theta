@@ -1,0 +1,947 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{rossmeta}
+\usepackage{doi}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{theoremA}{Theorem A}
+\newtheorem*{corollaryB}{Corollary B}
+\newtheorem*{hypH}{Hypothesis $\mathrm{H}(\vartheta)$}
+\newtheorem*{thmRS}{Theorem RS}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\pmin}{P^{-}}
+\newcommand{\N}{N}
+\newcommand{\J}{J_n}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\eof}[1]{e\!\left(#1\right)}
+\newcommand{\thstar}{\vartheta^{**}}
+
+\title{An Explicit Semiprime-Tail Bound in Square-Root Intervals\\
+and a One-Hypothesis Reduction for $[4n^2-n,\,4n^2+n]$}
+\author{Michael M. Ross\\
+\textit{Independent Researcher}\\
+\small \texttt{michaelmross@cantab.net}}
+
+\begin{document}
+\maketitle
+\papermeta{Primary 11N35; Secondary 11N05, 11N25, 11N36, 11L07.}{%
+Legendre's conjecture; primes in short intervals; linear sieve; Buchstab function; rough numbers; semiprimes; bilinear remainder terms; exponential sums with monomials; parity barrier; prime-detecting sieves.}
+
+\begin{abstract}
+Let $\J=[4n^2-n,\,4n^2+n]$ and $N=2n$. Every composite integer in $\J$ has a prime
+factor at most $N$, so a Buchstab decomposition at $N^{\theta}$, $\theta>2/3$, writes
+the number of primes in $\J$ as the count of $N^{\theta}$-rough integers minus a tail
+$T(\theta)$ of semiprimes. We prove unconditionally that
+$T(\theta)\le\bigl(C(\theta)+o(1)\bigr)u$ for every fixed $\theta\in(4/5,1)$, where
+$u=n/\log N$ is the expected number of primes in $\J$ and
+$C(\theta)=\frac83\log\frac{2-\theta}{5\theta-4}$, improving the linear-sieve bound
+$(4+o(1))u$ for $\theta>0.8513$. The proof is a linear sieve over the cofactors of the
+large prime factor, with the bilinear remainder controlled by the Robert--Sargos
+exponential-sum estimate, and it holds for every interval $[x-y,\,x+y]$ with
+$y\asymp x^{1/2}$. Consequently, for every fixed
+$\vartheta>\vartheta^{**}=0.93930\ldots$, a lower bound at the Buchstab value for the
+$N^{\vartheta}$-rough integers of $\J$ (Hypothesis $\mathrm{H}(\vartheta)$) implies
+that $\J$ contains a prime for all sufficiently large $n$. We show that $\mathrm{H}(\vartheta)$ is a genuinely parity-breaking Type~II input and that the relevant bounded-weight Type~I remainders are already controlled unconditionally.
+\end{abstract}
+
+\section{Introduction and statement of results}\label{sec:intro}
+
+Fix $n\ge 2$ and write throughout
+\[
+\N:=2n,\qquad x:=4n^2,\qquad \J:=[x-n,\,x+n],\qquad u:=\frac{n}{\log \N},
+\]
+and let $\A=\J\cap\mathbb{Z}$, so $|\A|=2n+1$. Since $x+n<(2n+1)^2$, every composite
+$m\in\J$ has a prime factor $\le \N$ (Lemma~\ref{lem:structural}); hence, writing
+$S(\A,z)=\#\{m\in\A:\pmin(m)>z\}$,
+\begin{equation}\label{eq:pure-sieve}
+\pi(\J):=\#\{p\in\J:\ p\ \text{prime}\}=S(\A,\N).
+\end{equation}
+Because $\J\subset\bigl((2n-1)^2,(2n+1)^2\bigr)$, a prime in $\J$ for every large $n$
+would settle the quadratic-interval form of Legendre's conjecture. The broader
+analytic setting is discussed in \cite{RossObstruction}.
+
+A Buchstab decomposition of \eqref{eq:pure-sieve} at $\N^{\theta}$ with
+$\theta\in(2/3,1)$ produces (Lemma~\ref{lem:buchstab})
+\begin{equation}\label{eq:buchstab-intro}
+\pi(\J)=S(\A,\N^{\theta})-T(\theta)+O(1),\qquad
+T(\theta):=\#\{m\in\J:\ m=pq,\ \N^{\theta}<q\le \N<p\},
+\end{equation}
+with $p,q$ prime: for $\theta>2/3$ the discarded tail consists of semiprimes only.
+The main result of this note is an unconditional upper bound for $T(\theta)$. The
+classical bound is the Brun--Titchmarsh argument for the interval and uses no
+exponential sums (the definition of $T(\theta)$ makes sense for every
+$\theta\in(0,1)$).
+
+\begin{proposition}[Classical tail bound]\label{prop:classical}
+For every fixed $\theta\in[1/3,1)$, $T(\theta)\le(4+o(1))\,u$ as $n\to\infty$; and
+$T(\theta)\ll_{\theta}u$ for every fixed $\theta\in(0,1)$.
+\end{proposition}
+
+The constant $4$ exceeds the Buchstab value $m(\vartheta)\le 1+\log 2$ of the main term
+(Lemma~\ref{lem:constant}), so Proposition~\ref{prop:classical} cannot win the race in
+Corollary~B below. The content of Theorem~A is the constant.
+
+\begin{theoremA}
+Fix $\theta\in(4/5,1)$ and put
+\[
+C(\theta):=\frac{8}{3}\,\log\frac{2-\theta}{5\theta-4}.
+\]
+Then, as $n\to\infty$,
+\[
+T(\theta)\le \bigl(C(\theta)+o(1)\bigr)\,u .
+\]
+\end{theoremA}
+
+Since $C(\theta)<4$ exactly when $\theta>\theta_4:=(2+4e^{3/2})/(1+5e^{3/2})=0.85126\ldots$,
+Theorem~A improves Proposition~\ref{prop:classical} on $(\theta_4,1)$.
+Theorem~A is proved in Sections~\ref{sec:tail-setup}--\ref{sec:expsums} by a linear
+sieve on the cofactors $q_p=m/p$, parametrized by the large prime $p$, at the per-slice
+level
+\begin{equation}\label{eq:profile}
+D(a)=\N^{\zeta(a)},\qquad \zeta(a)=\frac{5a-4}{4}\qquad (q\asymp \N^{a},\ p\asymp \N^{2-a}),
+\end{equation}
+the bilinear sieve remainder being controlled through the Fouvry--Iwaniec reduction to
+trilinear exponential sums \cite{FI} and the three-dimensional estimate of
+Robert--Sargos \cite{RS}, after a Vaughan decomposition of the prime variable and an
+Iwaniec-style bilinear splitting of the sieve modulus \cite{Iwaniec80}. The exponent
+$(5a-4)/4$ is proved in Lemma~\ref{lem:coverage} and is optimal for these ingredients
+(Proposition~\ref{prop:optimal}, Appendix~\ref{app:cert}). Nothing in the proof uses
+the square center of $\J$, and Theorem~A holds for every interval $[x-y,\,x+y]$ with
+$y\asymp x^{1/2}$ (Section~\ref{sec:general}).
+
+The main term $S(\A,\N^{\vartheta})$ is governed by the following hypothesis, in which
+$\omega$ denotes the Buchstab function and we use the classical identity
+$s\,\omega(s)=1+\log(s-1)$ for $s\in[2,3]$.
+
+\begin{hypH}
+Fix $\vartheta\in(2/3,1)$. As $n\to\infty$,
+\[
+S(\A,\N^{\vartheta})\ \ge\ \bigl(1-o(1)\bigr)\,m(\vartheta)\,u,
+\qquad m(\vartheta):=1+\log\frac{2-\vartheta}{\vartheta}.
+\]
+\end{hypH}
+
+The quantity $m(\vartheta)u=\frac{2}{\vartheta}\,\omega(2/\vartheta)\,u$ is exactly
+the Buchstab prediction for the number of $\N^{\vartheta}$-rough integers in an
+interval of length $2n$ near $x=\N^2$ (Lemma~\ref{lem:constant}); only the lower bound
+is assumed, and it is assumed with no loss. Hypothesis $\mathrm{H}(\vartheta)$ is open
+for every $\vartheta$ in the stated range. Section~\ref{sec:hyp} characterizes it:
+the Type~I remainders of the relevant sieve, against arbitrary bounded weights, are
+controlled unconditionally at level $\N^{1-\varepsilon}$ (Lemma~\ref{lem:remainder}),
+while the linear sieve, at any level of distribution below $x$, falls short of the
+required bound by a positive proportion of $u$ (Proposition~\ref{prop:parity}).
+$\mathrm{H}(\vartheta)$ is therefore a parity-breaking hypothesis, and the input it
+requires is Type~II information for the sequence $\mathbf{1}_{\J}$
+(Remark~\ref{rem:requires}).
+
+\begin{corollaryB}[Conditional prime consequence]
+Let $\thstar=0.939305\ldots$ be the unique root in $(4/5,1)$ of
+\begin{equation}\label{eq:threshold}
+1+\log\frac{2-\vartheta}{\vartheta}\ =\ \frac83\,\log\frac{2-\vartheta}{5\vartheta-4}.
+\end{equation}
+Assume Hypothesis $\mathrm{H}(\vartheta)$ for some fixed $\vartheta\in(\thstar,1)$.
+Then, as $n\to\infty$,
+\[
+\pi(\J)\ \ge\ \bigl(c(\vartheta)-o(1)\bigr)\,u,\qquad
+c(\vartheta):=m(\vartheta)-C(\vartheta)>0 .
+\]
+In particular, for all sufficiently large $n$ the interval $[4n^2-n,\,4n^2+n]$
+contains a prime.
+\end{corollaryB}
+
+Corollary~B follows immediately from Theorem~A and \eqref{eq:buchstab-intro}; the threshold is checked in Section~\ref{sec:race}.
+
+\subsection*{Notation}
+$p,q$ denote primes; $\pmin(m)$ the least prime factor of $m$ ($\pmin(1)=\infty$);
+$P(z)=\prod_{p<z}p$; $\psi(t)=t-\lfloor t\rfloor-\tfrac12$;
+$e(t)=e^{2\pi i t}$; $L:=\log \N$. We write $m\sim M$ for $M<m\le 2M$, and
+$f\ll g$ with implied constants absolute unless subscripted. Throughout,
+$\varepsilon$ denotes a sufficiently small positive constant, not the same at each
+occurrence, and $o(1)$ refers to $n\to\infty$ with all other parameters fixed.
+$F$ and $f$ denote the upper and lower functions of the linear sieve,
+$F(s)=2e^{\gamma_0}/s$ for $1\le s\le 3$, $f(s)=0$ for $s\le 2$ and
+$f(s)=2e^{\gamma_0}\log(s-1)/s$ for $2\le s\le 4$, $\gamma_0$ Euler's constant
+\cite{FriedlanderIwaniec}. For a set $S$ we write $\mathbf{1}_S$ for its indicator function. We identify $\A$ with the sequence $a_m=\mathbf{1}_{\J}(m)$, $m\ge 1$, in the sense of \cite{FriedlanderIwaniec}, and use whichever form reads more clearly.
+
+\section{Bookkeeping}\label{sec:bookkeeping}
+
+\begin{lemma}\label{lem:structural}
+Every composite $m\in\J$ has a prime factor $\le \N$, and \eqref{eq:pure-sieve} holds.
+\end{lemma}
+
+\begin{proof}
+If $m\in\J$ is composite then $\pmin(m)\le\sqrt m\le\sqrt{4n^2+n}<2n+1$, so
+$\pmin(m)\le 2n=\N$. Every $m\in\J$ exceeds $\N$, so the $\N$-rough elements of $\A$
+are exactly the primes in $\J$.
+\end{proof}
+
+\begin{lemma}[Buchstab step]\label{lem:buchstab}
+For fixed $\theta\in(2/3,1)$, identity \eqref{eq:buchstab-intro} holds with
+$T(\theta)$ counting semiprimes $m=pq$, $\N^{\theta}<q\le\N<p$.
+\end{lemma}
+
+\begin{proof}
+Buchstab's identity gives
+$S(\A,\N)=S(\A,\N^{\theta})-\sum_{\N^{\theta}<q\le \N}S(\A_q,q)$,
+where $\A_q=\{m\in\A: q\mid m\}$ and $S(\A_q,q)$ counts $m=q\,m'$ with
+$\pmin(m')\ge q$. Here $m'\le (x+n)/\N^{\theta}<\N^{2-\theta}(1+o(1))$, and
+$\pmin(m')>\N^{\theta}$ with $2\theta>2-\theta$ forces $m'=1$ or $m'$ prime.
+The case $m'=1$ is impossible ($q\le\N<\min\J$). If $m'=p$ then
+$p=m/q\ge (x-n)/\N>\N-1$, and $p=\N$ is impossible ($\N$ even), so $p>\N\ge q$.
+The case $p=q$ would force $m=q^2\in\J$, whence $q\in(2n-1,2n+1)$, i.e.\ $q=2n$,
+not prime. Finally $S(\A,\N)=\pi(\J)$ by Lemma~\ref{lem:structural}; the $O(1)$
+absorbs boundary conventions at $q=\N^{\theta}$.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:classical}]
+Every $m$ counted by $T(\theta)$ has both prime factors above $\N^{\theta}$, so
+$T(\theta)\le S(\A,\N^{\theta})$. For the interval $\A$ one has
+$|\A_d|=(2n+1)/d+r_d$ with $|r_d|\le 1$, so the sieve axioms hold with $X=2n+1$,
+$g(d)=1/d$ and $\sum_{d\le D}|r_d|\le D$. The upper-bound linear sieve at level
+$D=\N^{1-\varepsilon}$ with $z=\N^{\theta}$ gives
+$S(\A,z)\le (F(s)+o(1))(2n+1)V(z)+\N^{1-\varepsilon}$, $s=(1-\varepsilon)/\theta$.
+For $\theta\in[1/3,1)$ and $\varepsilon$ small, $s\in[1,3]$, where $F(s)=2e^{\gamma_0}/s$
+and hence
+\[
+(2n+1)V(z)F(s)=(2n+1)(1+o(1))\frac{2}{s\log z}=(2n+1)(1+o(1))\frac{2}{\log D}
+=\bigl(4+O(\varepsilon)+o(1)\bigr)u .
+\]
+Let $\varepsilon\to 0$ along a sequence. For $\theta\in(0,1/3)$ the same bound with
+$s>3$ gives $S(\A,z)\ll u/\theta$, since $F$ is bounded.
+\end{proof}
+
+\begin{lemma}[Main-term constant]\label{lem:constant}
+The Buchstab prediction for $S(\A,\N^{\vartheta})$, $\vartheta\in[2/3,1)$, is
+$m(\vartheta)\,u$ with $m(\vartheta)=1+\log\frac{2-\vartheta}{\vartheta}$.
+\end{lemma}
+
+\begin{proof}
+The density of $z$-rough integers near $x$ is $\omega(s)/\log z$ with
+$s=\log x/\log z$ \cite[III.6]{Tenenbaum}. With $z=\N^{\vartheta}$ and $x=\N^{2}(1+o(1))$
+we get $s=2/\vartheta\in[2,3]$ and prediction
+$2n\cdot \omega(2/\vartheta)/(\vartheta L)=\tfrac{2}{\vartheta}\omega(2/\vartheta)\,u$.
+On $[2,3]$, $(s\omega(s))'=\omega(s-1)=1/(s-1)$ and $2\omega(2)=1$, so
+$s\omega(s)=1+\log(s-1)$; substituting $s=2/\vartheta$ gives the claim.
+\end{proof}
+
+\section{The tail: swap and sieve}\label{sec:tail-setup}
+
+\begin{lemma}\label{lem:swap}
+For each prime $p>\N$ there is at most one multiple of $p$ in $\J$; write it $p\,q_p$
+when it exists. Then
+\[
+T(\theta)\ \le\ \#\{p\ \mathrm{prime},\ \N<p\le \N^{2-\theta}(1+o(1)):\ q_p\ \text{exists and is prime}\}.
+\]
+\end{lemma}
+
+\begin{proof}
+The interval $[(x-n)/p,(x+n)/p]$ has length $2n/p<1$. If $m=pq\in\J$ with
+$q>\N^{\theta}$ then $p=m/q<(x+n)/\N^{\theta}$.
+\end{proof}
+
+We bound the right side by an upper-bound linear sieve on the family of cofactors
+$q_p$, slice by slice. Fix a dyadic block $P\subset(\N,\N^{2-\theta}]$, write
+$P=\N^{\gamma}$, $\gamma\in[1,2-\theta]$, and set $a:=2-\gamma$, so
+$q_p\asymp \N^{a}$. Let $z:=\N^{\zeta/2}$ and relax primality of $q_p$ to
+$\pmin(q_p)>z$; this is a relaxation since $q_p\asymp \N^{a}\ge \N^{4/5}>z$.
+For squarefree $e\mid P(z)$ put
+\[
+\A_e(P):=\#\{(p,j):\ p\sim P\ \mathrm{prime},\ e p j\in\J\}
+= X_P\,\frac1e + r_e(P),\qquad X_P:=(2n+1)\sum_{p\sim P}\frac1p ,
+\]
+where, with $\psi(t)=t-\lfloor t\rfloor-\tfrac12$,
+\begin{equation}\label{eq:remainder-def}
+r_e(P)=\sum_{p\sim P}\Bigl(\psi\Bigl(\frac{x-n-1}{ep}\Bigr)-\psi\Bigl(\frac{x+n}{ep}\Bigr)\Bigr).
+\end{equation}
+The sharp block $p\sim P$ may be replaced throughout by a smooth one, $p$ weighted by
+$g(p/P)$ with $g\in C_c^{\infty}([1/2,2])$ nonnegative, with $X_P:=(2n+1)\sum_p g(p/P)/p$;
+the sieve below applies to nonnegative weights verbatim, and
+Section~\ref{sec:expsums} uses this freedom (Lemma~\ref{lem:separation}).
+
+\begin{proposition}[Slice bound]\label{prop:slice}
+Let $0<\zeta\le 1/2$ and $D:=\N^{\zeta}$, and suppose that for every choice of
+coefficients $(\xi_e)$ with $|\xi_e|\le 1$ supported on squarefree $e\le D$ and
+representable in Iwaniec's bilinear form at any prescribed factorization $D=D_1D_2$,
+\begin{equation}\label{eq:interface}
+\Bigl|\sum_{e}\xi_e\, r_e(P)\Bigr|\ \ll\ \N^{1-\varepsilon}.
+\end{equation}
+Then
+\[
+\#\{p\sim P:\ q_p\ \text{exists},\ \pmin(q_p)>z\}
+\ \le\ \bigl(1+o(1)\bigr)\,\frac{2X_P}{\zeta\, L}.
+\]
+\end{proposition}
+
+\begin{proof}
+Apply the upper linear sieve in Iwaniec's form \cite{Iwaniec80},
+\cite[Ch.~12]{FriedlanderIwaniec}: with level $D$ and $z=D^{1/2}$ (so $s=2$),
+\[
+\sum_{p\sim P}\mathbf{1}\{\pmin(q_p)>z\}
+\le X_P\,V(z)\bigl(F(2)+o(1)\bigr)+R,
+\qquad V(z)F(2)=\frac{2e^{-\gamma_0}\cdot e^{\gamma_0}}{\log D}\bigl(1+o(1)\bigr),
+\]
+and the error $R$ is a bounded combination of
+$O_\varepsilon(1)$ bilinear forms
+\[
+\sum_{e_1\le D_1}\sum_{e_2\le D_2} a_{e_1}b_{e_2}\,r_{e_1e_2}(P),
+\qquad |a|,|b|\le 1,
+\]
+at any prescribed factorization $D_1D_2=D$; each is
+$\ll \N^{1-\varepsilon}=o(X_P/L)$ by \eqref{eq:interface}. The weights $\lambda^{+}$
+are fixed once for all; the factorization enters only through the representation of
+the remainder, which Iwaniec's theorem supplies for every factorization $D_1D_2=D$
+simultaneously. Since each of the blocks into which Section~\ref{sec:expsums} splits
+the remainder is a linear functional of $\lambda^{+}$, the factorization may be chosen
+block by block.
+\end{proof}
+
+Summing Proposition~\ref{prop:slice} over dyadic blocks, with the slice-dependent
+level $\zeta=\zeta(a)$ of \eqref{eq:profile} and Mertens'
+$\sum_{p\sim P}1/p=(1+o(1))\log 2/\log P$, yields the Riemann sum of
+\begin{equation}\label{eq:tail-integral}
+T(\theta)\ \le\ (1+o(1))\,u\int_{\theta}^{1}\frac{4\,da}{(2-a)\,\zeta(a)}\ +\ O(\N^{1-\varepsilon}L),
+\end{equation}
+so Theorem~A reduces to establishing \eqref{eq:interface} at level
+$\zeta(a)=(5a-4)/4-\varepsilon_0$ for each fixed $\varepsilon_0>0$, plus the closed-form
+evaluation of the integral (Section~\ref{sec:expsums-assemble}). Everything now rests
+on the exponential-sum estimate \eqref{eq:interface}, and Section~\ref{sec:expsums}
+is devoted to it.
+
+\section{The tail: exponential sums}\label{sec:expsums}
+
+Throughout this section fix a slice: $P=\N^{\gamma}$ with $\gamma\in[1,6/5)$,
+a sieve modulus $e=e_1e_2$ with $e_1\sim E_1$, $e_2\sim E_2$ in independent dyadic
+ranges, $E:=E_1E_2=\N^{\beta'}$ with $\beta'\le\beta:=\zeta-\varepsilon_0$, and write
+\[
+\Sigma:=\beta+\gamma\ \Bigl(\le \tfrac{6-\gamma}{4}\le\tfrac54\Bigr),
+\qquad \xi:=\eta+2-\Sigma ,
+\]
+where $\N^{\eta}$ will denote a dyadic frequency block. All exponents are with respect
+to base $\N$, and $x\asymp \N^2$.
+
+\subsection{From remainders to trilinear sums}\label{sec:pipeline}
+
+\begin{lemma}[Pipeline; after {\cite[Lemma~9]{FI}}]\label{lem:pipeline}
+Let $E_1,E_2,P\ge 1$ with $E_1E_2P\le x$, write $E:=E_1E_2$, let
+$|c_{e_1}|,|c'_{e_2}|,|b_p|\le 1$, and set $y:=2n+1$, $H:=4EP\,y^{-1}x^{3\varepsilon}$.
+If for every $z'\in[x-2y,\,x+2y]$ and every $1\le H'\le H$,
+\begin{equation}\label{eq:trilinear-req}
+\Bigl|\sum_{h\le H'}\sum_{e_1\sim E_1}\sum_{e_2\sim E_2}\sum_{p\sim P}
+c_{e_1}c'_{e_2}\,b_p\; \eof{\frac{h z'}{e_1e_2 p}}\Bigr|
+\ \le\ EP\,x^{-2\varepsilon},
+\end{equation}
+then
+\[
+\Bigl|\sum_{e_1\sim E_1}\sum_{e_2\sim E_2}\sum_{p\sim P}c_{e_1}c'_{e_2}\,b_p\,r_{e_1e_2p}\Bigr|
+\ \ll\ y\,x^{-\varepsilon},
+\qquad
+r_d:=\Bigl\lfloor\frac{x+n}{d}\Bigr\rfloor-\Bigl\lfloor\frac{x-n-1}{d}\Bigr\rfloor-\frac{y}{d}.
+\]
+\end{lemma}
+
+\begin{proof}
+This is \cite[Lemma~9]{FI} with $(x,y)$ there replaced by $(x+n,\,2n+1)$ here. The
+argument is insensitive to the ranges of the outer variables, which enter only through
+the truncation height $H\asymp \max(e p)\,y^{-1}x^{3\varepsilon}$, and here $e\le 4E$.
+In brief: sandwich the interval indicator between smooth functions $f_{\pm}$ of total
+variation $O(1)$, supported within $y\,x^{-2\varepsilon}$ of $\J$, with
+$f_\pm^{(j)}\ll (y x^{-2\varepsilon})^{-j}$; Poisson summation in the inner variable
+converts $\sum_j f_\pm(epj)$ into $\widehat{f_\pm}(0)/(ep)$ plus frequencies $h\ne 0$.
+Frequencies $|h|>H$ are negligible after $j$ integrations by parts with
+$j\gg 1/\varepsilon$, since $|h|/(ep)\cdot y x^{-2\varepsilon}\ge x^{\varepsilon}$
+there. The main terms reassemble $y/(ep)$ up to $O(y x^{-2\varepsilon})$ total, and the
+surviving frequencies are bounded by suprema of the sums \eqref{eq:trilinear-req}
+after removing the smooth weights $\widehat{f_\pm}(h/ep)/(ep)$ by partial summation
+in each variable (the weights are monotone in dyadic ranges), at the cost of the
+factor $x^{\varepsilon}$ absorbed in \eqref{eq:trilinear-req}.
+\end{proof}
+
+By dyadic decompositions (a factor $O(L^4)$, absorbed in $x^{-\varepsilon}$),
+\eqref{eq:trilinear-req} follows from: \emph{for every dyadic
+$H_0=\N^{\eta}$, $0\le \eta\le \Sigma-1+O(\varepsilon)$, the block sum with $h\sim H_0$
+is at most $EP\,x^{-3\varepsilon}$}. Blocks with $\beta'+\gamma\le 1-O(\varepsilon)$
+satisfy $H<1$ and require nothing. We henceforth fix a block and prove the required
+bound.
+
+\subsection{The obstruction to a direct estimate}\label{sec:obstruction}
+
+Estimates for sums \eqref{eq:trilinear-req} with two free coefficient slots ---
+\cite[Thm.~6, Thm.~7]{FI}, or Theorem~RS below applied with the pair $(e,p)$ ---
+cannot be applied with the prime $p$ occupying a slot as-is. The packaged sieve form
+\cite[Thm.~7]{FI} requires \emph{both} coefficient ranges below the interval length
+(their conditions (7.4)--(7.6) force $M<y\,x^{-\varepsilon'}$ and $N^6<My^{7}x^{-3}$),
+while $p\sim \N^{\gamma}\ge \N=y(1+o(1))$. The same failure is visible directly in
+Theorem~RS: with $p$ undecomposed the admissible standalone exponents are
+$m_1\in[0,\beta']\cup[\gamma,\gamma+\beta']$, whereas the window of
+Lemma~\ref{lem:window} below is $[2\eta,\Sigma-3\eta]$, which misses both components
+as soon as $\eta>\beta'/2$ --- and $\eta$ ranges up to $\Sigma-1\ge\gamma-1$, with
+$\gamma>1$ on all interior slices. A decomposition of the prime variable is therefore
+forced, and the entire question becomes which factorizations the resulting pieces
+admit. This coefficient-restructuring problem is analyzed in \cite{RossObstruction}; the
+remainder of the section settles it for the present cofactor sums.
+
+\subsection{Decomposition and grouping}\label{sec:decomp}
+
+Apply Vaughan's identity \cite{Vaughan} to the prime variable with cutoffs
+$U=V=P^{1/3}$: the indicator of primes $p\sim P$ (weighted by $\log p$, removed by
+partial summation) decomposes into $O(1)$ sums of two shapes,
+\[
+\textbf{(I)}\ \sum_{m_v\le P^{2/3}}\alpha_{m_v}\sum_{k}(\ast)_k,\qquad
+\textbf{(II)}\ \sum_{P^{1/3}<m_v\le P^{1/2}}\ \sum_{k}\alpha_{m_v}\beta_k ,
+\]
+with $m_vk\sim P$, where in type~I the inner weight $(\ast)_k\in\{1,\log k\}$ is
+smooth and in type~II both coefficient sequences are arbitrary with divisor-bounded
+size; all coefficients are $\ll \N^{o(1)}$, absorbed into $x^{\varepsilon}$-slack.
+Writing $m_v=\N^{\mu}$, the pieces carry
+\[
+\textbf{(I)}:\ \mu\in[0,\tfrac{2\gamma}{3}],\qquad
+\textbf{(II)}:\ \mu\in[\tfrac{\gamma}{3},\tfrac{\gamma}{2}]
+\]
+(after choosing the shorter type-II side). Simultaneously, by
+Proposition~\ref{prop:slice} the sieve coefficients may be prescribed in bilinear
+form $e=e_1e_2$ with $e_1\le \N^{\beta-s}$, $e_2\le \N^{s}$ for \emph{any}
+$s\in[0,\beta]$, chosen per block.
+
+The estimates below (Theorem~RS and Lemma~\ref{lem:elementary}) require their groups
+of variables to range over independent dyadic boxes with coefficients in product
+form. The following lemma supplies that form.
+
+\begin{lemma}[Separation of variables]\label{lem:separation}
+Each block of \eqref{eq:trilinear-req} may be reduced, at a cost
+$\N^{O(\varepsilon)}$ absorbed in the available slack and $O(L)$ additional
+blocks, to a sum in which:
+the sieve variables $e_1\sim E_1$ and $e_2\sim E_2$ range independently;
+the Vaughan variables have product-form coefficients; and every group used as
+a joint or standalone variable in Theorem~RS ranges over a dyadic interval
+with arbitrary bounded coefficients. In a type-I piece in which $k$ remains
+free, its weight is smooth with $j$-th derivative $\ll_j K^{-j}$.
+\end{lemma}
+
+\begin{proof}
+There are two apparent obstacles to product structure. First, the sieve
+condition may couple $e_1$ and $e_2$ through their product $e=e_1e_2$.
+Second, after Vaughan's identity the condition $p\sim P$ becomes
+$m_vk\sim P$.
+
+The first obstacle is avoided by construction: throughout we keep
+$e_1\sim E_1$ and $e_2\sim E_2$ in independent dyadic ranges. This is the
+reason Lemma~\ref{lem:pipeline} allows $e=e_1e_2$ to range over the
+factor-$4$ interval $(E,4E]$.
+
+For the Vaughan variables, use the smooth $p$-partition introduced in
+Section~\ref{sec:tail-setup}. Thus the sharp condition $m_vk\sim P$ is
+replaced by the smooth weight
+\[
+G(m_vk):=\frac{g(m_vk/P)}{\log(m_vk)},
+\qquad g\in C_c^\infty([1/2,2]),
+\]
+at a cost of $O(L)$ blocks.
+
+In a type-II piece, and in a type-I piece when $k$ is to occupy a
+standalone Robert--Sargos slot, separate this weight by Mellin inversion:
+\[
+G(mk)=\frac{1}{2\pi i}\int_{(0)}
+   \widehat G(s)m^{-s}k^{-s}\,ds .
+\]
+Since $G$ is smooth and supported on $[P/2,2P]$,
+\[
+\widehat G(i\tau)\ll_j (1+|\tau|)^{-j}.
+\]
+The integral may therefore be truncated at $|\tau|\le \N^\varepsilon$
+with negligible error. For fixed $\tau$, the factors $m^{-i\tau}$ and
+$k^{-i\tau}$ have modulus $1$ and may be absorbed into the coefficients.
+The remaining $\tau$-integration costs at most $\N^\varepsilon$, which is
+absorbed by the slack in \eqref{eq:trilinear-req}.
+
+In a type-I piece with $k$ left free, no Mellin separation is needed:
+we retain $G(m_vk)$ as a smooth weight in $k$. Its $j$-th derivative is
+$\ll_j K^{-j}$, and Lemma~\ref{lem:elementary} remains valid after partial
+summation.
+
+Finally, a Robert--Sargos slot may consist of a product of several variables,
+such as $e_1e_2m_v$ or $m_ve_2$. Collapse such a product to a single variable,
+say $\nu$. Its coefficient is the sum over the factorizations of $\nu$ and
+is therefore divisor-bounded; this is absorbed into the
+$\N^{O(\varepsilon)}$ loss. Splitting the resulting range into dyadic
+intervals completes the reduction.
+\end{proof}
+
+Each block of \eqref{eq:trilinear-req} is now a sum over
+$(h;e_1,e_2,m_v,k)$ with phase $\eof{hz'/(e_1e_2m_vk)}$. To estimate it we designate
+one group of variables as the \emph{standalone} slot $w$ (of exponent $m_1$) and the
+rest join $h$ in a \emph{joint} slot; the available standalone exponents are
+\begin{equation}\label{eq:available}
+m_1\in \mathcal{A}(\mu):=[0,\beta]\ \cup\ [\mu,\,\mu+\beta]\ \cup\ [\gamma-\mu,\,\gamma-\mu+\beta],
+\end{equation}
+realized by $w\in\{e_2,\ m_ve_2,\ k e_2\}$ with $s\in[0,\beta]$ tuned continuously.
+
+\subsection{The engine}\label{sec:engine}
+
+\begin{thmRS}[{Robert--Sargos \cite[Thm.~1]{RS}}]
+Let $\alpha,\beta_0,\gamma_0$ be fixed nonzero reals with
+$\alpha(\alpha-1)\beta_0\gamma_0\ne 0$, let $H,N_1,M_1\ge 1$, $X\ge 1$, and let
+$a(h,\nu)$, $b(w)$ be arbitrary complex coefficients of modulus $\le 1$. Then
+\begin{multline*}
+\sum_{h\sim H}\sum_{\nu\sim N_1}a(h,\nu)\sum_{w\sim M_1}b(w)\,
+\eof{X\,\frac{h^{\beta_0}\nu^{\gamma_0}w^{\alpha}}{H^{\beta_0}N_1^{\gamma_0}M_1^{\alpha}}}\\
+\ll_{\varepsilon}\ (HN_1M_1)^{1+\varepsilon}
+\Bigl(\Bigl(\frac{X}{HN_1M_1^{2}}\Bigr)^{1/4}+\frac{1}{(HN_1)^{1/4}}
++\frac{1}{M_1^{1/2}}+\frac{1}{X^{1/2}}\Bigr).
+\end{multline*}
+\end{thmRS}
+
+We apply this with $(\beta_0,\gamma_0,\alpha)=(1,-1,-1)$ (so
+$\alpha(\alpha-1)\beta_0\gamma_0=-2\ne0$): $h$ and the joint group occupy $(h,\nu)$,
+the standalone group occupies $w$, and $X=\N^{\xi}$ is the phase size. Incomplete and
+maximal ranges arising from partial summation are standard
+\cite[Lemma~2]{RS}.
+
+\begin{lemma}[Admissibility window]\label{lem:window}
+Let the block have $h\sim\N^{\eta}$, standalone exponent $m_1$, joint exponent
+$\Sigma-m_1$, with $0\le\eta\le\Sigma-1$ and $\Sigma\le 5/4$. The Theorem~RS bound is
+$\le \N^{\Sigma-c\varepsilon}$ if and only if
+\[
+2\eta\ \le\ m_1\ \le\ \Sigma-3\eta
+\]
+(up to $O(\varepsilon)$ in each inequality).
+\end{lemma}
+
+\begin{proof}
+The trivial size is $\N^{\eta+\Sigma}$, so the requirement is that each of the four
+bracket terms be $\le \N^{-\eta-c\varepsilon}$. In exponents, with $n_1=\Sigma-m_1$:
+\[
+\text{(i)}\ \frac{\xi-\eta-n_1-2m_1}{4}=\frac{2-2\Sigma-m_1}{4}\le-\eta
+\iff m_1\ge 4\eta+2-2\Sigma;
+\]
+\[
+\text{(ii)}\ -\frac{\eta+n_1}{4}\le-\eta\iff m_1\le \Sigma-3\eta;\qquad
+\text{(iii)}\ -\frac{m_1}{2}\le-\eta\iff m_1\ge 2\eta;
+\]
+\[
+\text{(iv)}\ -\frac{\xi}{2}\le-\eta\iff \eta\le 2-\Sigma .
+\]
+Condition (iv) holds since $\eta\le\Sigma-1\le\frac14\le 2-\Sigma$ for
+$\Sigma\le\frac54$; condition (i) is implied by (iii) since
+$4\eta+2-2\Sigma\le 2\eta\iff\eta\le\Sigma-1$. This leaves (ii) and (iii).
+\end{proof}
+
+\subsection{The elementary bound for type-I pieces}\label{sec:elementary}
+
+\begin{lemma}\label{lem:elementary}
+Consider a type-I block: modulus $c=e_1e_2m_v\sim \N^{\chi}$, $\chi=\beta'+\mu$,
+carrying arbitrary bounded coefficients, and smooth inner variable
+$k\sim K=\N^{\kappa}$, $\kappa=\gamma-\mu$. If
+\[
+3\eta+2\mu\ \le\ \beta'+3\gamma-2 - c\varepsilon,
+\]
+then the block sum is $\le \N^{\Sigma'-c'\varepsilon}$, $\Sigma'=\beta'+\gamma$.
+\end{lemma}
+
+\begin{proof}
+Sum absolutely over $h$ and $c$ and estimate the $k$-sum. The phase
+$f(k)=hz'/(ck)$ has $|f'|\asymp \Lambda:=\N^{\lambda}$,
+$\lambda=\eta+2-\chi-2\kappa$, monotone with $|f''|\asymp\Lambda/K$. By the
+exponent pair $(\tfrac12,\tfrac12)$ (van der Corput's second-derivative test,
+\cite[Thm.~2.2]{GK}), together with the Kuzmin--Landau complement,
+\[
+\Bigl|\sum_{k\sim K}\eof{f(k)}\Bigr|\ \ll\ \Lambda^{1/2}K^{1/2}+\Lambda^{-1}.
+\]
+The first term contributes exponent
+$\eta+\chi+\tfrac{\lambda}{2}+\tfrac{\kappa}{2}
+=\tfrac{3\eta}{2}+\tfrac{\beta'}{2}+\mu+1-\tfrac{\gamma}{2}$, and the requirement
+$\le \Sigma'$ is the displayed inequality. The second contributes
+$\eta+\chi+(\chi+2\kappa-\eta-2)=2\Sigma'-2\le \Sigma'-\tfrac34$ since
+$\Sigma'\le\frac54$.
+\end{proof}
+
+\subsection{The coverage lemma}\label{sec:coverage}
+
+\begin{lemma}[Coverage]\label{lem:coverage}
+Let $\gamma\in[1,6/5)$ and
+\[
+0<\beta\ \le\ \frac{6-5\gamma}{4}-\varepsilon_0,\qquad \Sigma=\beta+\gamma .
+\]
+Then for every Vaughan piece and every $\eta\in[0,\Sigma-1]$, at least one admissible
+configuration exists:
+\begin{itemize}
+\item[\emph{(II)}] for type-II pieces $\mu\in[\gamma/3,\gamma/2]$: Theorem~RS with
+standalone exponent $m_1=\max(\mu,2\eta)\in[\mu,\mu+\beta]$;
+\item[\emph{(I)}] for type-I pieces $\mu\in[0,2\gamma/3]$: Lemma~\ref{lem:elementary}
+if $3\eta+2\mu\le\beta+3\gamma-2$; otherwise Theorem~RS with
+$m_1=\max(\mu,2\eta)\in[\mu,\mu+\beta]$ if $\mu\le\Sigma-3\eta$; otherwise Theorem~RS
+with $m_1=\max(\gamma-\mu,2\eta)\in[\gamma-\mu,\gamma-\mu+\beta]$.
+\end{itemize}
+Consequently every block of \eqref{eq:trilinear-req} is $\le EP\,x^{-3\varepsilon}$,
+and \eqref{eq:interface} holds at level $\zeta=\beta$.
+\end{lemma}
+
+\begin{proof}
+All inequalities below hold with linear slack in $\varepsilon_0$; we suppress the
+$\varepsilon$'s. Note first $\Sigma\le\gamma+\frac{6-5\gamma}{4}=\frac{6-\gamma}{4}
+\le\frac54$, so Lemma~\ref{lem:window} applies, and $\eta\le\Sigma-1\le\Sigma/5$,
+so $2\eta\le\Sigma-3\eta$: the window is nonempty. Five verifications remain.
+
+\smallskip
+\emph{Type II.} (V1) Upper edge: for all $\eta\le\Sigma-1$,
+\[
+\mu\ \le\ \frac{\gamma}{2}\ \le\ 3-2\Sigma\ \le\ \Sigma-3\eta ,
+\]
+where $\gamma/2\le 3-2\Sigma$ is exactly $4\beta+5\gamma\le 6$. (V2) Lower edge:
+$m_1\le\mu+\beta$ requires $2\eta\le\mu+\beta$, and for all $\eta\le\Sigma-1$,
+\[
+2(\Sigma-1)\le \frac{\gamma}{3}+\beta
+\iff \beta\le 2-\frac{5\gamma}{3},
+\]
+which follows from $\beta\le\frac{6-5\gamma}{4}$ on $\gamma\le\frac65$ since
+$\frac{6-5\gamma}{4}\le 2-\frac{5\gamma}{3}\iff 5\gamma\le 6$. Thus
+$m_1=\max(\mu,2\eta)$ lies in $[\mu,\mu+\beta]\cap[2\eta,\Sigma-3\eta]$.
+
+\smallskip
+\emph{Type I.} At a given $\eta$, the three tools cover the $\mu$-intervals
+\[
+\Bigl[0,\ \mu_E(\eta)\Bigr]\ \cup\
+\Bigl[\max(0,2\eta-\beta),\ \Sigma-3\eta\Bigr]\ \cup\
+\Bigl[3\eta-\beta,\ \gamma+\beta-2\eta\Bigr],
+\qquad \mu_E(\eta):=\frac{\beta+3\gamma-2-3\eta}{2},
+\]
+the second and third by the same window computation as in (V1)--(V2) applied to
+$m_1=\max(\mu,2\eta)$ and $m_1=\max(\gamma-\mu,2\eta)$ respectively. Their union
+contains $[0,2\gamma/3]$ provided the following three inequalities hold for all
+$\eta\le \Sigma-1$; each is checked at the worst point $\eta=\Sigma-1$:
+\[
+\text{(V3)}\quad 2\eta-\beta\ \le\ \mu_E(\eta)
+\iff 7\eta\le 3\Sigma-2
+\ \Longleftarrow\ 7(\Sigma-1)\le 3\Sigma-2\iff \Sigma\le\tfrac54 ;
+\]
+\[
+\text{(V4)}\quad 3\eta-\beta\ \le\ \Sigma-3\eta
+\iff 6\eta\le\Sigma+\beta
+\ \Longleftarrow\ 6(\Sigma-1)\le\Sigma+\beta\iff 4\beta+5\gamma\le 6 ;
+\]
+\[
+\text{(V5)}\quad \frac{2\gamma}{3}\ \le\ \gamma+\beta-2\eta
+\iff 2\eta\le\beta+\frac{\gamma}{3}
+\ \Longleftarrow\ \beta\le 2-\frac{5\gamma}{3}\quad\text{as in (V2)} .
+\]
+This completes the case analysis: (V1) and (V4) are the facet $4\beta+5\gamma\le6$,
+(V2) and (V5) are implied by it on $\gamma\in[1,6/5]$, and (V3) by
+$\Sigma\le\frac54$, also implied. Each inequality is tightest at $\eta=\Sigma-1$ and
+monotone in $\beta'\le\beta$ in the right direction, so the verifications survive
+every sub-block $\beta'\le\beta$.
+\end{proof}
+
+\subsection{Optimality within the method}\label{sec:optimal}
+
+\begin{proposition}[Optimality within the method]\label{prop:optimal}
+Let $\gamma\in[1,6/5)$ and $\beta>\frac{6-5\gamma}{4}$. Then the balanced type-II
+block $\mu=\gamma/2$ at the top frequency $\eta=\Sigma-1$ admits no admissible
+configuration from the tools of Lemma~\ref{lem:coverage}. Consequently the level
+$\zeta(\gamma)=\frac{6-5\gamma}{4}$ is exact for that toolkit: Theorem~RS, the
+van der Corput and Kuzmin--Landau bounds, Vaughan cutoffs at $P^{1/3}$, and
+arbitrary bilinear splitting of the sieve modulus.
+\end{proposition}
+
+\begin{proof}
+The elementary bound needs a smooth inner variable, which a type-II piece lacks. For
+Theorem~RS the window of Lemma~\ref{lem:window} at $\eta=\Sigma-1$ is
+$[2\Sigma-2,\,3-2\Sigma]$, and $\beta>\frac{6-5\gamma}{4}$ gives $3-2\Sigma<\gamma/2$,
+so the families $[\mu,\mu+\beta]$ and $[\gamma-\mu,\gamma-\mu+\beta]$ of
+\eqref{eq:available}, both of which start at $\gamma/2$, lie above the window, while
+the family $[0,\beta]$ would need $\beta\ge 2\Sigma-2$, i.e.\ $\beta\le 2-2\gamma\le 0$.
+Lemma~\ref{lem:coverage} attains the level for every
+$\beta\le\frac{6-5\gamma}{4}-\varepsilon_0$.
+\end{proof}
+
+The binding constraint is the balanced type-II block at top frequency. Appendix~\ref{app:cert} verifies in exact rational arithmetic that adding the further Fouvry--Iwaniec groupings and the exponent pair $(\tfrac16,\tfrac23)$ does not improve the profile.
+
+\subsection{Proof of Theorem A}\label{sec:expsums-assemble}
+
+Fix $\theta\in(4/5,1)$ and $\varepsilon_0>0$. For each dyadic slice
+$P=\N^{\gamma}$, $\gamma\in[1,2-\theta]\subset[1,6/5)$, take the level
+$\zeta=\zeta(a)-\varepsilon_0=\frac{5a-4}{4}-\varepsilon_0$ with $a=2-\gamma$.
+Lemma~\ref{lem:coverage} verifies the hypothesis of Lemma~\ref{lem:pipeline} for
+every sub-block $\beta'\le\beta$, hence \eqref{eq:interface};
+Proposition~\ref{prop:slice} then gives the slice bound,
+and \eqref{eq:tail-integral} gives, using
+$5(2-a)+(5a-4)=6$ for the partial fractions,
+\[
+\int_{\theta}^{1}\frac{16\,da}{(2-a)(5a-4)}
+=\frac{16}{6}\Bigl[\log\frac{5a-4}{2-a}\Bigr]_{\theta}^{1}
+=\frac83\,\log\frac{2-\theta}{5\theta-4}\ =\ C(\theta).
+\]
+Letting $\varepsilon_0\to0$ along a sequence (the constant depends continuously on
+$\varepsilon_0$) completes the proof. \qed
+
+\section{The hypothesis: what it asserts and what it does not}\label{sec:hyp}
+
+Hypothesis $\mathrm{H}(\vartheta)$ asks for a lower bound, with no loss against the
+Buchstab value, for the $\N^{\vartheta}$-rough integers in an interval of length
+$\asymp x^{1/2}$ near $x$. This section records what such a bound would and would not
+require. First, the Type~I remainders of the sieve in question, against arbitrary
+bounded weights, are controlled unconditionally at level $\N^{1-\varepsilon}$
+(Lemma~\ref{lem:remainder}). Second, the linear sieve cannot reach the bound at any
+level of distribution below $x$ (Proposition~\ref{prop:parity}), and by Selberg's
+examples no argument from the sieve axioms alone can do better
+(Remark~\ref{rem:twist}). Together these locate the hypothesis at the parity barrier.
+
+Set
+\[
+B:=\exp\!\bigl(\sqrt{\log \N}\bigr),\qquad
+S(B):=\#\{k\in\A:\ \pmin(k)>B\}.
+\]
+
+\begin{lemma}\label{lem:fund}
+$S(B)=\bigl(1+O(e^{-c\sqrt{\log\N}})\bigr)\,(2n+1)\,V(B)$ for some absolute $c>0$, where
+$V(B)=\prod_{p<B}(1-1/p)$. In particular $S(B)\asymp n/\sqrt{\log \N}$.
+\end{lemma}
+
+\begin{proof}
+Sieve $\A$ by the primes below $B$ with the fundamental lemma at level
+$D_0=\N^{\delta}$ for a small fixed $\delta>0$
+\cite[Thm.~6.9]{FriedlanderIwaniec}. Since
+$s_0=\log D_0/\log B=\delta\sqrt{\log \N}\to\infty$, the sieve factor is
+$1+O(e^{-s_0})$, while the remainder is at most
+$\sum_{d\le D_0}1\le \N^{\delta}$, because each individual remainder
+$\bigl||\A_d|-(2n{+}1)/d\bigr|$ is at most $1$; and $\N^{\delta}\ll nV(B)e^{-s_0}$.
+\end{proof}
+
+For squarefree $m$ with $\pmin(m)>B$ define the discrepancy
+\begin{equation}\label{eq:delta-def}
+\Delta(m):=\#\Bigl\{k\in\A:\ k\equiv 0 \ (\mathrm{mod}\ m),\ \pmin(k/m)>B\Bigr\}
+\;-\;\frac{S(B)}{m}.
+\end{equation}
+These are the remainders of the sieve of the $B$-rough elements of $\A$ by the primes
+in $[B,z)$, whose moduli are the squarefree $m$ composed of such primes.
+
+\begin{lemma}[Unconditional remainder control]\label{lem:remainder}
+Fix $\vartheta\in(0,1)$. There is $c=c(\vartheta)>0$ such that
+\[
+\sum_{\substack{m\le \N^{\vartheta}\\ \mu^2(m)=1,\ \pmin(m)>B}} |\Delta(m)|
+\ \ll\ n\,e^{-c\sqrt{\log \N}}.
+\]
+Consequently, for every choice of coefficients $(c_m)$ with $|c_m|\le 1$ supported on
+such $m$,
+\[
+\Bigl|\sum_m c_m\Delta(m)\Bigr|\ \ll\ n\,e^{-c\sqrt{\log\N}}=o\bigl(u/\log\N\bigr),
+\]
+so every Type~I remainder of this sieve aggregated by bounded weights of level
+$\N^{\vartheta}$ --- upper or lower beta-sieve weights, well-factorable weights, or any
+bounded weights whatsoever --- is admissible.
+\end{lemma}
+
+\begin{proof}
+Fix $\varepsilon\in(0,1/2)$. For $m$ in the sum put $I_m:=\{k'\in\mathbb{Z}:\ mk'\in\J\}$,
+an interval of length $(2n+1)/m+O(1)\ge \tfrac12\N^{1-\vartheta}$. Writing $k=mk'$, the count
+in \eqref{eq:delta-def} is $S(I_m,B):=\#\{k'\in I_m:\ \pmin(k')>B\}$. Sieve $I_m$ by
+the primes below $B$ at level $D_m:=|I_m|^{1-\varepsilon}$: the individual remainders
+are at most $1$ in absolute value, so their sum is at most $D_m$, and
+$s_m:=\log D_m/\log B\ge (1-\varepsilon)(1-\vartheta)\sqrt{\log\N}\,(1+o(1))\to\infty$
+uniformly in $m$. The fundamental lemma \cite[Thm.~6.9]{FriedlanderIwaniec} gives
+\[
+S(I_m,B)=|I_m|\,V(B)\bigl(1+O(e^{-s_m})\bigr)+O\bigl(|I_m|^{1-\varepsilon}\bigr).
+\]
+By Lemma~\ref{lem:fund}, $S(B)/m=(2n+1)V(B)\bigl(1+O(e^{-c\sqrt{\log\N}})\bigr)/m$, and
+$|I_m|=(2n+1)/m+O(1)$. Hence
+\[
+\Delta(m)\ \ll\ \frac{n}{m}\,V(B)\,e^{-c'\sqrt{\log \N}}+\Bigl(\frac nm\Bigr)^{1-\varepsilon}+V(B).
+\]
+Summing over $m\le\N^{\vartheta}$, the three terms contribute
+$\ll nV(B)L\,e^{-c'\sqrt{\log\N}}$, $\ll n^{1-\varepsilon}\N^{\varepsilon\vartheta}
+=\N^{1-\varepsilon(1-\vartheta)+o(1)}$ and $\ll \N^{\vartheta}$ respectively, each
+$\ll n\,e^{-c\sqrt{\log\N}}$. The consequence is the triangle inequality, and
+$u/\log\N=n/L^2$.
+\end{proof}
+
+Lemma~\ref{lem:remainder} is the analogue, for $\J$, of the exact truncated-Legendre
+identification in \cite[\S\S6--7]{RossShells}: on the Type~I side of the problem there
+is no distributional obstacle at all. The obstacle is the following.
+
+\begin{proposition}[$\mathrm{H}(\vartheta)$ lies beyond the sieve axioms]\label{prop:parity}
+Let $\vartheta\in(2/3,1)$, $z=\N^{\vartheta}$, and
+$t(\vartheta):=\log\frac{2-\vartheta}{\vartheta}$, so that $m(\vartheta)=1+t(\vartheta)$.
+\begin{enumerate}
+\item[(i)] The linear sieve lower bound for $S(\A,z)$ at the level $\N^{1-\varepsilon}$
+of Lemma~\ref{lem:remainder} is trivial: $s=(1-\varepsilon)/\vartheta<2$ and $f(s)=0$.
+\item[(ii)] Suppose that remainder control were available at some level $D=\N^{\kappa}$
+with $\kappa<2$, that is, $D<x$. Then the linear sieve lower bound is at most
+\[
+\bigl(f(\kappa/\vartheta)+o(1)\bigr)(2n+1)V(z)\ \le\ \bigl(2t(\vartheta)+o(1)\bigr)\,u .
+\]
+Since $2t(\vartheta)<m(\vartheta)$ exactly when $t(\vartheta)<1$, i.e.\ for
+$\vartheta>2/(1+e)=0.53788\ldots$, Hypothesis $\mathrm{H}(\vartheta)$ exceeds every
+linear-sieve lower bound by $\bigl(1-t(\vartheta)-o(1)\bigr)u$, at every level of
+distribution, for every $\vartheta\in(2/(1+e),1)$. At $\vartheta=\thstar$ the sieve
+bound is $0.243\,u$ against the hypothesis's $1.122\,u$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The linear sieve lower bound reads
+$S(\A,z)\ge (f(s)-o(1))(2n+1)V(z)-\sum_{d\le D}|r_d|$ with $s=\log D/\log z$
+\cite{FriedlanderIwaniec}; this gives (i). For (ii), $f$ is increasing, so the bound
+at level $\N^{\kappa}$ is at most the bound at $s=2/\vartheta\in(2,3)$, where
+$f(2/\vartheta)=e^{\gamma_0}\vartheta\,t(\vartheta)$, while
+$(2n+1)V(z)=2n\,e^{-\gamma_0}(1+o(1))/(\vartheta L)$. The product is
+$2t(\vartheta)\,u\,(1+o(1))$. The numerical values are $t(\thstar)=0.12154\ldots$.
+\end{proof}
+
+\begin{remark}[Parity examples]\label{rem:twist}
+Selberg's examples show that the linear-sieve bounds are best possible under the sieve axioms: nonnegative prime-free sequences can satisfy the same Type~I data and attain the lower bound $f(s)$ \cite{Selberg,FriedlanderIwaniec}. Thus Proposition~\ref{prop:parity} reflects the parity barrier rather than a weakness of the chosen sieve. A local Liouville version for the present intervals is discussed in \cite[\S\S12--14]{RossShells}.
+\end{remark}
+
+\begin{remark}[What $\mathrm{H}(\vartheta)$ requires, and its strength]\label{rem:requires}
+(a) What passes the parity barrier in the known cases is bilinear, Type~II,
+information about the sequence itself: cancellation, schematically, in
+\[
+\sum_{m\sim M}\sum_{k\sim K}\alpha_m\beta_k\bigl(\mathbf{1}_{\J}(mk)-\text{expected}\bigr),
+\qquad MK\asymp x,
+\]
+for general bounded coefficients on \emph{both} variables and some range of $M,K$,
+in the sense of the asymptotic sieve of Friedlander and Iwaniec \cite{FI98} and of
+Harman's method \cite{Harman,FordMaynard}. A combinatorial decomposition of the kind
+used in Harman's sieve organizes such information; it does not replace it. For
+windows of length $x^{1/2}$ no Type~II estimate is known: the cited
+Dirichlet-polynomial results reach primes in intervals of length
+$x^{17/30+\varepsilon}$ \cite{GuthMaynard}. Absolute remainders cannot supply it: for a window
+of length $Y$ and $D\ge 2Y$ one has $\sum_{D<d\le 2D}\bigl||\A_d|-Y/d\bigr|\gg Y$
+\cite[\S14]{RossShells}, so the level $\N^{1-\varepsilon}$ of
+Lemma~\ref{lem:remainder} is the most that Type~I information can give, and by (i) it
+gives nothing.
+
+(b) $\mathrm{H}(\vartheta)$ is stronger than prime existence: by \eqref{eq:buchstab-intro} it is a prime-number-theorem-strength lower bound for primes and the semiprime tail together. The point of the reduction is that the semiprime contribution is now controlled unconditionally.
+\end{remark}
+
+\section{The race and the threshold}\label{sec:race}
+
+\begin{proof}[Proof of Corollary~B]
+By Lemma~\ref{lem:buchstab} with $\theta=\vartheta$, Hypothesis
+$\mathrm{H}(\vartheta)$, and Theorem~A,
+\[
+\pi(\J)= S(\A,\N^{\vartheta})-T(\vartheta)+O(1)
+\ \ge\ \bigl(m(\vartheta)-C(\vartheta)-o(1)\bigr)u .
+\]
+It remains to note $c(\vartheta)=m(\vartheta)-C(\vartheta)>0$ for
+$\vartheta>\thstar$: both sides of \eqref{eq:threshold} are continuous, the left side
+is decreasing and the right side strictly decreasing to $0$ as
+$\vartheta\to1^-$ faster (indeed $C(\vartheta)\to0$ while $m\to1$), while as
+$\vartheta\to(4/5)^+$ the right side diverges; a single crossing follows from
+monotonicity of $C-m$ (its derivative is negative on $(4/5,1)$, as
+$C'(\vartheta)=-\tfrac{16}{(2-\vartheta)(5\vartheta-4)}<m'(\vartheta)
+=-\tfrac{2}{\vartheta(2-\vartheta)}$ there, both computed directly). Numerically
+$\thstar=0.939305\ldots$
+\end{proof}
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{General intervals}\label{sec:general}
+Sections~\ref{sec:tail-setup}--\ref{sec:expsums} use only $x\asymp\N^2$, $y\asymp\N$
+and the shape of the tail, never the square center. Theorem~A therefore holds, with
+the same proof, for any interval $[x-y,\,x+y]$ with $y\asymp x^{1/2}$: writing
+\[
+T(\theta):=\#\{m\in[x-y,x+y]:\ m=pq,\ x^{\theta/2}<q\le x^{1/2}<p\},
+\qquad u:=\frac{2y}{\log x},
+\]
+so that $u$ is the prime number theorem's prediction for the number of primes in the
+interval (for $\J$ one has $y=n$ and $u=n/\log\N$ as before), one has
+$T(\theta)\le\bigl(C(\theta)+o(1)\bigr)\,u$ for every fixed $\theta\in(4/5,1)$,
+against the Brun--Titchmarsh value $(4+o(1))\,u$ of
+Proposition~\ref{prop:classical}. The square center enters only through
+Lemma~\ref{lem:structural}, which makes the Buchstab identity
+\eqref{eq:buchstab-intro} exact for $\J$ with no boundary terms.
+
+The square center is needed only for the exact prime-detecting identity; the tail estimate itself applies to general square-root intervals. Related square-centered obstructions are studied in \cite{RossObstruction,RossRays,RossShells}. Thus the remaining input is genuinely Type~II information for intervals of length $x^{1/2}$: Theorem~A removes the semiprime-tail obstruction but does not supply that parity-breaking input.
+
+\appendix
+
+\section{Exact certification of the level profile}\label{app:cert}
+
+The optimization behind Lemma~\ref{lem:coverage} and Proposition~\ref{prop:optimal} is piecewise linear and was checked exactly. For each fixed $\gamma$, admissibility of the Robert--Sargos groupings, the additional \cite[Thm.~6]{FI} groupings, and the elementary exponent-pair bounds becomes a finite system of linear inequalities in $(\mu,\eta,\beta)$. Exact rational vertex enumeration gives
+\[
+\begin{array}{c|ccccc}
+\gamma & 1 & 21/20 & 11/10 & 23/20 & 6/5\\ \hline
+\zeta(\gamma) & 1/4 & 3/16 & 1/8 & 1/16 & 0
+\end{array}
+\qquad\Bigl(=\tfrac{6-5\gamma}{4}\Bigr).
+\]
+In every case the minimizing witness is the balanced type-II block at top frequency, $(\mu,\eta)=(\gamma/2,\Sigma-1)$, confirming the facet $4\beta+5\gamma=6$. The computation also shows that adding the extra Fouvry--Iwaniec groupings and the exponent pair $(\tfrac16,\tfrac23)$ does not improve the optimum. Code and the full constraint inventory are archived at
+\url{https://github.com/michaelmross/Legendre/tree/main/Jn-tail}; the table is produced by \texttt{fm\_exact.py}.
+
+\subsection*{Acknowledgments}
+The author thanks Claude Fable 5.1 (Anthropic) and GPT-5.6 Sol (OpenAI) for collaboration in analysis and exposition.
+
+\begin{thebibliography}{99}
+
+\bibitem{FordMaynard} K.~Ford and J.~Maynard,
+\emph{On the theory of prime producing sieves},
+arXiv:2407.14368 (2024).
+
+\bibitem{FI} E.~Fouvry and H.~Iwaniec,
+\emph{Exponential sums with monomials},
+J. Number Theory \textbf{33} (1989), 311--333.
+
+\bibitem{FI98} J.~Friedlander and H.~Iwaniec,
+\emph{Asymptotic sieve for primes},
+Ann. of Math. (2) \textbf{148} (1998), 1041--1065.
+
+\bibitem{FriedlanderIwaniec} J.~Friedlander and H.~Iwaniec,
+\emph{Opera de Cribro},
+Amer. Math. Soc. Colloq. Publ. \textbf{57}, AMS, 2010.
+
+\bibitem{GK} S.~W. Graham and G.~Kolesnik,
+\emph{Van der Corput's Method of Exponential Sums},
+London Math. Soc. Lecture Note Ser. \textbf{126}, Cambridge Univ. Press, 1991.
+
+\bibitem{GuthMaynard} L.~Guth and J.~Maynard,
+\emph{New large value estimates for Dirichlet polynomials},
+Ann. of Math. (2) \textbf{203} (2026), 623--675.
+
+\bibitem{Harman} G.~Harman,
+\emph{Prime-Detecting Sieves},
+London Math. Soc. Monographs \textbf{33}, Princeton Univ. Press, 2007.
+
+\bibitem{Iwaniec80} H.~Iwaniec,
+\emph{A new form of the error term in the linear sieve},
+Acta Arith. \textbf{37} (1980), 307--320.
+
+\bibitem{RS} O.~Robert and P.~Sargos,
+\emph{Three-dimensional exponential sums with monomials},
+J. reine angew. Math. \textbf{591} (2006), 1--20.
+
+\bibitem{RossRays} M.~M. Ross,
+\emph{Factor Rays and the Self-Conjugate Parabola: Deterministic Coverage Geometry in
+Square Intervals},
+Zenodo (2026), \doi{10.5281/zenodo.20016398}.
+
+\bibitem{RossShells} M.~M. Ross,
+\emph{Multiplication Geometry in Square Shells: Finite Coverage, Truncated Legendre
+Sums, and the Parity Barrier},
+Zenodo (2026), \doi{10.5281/zenodo.22553216}.
+
+\bibitem{RossObstruction} M.~M. Ross,
+\emph{Primes in Square Intervals: Obstructions to the Square-Centered Dispersion Route},
+Zenodo (2026), \doi{10.5281/zenodo.21248789}.
+
+\bibitem{Selberg} A.~Selberg,
+\emph{Sieve methods},
+in: 1969 Number Theory Institute, Proc. Sympos. Pure Math. \textbf{XX},
+Amer. Math. Soc., Providence, 1971, pp.~311--351.
+
+\bibitem{Tenenbaum} G.~Tenenbaum,
+\emph{Introduction to Analytic and Probabilistic Number Theory}, 3rd ed.,
+Grad. Stud. Math. \textbf{163}, AMS, 2015.
+
+\bibitem{Vaughan} R.~C. Vaughan,
+\emph{Sommes trigonom\'etriques sur les nombres premiers},
+C. R. Acad. Sci. Paris S\'er. A \textbf{285} (1977), 981--983.
+
+\end{thebibliography}
+
+\end{document}

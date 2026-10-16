@@ -1,0 +1,477 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,
+  pdftitle={Constraint Inventory for fm-exact.py}]{hyperref}
+
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}[lemma]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[lemma]{Remark}
+\newtheorem{convention}[lemma]{Convention}
+
+\newcommand{\N}{N}
+\newcommand{\eof}[1]{e\!\left(#1\right)}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\title{Constraint Inventory for the Exact Certification\\
+of the Level Profile $\zeta(a)=(5a-4)/4$\\[2mm]
+\large Companion documentation to Appendix~A\\
+of ``An Explicit Semiprime-Tail Bound in Square-Root Intervals\\
+and a One-Hypothesis Reduction for $[4n^2-n,\,4n^2+n]$''}
+\author{Michael M. Ross\\
+\textit{Independent Researcher}\\
+\small \texttt{michaelmross@cantab.net}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}\noindent
+This note is the full constraint inventory referred to in Appendix~A of the
+paper referenced above (henceforth [P]). It derives every linear inequality appearing
+in the certification script \code{fm\_exact.py} from the published theorem
+that inequality encodes; states the sign, negation, and boundary conventions
+needed to read the code's coefficient tuples; records the three places
+where the encoding is a deliberate \emph{relaxation} of the true tool, and
+proves that the certification remains sound there by a sandwich against the
+Coverage Lemma of [P]; and cross-references every atom family to the code
+identifiers and to the corresponding statements of [P]. This is designed to be an audit trail, not new mathematics.
+\end{abstract}
+
+\section{Purpose and provenance}\label{sec:purpose}
+
+The script \code{fm\_exact.py} certifies, in exact rational arithmetic,
+the level profile
+\[
+\zeta(\gamma)\;=\;\frac{6-5\gamma}{4}\qquad(\gamma\in[1,6/5]),
+\]
+in both directions: for $\beta<\zeta(\gamma)$ every estimation block
+admits an admissible configuration (achievability --- proved by hand in
+[P], Coverage Lemma, and re-verified here as a byproduct), and at
+$\beta=\zeta(\gamma)$ a block exists that no encoded tool covers
+(optimality --- [P], Optimality Proposition). The certification is a
+finite computation because every tool's admissibility region is a
+conjunction of inequalities that are \emph{linear} in the block
+coordinates at fixed $\gamma$. This document is the dictionary between
+those inequalities, the code, and the literature.
+
+\section{Conventions}\label{sec:conventions}
+
+\begin{convention}[coordinates and exponents]\label{conv:coords}
+A slice is fixed by $\gamma\in[1,6/5]$ (prime block $p\sim
+\N^{\gamma}$; equivalently $a=2-\gamma$, cofactor $q\asymp\N^{a}$). The
+unknowns are $x=(\mu,\eta,\beta)$: the Vaughan-piece exponent, the dyadic
+frequency exponent, and the sieve-level exponent. All exponents are with
+respect to base $\N=2n$; $x_{\mathrm{arith}}:=4n^2\asymp\N^2$. We write
+$\Sigma:=\beta+\gamma$ and $\xi:=\eta+2-\Sigma$ (phase-size exponent).
+The admissibility requirement for a block, [P] eq.\ (trilinear
+requirement), is that the estimating bound have exponent at most
+$\Sigma$ (i.e.\ relative saving $\N^{\eta}$ against the trivial size
+$\N^{\eta+\Sigma}$), with an $x^{-c\varepsilon}$ margin suppressed
+throughout this document: all atoms are stated with $\varepsilon=0$ and
+\emph{closed} inequalities. Facet equalities are therefore boundary
+points of both the pass and fail regions; this is intentional (see
+Convention~\ref{conv:boundary}).
+\end{convention}
+
+\begin{convention}[atom format in the code]\label{conv:atoms}
+In \code{failure\_atoms()} a constraint is the tuple
+$\code{C}(a_{\mu},a_{\eta},a_{\beta},c_0,c_{\gamma})$, meaning
+\[
+a_{\mu}\,\mu+a_{\eta}\,\eta+a_{\beta}\,\beta\ \le\ c_0+c_{\gamma}\,\gamma ,
+\]
+all entries rational. Each \emph{tool} passes on a conjunction of pass
+conditions; the code stores, per tool, the list of \emph{negated} pass
+conditions (``fail atoms''), one of which must hold for the tool to fail
+at a point. A \emph{failure witness} is a point where every tool fails;
+distributing the disjunctions gives the product over tools of the
+fail-atom counts:
+\[
+\underbrace{3}_{\code{FI0}}\times
+\underbrace{3}_{\code{FI1}}\times
+\underbrace{3}_{\code{FI2}}\times
+\underbrace{2}_{\code{RS0}}\times
+\underbrace{2}_{\code{RS1}}\times
+\underbrace{2}_{\code{RS2}}\times
+\underbrace{1}_{\code{RS3}}\times
+\underbrace{1}_{\code{ELEM}}\;=\;216
+\]
+candidate polytopes per piece type (\code{ELEM} is present only for
+type~I, where its single fail option is the conjunction of its three
+negated clauses; type~II has $216$ combinations without the final
+factor). Each polytope comprises the chosen fail atoms plus the region
+constraints of Section~\ref{sec:region} ($\approx14$ inequalities in $3$
+unknowns); the minimal $\beta$ over it is found by exhaustive vertex
+enumeration ($\binom{14}{3}=364$ candidate bases, $3\times3$ systems
+solved by Cramer's rule over $\mathbb{Q}$ in \code{solve3()}), and
+$\zeta(\gamma)$ is the minimum over all polytopes (\code{min\_beta()}).
+\end{convention}
+
+\begin{convention}[boundaries and monotonicity]\label{conv:boundary}
+Because all fail atoms are closed, the computed $\zeta(\gamma)$ is the
+infimum of levels admitting a witness, and the witness printed at
+$\beta=\zeta(\gamma)$ sits on the facet with equalities active.
+Failure is not a priori monotone in $\beta$ (raising $\beta$ widens the
+frequency range and tightens windows, but also widens the reachable
+grouping intervals), so the script's output is, by itself, only the
+statement ``the \emph{first} failure occurs at $\beta=\zeta(\gamma)$.''
+That everything strictly below the facet passes is the Coverage Lemma of
+[P], proved by hand; the two artifacts meet at the facet. See also
+Section~\ref{sec:soundness}.
+\end{convention}
+
+\section{The block model and the region $R$}\label{sec:region}
+
+Per [P] (Decomposition and grouping), a block carries variables
+$(h,e_1,e_2,m_v,k)$ with exponents
+$(\eta,\ \beta-s,\ s,\ \mu,\ \gamma-\mu)$, $s\in[0,\beta]$ free. Vaughan
+pieces: type~I has $\mu\in[0,2\gamma/3]$ with $k$ smooth; type~II has
+$\mu\in[\gamma/3,\gamma/2]$, both coefficients arbitrary. The frequency
+range from the pipeline lemma is $0\le\eta\le\Sigma-1$ (blocks with
+$\Sigma\le1$ require nothing). The region constraints in
+\code{region()}:
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+code tuple & inequality & role & piece type\\
+\midrule
+\code{C(-1,0,0,0,0)} & $\mu\ge0$ & piece range & I\\
+\code{C(1,0,0,0,2/3)} & $\mu\le 2\gamma/3$ & piece range & I\\
+\code{C(-1,0,0,0,-1/3)} & $\mu\ge\gamma/3$ & piece range & II\\
+\code{C(1,0,0,0,1/2)} & $\mu\le\gamma/2$ & piece range & II\\
+\code{C(0,-1,0,0,0)} & $\eta\ge0$ & frequency range & both\\
+\code{C(0,1,-1,-1,1)} & $\eta\le\beta+\gamma-1$ & frequency range & both\\
+\code{C(0,0,-1,0,0)}, \code{C(0,0,1,1,0)} & $0\le\beta\le1$ & search box & both\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Tool family RS: the Robert--Sargos theorem}\label{sec:RS}
+
+\subsection{Statement and specialization}
+Robert--Sargos \cite[Theorem~1]{RS}: for exponents with
+$\alpha(\alpha-1)\beta_0\gamma_0\ne0$, dyadic ranges $H,N_1,M_1$, phase
+size $X\ge1$, and arbitrary coefficients $|a(h,\nu)|\le1$, $|b(w)|\le1$,
+\[
+\sum_{h\sim H}\sum_{\nu\sim N_1}a(h,\nu)\sum_{w\sim M_1}b(w)\,
+\eof{X\tfrac{h^{\beta_0}\nu^{\gamma_0}w^{\alpha}}
+{H^{\beta_0}N_1^{\gamma_0}M_1^{\alpha}}}
+\ \ll_{\varepsilon}\ (HN_1M_1)^{1+\varepsilon}
+\Bigl\{\Bigl(\tfrac{X}{HN_1M_1^{2}}\Bigr)^{1/4}
++(HN_1)^{-1/4}+M_1^{-1/2}+X^{-1/2}\Bigr\}.
+\]
+We use $(\beta_0,\gamma_0,\alpha)=(1,-1,-1)$, so
+$\alpha(\alpha-1)\beta_0\gamma_0=-2\ne0$; the standalone slot $w$ has
+exponent $m_1$, the joint slot $(h,\nu)$ has exponents
+$(\eta,\Sigma-m_1)$, and $X=\N^{\xi}$ with $\xi\ge2-\Sigma\ge3/4>0$.
+
+\subsection{Window derivation}\label{ssec:RSwindow}
+The requirement is $(\eta+\Sigma)+\max_i t_i\le\Sigma$, i.e.\
+$\max_i t_i\le-\eta$, where in exponents, with $n_1=\Sigma-m_1$ and
+$\xi-\eta=2-\Sigma$:
+\begin{align*}
+t_1&=\tfrac{\xi-\eta-n_1-2m_1}{4}=\tfrac{2-2\Sigma-m_1}{4}
+&&\Rightarrow\quad m_1\ \ge\ 4\eta+2-2\Sigma
+&&\text{(A)}\\
+t_2&=-\tfrac{\eta+n_1}{4}
+&&\Rightarrow\quad m_1\ \le\ \Sigma-3\eta
+&&\text{(B)}\\
+t_3&=-\tfrac{m_1}{2}
+&&\Rightarrow\quad m_1\ \ge\ 2\eta
+&&\text{(C)}\\
+t_4&=-\tfrac{\xi}{2}
+&&\Rightarrow\quad \eta\ \le\ 2-\Sigma
+&&\text{(D)}
+\end{align*}
+Subsumptions used by the encoding: (A)$\,\Leftarrow\,$(C) since
+$4\eta+2-2\Sigma\le2\eta\iff\eta\le\Sigma-1$, which is a region
+constraint; (D) is implied on the relevant part of the region (see
+Remark~\ref{rem:relaxations}). The effective window is
+$m_1\in[2\eta,\ \Sigma-3\eta]$, matching [P] (Admissibility window
+Lemma), whose window is nonempty iff $5\eta\le\Sigma$.
+
+\subsection{The four grouping families and their code atoms}
+The reachable standalone exponents are
+$m_1\in\{s,\ \mu+s,\ \gamma-\mu+s,\ \gamma+s\}$, $s\in[0,\beta]$
+([P], available-set display; the fourth family is retained here because
+the RS window's upper cap $\Sigma-3\eta$ can exceed $\gamma$ at small
+$\eta$). Taking in each family the choice $m_1=\max(\text{base},2\eta)$
+where possible, the pass conditions and their negations:
+
+\begin{center}
+\small
+\begin{tabular}{@{}lllll@{}}
+\toprule
+tool & pass conditions & fail atoms (code) & fail inequality\\
+\midrule
+\code{RS0} ($m_1=s$) & $2\eta\le\beta$;\ $5\eta\le\Sigma$
+ & \code{C(0,-2,1,0,0)} & $\beta\le2\eta$\\
+ & & \code{C(0,-5,1,0,-1)} & $\beta\le5\eta-\gamma$\ \ (i.e.\ $5\eta\ge\Sigma$)\\
+\code{RS1} ($m_1=\mu+s$) & $\mu+\beta\ge2\eta$;\ $\mu\le\Sigma-3\eta$
+ & \code{C(1,-2,1,0,0)} & $\mu+\beta\le2\eta$\\
+ & & \code{C(-1,-3,1,0,-1)} & $\mu\ge\Sigma-3\eta$\\
+\code{RS2} ($m_1=\gamma-\mu+s$) & $\gamma-\mu+\beta\ge2\eta$;\ $\gamma-\mu\le\Sigma-3\eta$
+ & \code{C(-1,-2,1,0,-1)} & $\gamma-\mu+\beta\le2\eta$\\
+ & & \code{C(1,-3,1,0,0)} & $\mu+\beta\le3\eta$\ \ (i.e.\ $\gamma-\mu\ge\Sigma-3\eta$)\\
+\code{RS3} ($m_1=\gamma+s$) & $3\eta\le\beta$\ \ (i.e.\ $\gamma\le\Sigma-3\eta$)
+ & \code{C(0,-3,1,0,0)} & $\beta\le3\eta$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}[documented relaxations in the RS encoding]
+\label{rem:relaxations}
+Three omissions make the encoded tools slightly \emph{stronger} than the
+true ones on part of the search box:
+(i) \code{RS1} and \code{RS2} omit the window-nonemptiness condition
+$5\eta\le\Sigma$ (which \code{RS0} includes);
+(ii) \code{RS3} omits the lower-edge condition $\gamma+s\ge2\eta$, vacuous
+only when $2\eta\le\gamma$, i.e.\ when $\Sigma\le(\gamma+2)/2$;
+(iii) condition (D) of Subsection~\ref{ssec:RSwindow} is omitted
+everywhere, valid only when $\eta\le2-\Sigma$, i.e.\ when
+$\Sigma\le3/2$ given $\eta\le\Sigma-1$.
+All three omitted conditions \emph{hold automatically} on
+$\{\Sigma\le5/4,\ \eta\le\Sigma-1\}$, which contains the entire facet
+region; outside it they are genuine relaxations. Soundness is unaffected:
+see Section~\ref{sec:soundness}.
+\end{remark}
+
+\section{Tool family ELEM: elementary bounds (type~I only)}
+\label{sec:elem}
+
+For a type~I block the smooth variable $k\sim K=\N^{\kappa}$,
+$\kappa=\gamma-\mu$, is summed with the phase $f(k)=hz'/(ck)$,
+$c=e_1e_2m_v\sim\N^{\chi}$, $\chi=\beta+\mu$, all other variables in
+absolute value; $|f'|\asymp\Lambda=\N^{\lambda}$,
+$\lambda=\eta+2-\chi-2\kappa$. Three clauses, whose disjunction is the
+pass condition; the tool fails only if all three fail, which is the
+single \code{ELEM} conjunction in the code.
+
+\begin{itemize}
+\item[(E1)] \emph{Kuzmin--Landau branch} ($\lambda<0$): by
+Kuzmin--Landau (e.g.\ \cite[Theorem~2.1]{GK}, after dyadic subdivision
+so that $|f'|\le\tfrac12$), $\sum_k\eof{f(k)}\ll\Lambda^{-1}$; total
+exponent $\eta+\chi-\lambda=2(\chi+\kappa)-2=2\Sigma-2\le\Sigma$ for
+$\Sigma\le2$: \emph{always admissible in region}. Pass clause:
+$\lambda<0\iff\eta\le\beta-\mu+2\gamma-2$.\\
+Fail atom \code{C(-1,-1,1,2,-2)}: $\ \eta\ge\beta-\mu+2\gamma-2$.
+\item[(E2)] \emph{Second-derivative test / exponent pair
+$(\tfrac12,\tfrac12)$} \cite[Theorem~2.2]{GK}:
+$\sum_k\ll(\Lambda K)^{1/2}+(K/\Lambda)^{1/2}$. The first term needs
+$\eta+\chi+\tfrac{\lambda+\kappa}{2}\le\Sigma$, which simplifies to
+$3\eta+2\mu\le\beta+3\gamma-2$; the companion term needs
+$\eta+\chi+\tfrac{\kappa-\lambda}{2}=\tfrac{\eta+3\Sigma-2}{2}\le\Sigma$,
+i.e.\ $\eta\le2-\Sigma$, automatic on the facet region.\\
+Fail atom \code{C(-2,-3,1,2,-3)}: $\ 3\eta+2\mu\ge\beta+3\gamma-2$.
+\item[(E3)] \emph{Exponent pair $(\tfrac16,\tfrac23)$}
+\cite[\S3]{GK}: $\sum_k\ll\Lambda^{1/6}K^{2/3}(+\,\text{admissible
+companions as in (E1),(E2)})$; the main term needs
+$\eta+\chi+\tfrac{\lambda}{6}+\tfrac{2\kappa}{3}
+=\tfrac{7\eta+5\beta+3\mu+2\gamma+2}{6}\le\Sigma$, which simplifies to
+$7\eta+3\mu\le\beta+4\gamma-2$.\\
+Fail atom \code{C(-3,-7,1,2,-4)}: $\ 7\eta+3\mu\ge\beta+4\gamma-2$.
+\end{itemize}
+
+\begin{remark}
+[P] uses only (E1) and (E2) in the Coverage Lemma; (E3) is carried in
+the certification solely so that the Optimality Proposition quantifies
+over the larger toolkit. The certified optimum is identical with or
+without (E3) --- one of the two byproducts recorded in [P],
+Appendix~A.
+\end{remark}
+
+\section{Tool family FI: Fouvry--Iwaniec Theorem~6}\label{sec:FI}
+
+This family is \emph{not used} in the proofs of [P]; it is encoded so
+that the Optimality Proposition's claim --- the profile is unchanged
+when \cite[Theorem~6]{FI} is adjoined --- is machine-checked rather
+than asserted. Since the derivation appears nowhere in [P], it is
+recorded here in full.
+
+\subsection{Statement and exponent form}
+\cite[Theorem~6]{FI}: for $\alpha\ne0,1$, an additive character
+$\chi(h)$, and arbitrary $|\varphi_m|,|\psi_n|\le1$,
+\begin{align*}
+S_{\chi\varphi\psi}(H,M,N)\ \ll\ (HMN)^{1/2}\Bigl[\,&(H+N)^{1/2}
+\bigl(x_6^{1/8}H^{-1/6}M^{1/12}N^{1/6}
++x_6^{1/8}H^{-1/8}N^{3/8}\\
+&\qquad+N^{1/2}+N^{1/4}M^{1/8}\bigr)\,x_6^{1/8}
+\;+\;M^{1/2}\;+\;x_6^{-1/4}M^{1/2}N\,\Bigr]\mathcal{L}^4,
+\end{align*}
+where $x_6$ is the phase size. With slot exponents $(m_0,n_0)$,
+$m_0+n_0=\Sigma$, frequency $\eta$, and $x_6=\N^{\xi}$, the requirement
+(bound $\le\N^{\Sigma}$) yields, after the prefactor
+$(\eta+\Sigma)/2$:
+\begin{itemize}
+\item the $M^{1/2}$ term (T5): $\tfrac{\eta+\Sigma}{2}+\tfrac{m_0}{2}
+\le\Sigma\iff\eta\le n_0$ --- a \emph{lower} window edge, which also
+fixes $(H+N)^{1/2}\mapsto\N^{n_0/2}$ in the remaining terms;
+\item five upper caps on $n_0$, derived by direct substitution
+($\xi=\eta+2-\Sigma$, $m_0=\Sigma-n_0$):
+\[
+\begin{array}{lll}
+\text{T1 } (x_6^{1/4}H^{-1/6}M^{1/12}N^{1/6}\cdot):
+& 7n_0\le 8\Sigma-7\eta-6
+& \Rightarrow\ n_0\le\mathrm{cap}_{1}=\tfrac{8\Sigma-7\eta-6}{7}\\[1mm]
+\text{T2 } (x_6^{1/4}H^{-1/8}N^{3/8}\cdot):
+& 7n_0\le 6\Sigma-5\eta-4
+& \Rightarrow\ n_0\le\mathrm{cap}_{2}=\tfrac{6\Sigma-5\eta-4}{7}\\[1mm]
+\text{T3 } (x_6^{1/8}N^{1/2}\cdot):
+& 8n_0\le 5\Sigma-5\eta-2
+& \Rightarrow\ n_0\le\mathrm{cap}_{3}=\tfrac{5\Sigma-5\eta-2}{8}\\[1mm]
+\text{T4 } (x_6^{1/8}N^{1/4}M^{1/8}\cdot):
+& 5n_0\le 4\Sigma-5\eta-2
+& \Rightarrow\ n_0\le\mathrm{cap}_{4}=\tfrac{4\Sigma-5\eta-2}{5}\\[1mm]
+\text{T6 } (x_6^{-1/4}M^{1/2}N):
+& 2n_0\le 2-\Sigma-\eta
+& \Rightarrow\ n_0\le\mathrm{cap}_{6}=\tfrac{2-\Sigma-\eta}{2}
+\end{array}
+\]
+\end{itemize}
+(Sample derivation, T2: multiply the requirement
+$\tfrac{\eta+\Sigma}{2}+\tfrac{n_0}{2}+\tfrac{\xi}{4}-\tfrac{\eta}{8}
++\tfrac{3n_0}{8}\le\Sigma$ by $8$ and substitute $\xi$:\ 
+$5\eta+7n_0+2\Sigma+4\le8\Sigma$. The others are identical in kind.)
+
+\subsection{Pruning lemma}\label{ssec:pruning}
+\begin{lemma}
+On $\{\eta\le\Sigma-1,\ \Sigma\le4/3\}$:
+$\mathrm{cap}_2\le\mathrm{cap}_1$,
+$\mathrm{cap}_2\le\mathrm{cap}_3$, and
+$\mathrm{cap}_2\le\mathrm{cap}_4$. Hence the FI window is
+$[\,\eta,\ \min(\mathrm{cap}_6,\mathrm{cap}_2)\,]$.
+\end{lemma}
+\begin{proof}
+$\mathrm{cap}_1-\mathrm{cap}_2=\tfrac{2\Sigma-2\eta-2}{7}\ge0$ iff
+$\eta\le\Sigma-1$.
+$\mathrm{cap}_2\le\mathrm{cap}_4$ iff $5(6\Sigma-5\eta-4)\le
+7(4\Sigma-5\eta-2)$ iff $\Sigma+5\eta\le3$; with $\eta\le\Sigma-1$ this
+follows from $6\Sigma\le8$, i.e.\ $\Sigma\le4/3$.
+$\mathrm{cap}_2\le\mathrm{cap}_3$ iff $8(6\Sigma-5\eta-4)\le
+7(5\Sigma-5\eta-2)$ iff $13\Sigma\le5\eta+18$, implied by
+$\Sigma\le4/3<18/13$.
+\end{proof}
+
+\subsection{Grouping families and code atoms}
+The reachable $n_0$ families are $\{s,\ \mu+s,\ \gamma-\mu+s\}$,
+$s\in[0,\beta]$; the fourth family $n_0=\gamma+s$ is \emph{provably
+dead} for this tool, since $\gamma\ge1$ while
+$\mathrm{cap}_6\le\tfrac{2-\Sigma}{2}\le\tfrac12$, and is therefore not
+encoded. In each family we take $n_0$ at the base value (lower edge
+condition base${}+\beta\ge\eta$):
+
+\begin{center}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+tool & pass conditions & fail atoms (code) & fail inequality\\
+\midrule
+\code{FI0} & $\eta\le\beta$;\ $\eta\le\mathrm{cap}_6$;\ $\eta\le\mathrm{cap}_2$
+ & \code{C(0,-1,1,0,0)} & $\eta\ge\beta$\\
+ & & \code{C(0,-3,-1,-2,1)} & $3\eta+\beta\ge2-\gamma$\ \ ($\eta\ge\mathrm{cap}_6$)\\
+ & & \code{C(0,-12,6,4,-6)} & $12\eta-6\beta\ge6\gamma-4$\ \ ($\eta\ge\mathrm{cap}_2$)\\
+\code{FI1} & $\mu+\beta\ge\eta$;\ $\mu\le\mathrm{cap}_6$;\ $\mu\le\mathrm{cap}_2$
+ & \code{C(1,-1,1,0,0)} & $\mu+\beta\le\eta$\\
+ & & \code{C(-2,-1,-1,-2,1)} & $2\mu+\eta+\beta\ge2-\gamma$\\
+ & & \code{C(-7,-5,6,4,-6)} & $7\mu+5\eta-6\beta\ge6\gamma-4$\\
+\code{FI2} & $\gamma-\mu+\beta\ge\eta$;\ $\gamma-\mu\le\mathrm{cap}_6$;\
+$\gamma-\mu\le\mathrm{cap}_2$
+ & \code{C(-1,-1,1,0,-1)} & $\gamma-\mu+\beta\le\eta$\\
+ & & \code{C(2,-1,-1,-2,3)} & $2\mu-\eta-\beta\le3\gamma-2$\\
+ & & \code{C(7,-5,6,4,1)} & $7\mu-5\eta+6\beta\le\gamma+4$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent(The last two \code{FI2} rows are the sign-flipped forms of
+$\gamma-\mu\ge\mathrm{cap}_6$ and $\gamma-\mu\ge\mathrm{cap}_2$.) The
+pruning is a further relaxation outside $\Sigma\le4/3$, handled by the
+same soundness argument below. The trivial-size lower edge $\eta\le
+n_0$ is encoded as the first pass condition in each family.
+
+\section{Soundness of the relaxed encoding}\label{sec:soundness}
+
+Let $\zeta_{\mathrm{code}}(\gamma)$ be the script's output and
+$\zeta_{\mathrm{true}}(\gamma)$ the first-failure level of the
+\emph{exactly} encoded toolkit. Every deviation documented in
+Remark~\ref{rem:relaxations} and Subsection~\ref{ssec:pruning} makes an
+encoded tool pass on a superset of its true pass region; failure
+witnesses are therefore harder to find, so
+$\zeta_{\mathrm{code}}\ge\zeta_{\mathrm{true}}$. In the other
+direction, the Coverage Lemma of [P] proves by hand --- using only the
+exactly-valid parts of the encoding, all active inside
+$\{\Sigma\le5/4\}$ where every omitted condition holds --- that all
+blocks pass for $\beta<(6-5\gamma)/4$, so
+$\zeta_{\mathrm{true}}\ge(6-5\gamma)/4$. Since the script returns
+$\zeta_{\mathrm{code}}=(6-5\gamma)/4$ exactly at every tested rational
+$\gamma$, the sandwich closes:
+\[
+\frac{6-5\gamma}{4}\;=\;\zeta_{\mathrm{code}}
+\;\ge\;\zeta_{\mathrm{true}}\;\ge\;\frac{6-5\gamma}{4}.
+\]
+Finally, the printed witnesses are legitimate witnesses for the
+\emph{true} system: at $(\mu,\eta)=(\gamma/2,\Sigma-1)$ with
+$4\beta+5\gamma=6$ one checks directly that every omitted condition
+($5\eta\le\Sigma$, $\eta\le2-\Sigma$, $2\eta\le\gamma$,
+$\Sigma\le4/3$) is satisfied, so no relaxed tool was wrongly credited
+there.
+
+\section{Cross-reference table}\label{sec:xref}
+
+\begin{center}
+\small
+\begin{center}
+\small
+\begin{tabular}{@{}ll>{\raggedright\arraybackslash}p{0.52\textwidth}@{}}
+\toprule
+code identifier & this document & item in [P]\\
+\midrule
+\code{RS0}--\code{RS3} & \S\ref{sec:RS} & \S5.4 Admissibility-window Lemma (5.3);
+\S5.3 available-set display (10)\\
+\code{ELEM} clause (E1) & \S\ref{sec:elem} & \S5.5 elementary Lemma (5.4),
+Kuzmin--Landau term $\Lambda^{-1}$\\
+\code{ELEM} clause (E2) & \S\ref{sec:elem} & \S5.5 elementary Lemma (5.4),
+exponent pair $(\tfrac12,\tfrac12)$; used in \S5.6 Coverage Lemma (5.5)\\
+\code{ELEM} clause (E3) & \S\ref{sec:elem} & \S5.6 Optimality Prop.\ (5.6);
+Appendix~A (certification only)\\
+\code{FI0}--\code{FI2} & \S\ref{sec:FI} & \S5.6 Optimality Prop.\ (5.6);
+Appendix~A byproducts (certification only)\\
+\code{region()} & \S\ref{sec:region} & \S5.3 Decomposition and grouping;
+\S5.1 pipeline Lemma (5.1), frequency range below (9)\\
+\code{solve3()}, \code{min\_beta()} & Convention~\ref{conv:atoms} &
+Appendix~A (vertex enumeration)\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{center}
+
+\section{Reproduction}\label{sec:repro}
+
+Run \code{python3 fm\_exact.py} (Python~3; \code{numpy}/\code{scipy}
+are used only for the final floating-point root-finding of
+$\theta^{\ast\ast}$, which is verification of a closed-form calculus step and
+not part of the certification). Expected output: the exact table
+$\zeta(\gamma)=1/4,\,3/16,\,1/8,\,1/16,\,0$ at
+$\gamma=1,\,21/20,\,11/10,\,23/20,\,6/5$, agreement with
+$(6-5\gamma)/4$ throughout, the witness
+$(\mu,\eta)=(11/20,\,9/40)$ at $\gamma=11/10$, the threshold
+$\theta^{\ast\ast}=0.939305$, and the margins $+0.0136$, $+0.2028$,
+$+0.5478$ (in units of $u$) at $\vartheta=0.94,\,0.95,\,0.97$.
+Runtime is a few minutes.
+
+\subsection*{Acknowledgments}
+The author thanks Claude Fable 5.1 (Anthropic) for collaboration in analysis and exposition.
+
+\begin{thebibliography}{9}
+\bibitem{FI} E.~Fouvry and H.~Iwaniec, \emph{Exponential sums with
+monomials}, J.~Number Theory \textbf{33} (1989), 311--333.
+\bibitem{GK} S.~W. Graham and G.~Kolesnik, \emph{Van der Corput's
+Method of Exponential Sums}, London Math.\ Soc.\ Lecture Note Ser.\
+\textbf{126}, Cambridge Univ.\ Press, 1991.
+\bibitem{RS} O.~Robert and P.~Sargos, \emph{Three-dimensional
+exponential sums with monomials}, J.~reine angew.\ Math.\ \textbf{591}
+(2006), 1--20.
+\end{thebibliography}
+
+\end{document}
