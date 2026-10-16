@@ -1,6 +1,6 @@
-# H(ϑ) campaign
+# H(ϑ) campaign — checkpoint 33
 
-Data and code for *Tri-prime Contributions and Signed Remainders in Square-Root Intervals*, Michael M. Ross (2026).
+Michael M. Ross's square-root interval project. Updated 14 October 2026.
 
 Start with **[DYADIC_VARIANCE_TEST_NOTE.md](DYADIC_VARIANCE_TEST_NOTE.md)**. The required weaker block variance remains unproved with little-o. An elementary Selberg square now proves the correct uniform O(N²/(PR log⁴N)) scale; its local diagonal is O(N/log³N) and is uniformly negligible. All prime masks, individual r thresholds, five kernel moments and physical sectors are retained. A zero-mean function-space construction proves that even arbitrary fixed logarithmic all-center mean-square savings do not automatically control this sparse reciprocal sample; it is not an actual prime counterexample. The checked primary correlation, interval, progression-variance and smooth Kloosterman clauses do not directly close the actual centered off-diagonal estimate. No sharp deficit coefficient is improved and no sector is removed. All 311 nonmutable checkpoint-32 records are preserved. The original .011/.007935 targets remain open, eta_W+eta_rest<=.000099 is unchanged, K=0 and milestone 7 is deferred.
 
@@ -162,6 +162,23 @@ python3 src/openai021_audit.py
 
 This verifies source preservation, exact rational margins, CRT translation and modular-hyperbola identities. The mathematical proof review and conditional shell deduction are in OPENAI021_AUDIT.md.
 
+## Reproduce the one-prime degree-pool audit
+
+```bash
+python3 src/one_prime_degree_pool_audit.py
+```
+
+This checks the actual degree partition and original mark gates on 451,078 short-padding sites, full one-prime source conditions, optimal reference-price ceilings, the covered four-prime witnesses and the ordinary reference of the next coupled band. Finite fixtures do not instantiate the universal sieve weights or prove the remaining short comparison. Historical modules and numerical ledgers are retained.
+
+
+## Reproduce the direct coupled-degree kernel checks
+
+```bash
+python3 src/coupled_degree_kernel.py
+```
+
+This verifies exact convolution and repeated-base multiplicities, actual prime-log kernel values on 451,078 original-padding sites, the fixed polynomial correction, both defect charges, 864 rational source mapping rows across two RS reductions and complete four-slot Vaughan tensors. The arithmetic/reference tests pass; the actual centered lower comparison remains open.
+
 ## Reproduce the earlier campaign stages
 
 From this directory:
@@ -304,26 +321,3 @@ This is an unchanged copy of the supplied script. It takes a few minutes and use
 | `results/checkpoint24_preservation_manifest.json` | Frozen prior manifest; 252 nonmutable records retained |
 | `results/campaign_state.json` | Milestone status and the next proof gate |
 
-## Next task
-
-Prove the actual centered short-scale signed integral from T0 to (x/Y)*log N at (.007935+o(1))*u, using Phi_N in SHORT_SCALE_LOCALIZATION_NOTE.md (23), or the coupled inequality in SPECTRAL_COVERAGE_NOTE.md (14). Its downward-rounded sufficient version (16) has coefficient .0686138 and retains the actual auxiliary beta, large-db continuation, positive prime core and reference subtraction. Larger-db Type II is not controlled merely because its outer Type I region is covered. For a fixed least-prime power cutoff, use checkpoint22 (23) and deduct its explicit xi budget from .007935. A fixed frequency multiplier L additionally charges 21147/L; the growing multiplier log N and the exact auxiliary identity cost zero in the asymptotic coefficient.
-
-The original E_(T_N<q<=U)-E_R<=(.011+o(1))*u remains the campaign target. The separate marked estimate is optional. K=0, H and the higher-degree allocation remain open.
-
-
-## Reproduce the one-prime degree-pool audit
-
-```bash
-python3 src/one_prime_degree_pool_audit.py
-```
-
-This checks the actual degree partition and original mark gates on 451,078 short-padding sites, full one-prime source conditions, optimal reference-price ceilings, the covered four-prime witnesses and the ordinary reference of the next coupled band. Finite fixtures do not instantiate the universal sieve weights or prove the remaining short comparison. Historical modules and numerical ledgers are retained.
-
-
-## Reproduce the direct coupled-degree kernel checks
-
-```bash
-python3 src/coupled_degree_kernel.py
-```
-
-This verifies exact convolution and repeated-base multiplicities, actual prime-log kernel values on 451,078 original-padding sites, the fixed polynomial correction, both defect charges, 864 rational source mapping rows across two RS reductions and complete four-slot Vaughan tensors. The arithmetic/reference tests pass; the actual centered lower comparison remains open.
